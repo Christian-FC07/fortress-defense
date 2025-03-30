@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      OLD grass smart shape_2_0: -7066524758522758802
+      OLD grass smart shape_2_1: 7927649134297041752
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
