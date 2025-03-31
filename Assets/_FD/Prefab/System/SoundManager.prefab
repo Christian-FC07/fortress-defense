@@ -48,6 +48,7 @@ MonoBehaviour:
     type: 3}
   musicsGame: {fileID: 8300000, guid: 03e1557661f15e34bbd363930ac9a45a, type: 3}
   BossMusicClip: {fileID: 8300000, guid: 78d215e0f9ac1874d8f41bc706b04bba, type: 3}
+  BossDeath: {fileID: 8300000, guid: dc066c79ca588b9449b3cfe9a98109c4, type: 3}
   musicsGameVolume: 0.4
   soundClick: {fileID: 8300000, guid: 4484820e2beda6140b027c7a42b2932e, type: 3}
   coinCollect: {fileID: 8300000, guid: 0362c1da574ac6342b542751cee14209, type: 3}

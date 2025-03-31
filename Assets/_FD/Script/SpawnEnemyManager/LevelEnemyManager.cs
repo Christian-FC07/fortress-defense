@@ -145,7 +145,6 @@ public class LevelEnemyManager : MonoBehaviour, IListener
             }
 
             //check all enemy killed
-
             while (isEnemyAlive())
             {
                 yield return new WaitForSeconds(0.1f);

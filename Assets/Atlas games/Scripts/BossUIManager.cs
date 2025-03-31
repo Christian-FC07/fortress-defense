@@ -9,6 +9,7 @@ public class BossUIManager : MonoBehaviour
     public Image EnemyHealthBar;
     public Enemy enemy;
     public GameObject miniboss, boss;
+    bool isBossDead = false;
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -31,5 +32,11 @@ public class BossUIManager : MonoBehaviour
     void Update()
     {
         EnemyHealthBar.fillAmount = (float)enemy.currentHealth / enemy.health;
+        if(((float)enemy.currentHealth / enemy.health) < 0 && isBossDead == false)
+        {
+            SoundManager.PlaySfx(SoundManager.Instance.BossDeath);
+            Debug.Log("gg");
+            isBossDead = true;
+        };
     }
 }

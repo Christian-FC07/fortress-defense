@@ -99,7 +99,8 @@ public class MenuManager : MonoBehaviour, IListener
         {
             currentTimeScale = Time.timeScale;
             Time.timeScale = 0;
-            UI.SetActive(false);
+            //UI.SetActive(false);
+            UI.transform.localScale = new Vector2(2, 2);
             PauseUI.SetActive(true);
             GameManager.Instance.State = GameManager.GameState.Pause;
             // SoundManager.Instance.PauseMusic(true);
@@ -107,7 +108,8 @@ public class MenuManager : MonoBehaviour, IListener
         else
         {
             Time.timeScale = currentTimeScale;
-            UI.SetActive(true);
+            //UI.SetActive(true);
+            UI.transform.localScale = new Vector2(1, 1);
             PauseUI.SetActive(false);
             SoundManager.Instance.PauseMusic(false);
             GameManager.Instance.State = GameManager.GameState.Playing;
