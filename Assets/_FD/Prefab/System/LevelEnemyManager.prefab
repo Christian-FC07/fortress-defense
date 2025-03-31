@@ -242,11 +242,11 @@ MonoBehaviour:
   - wait: 0
     enemySpawns:
     - wait: 0
-      enemy: {fileID: 3697426553599540029, guid: 2188a8e0fa173ce4fbadcd9fadc71f00,
+      enemy: {fileID: 3697426553599540029, guid: 0d97a740b5eb09c4c97077933e330069,
         type: 3}
-      numberEnemy: 2
+      numberEnemy: 1
       rate: 0
-      customHealth: 0
+      customHealth: 100
       customSpeed: 0
       customAttackDmg: 0
       boosType: 0
