@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      atlasgamesio_httpss.mj.runxZWMPm3zLbM_background_of_2d_game_s_aace70d7-45d0-4d39-9e02-74cccba3d4cf_0_0: -7915725966879911572
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
