@@ -424,11 +424,12 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
 
             SoundManager.PlaySfx(soundDieBlow, soundDieBlowVol);
         }
+        else if (is_boss)
+            SoundManager.PlaySfx(SoundManager.Instance.BossDeath);
         else
             SoundManager.PlaySfx(soundDie, soundDieVol);
 
         if (is_boss)
-            SoundManager.PlayMusic(SoundManager.Instance.musicsGame);
 
         GlobalValue.KillCount += 1;
 

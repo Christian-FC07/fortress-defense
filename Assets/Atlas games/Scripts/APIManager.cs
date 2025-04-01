@@ -190,7 +190,7 @@ public class APIManager : MonoBehaviour
             var asyncOperation = www.SendWebRequest();
             while (!asyncOperation.isDone)
             {
-                await Task.Delay(100);
+                await Task.Yield();
             }
 
             if (www.result != UnityWebRequest.Result.Success)
@@ -198,7 +198,7 @@ public class APIManager : MonoBehaviour
                 Debug.Log("Failed to get time: " + www.error);
                 TimeAndDateResponseModel time = new TimeAndDateResponseModel();
                 time.datetime = DateTime.Now.ToString();
-                return new TimeAndDateResponseModel();
+                return time;
             }
             else
             {
