@@ -71,3 +71,4 @@ MonoBehaviour:
   world1: {fileID: 8300000, guid: b6eab4112a811214192c4b922fdc9cc0, type: 3}
   world2: {fileID: 8300000, guid: c035d2e835f904b4aa92a0553c4b353d, type: 3}
   world3: {fileID: 8300000, guid: a30961033a9bd9742a23240430c7bdba, type: 3}
+  graveHit: {fileID: 8300000, guid: 0425ada5f2349f444ba864b95dc84617, type: 3}

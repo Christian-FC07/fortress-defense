@@ -54,6 +54,9 @@ public class SoundManager : MonoBehaviour
     public AudioClip world2;
     public AudioClip world3;
 
+    [Header("Grave")]
+    public AudioClip graveHit;
+
     //public AudioClip switchPlayerSound;
 
     //public AudioClip soundCheckpoint;
