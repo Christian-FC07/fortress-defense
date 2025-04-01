@@ -35,8 +35,7 @@ public class TimeChecker : MonoBehaviour
 
         while (!_fetchedTime)
         {
-            APIManager apiManager = FindObjectOfType<APIManager>();
-            _globalDate = await apiManager.GetCurrentDateAndTime();
+            _globalDate = await APIManager.instance.GetCurrentDateAndTime();
             if (_globalDate.datetime != null)
             {
                 _fetchedTime = true;
@@ -70,7 +69,7 @@ public class TimeChecker : MonoBehaviour
 
     public void SyncTimers()
     {
-        _items = FindObjectsOfType<TimedItemManager>();
+        _items = FindObjectsByType<TimedItemManager>(FindObjectsSortMode.None);
        if (_items.Length > 0)
        {
            for (int i = 0; i < _items.Length; i++)
@@ -115,7 +114,7 @@ public class TimeChecker : MonoBehaviour
 
     public void InitTimedItems()
     {
-        _items = FindObjectsOfType<TimedItemManager>();
+        _items = FindObjectsByType<TimedItemManager>(FindObjectsSortMode.None);
         for (int i = 0; i < _items.Length; i++)
         {
             _items[i].Init(_items[i].itemName,_items[i].duration,_items[i].allTimedItems,_items[i].purchaseWithCoin);
