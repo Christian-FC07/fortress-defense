@@ -9,6 +9,7 @@ public class BossUIManager : MonoBehaviour
     public Image EnemyHealthBar;
     public Enemy enemy;
     public GameObject miniboss, boss;
+    bool isBossDead = false;
     // Start is called before the first frame update
     void OnEnable()
     {
@@ -28,8 +29,4 @@ public class BossUIManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        EnemyHealthBar.fillAmount = (float)enemy.currentHealth / enemy.health;
-    }
 }
