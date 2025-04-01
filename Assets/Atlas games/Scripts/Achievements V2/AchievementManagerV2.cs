@@ -126,7 +126,7 @@ public class AchievementManagerV2 : MonoBehaviour
         if ((int)trophy.status >= (int)TrophyStatus.ACHIEVED)
         {
             SetUpButtons(obj, ClaimIndex);
-            showTrophyNum();
+            // showTrophyNum();
 
             trophycheck = true;
             
@@ -153,9 +153,13 @@ public class AchievementManagerV2 : MonoBehaviour
         ChildInParent.GetChild(obj.transform, DoneIndex).gameObject.SetActive(state == DoneIndex);
     }
 
-    void showTrophyNum()
+    int TotalTrophies()
     {
-        finishedTrophies += 1;
+        return BasePlayerPrefs<AchievementModel>.DictArray.Count();
+    }
+    int AchievedTrophies()
+    {
+        return BasePlayerPrefs<AchievementModel>.DictArray.Where(k => k.status == TrophyStatus.ACHIEVED).Count();
     }
 
     void Update()
@@ -163,8 +167,8 @@ public class AchievementManagerV2 : MonoBehaviour
         //Debug.Log(finishedTrophies);
         //Debug.Log(everyTrophy);
 
-        trophyCount.text = finishedTrophies + " out of " + everyTrophy;
-        ringBar.fillAmount = (float)finishedTrophies / (float)everyTrophy;
+        trophyCount.text = AchievedTrophies() + " out of " + TotalTrophies();
+        ringBar.fillAmount = (float)AchievedTrophies() / (float)TotalTrophies();
 
         Debug.Log(trophycheck);
     }

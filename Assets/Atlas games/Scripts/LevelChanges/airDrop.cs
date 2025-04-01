@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class airDrop : MonoBehaviour
@@ -10,23 +11,29 @@ public class airDrop : MonoBehaviour
     public float xPosition;
     public float destroyTime = 2f;
     public bool getclickDrop;
-    
-    void Update()
+    private Coroutine coroutine;
+
+    private void Start() {
+        coroutine = StartCoroutine(AirDrop());
+    }
+
+    private void OnApplicationQuit() { //ensure that the coroutine doesn't run indefinitely
+        if (coroutine != null)
+            StopCoroutine(coroutine);
+    }
+    ~airDrop() { // same as OnApplicationQuit but when the object is destroyed instead of application exit
+        if (coroutine != null)
+            StopCoroutine(coroutine);
+    }
+    IEnumerator AirDrop()
     {
-        timer += Time.deltaTime;
-
-        if(timer >= timeLimit)
-        {
-            timer = 0.0f;
+        while (true) {
+            yield return new WaitForSeconds(timeLimit);
+            xPosition = Random.Range(-9f, 4f);
             spawnAirDrop();
-
-            Debug.Log("grth");
+            Destroy(clone, destroyTime);
+            destroyAirDrop1();
         }
-
-        xPosition = Random.Range(-9f, 4f);
-
-        Destroy(clone, destroyTime);
-        destroyAirDrop1();
     }
 
     void spawnAirDrop()
@@ -34,12 +41,11 @@ public class airDrop : MonoBehaviour
         clone = Instantiate(xpBox, new Vector3(xPosition, 5f, 0), Quaternion.identity);
     }
 
-    void destroyAirDrop1()
-    {
-        getclickDrop = clone.GetComponent<addXP>().clickDrop;
+    void destroyAirDrop1() {
+        addXP addxp;
+        clone.TryGetComponent<addXP>(out addxp);
 
-        if(getclickDrop)
-        {
+        if(addxp && addxp.clickDrop)   {
             Destroy(clone);
 
             SoundManager.PlaySfx(SoundManager.Instance.soundUpgrade);

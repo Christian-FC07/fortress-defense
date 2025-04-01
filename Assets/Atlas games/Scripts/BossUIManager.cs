@@ -29,14 +29,4 @@ public class BossUIManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        EnemyHealthBar.fillAmount = (float)enemy.currentHealth / enemy.health;
-        if(((float)enemy.currentHealth / enemy.health) < 0 && isBossDead == false)
-        {
-            SoundManager.PlaySfx(SoundManager.Instance.BossDeath);
-            Debug.Log("gg");
-            isBossDead = true;
-        };
-    }
 }

@@ -11,11 +11,11 @@ public class levelChanges2 : MonoBehaviour
     {
         //GameLevelSetupScr = GameLevelSetupObj.GetComponent<GameLevelSetup>();
 
-        if(GlobalValue.levelPlaying < 150)
+        if(GlobalValue.levelPlaying < 1000)
         {
             wplayMusic();
         }
-        else if(GlobalValue.levelPlaying > 1000)
+        else // its equivalent to 1000 or greather
         {
             endlessPlayMusic();
         }
