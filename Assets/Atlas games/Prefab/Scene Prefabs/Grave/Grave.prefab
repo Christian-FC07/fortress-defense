@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8305248885659881562}
   - component: {fileID: 6574551146739853000}
-  - component: {fileID: 6480132868090749029}
   - component: {fileID: 1411655770588428141}
+  - component: {fileID: 7841244365586001006}
   m_Layer: 0
   m_Name: GraveVisual
   m_TagString: Untagged
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 847306227
   m_SortingLayer: 5
   m_SortingOrder: 1
-  m_Sprite: {fileID: 523802942716583952, guid: 9151a2643f7492046b9542b06f7841e2, type: 3}
+  m_Sprite: {fileID: 523802942716583952, guid: c94a7e322635e014490c604d1c9127a9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -87,21 +87,9 @@ SpriteRenderer:
   m_Size: {x: 9.92, y: 13.65}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6480132868090749029
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 226040133553825567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aa7b73b0b35c194c839e51d2d6beaca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &1411655770588428141
 Animator:
   serializedVersion: 7
@@ -124,6 +112,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7841244365586001006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226040133553825567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3aa7b73b0b35c194c839e51d2d6beaca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &449838865804430458
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,7 +174,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -4962,7 +4962,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 77e54b2c4a7f0ba4f9e1437fbe10f3a3, type: 2}
+  - {fileID: 2100000, guid: 2dc663d2eafc66f4faf90448267c7247, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

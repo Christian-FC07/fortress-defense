@@ -581,6 +581,7 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
                 spawnDisableFX != null ? spawnDisableFX.position : transform.position;
 
         GameObject grave = SpawnSystemHelper.GetNextObject(gravePrefab, true);
+        grave.SetActive(true);
         grave.transform.position = new Vector3(transform.position.x, transform.position.y + 0.55f, transform.position.z);
 
         yield return new WaitForSeconds(2);
