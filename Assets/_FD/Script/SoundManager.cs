@@ -57,6 +57,9 @@ public class SoundManager : MonoBehaviour
     public AudioClip[] world;
     public AudioClip[] endlessworld;
 
+    [Header("Grave")]
+    public AudioClip graveHit;
+
     //public AudioClip switchPlayerSound;
 
     //public AudioClip soundCheckpoint;

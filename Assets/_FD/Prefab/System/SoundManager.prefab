@@ -70,6 +70,7 @@ MonoBehaviour:
   BTsoundUseBoost: {fileID: 8300000, guid: 8e6e330d7994c3345b8b26552548c5eb, type: 3}
   soundTimeUp: {fileID: 8300000, guid: f3c4428f5cb72684981aa59a3bb0d6c4, type: 3}
   soundTimeDown: {fileID: 8300000, guid: 2229462345ca38347b03be209d56aca6, type: 3}
+  graveHit: {fileID: 8300000, guid: 0425ada5f2349f444ba864b95dc84617, type: 3}
   thunderSFX: {fileID: 8300000, guid: 83e013d69d240d14d8084c158d621d69, type: 3}
   rain: {fileID: 8300000, guid: 071ac8bda018d66439241fed63321e19, type: 3}
   world:
