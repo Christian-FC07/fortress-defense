@@ -125,7 +125,7 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                             AudioClip bossMusic = bossManeger.enemy.BossMusic != null
                                 ? bossManeger.enemy.BossMusic
                                 : SoundManager.Instance.BossMusicClip;
-                            SoundManager.PlayMusic(bossMusic, 0.5f);
+                            SoundManager.PlayMusic(SoundManager.Instance.BossMusicClip, 0.5f);
                         }
                     }
 
@@ -145,7 +145,6 @@ public class LevelEnemyManager : MonoBehaviour, IListener
             }
 
             //check all enemy killed
-
             while (isEnemyAlive())
             {
                 yield return new WaitForSeconds(0.1f);
