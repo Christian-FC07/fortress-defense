@@ -159,7 +159,7 @@ public class AchievementManagerV2 : MonoBehaviour
     }
     int AchievedTrophies()
     {
-        return BasePlayerPrefs<AchievementModel>.DictArray.Where(k => k.status == TrophyStatus.ACHIEVED).Count();
+        return BasePlayerPrefs<AchievementModel>.DictArray.Where(k => k.status == TrophyStatus.ACHIEVED || k.status == TrophyStatus.PAYED).Count();
     }
 
     void Update()
