@@ -354,6 +354,7 @@ MonoBehaviour:
   skeletonAnimation: {fileID: 0}
   customNightMultiplier: 2
   useCustomNightMultiplier: 0
+  isPet: 0
   magnet: 0
   magnetPos: {x: 0, y: 0, z: 0}
   magnetAttractionSpeed: 0
@@ -376,6 +377,8 @@ MonoBehaviour:
   holeAnimationTime: 0.5
   warriorTag: Warrior
   shadow: {fileID: 0}
+  gravePrefab: {fileID: 6184028714355178771, guid: 173fe0ba8a4e2a5408eac7158330d7a9,
+    type: 3}
 --- !u!114 &2789857920496220649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,7 +458,7 @@ SortingGroup:
   m_GameObject: {fileID: 8885830814786365834}
   m_Enabled: 1
   m_SortingLayerID: -565348741
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_SortAtRoot: 0
 --- !u!114 &-3704416227413336925
@@ -474,6 +477,7 @@ MonoBehaviour:
   expMax: 80
   customNightMultiplier: 2
   useCustomNightMultiplierOnly: 0
+  affectedItems: []
 --- !u!1 &8885830816368865243
 GameObject:
   m_ObjectHideFlags: 0

@@ -287,6 +287,8 @@ MonoBehaviour:
   holeAnimationTime: 0.5
   warriorTag: Warrior
   shadow: {fileID: 0}
+  gravePrefab: {fileID: 6184028714355178771, guid: 173fe0ba8a4e2a5408eac7158330d7a9,
+    type: 3}
 --- !u!114 &1950496936
 MonoBehaviour:
   m_ObjectHideFlags: 0
