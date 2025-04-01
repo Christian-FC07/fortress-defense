@@ -584,11 +584,11 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
         grave.SetActive(true);
         grave.transform.position = new Vector3(transform.position.x, transform.position.y + 0.55f, transform.position.z);
 
+        gameObject.SetActive(false);
         yield return new WaitForSeconds(2);
         grave.transform.position = new Vector3(0, 100, grave.transform.position.z);
-        grave.SetActive(false);
-
-        gameObject.SetActive(false);
+        //grave.SetActive(false);
+        SpawnSystemHelper.Destroy(grave, 2);
     }
 
     public void TouchEvent()

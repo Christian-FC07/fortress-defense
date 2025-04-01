@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class levelChanges2 : MonoBehaviour
 {
+    public GameObject xpDrop;
     //public GameObject GameLevelSetupObj;
     //GameLevelSetup GameLevelSetupScr;
 
@@ -18,6 +19,7 @@ public class levelChanges2 : MonoBehaviour
         else // its equivalent to 1000 or greather
         {
             endlessPlayMusic();
+            Instantiate(xpDrop, new Vector2(-4f, 5f), Quaternion.identity);
         }
     }
 

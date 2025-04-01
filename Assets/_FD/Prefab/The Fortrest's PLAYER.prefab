@@ -2849,8 +2849,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -504063309
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 8053899242462091416, guid: 7086ca8b18b79824181044f60599c7c9,
     type: 3}
@@ -2906,7 +2906,7 @@ MonoBehaviour:
   fortrestLevels:
   - maxHealth: 300
     stateFortrestSprites:
-    - {fileID: 21300000, guid: 780bd17f3d9de6347b0eb6249b2b2e69, type: 3}
+    - {fileID: 8053899242462091416, guid: 7086ca8b18b79824181044f60599c7c9, type: 3}
     - {fileID: 21300000, guid: 11bb9ca0d803ee7469433690b1d86b72, type: 3}
     - {fileID: 21300000, guid: 184d1cf569fdfce438557ea9a8f71693, type: 3}
     - {fileID: 21300000, guid: d7a9147ffa15b43448e280802e899544, type: 3}
