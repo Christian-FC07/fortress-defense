@@ -86,7 +86,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1480071122214238694}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 51dc5e60fa631ee4b8ccd071ae8debee, type: 3}
   m_Name: 
@@ -94,6 +94,8 @@ MonoBehaviour:
   FX_Smoke: {fileID: 6338145615417356351, guid: 2e064da420e915d45ae6569a3ed46339,
     type: 3}
   FX_Blow: {fileID: 7587624716690234243, guid: 0ffe2a5380c64a640830cf2a52799faa, type: 3}
+  GraveHit: {fileID: 6184028714355178771, guid: 8bb4c34a2f2c81c418550bfb6a730523,
+    type: 3}
   bullet: {fileID: 6686378747336277193, guid: b5ded0b86258f854c990f4a75d9ac1c8, type: 3}
   BossSpawnPoint: {fileID: 2329159576667478972}
   spawnPositions:

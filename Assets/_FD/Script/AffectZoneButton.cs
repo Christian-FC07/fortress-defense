@@ -78,7 +78,7 @@ public class AffectZoneButton : MonoBehaviour, IKeyboardCall
         if ((int)coolDownCounter == 0)
             timerTxt.text = "";
 
-        int fortressHealth = (int)FindObjectOfType<TheFortrest>().maxHealth - (int)FindObjectOfType<TheFortrest>().currentHealth;
+        int fortressHealth = (int)FindFirstObjectByType<TheFortrest>().maxHealth - (int)FindFirstObjectByType<TheFortrest>().currentHealth;
 
         canUse = coolDownCounter <= 0 && canvasGroup.blocksRaycasts && !AffectZoneManager.Instance.isAffectZoneWorking && !AffectZoneManager.Instance.isChecking;
         if (AffectZoneManager.Instance.isZoneUsedFirstTime)

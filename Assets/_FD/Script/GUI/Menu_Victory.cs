@@ -34,7 +34,7 @@ public class Menu_Victory : MonoBehaviour
         Star3.SetActive(false);
 
 
-        var theFortress = FindObjectsOfType<TheFortrest>();
+        var theFortress = FindObjectsByType<TheFortrest>(FindObjectsSortMode.None);
         foreach (var fortrest in theFortress)
         {
             //if (fortrest.healthCharacter == HEALTH_CHARACTER.PLAYER)

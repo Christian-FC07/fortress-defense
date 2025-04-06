@@ -11,7 +11,7 @@ namespace Assets.FantasyMonsters.Scripts
     /// </summary>
     public class Demo : MonoBehaviour
     {
-        private List<Monster> Monster => FindObjectsOfType<Monster>().ToList();
+        private List<Monster> Monster => FindObjectsByType<Monster>(FindObjectsSortMode.None).ToList();
 
         public void Start()
         {

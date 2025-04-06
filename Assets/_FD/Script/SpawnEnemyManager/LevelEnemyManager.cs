@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelEnemyManager : MonoBehaviour, IListener
 {
     public static LevelEnemyManager Instance;
-    public GameObject FX_Smoke, FX_Blow;
+    public GameObject FX_Smoke, FX_Blow, GraveHit;
     public SimpleProjectile bullet;
     public Transform BossSpawnPoint;
     public Transform[] spawnPositions;

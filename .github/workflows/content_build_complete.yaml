@@ -39,9 +39,9 @@ jobs:
             - uses: actions/cache@v3
               with:
                   path: Library
-                  key: Library-${{ matrix.targetPlatform }}-${{ hashFiles('Library/**') }}
+                  key: Library-${{ matrix.targetPlatform }}
                   restore-keys: |
-                    Bundles-${{ matrix.targetPlatform }}-
+                    Bundles-${{ matrix.targetPlatform }}
             - uses: game-ci/unity-builder@v4
               env:
                   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -66,9 +66,9 @@ jobs:
             - uses: actions/cache@v3
               with:
                   path: Library
-                  key: Library-Android-${{ hashFiles('Library/**') }}
+                  key: Library-Android
                   restore-keys: |
-                    Bundles-Android-
+                    Bundles-Android
             - uses: game-ci/unity-builder@v4
               env:
                   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -119,9 +119,9 @@ jobs:
             - uses: actions/cache@v3
               with:
                   path: Library
-                  key: Library-StandaloneWindows-${{ hashFiles('Library/**') }}
+                  key: Library-StandaloneWindows
                   restore-keys: |
-                    Bundles-StandaloneWindows-
+                    Bundles-StandaloneWindows
             - uses: game-ci/unity-builder@v4
               env:
                   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}

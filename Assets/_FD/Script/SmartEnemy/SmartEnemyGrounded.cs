@@ -56,9 +56,6 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
     public GameObject shadow;
     private float _initialMoveSpeed;
 
-    [Header("Grave")]
-    [SerializeField] private GameObject gravePrefab;
-
 
     IEnumerator Climb()
     {
@@ -580,9 +577,13 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
             SpawnSystemHelper.GetNextObject(disableFX, true).transform.position =
                 spawnDisableFX != null ? spawnDisableFX.position : transform.position;
 
-        GameObject grave = SpawnSystemHelper.GetNextObject(gravePrefab, true);
+        GameObject grave = SpawnSystemHelper.GetNextObject(LevelEnemyManager.Instance.GraveHit, true);
         grave.SetActive(true);
         grave.transform.position = new Vector3(transform.position.x, transform.position.y + 0.55f, transform.position.z);
+        grave.transform.GetChild(0).TryGetComponent(out Animator animator);
+        if (animator != null) {
+            animator.SetTrigger("play");
+        }
 
         yield return new WaitForSeconds(2);
         grave.transform.position = new Vector3(0, 100, grave.transform.position.z);
