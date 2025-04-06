@@ -89,7 +89,7 @@ public class TutorialNew : MonoBehaviour
             int childIndex = 0;
             if (tutorialSteps[tipOrder].tipType != TipType.Dialog)
             {
-                TutorialFinder[] uiParts = FindObjectsOfType<TutorialFinder>();
+                TutorialFinder[] uiParts = FindObjectsByType<TutorialFinder>(FindObjectsSortMode.None);
                 foreach (var uiPart in uiParts)
                 {
                     if (uiPart.GetComponent<TutorialFinder>().uiPartName == tutorialSteps[tipOrder].uiPartName)

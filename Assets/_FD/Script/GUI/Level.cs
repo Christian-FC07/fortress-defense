@@ -98,7 +98,7 @@ public class Level : MonoBehaviour
             if (GlobalValue.LevelPass + 1 == level)
             {
                 imgOpen.SetActive(true);
-                FindObjectOfType<MapControllerUI>().SetCurrentWorld(world);
+                FindFirstObjectByType<MapControllerUI>().SetCurrentWorld(world);
             }
             else
             {

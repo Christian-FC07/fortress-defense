@@ -29,7 +29,7 @@ public class VictoryMenuEvents : MonoBehaviour
         DefaultColor = CoinTxt.color;
         Coin = 0;
         Exp = GameManager.Instance.currentExp;
-        var theFortress = FindObjectsOfType<TheFortrest>();
+        var theFortress = FindObjectsByType<TheFortrest>(FindObjectsSortMode.None);
         foreach (var fortrest in theFortress)
         {
             TwoerHealth = (int)fortrest.currentHealth;

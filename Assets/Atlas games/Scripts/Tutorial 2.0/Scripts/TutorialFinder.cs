@@ -13,7 +13,7 @@ public class TutorialFinder : MonoBehaviour
       if (!_isClicked && isClickable)
       {
          _isClicked = true;
-         FindObjectOfType<TutorialNew>().NextStep();
+         FindFirstObjectByType<TutorialNew>().NextStep();
       }
    }
 }
