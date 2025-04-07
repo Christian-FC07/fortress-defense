@@ -22125,7 +22125,7 @@ GameObject:
   - component: {fileID: 6236543550299358269}
   - component: {fileID: 6236543550299358241}
   m_Layer: 5
-  m_Name: MenuManager
+  m_Name: MenuManager-Mobile
   m_TagString: Canves
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
