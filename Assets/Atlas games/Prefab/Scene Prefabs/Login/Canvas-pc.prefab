@@ -522,7 +522,7 @@ GameObject:
   - component: {fileID: 3213400516736634446}
   - component: {fileID: 3213400516736634447}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Canvas-pc
   m_TagString: Canves
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

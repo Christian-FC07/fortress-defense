@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7078009969058536859
+--- !u!1 &1081232907899043822
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7078009969058536857}
-  - component: {fileID: 7078009969058536858}
+  - component: {fileID: 1081232907899043820}
+  - component: {fileID: 1081232907899043823}
   m_Layer: 0
-  m_Name: AddressableManager-Panel
+  m_Name: AddressableManager-HomeMen-Mobile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7078009969058536857
+--- !u!4 &1081232907899043820
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7078009969058536859}
+  m_GameObject: {fileID: 1081232907899043822}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.8730707, y: -0.5789437, z: -0.35214528}
@@ -32,13 +32,13 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7078009969058536858
+--- !u!114 &1081232907899043823
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7078009969058536859}
+  m_GameObject: {fileID: 1081232907899043822}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47f822c7590b99248b4655625e916de8, type: 3}
@@ -46,17 +46,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bundles:
     asset_bundle:
-      m_AssetGUID: 00ee3d148b28ab04181cd658750e0b2f
+      m_AssetGUID: 2561b79b7284f2844a441c212c25f94a
       m_SubObjectName: 
       m_SubObjectGUID: 
       m_SubObjectType: 
-      m_EditorAssetChanged: 0
-    scene_name: Logo atlas
+      m_EditorAssetChanged: 1
+    scene_name: Menu atlas
     percent: 0
     is_complete: 0
-    root: Canvas
+    root: 
     obj: {fileID: 0}
-    is_root_world: 0
+    is_root_world: 1
     has_depends: 0
     dependence: 
     dependence_type: 

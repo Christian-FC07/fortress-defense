@@ -461,10 +461,10 @@ RectTransform:
   - {fileID: 2999922155902521294}
   m_Father: {fileID: 1509015023783675709}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 315.40698, y: 0}
-  m_SizeDelta: {x: 510.814, y: 100}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -40}
+  m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1434528333905476302
 CanvasRenderer:
@@ -1120,7 +1120,7 @@ GameObject:
   - component: {fileID: 8879120083812619290}
   - component: {fileID: 5797792292154627364}
   m_Layer: 5
-  m_Name: HomeMenu
+  m_Name: HomeMenu-PC
   m_TagString: Canves
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1251,6 +1251,7 @@ MonoBehaviour:
   facebookLink: https://www.instagram.com/atlasgamesio/
   twitterLink: https://x.com/atlasgamesio
   playingLevelName: Playing atlas
+  device_type: 3
   coinTxt:
   - {fileID: 2372228412899991197}
   soundImage: {fileID: 1353747163527059889}
@@ -6704,10 +6705,10 @@ RectTransform:
   - {fileID: 5908181486082824099}
   m_Father: {fileID: 1509015023783675709}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1378.6749, y: 0}
-  m_SizeDelta: {x: 510.814, y: 100}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -40}
+  m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8774589587701731631
 CanvasRenderer:
@@ -14900,10 +14901,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1509015023783675709}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 847.04095, y: 0}
-  m_SizeDelta: {x: 552.454, y: 153.24}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: -40}
+  m_SizeDelta: {x: 0, y: 153.24}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3483246182262994656
 CanvasRenderer:
@@ -38443,7 +38444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2625522316255912347
 RectTransform:
   m_ObjectHideFlags: 0
