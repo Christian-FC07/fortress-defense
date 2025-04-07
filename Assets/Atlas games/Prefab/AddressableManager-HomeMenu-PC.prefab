@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bundles:
     asset_bundle:
-      m_AssetGUID: 018312f18472d8841b7e62c2c379afd1
+      m_AssetGUID: 5da6134de5a9f494f91c5ebead7f6a13
       m_SubObjectName: 
       m_SubObjectGUID: 
       m_SubObjectType: 
