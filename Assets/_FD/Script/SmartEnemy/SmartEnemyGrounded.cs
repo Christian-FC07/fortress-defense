@@ -74,7 +74,7 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
             yield return null; 
         }
 
-        GetComponent<SortingGroup>().sortingOrder = 0;
+        GetComponent<SortingGroup>().sortingOrder = LevelEnemyManager.enemyPos;
         transform.position = end;
         transform.position =
             new Vector3(transform.position.x, transform.position.y,
@@ -228,6 +228,8 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
     {
         base.Update();
         HandleAnimation();
+        //GetComponent<SortingGroup>().sortingOrder = LevelEnemyManager.enemyPos;
+        Debug.Log(LevelEnemyManager.enemyPos);
 
         if (enemyState != ENEMYSTATE.WALK || GameManager.Instance.State != GameManager.GameState.Playing)
         {

@@ -11,6 +11,8 @@ public class LevelEnemyManager : MonoBehaviour, IListener
     public Transform[] spawnPositions;
     public Transform[] underground_spawn_positions;
     public EnemyWave[] EnemyWaves;
+    public float enemyScale = 1f;
+    [HideInInspector] public static int enemyPos;
     [DeviceDependent]
     public DeviceDependentReference bossManeger;
     int currentWave = 0;
@@ -53,6 +55,11 @@ public class LevelEnemyManager : MonoBehaviour, IListener
         currentSpawn = 0;
     }
 
+    void Update()
+    {
+        
+    }
+
     IEnumerator SpawnEnemyCo()
     {
         for (int i = 0; i < EnemyWaves.Length; i++)
@@ -66,10 +73,11 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                 {
                     Vector2 spawnPos = Vector2.zero;
                     if (enemySpawn.boosType == EnemySpawn.isBoss.NONE)
-                        spawnPos = (Vector2)spawnPositions[Random.Range(0, spawnPositions.Length)].position;
+                        spawnPos = (Vector2)spawnPositions[enemyPos = Random.Range(0, spawnPositions.Length)].position;
                     else
                         spawnPos = (Vector2)BossSpawnPoint.position;
                     GameObject _temp = Instantiate(enemySpawn.enemy,spawnPos,Quaternion.identity) as GameObject;
+                    _temp.transform.localScale = new Vector2(enemyScale, enemyScale);
                     var isEnemy = (Enemy)_temp.GetComponent(typeof(Enemy));
                     if (isEnemy != null)
                     {
@@ -156,7 +164,6 @@ public class LevelEnemyManager : MonoBehaviour, IListener
         yield return new WaitForSeconds(0.5f);
         GameManager.Instance.Victory();
     }
-
 
     bool isEnemyAlive()
     {
