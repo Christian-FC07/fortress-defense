@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
 {
@@ -17,6 +18,8 @@ public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
     List<int> prices = new List<int>();
     //public int[] prices;
     public Player_Archer[] Players;
+    public SortingGroup[] archersOrder;
+    public int layer;
 
     int currentPlayer = -1;
 
@@ -46,6 +49,11 @@ public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
             SetPlayer();
         }
         InvokeRepeating("CheckStatus", 0, 0.2f);
+    }
+
+    void Update()
+    {
+        archersOrder[archersOrder.Length].sortingOrder = layer;
     }
 
     private void CheckStatus()
