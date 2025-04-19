@@ -224,10 +224,10 @@ MonoBehaviour:
   BossSpawnPoint: {fileID: 1327776267969963442}
   spawnPositions:
   - {fileID: 1527872745}
-  - {fileID: 133059271}
-  - {fileID: 1971403648}
   - {fileID: 3558667912981391227}
+  - {fileID: 133059271}
   - {fileID: 1327776267969963442}
+  - {fileID: 1971403648}
   - {fileID: 5671784134632840790}
   underground_spawn_positions:
   - {fileID: 1327542103707719042}
@@ -244,19 +244,75 @@ MonoBehaviour:
   - wait: 0
     enemySpawns:
     - wait: 0
-      enemy: {fileID: 3697426553599540029, guid: 0d97a740b5eb09c4c97077933e330069,
+      enemy: {fileID: 3697426553599540029, guid: ad3c9fb4b2945fb498fa1479e92a5f03,
         type: 3}
-      numberEnemy: 1
+      numberEnemy: 5
       rate: 0
       customHealth: 100
-      customSpeed: 0
+      customSpeed: 0.5
       customAttackDmg: 0
       boosType: 0
       BossScale: 1
       BossMinExp: 0
       BossMaxExp: 0
       spawnFromUnderground: 0
-  bossManeger: {fileID: 0}
+    - wait: 5
+      enemy: {fileID: 3697426553599540029, guid: ad3c9fb4b2945fb498fa1479e92a5f03,
+        type: 3}
+      numberEnemy: 5
+      rate: 0
+      customHealth: 100
+      customSpeed: 0.5
+      customAttackDmg: 0
+      boosType: 0
+      BossScale: 1
+      BossMinExp: 0
+      BossMaxExp: 0
+      spawnFromUnderground: 0
+    - wait: 5
+      enemy: {fileID: 3697426553599540029, guid: 47d8bb5aaa7432d499c37cc760088318,
+        type: 3}
+      numberEnemy: 5
+      rate: 0
+      customHealth: 100
+      customSpeed: 0.5
+      customAttackDmg: 0
+      boosType: 0
+      BossScale: 1
+      BossMinExp: 0
+      BossMaxExp: 0
+      spawnFromUnderground: 0
+    - wait: 5
+      enemy: {fileID: 3697426553599540029, guid: 8c9aaa25cc8de4a429d73d93ad20349e,
+        type: 3}
+      numberEnemy: 5
+      rate: 0
+      customHealth: 100
+      customSpeed: 0.5
+      customAttackDmg: 0
+      boosType: 0
+      BossScale: 1
+      BossMinExp: 0
+      BossMaxExp: 0
+      spawnFromUnderground: 0
+    - wait: 5
+      enemy: {fileID: 3697426553599540029, guid: 2e64422e639f68248aeecf09fc886fcc,
+        type: 3}
+      numberEnemy: 5
+      rate: 0
+      customHealth: 100
+      customSpeed: 0.5
+      customAttackDmg: 0
+      boosType: 0
+      BossScale: 1
+      BossMinExp: 0
+      BossMaxExp: 0
+      spawnFromUnderground: 0
+  enemyScale: 0.55
+  enemyPos: 0
+  bossManeger:
+    mobile_object: {fileID: 0}
+    pc_object: {fileID: 0}
   listEnemySpawned: []
   totalEnemy: 0
   currentSpawn: 0

@@ -76,6 +76,9 @@ TagManager:
   - name: New Layer 17
     uniqueID: 3790974163
     locked: 0
+  - name: tree
+    uniqueID: 3205532409
+    locked: 0
   - name: fog
     uniqueID: 2680958217
     locked: 0

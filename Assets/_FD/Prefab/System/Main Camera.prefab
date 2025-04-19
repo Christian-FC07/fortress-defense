@@ -48,7 +48,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 3
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 1, g: 0, b: 0.8834677, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -139,7 +139,9 @@ MonoBehaviour:
   target_left: {x: -1, y: -0.4, z: -10}
   allowTouch: 0
   is_left: 1
-  CameraMove: {fileID: 0}
+  CameraMove:
+    mobile_object: {fileID: 0}
+    pc_object: {fileID: 0}
   Left: {fileID: 3358492503325573568, guid: 20489e0be3bfc674f9f5e726244cae9f, type: 3}
   Right: {fileID: 445518788713893347, guid: f4908ec35b95fb44abfac0a9431c6f5f, type: 3}
 --- !u!114 &4207485624955214532
@@ -166,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
+  m_RenderShadows: 0
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
   m_CameraType: 0
@@ -174,10 +176,10 @@ MonoBehaviour:
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 4294967295
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0

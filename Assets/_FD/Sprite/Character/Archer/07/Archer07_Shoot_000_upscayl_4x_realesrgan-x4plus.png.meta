@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 339cb46521b2c124d99b2631da953f86
+guid: c9b0587f7b49af044a8b8aa086b131ac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1170064116241548331
-    second: grass3_0
+      213: -2913973982387275847
+    second: Archer07_Shoot_000_upscayl_4x_realesrgan-x4plus_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: grass3_0
+      name: Archer07_Shoot_000_upscayl_4x_realesrgan-x4plus_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 4992
-        height: 1687
+        x: 321
+        y: 72
+        width: 514
+        height: 369
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5dbbdf2b2e813cfe0800000000000000
-      internalID: -1170064116241548331
+      spriteID: 9b773171a1c7f87d0800000000000000
+      internalID: -2913973982387275847
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      grass3_0: -1170064116241548331
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

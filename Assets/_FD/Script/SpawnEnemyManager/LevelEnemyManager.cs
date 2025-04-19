@@ -12,7 +12,7 @@ public class LevelEnemyManager : MonoBehaviour, IListener
     public Transform[] underground_spawn_positions;
     public EnemyWave[] EnemyWaves;
     public float enemyScale = 1f;
-    [HideInInspector] public static int enemyPos;
+    [HideInInspector] public int enemyPos;
     [DeviceDependent]
     public DeviceDependentReference bossManeger;
     int currentWave = 0;
@@ -73,9 +73,11 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                 {
                     Vector2 spawnPos = Vector2.zero;
                     if (enemySpawn.boosType == EnemySpawn.isBoss.NONE)
-                        spawnPos = (Vector2)spawnPositions[enemyPos = Random.Range(0, spawnPositions.Length)].position;
+                        {spawnPos = (Vector2)spawnPositions[enemyPos = Random.Range(0, spawnPositions.Length)].position;
+                        //SmartEnemyGrounded.sp.sortingOrder = 2;
+                        }
                     else
-                        spawnPos = (Vector2)BossSpawnPoint.position;
+                        {spawnPos = (Vector2)BossSpawnPoint.position;}
                     GameObject _temp = Instantiate(enemySpawn.enemy,spawnPos,Quaternion.identity) as GameObject;
                     _temp.transform.localScale = new Vector2(enemyScale, enemyScale);
                     var isEnemy = (Enemy)_temp.GetComponent(typeof(Enemy));
@@ -151,6 +153,7 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                     MenuManager.Instance.UpdateEnemyWavePercent(currentSpawn, totalEnemy);
 
                     yield return new WaitForSeconds(enemySpawn.rate);
+                    SmartEnemyGrounded.sp.sortingOrder = enemyPos;
                 }
             }
 
