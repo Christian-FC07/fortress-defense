@@ -92,7 +92,7 @@ public class MenuManager : MonoBehaviour, IListener
     }
 
     float currentTimeScale;
-    public void Pause()
+    public void Pause(bool include_ui)
     {
         SoundManager.PlaySfx(SoundManager.Instance.soundPause);
         if (Time.timeScale != 0)
@@ -101,7 +101,8 @@ public class MenuManager : MonoBehaviour, IListener
             Time.timeScale = 0;
             //UI.SetActive(false);
             UI.transform.localScale = new Vector2(2, 2);
-            PauseUI.SetActive(true);
+            if (include_ui)
+                PauseUI.SetActive(true);
             GameManager.Instance.State = GameManager.GameState.Pause;
             // SoundManager.Instance.PauseMusic(true);
         }
@@ -110,7 +111,8 @@ public class MenuManager : MonoBehaviour, IListener
             Time.timeScale = currentTimeScale;
             //UI.SetActive(true);
             UI.transform.localScale = new Vector2(1, 1);
-            PauseUI.SetActive(false);
+            if (include_ui)
+                PauseUI.SetActive(false);
             SoundManager.Instance.PauseMusic(false);
             GameManager.Instance.State = GameManager.GameState.Playing;
         }
@@ -282,6 +284,6 @@ public class MenuManager : MonoBehaviour, IListener
     {
         SoundManager.Click();
         HelperUI.SetActive(open);
-        Pause();
+        Pause(false);
     }
 }
