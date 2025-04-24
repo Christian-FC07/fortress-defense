@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      PirateBoar_chain_0: -6559239617510406404
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
