@@ -17,7 +17,7 @@ public class MainMenuHomeScene : MonoBehaviour
     public GameObject inventory;
     public string facebookLink;
     public string twitterLink = "https://twitter.com/";
-    public string playingLevelName = "Playing atlas";
+    public string playingLevelName = "Playing atlas (Graphical test)";
     public DeviceType device_type;
 
     public Text[] coinTxt;
@@ -63,7 +63,7 @@ public class MainMenuHomeScene : MonoBehaviour
         if (Loading != null)
             Loading.SetActive(true);
 
-        StartCoroutine(LoadAsynchronously(playingLevelName));
+        StartCoroutine(LoadAsynchronously("Playing atlas (Graphical test)"));
     }
 
     public void LoadScene(string sceneNamage)

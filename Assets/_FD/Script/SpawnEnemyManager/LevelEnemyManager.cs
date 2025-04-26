@@ -12,6 +12,7 @@ public class LevelEnemyManager : MonoBehaviour, IListener
     public Transform[] underground_spawn_positions;
     public EnemyWave[] EnemyWaves;
     public float enemyScale = 1f;
+    public static float _enemyScale;
     [HideInInspector] public int enemyPos;
     [DeviceDependent]
     public DeviceDependentReference bossManeger;
@@ -79,7 +80,8 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                     else
                         {spawnPos = (Vector2)BossSpawnPoint.position;}
                     GameObject _temp = Instantiate(enemySpawn.enemy,spawnPos,Quaternion.identity) as GameObject;
-                    _temp.transform.localScale = new Vector2(enemyScale, enemyScale);
+                    _enemyScale = enemyScale;
+                    _temp.transform.localScale = new Vector2(_enemyScale * Enemy._enemyScaleSelf, _enemyScale * Enemy._enemyScaleSelf);
                     var isEnemy = (Enemy)_temp.GetComponent(typeof(Enemy));
                     if (isEnemy != null)
                     {

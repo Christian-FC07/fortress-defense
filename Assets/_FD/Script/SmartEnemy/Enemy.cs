@@ -85,6 +85,9 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
     public bool useGravity = false;
     [ReadOnly] public float gravity = 35f;
     public float walkSpeed = 3;
+    public float walkSpeed2 = 1;
+    public float enemyScaleSelf;
+    public static float _enemyScaleSelf;
     [Header("Behavier")]
     public ATTACKTYPE attackType;
     public STARTBEHAVIOR startBehavior = STARTBEHAVIOR.WALK_LEFT;
@@ -97,6 +100,7 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
     [Header("HEALTH")]
     [Range(0, 5000)]
     public int health = 100;
+    public int health2 = 100;
     [HideInInspector] public GameObject dieFX, hitFX;
     public GameObject disableFX;
     public Transform spawnDisableFX;
@@ -215,8 +219,10 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
         
         if (!useGravity)
             gravity = 0;
-        currentHealth = health;
-        moveSpeed = walkSpeed;
+        currentHealth = health2;
+        moveSpeed = walkSpeed2;
+        _enemyScaleSelf = enemyScaleSelf;
+        this.transform.localScale = new Vector2(_enemyScaleSelf * LevelEnemyManager._enemyScale, _enemyScaleSelf * LevelEnemyManager._enemyScale);
         if (IsAutoHealthBar ){
             if (transform.GetComponent<BoxCollider2D>())
             {

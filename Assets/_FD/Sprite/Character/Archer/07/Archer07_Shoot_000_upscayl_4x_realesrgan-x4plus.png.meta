@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Archer07_Shoot_000_upscayl_4x_realesrgan-x4plus_0: -2913973982387275847
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
