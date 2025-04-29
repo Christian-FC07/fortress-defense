@@ -360,6 +360,8 @@ MonoBehaviour:
   useGravity: 0
   gravity: 35
   walkSpeed: 1
+  walkSpeed2: 1
+  enemyScaleSelf: 1.1
   attackType: 1
   startBehavior: 3
   dieBehavior: 0
@@ -467,8 +469,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af11ea3b84b0b7d40ba7855f48cd56db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  expMin: 3
-  expMax: 6
+  expMin: 8
+  expMax: 10
   customNightMultiplier: 2
   useCustomNightMultiplierOnly: 0
   affectedItems: []

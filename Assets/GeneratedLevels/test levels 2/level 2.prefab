@@ -46,14 +46,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemiesList: []
   type: 1
-  defaultExp: 180
+  defaultExp: 80
   Waves:
   - wait: 0
     enemySpawns:
     - wait: 0
-      enemy: {fileID: 3697426553599540029, guid: 572975343a4870a419dcf0199f18e909,
+      enemy: {fileID: 3697426553599540029, guid: 61fea0f2db067ad4c998eeeec568bb35,
         type: 3}
-      numberEnemy: 2
+      numberEnemy: 3
       rate: 0
       customHealth: 0
       customSpeed: 0

@@ -237,7 +237,7 @@ MonoBehaviour:
   gravity: 35
   walkSpeed: 1
   walkSpeed2: 1
-  enemyScaleSelf: 1
+  enemyScaleSelf: 0.85
   attackType: 1
   startBehavior: 3
   dieBehavior: 0

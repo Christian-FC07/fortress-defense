@@ -13,6 +13,10 @@ public class LevelEnemyManager : MonoBehaviour, IListener
     public EnemyWave[] EnemyWaves;
     public float enemyScale = 1f;
     public static float _enemyScale;
+    public static float _bossScale;
+    public static bool isItBoss = false;
+    public static bool isItEnemy = false;
+    public static float _customBossSpeed;
     [HideInInspector] public int enemyPos;
     [DeviceDependent]
     public DeviceDependentReference bossManeger;
@@ -80,8 +84,9 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                     else
                         {spawnPos = (Vector2)BossSpawnPoint.position;}
                     GameObject _temp = Instantiate(enemySpawn.enemy,spawnPos,Quaternion.identity) as GameObject;
-                    _enemyScale = enemyScale;
-                    _temp.transform.localScale = new Vector2(_enemyScale * Enemy._enemyScaleSelf, _enemyScale * Enemy._enemyScaleSelf);
+                    //moved the 2 below lines to the boss manager
+                    //_enemyScale = enemyScale;
+                    //_temp.transform.localScale = new Vector2(_enemyScale * Enemy._enemyScaleSelf, _enemyScale * Enemy._enemyScaleSelf);
                     var isEnemy = (Enemy)_temp.GetComponent(typeof(Enemy));
                     if (isEnemy != null)
                     {
@@ -89,7 +94,7 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                         if (enemySpawn.customHealth > 0)
                             isEnemy.health = enemySpawn.customHealth;
                         if (enemySpawn.customSpeed > 0)
-                            isEnemy.walkSpeed = enemySpawn.customSpeed;
+                            _customBossSpeed = enemySpawn.customSpeed;
                         if (enemySpawn.customAttackDmg > 0)
                         {
                             var rangeAttack = _temp.GetComponent<EnemyRangeAttack>();
@@ -121,10 +126,13 @@ public class LevelEnemyManager : MonoBehaviour, IListener
 
                         if (enemySpawn.boosType != EnemySpawn.isBoss.NONE)
                         {
+                            isItBoss = true;
+                            Debug.Log("it is a boss");
                             BossUIManager bsmng = bossManeger.type<BossUIManager>();
                             bsmng.enemy = _temp.GetComponent<Enemy>();
                                 if (enemySpawn.BossScale > 1) {
-                                    Vector2 scale = new Vector2(enemySpawn.BossScale, enemySpawn.BossScale);
+                                    _bossScale = enemySpawn.BossScale;
+                                    Vector2 scale = new Vector2(enemySpawn.BossScale * _enemyScale, enemySpawn.BossScale * _enemyScale);
                                 bsmng.enemy.gameObject.transform.localScale =
                                  bsmng.enemy.gameObject.transform.localScale * scale;
                                 }
@@ -141,6 +149,13 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                                 ? bsmng.enemy.BossMusic
                                 : SoundManager.Instance.BossMusicClip;
                             SoundManager.PlayMusic(SoundManager.Instance.BossMusicClip, 0.5f);
+                        }
+
+                        if (enemySpawn.boosType == EnemySpawn.isBoss.NONE)
+                        {
+                            isItEnemy = true;
+                            _enemyScale = enemyScale;
+                            _temp.transform.localScale = new Vector2(_enemyScale * Enemy._enemyScaleSelf, _enemyScale * Enemy._enemyScaleSelf);
                         }
                     }
 

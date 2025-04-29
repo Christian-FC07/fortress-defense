@@ -86,7 +86,7 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
     [ReadOnly] public float gravity = 35f;
     public float walkSpeed = 3;
     public float walkSpeed2 = 1;
-    public float enemyScaleSelf;
+    public float enemyScaleSelf = 1;
     public static float _enemyScaleSelf;
     [Header("Behavier")]
     public ATTACKTYPE attackType;
@@ -220,9 +220,25 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
         if (!useGravity)
             gravity = 0;
         currentHealth = health2;
-        moveSpeed = walkSpeed2;
         _enemyScaleSelf = enemyScaleSelf;
-        this.transform.localScale = new Vector2(_enemyScaleSelf * LevelEnemyManager._enemyScale, _enemyScaleSelf * LevelEnemyManager._enemyScale);
+        if(this.tag == ("Player"))
+        {
+            this.transform.localScale = new Vector2(1, 1);
+            moveSpeed = 0;
+        }
+        else
+        {
+            if(LevelEnemyManager.isItEnemy)
+            {
+                this.transform.localScale = new Vector2(_enemyScaleSelf * LevelEnemyManager._enemyScale, _enemyScaleSelf * LevelEnemyManager._enemyScale);
+                moveSpeed = walkSpeed2;
+            }
+            if(LevelEnemyManager.isItBoss)
+            {
+                this.transform.localScale = new Vector2(LevelEnemyManager._bossScale * LevelEnemyManager._enemyScale, LevelEnemyManager._bossScale * LevelEnemyManager._enemyScale);
+                moveSpeed = LevelEnemyManager._customBossSpeed;
+            }
+        }
         if (IsAutoHealthBar ){
             if (transform.GetComponent<BoxCollider2D>())
             {

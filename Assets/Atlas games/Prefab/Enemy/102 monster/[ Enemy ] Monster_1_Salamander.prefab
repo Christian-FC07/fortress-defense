@@ -236,6 +236,8 @@ MonoBehaviour:
   useGravity: 0
   gravity: 35
   walkSpeed: 1
+  walkSpeed2: 0.85
+  enemyScaleSelf: 2.3
   attackType: 1
   startBehavior: 3
   dieBehavior: 0

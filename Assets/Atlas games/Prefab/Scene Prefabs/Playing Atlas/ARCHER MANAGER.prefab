@@ -1499,6 +1499,26 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2516504153725070396, guid: d1f8bad16af5bd6408637fda60294854,
+        type: 3}
+      propertyPath: walkSpeed2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2516504153725070396, guid: d1f8bad16af5bd6408637fda60294854,
+        type: 3}
+      propertyPath: enemyScaleSelf
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2517707876252549160, guid: d1f8bad16af5bd6408637fda60294854,
+        type: 3}
+      propertyPath: walkSpeed2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2517707876252549160, guid: d1f8bad16af5bd6408637fda60294854,
+        type: 3}
+      propertyPath: enemyScaleSelf
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2517707876252549169, guid: d1f8bad16af5bd6408637fda60294854,
         type: 3}
       propertyPath: m_TagString
@@ -1533,6 +1553,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338754436070595640, guid: d1f8bad16af5bd6408637fda60294854,
+        type: 3}
+      propertyPath: walkSpeed2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3338754436070595640, guid: d1f8bad16af5bd6408637fda60294854,
+        type: 3}
+      propertyPath: enemyScaleSelf
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4093032262269541130, guid: d1f8bad16af5bd6408637fda60294854,
         type: 3}
@@ -1681,8 +1711,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6347350413956747389, guid: d1f8bad16af5bd6408637fda60294854,
         type: 3}
+      propertyPath: walkSpeed2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6347350413956747389, guid: d1f8bad16af5bd6408637fda60294854,
+        type: 3}
       propertyPath: criticalRate
       value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6347350413956747389, guid: d1f8bad16af5bd6408637fda60294854,
+        type: 3}
+      propertyPath: enemyScaleSelf
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6347350413956747389, guid: d1f8bad16af5bd6408637fda60294854,
         type: 3}
@@ -1703,6 +1743,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7024210911800126229, guid: d1f8bad16af5bd6408637fda60294854,
+        type: 3}
+      propertyPath: walkSpeed2
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7024210911800126229, guid: d1f8bad16af5bd6408637fda60294854,
+        type: 3}
+      propertyPath: enemyScaleSelf
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7042473664340052688, guid: d1f8bad16af5bd6408637fda60294854,
         type: 3}
