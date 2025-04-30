@@ -10,7 +10,15 @@ public class BossUIManager : MonoBehaviour
     public Enemy enemy;
     public GameObject miniboss, boss;
     bool isBossDead = false;
+    [ReadOnly] public float targetFill = 1;
+    public float fill_speed = 1;
     // Start is called before the first frame update
+    public void UpdateHealthBar(float to) {
+        targetFill = to;
+    }
+    void Update() {
+        EnemyHealthBar.fillAmount = Mathf.SmoothStep(EnemyHealthBar.fillAmount, targetFill, Time.deltaTime * fill_speed);
+    }
     void OnEnable()
     {
         miniboss.SetActive(false);

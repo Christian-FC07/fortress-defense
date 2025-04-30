@@ -117,13 +117,14 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                                  bsmng.enemy.gameObject.transform.localScale * scale;
                                 }
                             bsmng.bossType = enemySpawn.boosType;
-                            bsmng.enemy.gameObject.GetComponent<GiveExpWhenDie>().expMin =
-                                enemySpawn.BossMinExp;
-                            bsmng.enemy.gameObject.GetComponent<GiveExpWhenDie>().expMax =
-                                enemySpawn.BossMaxExp;
-
+                            bsmng.enemy.gameObject.TryGetComponent<GiveExpWhenDie>(out GiveExpWhenDie component);
+                            if (component) {
+                                component.expMin = enemySpawn.BossMinExp;
+                                component.expMax = enemySpawn.BossMaxExp;
+                            }
                             bsmng.gameObject.SetActive(true);
                             bsmng.enemy.is_boss = true;
+                            bsmng.enemy.boss_ui = bsmng;
                             AudioClip bossMusic = bsmng.enemy.BossMusic != null
                                 ? bsmng.enemy.BossMusic
                                 : SoundManager.Instance.BossMusicClip;

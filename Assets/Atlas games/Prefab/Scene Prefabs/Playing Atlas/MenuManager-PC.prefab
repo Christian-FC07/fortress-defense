@@ -334,16 +334,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6236543550299358241}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: Pause
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &168610545392824895
 GameObject:
@@ -21433,6 +21433,7 @@ MonoBehaviour:
   enemy: {fileID: 0}
   miniboss: {fileID: 6236543549023691446}
   boss: {fileID: 6236543549607985783}
+  fill_speed: 10
 --- !u!1 &6236543549771711374
 GameObject:
   m_ObjectHideFlags: 0
@@ -26815,16 +26816,16 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6236543550299358241}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: Pause
-        m_Mode: 1
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!1 &9064268548036455208
 GameObject:

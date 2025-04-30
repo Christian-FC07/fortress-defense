@@ -29,9 +29,10 @@ public class MainMenuHomeScene : MonoBehaviour
 
     void Awake()
     {
-        Instance = this;
         if (SystemInfo.deviceType != device_type) {
             gameObject.SetActive(false);
+        } else {
+            Instance = this;
         }
         if (HomeUI)
             HomeUI.SetActive(false);
