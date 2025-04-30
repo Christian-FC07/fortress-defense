@@ -876,11 +876,6 @@ PrefabInstance:
       propertyPath: MobileUI
       value: 
       objectReference: {fileID: 6236543548756082481}
-    - target: {fileID: 1919464341597359832, guid: ea94af88dd927874986930a7e50bcda8,
-        type: 3}
-      propertyPath: reverse_test
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
