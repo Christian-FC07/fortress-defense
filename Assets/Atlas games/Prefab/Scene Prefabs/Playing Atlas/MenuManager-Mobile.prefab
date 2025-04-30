@@ -22753,6 +22753,7 @@ MonoBehaviour:
   enemy: {fileID: 0}
   miniboss: {fileID: 6236543549023691446}
   boss: {fileID: 6236543549607985783}
+  fill_speed: 10
 --- !u!1 &6236543549771711374
 GameObject:
   m_ObjectHideFlags: 0
@@ -22899,7 +22900,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.822
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0

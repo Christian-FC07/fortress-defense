@@ -225,10 +225,11 @@ public class EndlessWaveGenerator : LevelEnemyManager, IListener
                                 bsmng.enemy.gameObject.transform.localScale =
                                     new Vector2(enemySpawn.BossScale, enemySpawn.BossScale);
                             bsmng.bossType = enemySpawn.boosType;
-                            bsmng.enemy.gameObject.GetComponent<GiveExpWhenDie>().expMin =
-                                enemySpawn.BossMinExp;
-                            bsmng.enemy.gameObject.GetComponent<GiveExpWhenDie>().expMax =
-                                enemySpawn.BossMaxExp;
+                            bsmng.enemy.gameObject.TryGetComponent<GiveExpWhenDie>(out GiveExpWhenDie component);
+                            if (component) {
+                                component.expMin = enemySpawn.BossMinExp;
+                                component.expMax = enemySpawn.BossMaxExp;
+                            }
                             bsmng.gameObject.SetActive(true);
                             bsmng.enemy.is_boss = true;
                             AudioClip bossMusic = bsmng.enemy.BossMusic != null

@@ -8,7 +8,7 @@ public class DeviceDependentReference
 
     public GameObject Object {
         get {
-        return SystemInfo.deviceType == DeviceType.Handheld ? mobile_object : pc_object;
+        return SystemInfo.deviceType == DeviceType.Handheld || UIManager.IsReversed ? mobile_object : pc_object;
         }
     }
 
