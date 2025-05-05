@@ -17,6 +17,7 @@ public class LevelEnemyManager : MonoBehaviour, IListener
     public static bool isItBoss = false;
     public static bool isItEnemy = false;
     public static float _customBossSpeed;
+    public static int _customBossHealth;
     [HideInInspector] public int enemyPos;
     [DeviceDependent]
     public DeviceDependentReference bossManeger;
@@ -92,7 +93,8 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                     {
                         isEnemy.disableFX = FX_Smoke;
                         if (enemySpawn.customHealth > 0)
-                            isEnemy.health = enemySpawn.customHealth;
+                            {isEnemy.health = enemySpawn.customHealth;
+                            _customBossHealth = isEnemy.health;}
                         if (enemySpawn.customSpeed > 0)
                             _customBossSpeed = enemySpawn.customSpeed;
                         if (enemySpawn.customAttackDmg > 0)

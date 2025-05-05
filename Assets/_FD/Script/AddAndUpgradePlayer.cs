@@ -59,9 +59,12 @@ public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
     private void CheckStatus()
     {
         addIcon.SetActive(Players[0].upgradedCharacterID.price <= GameManager.Instance.currentExp && currentPlayer == -1);
-        upgradeIcon.SetActive((currentPlayer + 1 < Players.Length)
+        if(GlobalValue.levelPlaying != 2)
+        {
+            upgradeIcon.SetActive((currentPlayer + 1 < Players.Length)
             && (Players[currentPlayer + 1].upgradedCharacterID.price <= GameManager.Instance.currentExp)
             && currentPlayer > -1);
+        }
     }
 
     void SetPlayer()

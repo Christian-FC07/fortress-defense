@@ -63,7 +63,8 @@ public class MainMenuHomeScene : MonoBehaviour
         if (Loading != null)
             Loading.SetActive(true);
 
-        StartCoroutine(LoadAsynchronously("Playing atlas (Graphical test)"));
+        //StartCoroutine(LoadAsynchronously("Playing atlas (Graphical test)"));
+        SceneManager.LoadScene("Playing atlas (Graphical test)");
     }
 
     public void LoadScene(string sceneNamage)
@@ -71,7 +72,8 @@ public class MainMenuHomeScene : MonoBehaviour
         if (Loading != null)
             Loading.SetActive(true);
 
-        StartCoroutine(LoadAsynchronously(sceneNamage));
+        //StartCoroutine(LoadAsynchronously(sceneNamage));
+        SceneManager.LoadScene("Playing atlas (Graphical test)");
     }
 
     IEnumerator Start()

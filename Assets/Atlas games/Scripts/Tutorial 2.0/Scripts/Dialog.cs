@@ -175,7 +175,7 @@ public class Dialog : MonoBehaviour
                 _dialogStep--;
                 if (_dialogStep <2 )
                 {
-                    buttonsAnimator.SetTrigger("OneButton");
+                    //buttonsAnimator.SetTrigger("OneButton");
                     previousButton.interactable = false;
                 }
                 dialogTitle.text = "Tip #" + (_dialogStep + 1).ToString();
@@ -202,7 +202,7 @@ public class Dialog : MonoBehaviour
         {
             if (_tutorial.tutorialSteps[_tutorial.tipOrder].tipType == TipType.Dialog )
             {
-                buttonsAnimator.SetTrigger("TwoButton");
+                //buttonsAnimator.SetTrigger("TwoButton");
                 _tutorial.NextStep();
             }
         }

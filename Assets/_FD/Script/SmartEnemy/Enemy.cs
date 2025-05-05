@@ -219,7 +219,7 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
         
         if (!useGravity)
             gravity = 0;
-        currentHealth = health2;
+        //currentHealth = health2;
         _enemyScaleSelf = enemyScaleSelf;
         if(this.tag == ("Player"))
         {
@@ -232,11 +232,13 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
             {
                 this.transform.localScale = new Vector2(_enemyScaleSelf * LevelEnemyManager._enemyScale, _enemyScaleSelf * LevelEnemyManager._enemyScale);
                 moveSpeed = walkSpeed2;
+                currentHealth = health2;
             }
             if(LevelEnemyManager.isItBoss)
             {
                 this.transform.localScale = new Vector2(LevelEnemyManager._bossScale * LevelEnemyManager._enemyScale, LevelEnemyManager._bossScale * LevelEnemyManager._enemyScale);
                 moveSpeed = LevelEnemyManager._customBossSpeed;
+                currentHealth = (int)LevelEnemyManager._customBossHealth;
             }
         }
         if (IsAutoHealthBar ){

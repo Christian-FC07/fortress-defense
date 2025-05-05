@@ -51,6 +51,7 @@ public class TutorialNew : MonoBehaviour
     public Transform BM_Pos_env;
     
     public Transform pointerPlacerEnvironment;
+    [HideInInspector] public static bool isTutorialOn = false;
 
 
     public float initialDelay;
@@ -105,6 +106,7 @@ public class TutorialNew : MonoBehaviour
                     dialog.DialogChange(tutorialSteps[tipOrder], !previous ? DialogAction.Next : DialogAction.Previous, tutorialSteps[tipOrder], this);
                     clickPreventer.GetComponent<Image>().color = darkBackground;
                     circleMask.gameObject.SetActive(false);
+                    isTutorialOn = true;
                     Time.timeScale = 0;
                     break;
                 case TipType.Hint:
@@ -119,6 +121,7 @@ public class TutorialNew : MonoBehaviour
                 case TipType.Task:
                     circleMask.gameObject.SetActive(false);
                     Time.timeScale = tutorialSteps[tipOrder].pauseGame ? 0 : 1;
+                    isTutorialOn = false;
                                         if (!tutorialSteps[tipOrder].isUiInteractible && nextUIPart.GetComponent<Button>())
                     {
                         buttonParent = nextUIPart.transform.parent;

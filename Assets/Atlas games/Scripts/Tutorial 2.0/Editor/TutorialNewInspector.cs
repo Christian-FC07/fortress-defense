@@ -70,6 +70,7 @@ public class TutorialNewInspector : Editor
         else if (tutorial.placing == TutorialPlacing.Game)
         {
             tutorial.tutorialLevel = EditorGUILayout.IntField("Tutorial Level", tutorial.tutorialLevel);
+            Debug.Log("tutorialLevel");
         }
 
         EditorGUILayout.Space();
