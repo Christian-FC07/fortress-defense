@@ -52,7 +52,10 @@ public class Shop : MonoBehaviour
             if (data.ShopData[i].type == _chosenType && !data.ShopData[i].isFree)
             {
                 contentDatas.Add(new ScrollItemData(data.ShopData[i]));
+                Debug.Log("towers are here");
             }
+
+            Debug.Log("hell no");
         }
 
         for (int i = 0; i < scrollContentParent.childCount; i++)

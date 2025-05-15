@@ -26,6 +26,13 @@ public class MainMenuHomeScene : MonoBehaviour
     public Image soundImage;
     public Image musicImage;
     public Sprite soundImageOn, soundImageOff, musicImageOn, musicImageOff;
+    bool mainMenuLimiter = false;
+    public static bool triggerT = false;
+    bool check = true;
+    bool check2 = true;
+    bool check3 = true;
+    bool check4 = true;
+    bool check5 = true;
 
     void Awake()
     {
@@ -99,6 +106,67 @@ public class MainMenuHomeScene : MonoBehaviour
         foreach (var ct in coinTxt)
         {
             ct.text = User.Coin + "";
+        }
+
+        if(HomeUI.activeInHierarchy == true && mainMenuLimiter == false)
+        {
+            GlobalValue.menuPart = "Home";
+            mainMenuLimiter = true;
+        }
+        else if(MapUI.activeInHierarchy == true)
+        {
+            GlobalValue.menuPart = "Map";
+
+            if(check)
+            {
+                showTutorial.isTutorialOn = false;
+                showTutorial.isTutorialoff = false;
+                check = false;
+            }
+        }
+        else if(TrophyUIV2.activeInHierarchy == true)
+        {
+            GlobalValue.menuPart = "Trophy";
+
+            if(check2)
+            {
+                showTutorial.isTutorialOn = false;
+                showTutorial.isTutorialoff = false;
+                check2 = false;
+            }
+        }
+        else if(EventUI.activeInHierarchy == true)
+        {
+            GlobalValue.menuPart = "Events";
+
+            if(check3)
+            {
+                showTutorial.isTutorialOn = false;
+                showTutorial.isTutorialoff = false;
+                check3 = false;
+            }
+        }
+        else if(LeaderBoardUI.activeInHierarchy == true)
+        {
+            GlobalValue.menuPart = "Leaderboard";
+
+            if(check4)
+            {
+                showTutorial.isTutorialOn = false;
+                showTutorial.isTutorialoff = false;
+                check4 = false;
+            }
+        }
+        else if(StoreUI.activeInHierarchy == true)
+        {
+            GlobalValue.menuPart = "Store";
+
+            if(check5)
+            {
+                showTutorial.isTutorialOn = false;
+                showTutorial.isTutorialoff = false;
+                check5 = false;
+            }
         }
     }
 

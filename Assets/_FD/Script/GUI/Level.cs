@@ -13,6 +13,7 @@ public class Level : MonoBehaviour
     public int world = 1;
     public int level = 1;
     public bool isUnlock = false;
+    public static bool isComic = false;
     public Text numberTxt;
     public GameObject imgLock, imgOpen, imgPass;
 
@@ -133,6 +134,15 @@ public class Level : MonoBehaviour
 
     public void Play()
     {
+        SoundManager.Click();
+        if(level == 1 && world == 1)
+        {
+            isComic = true;
+            //Time.timeScale = 0;
+            Debug.Log("comic is on");
+        }
+        Debug.Log("comic is on222");
+
         GlobalValue.levelPlaying = level;
         GlobalValue.levelType = levelType;
        // GlobalValue.NightMode = nightMode;
@@ -150,8 +160,6 @@ public class Level : MonoBehaviour
 
     public void Play(string _levelSceneName = null)
     {
-
-        SoundManager.Click();
         //if (loadSceneManual && GlobalValue.showComicBossLevel)
         //{
         //    MainMenuHomeScene.Instance.LoadScene(loadSceneName);

@@ -1457,6 +1457,37 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &742206050756598984
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 668905328169850131}
+  m_Layer: 0
+  m_Name: Soldiers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &668905328169850131
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742206050756598984}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.9882352, y: 1.8588233, z: 0}
+  m_LocalScale: {x: 1.1764705, y: 1.1764705, z: 1.1764705}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2859291877774657217}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &906131524718512098
 GameObject:
   m_ObjectHideFlags: 0
@@ -2881,6 +2912,7 @@ Transform:
   m_LocalScale: {x: 0.85, y: 0.85, z: 0.85}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 668905328169850131}
   - {fileID: 216660148}
   - {fileID: 435861065880105131}
   - {fileID: 5386658209726709622}
@@ -2902,7 +2934,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2859291877774657223}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -2939,7 +2971,7 @@ SpriteRenderer:
   m_SortingLayerID: -504063309
   m_SortingLayer: 2
   m_SortingOrder: 1
-  m_Sprite: {fileID: 8053899242462091416, guid: 7086ca8b18b79824181044f60599c7c9,
+  m_Sprite: {fileID: 7812483196768676207, guid: 21ca431d0ae447741b7935ed498da3f0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2993,24 +3025,24 @@ MonoBehaviour:
   fortrestLevels:
   - maxHealth: 300
     stateFortrestSprites:
-    - {fileID: 21300000, guid: 780bd17f3d9de6347b0eb6249b2b2e69, type: 3}
-    - {fileID: 21300000, guid: 11bb9ca0d803ee7469433690b1d86b72, type: 3}
-    - {fileID: 21300000, guid: 184d1cf569fdfce438557ea9a8f71693, type: 3}
-    - {fileID: 21300000, guid: d7a9147ffa15b43448e280802e899544, type: 3}
+    - {fileID: 7812483196768676207, guid: 21ca431d0ae447741b7935ed498da3f0, type: 3}
+    - {fileID: 7812483196768676207, guid: 21ca431d0ae447741b7935ed498da3f0, type: 3}
+    - {fileID: 7812483196768676207, guid: 21ca431d0ae447741b7935ed498da3f0, type: 3}
+    - {fileID: 7812483196768676207, guid: 21ca431d0ae447741b7935ed498da3f0, type: 3}
     fortressId: 33
   - maxHealth: 400
     stateFortrestSprites:
-    - {fileID: 21300000, guid: ebc9712108472e9468a28fa1ce98f1c2, type: 3}
-    - {fileID: 21300000, guid: f54ded5353cb688428f39b6335a7d371, type: 3}
-    - {fileID: 21300000, guid: 37bfcc8926f8fd84995290d260f2c1fa, type: 3}
-    - {fileID: 21300000, guid: 3d58ac7db715a8043adc3460236e9d85, type: 3}
+    - {fileID: -1183575021911715694, guid: f1d400af483b5b04d8293d142e1291d0, type: 3}
+    - {fileID: -1183575021911715694, guid: f1d400af483b5b04d8293d142e1291d0, type: 3}
+    - {fileID: -1183575021911715694, guid: f1d400af483b5b04d8293d142e1291d0, type: 3}
+    - {fileID: -1183575021911715694, guid: f1d400af483b5b04d8293d142e1291d0, type: 3}
     fortressId: 34
   - maxHealth: 500
     stateFortrestSprites:
-    - {fileID: 21300000, guid: cfe5294bee5a8114e82efb97a8a1536a, type: 3}
-    - {fileID: 21300000, guid: a159f21b64170f04580793f065f6b9d0, type: 3}
-    - {fileID: 21300000, guid: 5a59ca7f5caf16145bec58f6e4d6484d, type: 3}
-    - {fileID: 21300000, guid: 4942abe19c31ac84e8db7b1da05b99b3, type: 3}
+    - {fileID: -7069246458290640737, guid: d3ef6acac69f0ba45965f60dfbc3db60, type: 3}
+    - {fileID: -7069246458290640737, guid: d3ef6acac69f0ba45965f60dfbc3db60, type: 3}
+    - {fileID: -7069246458290640737, guid: d3ef6acac69f0ba45965f60dfbc3db60, type: 3}
+    - {fileID: -7069246458290640737, guid: d3ef6acac69f0ba45965f60dfbc3db60, type: 3}
     fortressId: 35
   - maxHealth: 600
     stateFortrestSprites:
@@ -3077,7 +3109,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6, y: 4.5}
+    oldSize: {x: 3.8111112, y: 4.06}
     newSize: {x: 2.41, y: 2.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
