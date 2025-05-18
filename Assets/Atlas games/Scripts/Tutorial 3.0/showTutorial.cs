@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -15,10 +16,14 @@ public class showTutorial : MonoBehaviour
     public GameObject[] menuParts;
 
     public static bool isTutorialOn = false;
-    public static bool isTutorialoff = false;
+    //public static bool isTutorialoff = false;
     public static bool isTutorialOn2 = false;
     public static bool isTutorialoff2 = false;
-    int[] inGameTutorialCounter;
+
+    Dictionary<int, GameObject> levelCheck = new Dictionary<int, GameObject>()
+    {
+        //{1, tutorials.infoT[1].TutorialPrefab},
+    };
 
     public void Start()
     {
@@ -86,12 +91,12 @@ public class showTutorial : MonoBehaviour
                         isTutorialOn = true;
                     }
                 }
-                else if(isTutorialoff == false && buttonCheck.press)
+                else if(buttonCheck.press)
                 {
                     Destroy(newTutorialCLone, 0.1f);
 
                     //run only once
-                    isTutorialoff = true;
+                    //isTutorialoff = true;
                     buttonCheck.press = false;
                 }
             }

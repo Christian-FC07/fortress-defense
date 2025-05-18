@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pink_Icon_ItemIcon_Trophy_0: 8428833747932740668
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

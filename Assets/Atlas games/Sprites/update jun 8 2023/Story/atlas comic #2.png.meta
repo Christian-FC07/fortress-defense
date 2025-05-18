@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      atlas comic #2_0: 5336228493529161769
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

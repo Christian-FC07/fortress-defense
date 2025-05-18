@@ -4978,7 +4978,7 @@ RectTransform:
   m_Father: {fileID: 7531650820913940625}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6348,6 +6348,13 @@ MonoBehaviour:
   blur: {fileID: 0}
   archerManager: {fileID: 0}
   timer: 0
+  menuParts:
+  - {fileID: 175416222874014435}
+  - {fileID: 7549375739293902938}
+  - {fileID: 8130699747163586305}
+  - {fileID: 4409576606181652505}
+  - {fileID: 7114820371159929400}
+  - {fileID: 9083649249035859169}
 --- !u!1 &1457410555379570137
 GameObject:
   m_ObjectHideFlags: 0
@@ -10598,7 +10605,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ba576c952134c278ee85170a9bfc463, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spacing: {x: 25, y: 0}
+  _spacing: {x: 25, y: 1}
   _fillContent: 1
   _fixedItemCount: 1
 --- !u!1 &2133724172470045692
@@ -31933,10 +31940,10 @@ RectTransform:
   - {fileID: 8298292398004167771}
   m_Father: {fileID: 5133160443236943071}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 144.55, y: -189.85}
-  m_SizeDelta: {x: 289.1, y: 379.7}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3479817267517154730
 CanvasRenderer:

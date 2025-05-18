@@ -27,12 +27,6 @@ public class MainMenuHomeScene : MonoBehaviour
     public Image musicImage;
     public Sprite soundImageOn, soundImageOff, musicImageOn, musicImageOff;
     bool mainMenuLimiter = false;
-    public static bool triggerT = false;
-    bool check = true;
-    bool check2 = true;
-    bool check3 = true;
-    bool check4 = true;
-    bool check5 = true;
 
     void Awake()
     {
@@ -113,67 +107,14 @@ public class MainMenuHomeScene : MonoBehaviour
             GlobalValue.menuPart = "Home";
             mainMenuLimiter = true;
         }
-        else if(MapUI.activeInHierarchy == true)
-        {
-            GlobalValue.menuPart = "Map";
-
-            if(check)
-            {
-                showTutorial.isTutorialOn = false;
-                showTutorial.isTutorialoff = false;
-                check = false;
-            }
-        }
-        else if(TrophyUIV2.activeInHierarchy == true)
-        {
-            GlobalValue.menuPart = "Trophy";
-
-            if(check2)
-            {
-                showTutorial.isTutorialOn = false;
-                showTutorial.isTutorialoff = false;
-                check2 = false;
-            }
-        }
-        else if(EventUI.activeInHierarchy == true)
-        {
-            GlobalValue.menuPart = "Events";
-
-            if(check3)
-            {
-                showTutorial.isTutorialOn = false;
-                showTutorial.isTutorialoff = false;
-                check3 = false;
-            }
-        }
-        else if(LeaderBoardUI.activeInHierarchy == true)
-        {
-            GlobalValue.menuPart = "Leaderboard";
-
-            if(check4)
-            {
-                showTutorial.isTutorialOn = false;
-                showTutorial.isTutorialoff = false;
-                check4 = false;
-            }
-        }
-        else if(StoreUI.activeInHierarchy == true)
-        {
-            GlobalValue.menuPart = "Store";
-
-            if(check5)
-            {
-                showTutorial.isTutorialOn = false;
-                showTutorial.isTutorialoff = false;
-                check5 = false;
-            }
-        }
     }
 
     public void OpenMap(bool open)
     {
         SoundManager.Click();
         StartCoroutine(OpenMapCo(open));
+        
+        
     }
 
     public void OpenInventory(bool open)
@@ -193,9 +134,13 @@ public class MainMenuHomeScene : MonoBehaviour
     IEnumerator OpenMapCo(bool open)
     {
         yield return null;
+        GlobalValue.menuPart = "Map";
+        showTutorial.isTutorialOn = open;
         BlackScreenUI.instance.Show(0.2f);
         MapUI.SetActive(open);
+
         BlackScreenUI.instance.Hide(0.2f);
+        showTutorial.isTutorialOn = !open;
     }
 
     public void Facebook()
@@ -225,8 +170,12 @@ public class MainMenuHomeScene : MonoBehaviour
     public void Store(bool open)
     {
         SoundManager.Click();
+        GlobalValue.menuPart = "Store";
+        showTutorial.isTutorialOn = open;
         StoreUI.SetActive(open);
         StoreUI.GetComponent<Shop>().OpenMenu("features");
+
+        showTutorial.isTutorialOn = !open;
     }
     public void OpenUpgradeUI(bool open)
     {
@@ -274,18 +223,30 @@ public class MainMenuHomeScene : MonoBehaviour
     public void OpenLeaderBoard(bool open)
     {
         LeaderBoard leaderBoard = LeaderBoardUI.GetComponent<LeaderBoard>();
+        GlobalValue.menuPart = "Store";
+        showTutorial.isTutorialOn = open;
         LeaderBoardUI.SetActive(open);
         if(!open) leaderBoard.ClearList();
+
+        showTutorial.isTutorialOn = !open;
     }
     public void OpenTrophyV2(bool open)
     {
         SoundManager.Click();
+        GlobalValue.menuPart = "Trophy";
+        showTutorial.isTutorialOn = open;
         TrophyUIV2.SetActive(open);
+
+        showTutorial.isTutorialOn = !open;
     }
     public void OpenEvent(bool open)
     {
         SoundManager.Click();
+        GlobalValue.menuPart = "Events";
+        showTutorial.isTutorialOn = open;
         EventUI.SetActive(open);
+
+        showTutorial.isTutorialOn = !open;
     }
     public void OpenCoinShop(bool open)
     {
