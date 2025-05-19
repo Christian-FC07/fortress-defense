@@ -3315,7 +3315,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -0.0002593994, y: -0.25800037}
+  m_AnchoredPosition: {x: -0.0002593994, y: -0.25799942}
   m_SizeDelta: {x: -0.00013018, y: 3.608}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4731742151776449278
@@ -22754,6 +22754,7 @@ MonoBehaviour:
   enemy: {fileID: 0}
   miniboss: {fileID: 6236543549023691446}
   boss: {fileID: 6236543549607985783}
+  targetFill: 1
   fill_speed: 10
 --- !u!1 &6236543549771711374
 GameObject:

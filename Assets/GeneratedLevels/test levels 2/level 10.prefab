@@ -125,7 +125,7 @@ MonoBehaviour:
       customHealth: 1100
       customSpeed: 0.8
       customAttackDmg: 25
-      boosType: 1
+      boosType: 2
       BossScale: 3
       BossMinExp: 0
       BossMaxExp: 0
