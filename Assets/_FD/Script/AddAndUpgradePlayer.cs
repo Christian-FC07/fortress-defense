@@ -53,7 +53,7 @@ public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
 
     void Update()
     {
-        archersOrder[archersOrder.Length].sortingOrder = layer - 1;
+        archersOrder[archersOrder.Length].sortingOrder = layer;
     }
 
     private void CheckStatus()

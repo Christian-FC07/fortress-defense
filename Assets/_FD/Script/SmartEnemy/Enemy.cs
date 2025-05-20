@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using Spine.Unity;
 public enum ATTACKTYPE
 {
@@ -80,14 +79,10 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
     public UpgradedCharacterParameter upgradedCharacterID;
     [HideInInspector] public ENEMYTYPE enemyType;
     public bool is_boss = false;
-    public BossUIManager boss_ui;
     [Header("Setup")]
     public bool useGravity = false;
     [ReadOnly] public float gravity = 35f;
     public float walkSpeed = 3;
-    public float walkSpeed2 = 1;
-    public float enemyScaleSelf = 1;
-    public static float _enemyScaleSelf;
     [Header("Behavier")]
     public ATTACKTYPE attackType;
     public STARTBEHAVIOR startBehavior = STARTBEHAVIOR.WALK_LEFT;
@@ -100,7 +95,6 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
     [Header("HEALTH")]
     [Range(0, 5000)]
     public int health = 100;
-    public int health2 = 100;
     [HideInInspector] public GameObject dieFX, hitFX;
     public GameObject disableFX;
     public Transform spawnDisableFX;
@@ -219,28 +213,8 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
         
         if (!useGravity)
             gravity = 0;
-        //currentHealth = health2;
-        _enemyScaleSelf = enemyScaleSelf;
-        if(this.tag == ("Player"))
-        {
-            this.transform.localScale = new Vector2(1, 1);
-            moveSpeed = 0;
-        }
-        else
-        {
-            if(LevelEnemyManager.isItEnemy)
-            {
-                this.transform.localScale = new Vector2(_enemyScaleSelf * LevelEnemyManager._enemyScale, _enemyScaleSelf * LevelEnemyManager._enemyScale);
-                moveSpeed = walkSpeed2;
-                currentHealth = health2;
-            }
-            if(LevelEnemyManager.isItBoss)
-            {
-                this.transform.localScale = new Vector2(LevelEnemyManager._bossScale * LevelEnemyManager._enemyScale, LevelEnemyManager._bossScale * LevelEnemyManager._enemyScale);
-                moveSpeed = LevelEnemyManager._customBossSpeed;
-                currentHealth = (int)LevelEnemyManager._customBossHealth;
-            }
-        }
+        currentHealth = health;
+        moveSpeed = walkSpeed;
         if (IsAutoHealthBar ){
             if (transform.GetComponent<BoxCollider2D>())
             {
@@ -839,9 +813,7 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
                 (Vector2)transform.position + new Vector2(Random.Range(-randomBloodPuddlePoint.x, randomBloodPuddlePoint.x), Random.Range(-randomBloodPuddlePoint.y, randomBloodPuddlePoint.y));
 
 
-        // Add boss check for damage
-        if (boss_ui) boss_ui.UpdateHealthBar(currentHealth / (float)health);
-        else if (healthBar)
+        if (healthBar)
             healthBar.UpdateValue(currentHealth / (float)health);
         //		Debug.LogError (isExplosion + "BLOW" + (dieBehavior == DIEBEHAVIOR.BLOWUP));
         if (currentHealth <= 0)

@@ -96,8 +96,6 @@ MonoBehaviour:
   FX_Smoke: {fileID: 6338145615417356351, guid: 2e064da420e915d45ae6569a3ed46339,
     type: 3}
   FX_Blow: {fileID: 7587624716690234243, guid: 0ffe2a5380c64a640830cf2a52799faa, type: 3}
-  GraveHit: {fileID: 6184028714355178771, guid: 8bb4c34a2f2c81c418550bfb6a730523,
-    type: 3}
   bullet: {fileID: 6686378747336277193, guid: b5ded0b86258f854c990f4a75d9ac1c8, type: 3}
   BossSpawnPoint: {fileID: 2329159576667478972}
   spawnPositions:
@@ -120,92 +118,16 @@ MonoBehaviour:
   - {fileID: 6507468072582231500}
   - {fileID: 2313493240504497367}
   - {fileID: 7523637470555892412}
-  EnemyWaves:
-  - wait: 0
-    enemySpawns:
-    - wait: 0
-      enemy: {fileID: 3697426553599540029, guid: ec2d1c87b32a1e44498264d6be439280,
-        type: 3}
-      numberEnemy: 1
-      rate: 1
-      customHealth: 0
-      customSpeed: 0
-      customAttackDmg: 0
-      boosType: 0
-      BossScale: 1.001
-      BossMinExp: 25
-      BossMaxExp: 50
-      spawnFromUnderground: 0
-  - wait: 0
-    enemySpawns:
-    - wait: 0
-      enemy: {fileID: 3697426553599540029, guid: ec2d1c87b32a1e44498264d6be439280,
-        type: 3}
-      numberEnemy: 1
-      rate: 1
-      customHealth: 0
-      customSpeed: 0
-      customAttackDmg: 0
-      boosType: 0
-      BossScale: 1.001
-      BossMinExp: 25
-      BossMaxExp: 50
-      spawnFromUnderground: 0
-  enemyScale: 1
-  enemyPos: 0
-  bossManeger:
-    mobile_object: {fileID: 0}
-    pc_object: {fileID: 0}
+  EnemyWaves: []
+  bossManeger: {fileID: 0}
   listEnemySpawned: []
   totalEnemy: 0
   currentSpawn: 0
   levelType: 0
   enemiesList:
-  - enemyObject: {fileID: 3946748681848493890, guid: 76bd4471ba8a6d34cb7b57cb50b197dd,
+  - enemyObject: {fileID: 3697426553599540029, guid: 61fea0f2db067ad4c998eeeec568bb35,
       type: 3}
     initialCount: 3
-  - enemyObject: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d,
-      type: 3}
-    initialCount: 2
-  - enemyObject: {fileID: 7410894354902345084, guid: 0456569c346a8cc40b693ef04ff40a03,
-      type: 3}
-    initialCount: 1
-  - enemyObject: {fileID: 6766448378530673492, guid: b9166541803a17d43b6bed03d3d60701,
-      type: 3}
-    initialCount: 0
-  - enemyObject: {fileID: 3449677795528492924, guid: 754de641f17a8c04f9ecc8d5c4dc7bd2,
-      type: 3}
-    initialCount: 0
-  - enemyObject: {fileID: 3505094654918231060, guid: 93b3a96647087d54085a68ddee065188,
-      type: 3}
-    initialCount: 0
-  - enemyObject: {fileID: 8735511819807008694, guid: 4938ba1c1070b8b4e8cda5c6fb4cf6c0,
-      type: 3}
-    initialCount: 0
-  - enemyObject: {fileID: 1384076305360503900, guid: 71d92f6a73d83a648b515b6a3ba1a113,
-      type: 3}
-    initialCount: 0
-  - enemyObject: {fileID: 6513545254321279005, guid: 2c5556c3a69136f43b0397e19407d0e2,
-      type: 3}
-    initialCount: 0
-  - enemyObject: {fileID: 6095283598343155490, guid: 1d22479a8a9a454499d8b5f1c77eea2d,
-      type: 3}
-    initialCount: 0
-  - enemyObject: {fileID: 3924842065213229019, guid: e9c59e2fd78df8346a4f538953463f51,
-      type: 3}
-    initialCount: 0
-  - enemyObject: {fileID: 5848783413869001439, guid: 47a3389ea7fcd80408b82752901fef1c,
-      type: 3}
-    initialCount: 0
-  - enemyObject: {fileID: 7750709616934011868, guid: 867afff3257836d4083e111950f04e86,
-      type: 3}
-    initialCount: 0
-  - enemyObject: {fileID: 7965514550485599631, guid: 0b3d1e7795ef1cf40b031e4821bd133c,
-      type: 3}
-    initialCount: 0
-  - enemyObject: {fileID: 8885830814786365834, guid: 8a42c3f4494766942b7362c1737df6f9,
-      type: 3}
-    initialCount: 0
   wave:
     wait: 3
     enemySpawns: []

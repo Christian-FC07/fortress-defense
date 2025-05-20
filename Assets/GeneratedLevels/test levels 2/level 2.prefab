@@ -55,9 +55,9 @@ MonoBehaviour:
         type: 3}
       numberEnemy: 2
       rate: 0
-      customHealth: 0
+      customHealth: 78
       customSpeed: 0
-      customAttackDmg: 0
+      customAttackDmg: 50
       boosType: 0
       BossScale: 0
       BossMinExp: 0

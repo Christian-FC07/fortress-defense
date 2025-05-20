@@ -56,7 +56,7 @@ public class UpdateBackground : MonoBehaviour
         }
         else if(GlobalValue.levelPlaying > 1000)
         {
-            GetComponent<SpriteRenderer>().sprite = background.endlessBackground[(int)((GlobalValue.levelPlaying) - 1001)];
+            Instantiate(background.endlessBackground[(int)((GlobalValue.levelPlaying) - 1001)], new Vector2(0, 0), Quaternion.identity);
             //details
             //Instantiate(detail.endlessDetail[(int)((GlobalValue.levelPlaying) - 1001)],
             //detail.endlessDetail[(int)((GlobalValue.levelPlaying) - 1001)].transform.position,

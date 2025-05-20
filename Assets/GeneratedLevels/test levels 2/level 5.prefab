@@ -55,9 +55,9 @@ MonoBehaviour:
         type: 3}
       numberEnemy: 4
       rate: 0
-      customHealth: 0
+      customHealth: 78
       customSpeed: 0
-      customAttackDmg: 0
+      customAttackDmg: 50
       boosType: 0
       BossScale: 1
       BossMinExp: 0
@@ -68,11 +68,11 @@ MonoBehaviour:
         type: 3}
       numberEnemy: 4
       rate: 0
-      customHealth: 0
+      customHealth: 91
       customSpeed: 0
-      customAttackDmg: 0
+      customAttackDmg: 50
       boosType: 0
-      BossScale: 0
+      BossScale: 1
       BossMinExp: 0
       BossMaxExp: 0
       spawnFromUnderground: 0
@@ -83,9 +83,9 @@ MonoBehaviour:
         type: 3}
       numberEnemy: 5
       rate: 0
-      customHealth: 600
-      customSpeed: 2.5
-      customAttackDmg: 20
+      customHealth: 91
+      customSpeed: 0
+      customAttackDmg: 50
       boosType: 0
       BossScale: 4
       BossMinExp: 0

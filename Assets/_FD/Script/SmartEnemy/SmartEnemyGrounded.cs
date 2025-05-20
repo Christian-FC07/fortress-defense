@@ -55,7 +55,9 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
     private float _zPos;
     public GameObject shadow;
     private float _initialMoveSpeed;
-    public static SortingGroup sp;
+
+    [Header("Grave")]
+    [SerializeField] private GameObject gravePrefab;
 
 
     IEnumerator Climb()
@@ -75,7 +77,7 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
             yield return null; 
         }
 
-        //sp = GetComponent<SortingGroup>();
+        GetComponent<SortingGroup>().sortingOrder = 0;
         transform.position = end;
         transform.position =
             new Vector3(transform.position.x, transform.position.y,
@@ -173,8 +175,6 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
     public override void Start()
     {
 
-        sp = GetComponent<SortingGroup>();
-
         if (spawnFromUnderground)
         {
             StartClimbing();
@@ -231,8 +231,6 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
     {
         base.Update();
         HandleAnimation();
-
-        //Debug.Log(LevelEnemyManager.enemyPos);
 
         if (enemyState != ENEMYSTATE.WALK || GameManager.Instance.State != GameManager.GameState.Playing)
         {
@@ -582,17 +580,13 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
             SpawnSystemHelper.GetNextObject(disableFX, true).transform.position =
                 spawnDisableFX != null ? spawnDisableFX.position : transform.position;
 
-        GameObject grave = SpawnSystemHelper.GetNextObject(LevelEnemyManager.Instance.GraveHit, true);
-        //grave.SetActive(true);
-        //grave.transform.position = new Vector3(transform.position.x, transform.position.y + 0.55f, transform.position.z);
-        //grave.transform.GetChild(0).TryGetComponent(out Animator animator);
-        //if (animator != null) {
-        //    animator.SetTrigger("play");
-        //}
+        GameObject grave = SpawnSystemHelper.GetNextObject(gravePrefab, true);
+        grave.SetActive(true);
+        grave.transform.position = new Vector3(transform.position.x, transform.position.y + 0.55f, transform.position.z);
 
         yield return new WaitForSeconds(2);
-        //grave.transform.position = new Vector3(0, 100, grave.transform.position.z);
-        //grave.SetActive(false);
+        grave.transform.position = new Vector3(0, 100, grave.transform.position.z);
+        grave.SetActive(false);
 
         gameObject.SetActive(false);
     }

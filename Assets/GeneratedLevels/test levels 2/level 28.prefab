@@ -55,22 +55,22 @@ MonoBehaviour:
         type: 3}
       numberEnemy: 4
       rate: 0
-      customHealth: 0
+      customHealth: 91
       customSpeed: 0
-      customAttackDmg: 0
+      customAttackDmg: 60
       boosType: 0
       BossScale: 1
       BossMinExp: 0
       BossMaxExp: 0
       spawnFromUnderground: 0
     - wait: 3
-      enemy: {fileID: 3697426553599540029, guid: a5810a7bbd5d0f94984fa5d4e349193e,
+      enemy: {fileID: 3697426553599540029, guid: 8ab432341d31f354f8fc719ef53ba1d4,
         type: 3}
       numberEnemy: 4
       rate: 0
-      customHealth: 0
+      customHealth: 91
       customSpeed: 0
-      customAttackDmg: 0
+      customAttackDmg: 50
       boosType: 0
       BossScale: 1
       BossMinExp: 0
@@ -81,9 +81,9 @@ MonoBehaviour:
         type: 3}
       numberEnemy: 5
       rate: 0
-      customHealth: 0
+      customHealth: 91
       customSpeed: 0
-      customAttackDmg: 0
+      customAttackDmg: 60
       boosType: 0
       BossScale: 0
       BossMinExp: 0
@@ -94,22 +94,22 @@ MonoBehaviour:
         type: 3}
       numberEnemy: 4
       rate: 0
-      customHealth: 0
+      customHealth: 91
       customSpeed: 0
-      customAttackDmg: 0
+      customAttackDmg: 60
       boosType: 0
       BossScale: 1
       BossMinExp: 0
       BossMaxExp: 0
       spawnFromUnderground: 0
     - wait: 9
-      enemy: {fileID: 3697426553599540029, guid: a5810a7bbd5d0f94984fa5d4e349193e,
+      enemy: {fileID: 3697426553599540029, guid: 8ab432341d31f354f8fc719ef53ba1d4,
         type: 3}
       numberEnemy: 5
       rate: 0
-      customHealth: 0
+      customHealth: 91
       customSpeed: 0
-      customAttackDmg: 0
+      customAttackDmg: 50
       boosType: 0
       BossScale: 1
       BossMinExp: 0
@@ -122,9 +122,9 @@ MonoBehaviour:
         type: 3}
       numberEnemy: 4
       rate: 0
-      customHealth: 0
+      customHealth: 117
       customSpeed: 0
-      customAttackDmg: 0
+      customAttackDmg: 45
       boosType: 0
       BossScale: 0
       BossMinExp: 0
@@ -135,9 +135,9 @@ MonoBehaviour:
         type: 3}
       numberEnemy: 4
       rate: 0
-      customHealth: 0
+      customHealth: 117
       customSpeed: 0
-      customAttackDmg: 0
+      customAttackDmg: 50
       boosType: 0
       BossScale: 1
       BossMinExp: 0
@@ -148,9 +148,9 @@ MonoBehaviour:
         type: 3}
       numberEnemy: 5
       rate: 0
-      customHealth: 0
+      customHealth: 117
       customSpeed: 0
-      customAttackDmg: 0
+      customAttackDmg: 50
       boosType: 0
       BossScale: 1
       BossMinExp: 0
@@ -161,9 +161,9 @@ MonoBehaviour:
         type: 3}
       numberEnemy: 5
       rate: 0
-      customHealth: 0
+      customHealth: 91
       customSpeed: 0
-      customAttackDmg: 0
+      customAttackDmg: 50
       boosType: 0
       BossScale: 0
       BossMinExp: 0
@@ -174,9 +174,9 @@ MonoBehaviour:
         type: 3}
       numberEnemy: 4
       rate: 0
-      customHealth: 0
+      customHealth: 117
       customSpeed: 0
-      customAttackDmg: 0
+      customAttackDmg: 45
       boosType: 0
       BossScale: 0
       BossMinExp: 0
