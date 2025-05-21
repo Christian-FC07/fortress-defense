@@ -488,7 +488,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 847306227
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0f6da50733ee7264cbe710d781aa99a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1674,7 +1674,7 @@ GameObject:
   - component: {fileID: 8709909227381580440}
   - component: {fileID: 8709909227381580447}
   m_Layer: 5
-  m_Name: Inventory
+  m_Name: Trophies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1720,71 +1720,70 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tutorialSteps:
-  - tipDirection: 6
+  - tipDirection: 0
     dialogContentType: 0
-    tipType: 1
+    tipType: 0
     pointerDirection: 0
     delay: 0
     isLastDialog: 0
-    uiPartName: Tower
-    circleMaskScale: 2.026067
+    uiPartName: 
+    circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: Here you can choose your tower appearance and  customize it
+    tipText: Here you can check all of the available challenges. By completing each
+      one will earn you will earn yourself a trophy!
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
     hintDirection: 0
-  - tipDirection: 5
+  - tipDirection: 0
     dialogContentType: 0
-    tipType: 1
+    tipType: 0
     pointerDirection: 0
     delay: 0
     isLastDialog: 0
-    uiPartName: Magic
-    circleMaskScale: 2.026067
+    uiPartName: 
+    circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: Here you can choose spells you  want to carry in the game, you can 
-      buy new spells in shop.
+    tipText: In order to check each challenge category, select its type button (e.g.
+      daily challenges).
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
     hintDirection: 0
-  - tipDirection: 4
+  - tipDirection: 0
     dialogContentType: 0
-    tipType: 1
+    tipType: 0
     pointerDirection: 0
     delay: 0
     isLastDialog: 0
-    uiPartName: Items
-    circleMaskScale: 2.026067
+    uiPartName: 
+    circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: Here you xcan choose your usable items, you can purchase new items in
-      shop, also remember items  are not renewable like spells
+    tipText: You will earn yourself some gold as well by finishing each challenge.
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
     hintDirection: 0
-  - tipDirection: 5
+  - tipDirection: 0
     dialogContentType: 0
-    tipType: 1
+    tipType: 0
     pointerDirection: 0
     delay: 0
     isLastDialog: 0
-    uiPartName: Pets
-    circleMaskScale: 2.026067
+    uiPartName: 
+    circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: After defeating every boss the boss is availible as a pet in shop you
-      can use it to fight off enemies
+    tipText: Time-based challenges will get updated every week, so stay tuned!
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
     hintDirection: 0
   placing: 0
-  tutorialName: Inventory
+  tutorialName: Trophies
   tutorialLevel: 16
   circleMask: {fileID: 631300854953505198}
   pointerObject: {fileID: 8647203140545272142}

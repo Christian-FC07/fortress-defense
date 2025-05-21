@@ -6,29 +6,29 @@ using UnityEngine;
 public class GameTutorialManager : MonoBehaviour
 {
     public GameTutorialSetup setup;
-    void Start() {
-        if (GameTutorialSetup.self == null)
-            return;
-        setup = GameTutorialSetup.self;
-        if (GlobalValue.GetTutorialState(GlobalValue.levelPlaying.ToString()) == 0) {
-            GameObject setupObj = setup.SceneTutorial();
-            if (!setupObj) return;
-            if (setup.SceneTutorial() != null)
-            {
-                if (MenuManager.Instance == null)
-                    return;
-                MenuManager manager = MenuManager.Instance;
-                GameObject obj = Instantiate(setup.SceneTutorial(), manager.transform.position, Quaternion.identity, manager.transform);
-                obj.SetActive(true);
-                obj.transform.SetSiblingIndex(manager.transform.childCount - 1);
-                obj.GetComponent<TutorialNew>().InitTutorial();
-            }
-        
-            GlobalValue.SetTutorialState(GlobalValue.levelPlaying.ToString(),1);
-        }
+    void Start()
+    {
+        StartTutorial();
     }
 
- 
+    public void StartTutorial()
+    {
+        if (GameTutorialSetup.self == null) return;
+        setup = GameTutorialSetup.self;
+        if (GlobalValue.GetTutorialState(GlobalValue.levelPlaying.ToString()) != 0) return;
+        GameObject setupObj = setup.SceneTutorial();
+        if (!setupObj) return;
+        if (MenuManager.Instance == null) return;
+        MenuManager manager = MenuManager.Instance;
+        GameObject obj = Instantiate(setupObj, manager.transform.position, Quaternion.identity, manager.transform);
+        obj.SetActive(true);
+        obj.transform.SetSiblingIndex(manager.transform.childCount - 1);
+        obj.GetComponent<TutorialNew>().InitTutorial();
+
+        GlobalValue.SetTutorialState(GlobalValue.levelPlaying.ToString(), 1);
+        return;
+    }
+
     GameObject _tutorialObj;
     public void StartTutorialInMenu(string placing)
     {

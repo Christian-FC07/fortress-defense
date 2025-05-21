@@ -1395,7 +1395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4677290180107626091
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2423,6 +2423,7 @@ GameObject:
   - component: {fileID: 8560231670963969557}
   - component: {fileID: 8977237830232039991}
   - component: {fileID: 2962671802518081230}
+  - component: {fileID: 5917120755919845451}
   m_Layer: 5
   m_Name: Share Twitter
   m_TagString: Untagged
@@ -2544,6 +2545,20 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &5917120755919845451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440763861838254783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 471613d457aa21e4d9cf625466645bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiPartName: Twitter
+  isClickable: 0
 --- !u!1 &491463651725720425
 GameObject:
   m_ObjectHideFlags: 0
@@ -9242,6 +9257,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 6337989796212278761}
+        m_TargetAssemblyTypeName: UITutorialTrigger, Assembly-CSharp
+        m_MethodName: OpenTutorial
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Shop
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!95 &7183633249719291128
 Animator:
   serializedVersion: 7
@@ -11645,6 +11672,7 @@ GameObject:
   - component: {fileID: 511726723495892540}
   - component: {fileID: 8749499999689051514}
   - component: {fileID: 4924638120250611463}
+  - component: {fileID: 7722408390315842275}
   m_Layer: 5
   m_Name: Ranking
   m_TagString: Untagged
@@ -11779,6 +11807,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 7722408390315842275}
+        m_TargetAssemblyTypeName: UITutorialTrigger, Assembly-CSharp
+        m_MethodName: OpenTutorial
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Leaderboard
+          m_BoolArgument: 1
+        m_CallState: 2
+--- !u!114 &7722408390315842275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2206983296257178378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9ff88aa5b512eb46a9c915e17dc89d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tutorialName: Leaderboard
+  runAutomatically: 0
 --- !u!1 &2208515746766187395
 GameObject:
   m_ObjectHideFlags: 0
@@ -31020,7 +31074,6 @@ GameObject:
   - component: {fileID: 1926367468477529315}
   - component: {fileID: 7907836298650495258}
   - component: {fileID: 1681933546846180363}
-  - component: {fileID: 6092285840255487555}
   m_Layer: 5
   m_Name: Inventory
   m_TagString: Untagged
@@ -31142,32 +31195,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 6092285840255487555}
-        m_TargetAssemblyTypeName: UITutorialTrigger, Assembly-CSharp
-        m_MethodName: OpenTutorial
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Inventory
-          m_BoolArgument: 1
-        m_CallState: 2
---- !u!114 &6092285840255487555
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5036040162590638607}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9ff88aa5b512eb46a9c915e17dc89d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tutorialName: Inventory
-  runAutomatically: 0
 --- !u!1 &5036142442493345220
 GameObject:
   m_ObjectHideFlags: 0

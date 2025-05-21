@@ -8,8 +8,7 @@ public class TutorialFinder : MonoBehaviour
    public string uiPartName;
    private bool _isClicked = false;
    [HideInInspector] public bool isClickable = false;
-   public void InitiateTutorialClick()
-   {
+   public void InitiateTutorialClick() {
       if (!_isClicked && isClickable)
       {
          _isClicked = true;
