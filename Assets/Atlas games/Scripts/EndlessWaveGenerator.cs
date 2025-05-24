@@ -219,19 +219,21 @@ public class EndlessWaveGenerator : LevelEnemyManager, IListener
 
                         if (enemySpawn.boosType != EnemySpawn.isBoss.NONE)
                         {
-                            bossManeger.enemy = _temp.GetComponent<Enemy>();
+                            BossUIManager bsmng = bossManeger.type<BossUIManager>();
+                            bsmng.enemy = _temp.GetComponent<Enemy>();
                             if (enemySpawn.BossScale > 1)
-                                bossManeger.enemy.gameObject.transform.localScale =
+                                bsmng.enemy.gameObject.transform.localScale =
                                     new Vector2(enemySpawn.BossScale, enemySpawn.BossScale);
-                            bossManeger.bossType = enemySpawn.boosType;
-                            bossManeger.enemy.gameObject.GetComponent<GiveExpWhenDie>().expMin =
-                                enemySpawn.BossMinExp;
-                            bossManeger.enemy.gameObject.GetComponent<GiveExpWhenDie>().expMax =
-                                enemySpawn.BossMaxExp;
-                            bossManeger.gameObject.SetActive(true);
-                            bossManeger.enemy.is_boss = true;
-                            AudioClip bossMusic = bossManeger.enemy.BossMusic != null
-                                ? bossManeger.enemy.BossMusic
+                            bsmng.bossType = enemySpawn.boosType;
+                            bsmng.enemy.gameObject.TryGetComponent<GiveExpWhenDie>(out GiveExpWhenDie component);
+                            if (component) {
+                                component.expMin = enemySpawn.BossMinExp;
+                                component.expMax = enemySpawn.BossMaxExp;
+                            }
+                            bsmng.gameObject.SetActive(true);
+                            bsmng.enemy.is_boss = true;
+                            AudioClip bossMusic = bsmng.enemy.BossMusic != null
+                                ? bsmng.enemy.BossMusic
                                 : SoundManager.Instance.BossMusicClip;
                             SoundManager.PlayMusic(bossMusic, 0.5f);
                         }

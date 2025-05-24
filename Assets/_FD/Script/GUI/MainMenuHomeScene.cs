@@ -26,7 +26,6 @@ public class MainMenuHomeScene : MonoBehaviour
     public Image soundImage;
     public Image musicImage;
     public Sprite soundImageOn, soundImageOff, musicImageOn, musicImageOff;
-    bool mainMenuLimiter = false;
 
     void Awake()
     {
@@ -101,12 +100,6 @@ public class MainMenuHomeScene : MonoBehaviour
         {
             ct.text = User.Coin + "";
         }
-
-        if(HomeUI.activeInHierarchy == true && mainMenuLimiter == false)
-        {
-            GlobalValue.menuPart = "Home";
-            mainMenuLimiter = true;
-        }
     }
 
     public void OpenMap(bool open)
@@ -134,13 +127,9 @@ public class MainMenuHomeScene : MonoBehaviour
     IEnumerator OpenMapCo(bool open)
     {
         yield return null;
-        GlobalValue.menuPart = "Map";
-        showTutorial.isTutorialOn = open;
         BlackScreenUI.instance.Show(0.2f);
         MapUI.SetActive(open);
-
         BlackScreenUI.instance.Hide(0.2f);
-        showTutorial.isTutorialOn = !open;
     }
 
     public void Facebook()
@@ -170,12 +159,8 @@ public class MainMenuHomeScene : MonoBehaviour
     public void Store(bool open)
     {
         SoundManager.Click();
-        GlobalValue.menuPart = "Store";
-        showTutorial.isTutorialOn = open;
         StoreUI.SetActive(open);
         StoreUI.GetComponent<Shop>().OpenMenu("features");
-
-        showTutorial.isTutorialOn = !open;
     }
     public void OpenUpgradeUI(bool open)
     {
@@ -223,30 +208,18 @@ public class MainMenuHomeScene : MonoBehaviour
     public void OpenLeaderBoard(bool open)
     {
         LeaderBoard leaderBoard = LeaderBoardUI.GetComponent<LeaderBoard>();
-        GlobalValue.menuPart = "Store";
-        showTutorial.isTutorialOn = open;
         LeaderBoardUI.SetActive(open);
         if(!open) leaderBoard.ClearList();
-
-        showTutorial.isTutorialOn = !open;
     }
     public void OpenTrophyV2(bool open)
     {
         SoundManager.Click();
-        GlobalValue.menuPart = "Trophy";
-        showTutorial.isTutorialOn = open;
         TrophyUIV2.SetActive(open);
-
-        showTutorial.isTutorialOn = !open;
     }
     public void OpenEvent(bool open)
     {
         SoundManager.Click();
-        GlobalValue.menuPart = "Events";
-        showTutorial.isTutorialOn = open;
         EventUI.SetActive(open);
-
-        showTutorial.isTutorialOn = !open;
     }
     public void OpenCoinShop(bool open)
     {

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Spine.Unity;
 public enum ATTACKTYPE
 {
@@ -79,6 +80,7 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
     public UpgradedCharacterParameter upgradedCharacterID;
     [HideInInspector] public ENEMYTYPE enemyType;
     public bool is_boss = false;
+    public BossUIManager boss_ui;
     [Header("Setup")]
     public bool useGravity = false;
     [ReadOnly] public float gravity = 35f;
@@ -813,7 +815,9 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
                 (Vector2)transform.position + new Vector2(Random.Range(-randomBloodPuddlePoint.x, randomBloodPuddlePoint.x), Random.Range(-randomBloodPuddlePoint.y, randomBloodPuddlePoint.y));
 
 
-        if (healthBar)
+        // Add boss check for damage
+        if (boss_ui) boss_ui.UpdateHealthBar(currentHealth / (float)health);
+        else if (healthBar)
             healthBar.UpdateValue(currentHealth / (float)health);
         //		Debug.LogError (isExplosion + "BLOW" + (dieBehavior == DIEBEHAVIOR.BLOWUP));
         if (currentHealth <= 0)
