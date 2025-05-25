@@ -61,7 +61,7 @@ MonoBehaviour:
   soundPurchased: {fileID: 8300000, guid: 1982fb7e1919d7c4aa5f7f5d05ebb252, type: 3}
   soundUpgrade: {fileID: 8300000, guid: a59989984f453c84fb3d15e6ee11eac5, type: 3}
   soundNotEnoughCoin: {fileID: 8300000, guid: 4a02139b2767b774f9b966232843482e, type: 3}
-  soundVictoryPanel: {fileID: 8300000, guid: 07cf5e04361b9954c88dca1aab795bfb, type: 3}
+  soundVictoryPanel: {fileID: 8300000, guid: 6389bd810e7d18847b52e67342541054, type: 3}
   soundStar1: {fileID: 0}
   soundStar2: {fileID: 0}
   soundStar3: {fileID: 0}
