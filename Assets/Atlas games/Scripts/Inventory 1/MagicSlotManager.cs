@@ -8,7 +8,6 @@ public class MagicSlotManager : MonoBehaviour
     private int[] _chosenMagics;
     public ShopItemData data;
     public AffectZoneButton[] slots;
-    public GameObject[] images;
     [HideInInspector]public bool abilityUsed;
 
     void Start()
@@ -23,7 +22,6 @@ public class MagicSlotManager : MonoBehaviour
         for (int i = 0; i < slots.Length; i++)
         {
             slots[i].GetComponent<Image>().sprite = GetMagicData(_chosenMagics[i]).buttonImage;
-            images[i].GetComponent<Image>().sprite = GetMagicData(_chosenMagics[i]).itemImage;
             switch (GetMagicData(_chosenMagics[i]).itemName)
             {
                 case "Lightning":
