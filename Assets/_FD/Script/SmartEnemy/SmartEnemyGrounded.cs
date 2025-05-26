@@ -56,9 +56,6 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
     public GameObject shadow;
     private float _initialMoveSpeed;
 
-    [Header("Grave")]
-    [SerializeField] private GameObject gravePrefab;
-
 
     IEnumerator Climb()
     {
