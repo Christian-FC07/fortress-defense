@@ -17,7 +17,7 @@ public class MainMenuHomeScene : MonoBehaviour
     public GameObject inventory;
     public string facebookLink;
     public string twitterLink = "https://twitter.com/";
-    public string playingLevelName = "Playing atlas (Graphical test)";
+    public string playingLevelName = "Playing atlas";
     public DeviceType device_type;
 
     public Text[] coinTxt;
@@ -63,8 +63,7 @@ public class MainMenuHomeScene : MonoBehaviour
         if (Loading != null)
             Loading.SetActive(true);
 
-        //StartCoroutine(LoadAsynchronously("Playing atlas (Graphical test)"));
-        SceneManager.LoadScene("Playing atlas (Graphical test)");
+        StartCoroutine(LoadAsynchronously(playingLevelName));
     }
 
     public void LoadScene(string sceneNamage)
@@ -72,8 +71,7 @@ public class MainMenuHomeScene : MonoBehaviour
         if (Loading != null)
             Loading.SetActive(true);
 
-        //StartCoroutine(LoadAsynchronously(sceneNamage));
-        SceneManager.LoadScene("Playing atlas (Graphical test)");
+        StartCoroutine(LoadAsynchronously(sceneNamage));
     }
 
     IEnumerator Start()
@@ -106,8 +104,6 @@ public class MainMenuHomeScene : MonoBehaviour
     {
         SoundManager.Click();
         StartCoroutine(OpenMapCo(open));
-        
-        
     }
 
     public void OpenInventory(bool open)
