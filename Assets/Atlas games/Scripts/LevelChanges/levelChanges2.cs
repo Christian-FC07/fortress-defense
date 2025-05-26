@@ -39,7 +39,6 @@ public class levelChanges2 : MonoBehaviour
     void wplayMusic()
     {
        SoundManager.PlayMusic(SoundManager.Instance.world[(int)((GlobalValue.levelPlaying - 0.1)/10)]);
-       Debug.Log("code is running");      
     }
     
     void endlessPlayMusic()

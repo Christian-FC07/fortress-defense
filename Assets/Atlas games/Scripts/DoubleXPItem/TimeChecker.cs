@@ -20,17 +20,18 @@ public class TimeChecker : MonoBehaviour
     private List<ShopItemData.ShopItem>  _timedItems = new List<ShopItemData.ShopItem>();
     [HideInInspector]public TimedItemManager[] _items;
     public static TimeChecker Instance { get; private set; }
+    private Coroutine _syncCoroutine;
     async void Awake()
     {
         _items = new TimedItemManager[0];
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
+        if (Instance == null) {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+        } else {
+            if (_syncCoroutine != null) 
+                StopCoroutine(_syncCoroutine);
+            Destroy(gameObject);
+            return;
         }
 
         while (!_fetchedTime)
@@ -45,7 +46,7 @@ public class TimeChecker : MonoBehaviour
         }
         extractedDate = _syncedGlobalDateTime.ToString("yyyy-MM-dd");
         extractedTime = _syncedGlobalDateTime.ToString("HH:mm:ss");
-        StartCoroutine(SyncTimeEverySecond());
+        _syncCoroutine = StartCoroutine(SyncTimeEverySecond());
         
         for (int i = 0; i < data.ShopData.Length; i++)
         {

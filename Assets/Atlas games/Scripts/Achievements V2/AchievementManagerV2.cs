@@ -170,7 +170,6 @@ public class AchievementManagerV2 : MonoBehaviour
         trophyCount.text = AchievedTrophies() + " out of " + TotalTrophies();
         ringBar.fillAmount = (float)AchievedTrophies() / (float)TotalTrophies();
 
-        Debug.Log(trophycheck);
     }
 
 }
