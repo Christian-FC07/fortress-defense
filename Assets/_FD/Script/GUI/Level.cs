@@ -133,6 +133,7 @@ public class Level : MonoBehaviour
 
     public void Play()
     {
+        SoundManager.Click();
         GlobalValue.levelPlaying = level;
         GlobalValue.levelType = levelType;
        // GlobalValue.NightMode = nightMode;

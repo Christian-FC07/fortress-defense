@@ -584,7 +584,7 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
         if (animator != null) {
             animator.SetTrigger("play");
         }
-
+        
         yield return new WaitForSeconds(2);
         grave.transform.position = new Vector3(0, 100, grave.transform.position.z);
         grave.SetActive(false);

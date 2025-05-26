@@ -98,7 +98,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.63, y: -2.64, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5302841712264848057}
@@ -209,7 +209,7 @@ MonoBehaviour:
   checkPoint: {fileID: 1315889782}
   maxTargetPerHit: 1
   radiusCheck: 1
-  dealDamage: 20
+  dealDamage: 50
   criticalPercent: 10
   meleeRate: 2
   MeleeObj: {fileID: 0}

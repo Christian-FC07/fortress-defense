@@ -10,7 +10,6 @@ public class levelChanges2 : MonoBehaviour
     void Start()
     {
         //GameLevelSetupScr = GameLevelSetupObj.GetComponent<GameLevelSetup>();
-
         if(GlobalValue.levelPlaying < 1000)
         {
             wplayMusic();
@@ -19,12 +18,17 @@ public class levelChanges2 : MonoBehaviour
         {
             endlessPlayMusic();
         }
+
+        //for(int i = 0; i < tutorials.Length; i++)
+        //{
+            //spawnPoints[i].SetActive(false);
+            //upgradePoints[i].SetActive(false);
+        //}
     }
 
     void Update()
     {
        //Levels = GameLevelSetupScr.levelWaves.ToArray();
-
        if(Input.GetKey("p"))
            {
                SoundManager.Instance.PauseMusic(true);
@@ -35,7 +39,6 @@ public class levelChanges2 : MonoBehaviour
     void wplayMusic()
     {
        SoundManager.PlayMusic(SoundManager.Instance.world[(int)((GlobalValue.levelPlaying - 0.1)/10)]);
-       Debug.Log("code is running");      
     }
     
     void endlessPlayMusic()

@@ -209,7 +209,7 @@ MonoBehaviour:
   checkPoint: {fileID: 1315889782}
   maxTargetPerHit: 1
   radiusCheck: 1
-  dealDamage: 20
+  dealDamage: 60
   criticalPercent: 10
   meleeRate: 2
   MeleeObj: {fileID: 0}

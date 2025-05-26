@@ -14,8 +14,10 @@ public class thunderStorm : MonoBehaviour
 
     void Awake()
     {
-        dayLight.SetActive(true);
-        nightLight.SetActive(false);
+        if (dayLight)
+            dayLight.SetActive(true);
+        if (nightLight)
+            nightLight.SetActive(false);
     }
 
     void Start()
@@ -39,6 +41,7 @@ public class thunderStorm : MonoBehaviour
     {
         //thunderVisualINT = Instantiate(thunderVisual, new Vector2(0, 0), Quaternion.identity);
         //Destroy(thunderVisualINT, 5f);
+        if (nightLightAnim == null) return;
         nightLightAnim.SetTrigger("shine");
         SoundManager.PlaySfx(SoundManager.Instance.thunderSFX);
         SoundManager.PlaySfx(SoundManager.Instance.rain);
@@ -48,10 +51,13 @@ public class thunderStorm : MonoBehaviour
     {
         if(GlobalValue.levelPlaying > 1001)
         {
-            Instantiate(rianParticle, new Vector2(-5.266938f, -0.4270768f), Quaternion.identity);
+            if (rianParticle)
+                Instantiate(rianParticle, new Vector2(-5.266938f, -0.4270768f), Quaternion.identity);
 
-            dayLight.SetActive(false);
-            nightLight.SetActive(true);
+            if (dayLight)
+                dayLight.SetActive(false);
+            if (nightLight)
+                nightLight.SetActive(true);
         }
     }
 }

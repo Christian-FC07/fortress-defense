@@ -298,6 +298,8 @@ MonoBehaviour:
   useGravity: 0
   gravity: 35
   walkSpeed: 1.2
+  walkSpeed2: 1
+  enemyScaleSelf: 1
   attackType: 1
   startBehavior: 3
   dieBehavior: 0
@@ -305,6 +307,7 @@ MonoBehaviour:
   spawnDelay: 1
   multipleSpeed: 1
   health: 40
+  health2: 100
   dieFX: {fileID: 0}
   hitFX: {fileID: 0}
   disableFX: {fileID: 6338145615417356351, guid: 2e064da420e915d45ae6569a3ed46339,
@@ -377,8 +380,6 @@ MonoBehaviour:
   holeAnimationTime: 0.5
   warriorTag: Warrior
   shadow: {fileID: 0}
-  gravePrefab: {fileID: 6184028714355178771, guid: 8bb4c34a2f2c81c418550bfb6a730523,
-    type: 3}
 --- !u!114 &760439294879069736
 MonoBehaviour:
   m_ObjectHideFlags: 0

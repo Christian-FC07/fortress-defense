@@ -209,7 +209,7 @@ MonoBehaviour:
   checkPoint: {fileID: 1315889782}
   maxTargetPerHit: 1
   radiusCheck: 1
-  dealDamage: 20
+  dealDamage: 75
   criticalPercent: 10
   meleeRate: 2
   MeleeObj: {fileID: 0}
@@ -236,6 +236,8 @@ MonoBehaviour:
   useGravity: 0
   gravity: 35
   walkSpeed: 1
+  walkSpeed2: 1
+  enemyScaleSelf: 0
   attackType: 1
   startBehavior: 3
   dieBehavior: 0
@@ -243,6 +245,7 @@ MonoBehaviour:
   spawnDelay: 1
   multipleSpeed: 1
   health: 120
+  health2: 117
   dieFX: {fileID: 0}
   hitFX: {fileID: 0}
   disableFX: {fileID: 6338145615417356351, guid: 2e064da420e915d45ae6569a3ed46339,
@@ -314,8 +317,6 @@ MonoBehaviour:
   holeAnimationTime: 0.5
   warriorTag: Warrior
   shadow: {fileID: 8835841617553682194}
-  gravePrefab: {fileID: 6184028714355178771, guid: 8bb4c34a2f2c81c418550bfb6a730523,
-    type: 3}
 --- !u!114 &1950496936
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -42,20 +42,21 @@ public class UpdateBackground : MonoBehaviour
         if(GlobalValue.levelPlaying < 150)
         {
             //background
-            GetComponent<SpriteRenderer>().sprite = background.wBackground[(int)((GlobalValue.levelPlaying - 0.1)/10)];
+            //GetComponent<SpriteRenderer>().sprite = background.wBackground[(int)((GlobalValue.levelPlaying - 0.1)/10)];
+            Instantiate(background.wBackground[(int)((GlobalValue.levelPlaying - 0.1)/10)], new Vector2(0, 0), Quaternion.identity);
 
             //details
-            Instantiate(detail.worldDetail[(int)((GlobalValue.levelPlaying - 0.1)/10)],
+            /*Instantiate(detail.worldDetail[(int)((GlobalValue.levelPlaying - 0.1)/10)],
             detail.worldDetail[(int)((GlobalValue.levelPlaying - 0.1)/10)].transform.position,
             detail.worldDetail[(int)((GlobalValue.levelPlaying - 0.1)/10)].transform.rotation);
             //particles
             Instantiate(detail.particle[(int)((GlobalValue.levelPlaying - 0.1)/10)],
             detail.particle[(int)((GlobalValue.levelPlaying - 0.1)/10)].transform.position,
-            detail.particle[(int)((GlobalValue.levelPlaying - 0.1)/10)].transform.rotation);
+            detail.particle[(int)((GlobalValue.levelPlaying - 0.1)/10)].transform.rotation);*/
         }
         else if(GlobalValue.levelPlaying > 1000)
         {
-            GetComponent<SpriteRenderer>().sprite = background.endlessBackground[(int)((GlobalValue.levelPlaying) - 1001)];
+            Instantiate(background.endlessBackground[(int)((GlobalValue.levelPlaying) - 1001)], new Vector2(0, 0), Quaternion.identity);
             //details
             //Instantiate(detail.endlessDetail[(int)((GlobalValue.levelPlaying) - 1001)],
             //detail.endlessDetail[(int)((GlobalValue.levelPlaying) - 1001)].transform.position,
