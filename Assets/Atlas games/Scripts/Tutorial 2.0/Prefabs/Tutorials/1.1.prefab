@@ -98,7 +98,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: ffdd18d0980a3ad49ae4d3753ae8a4b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -189,7 +189,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: ffdd18d0980a3ad49ae4d3753ae8a4b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -279,7 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 0c63251d9deb8134ca2bae3a83486d32, type: 2}
   m_Color: {r: 0, g: 0, b: 0, a: 0.44705883}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 0c63251d9deb8134ca2bae3a83486d32, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -743,7 +743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 0c63251d9deb8134ca2bae3a83486d32, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -820,7 +820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 0c63251d9deb8134ca2bae3a83486d32, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -910,7 +910,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: ffdd18d0980a3ad49ae4d3753ae8a4b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1001,7 +1001,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: ffdd18d0980a3ad49ae4d3753ae8a4b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1123,7 +1123,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: ffdd18d0980a3ad49ae4d3753ae8a4b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1214,7 +1214,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: ffdd18d0980a3ad49ae4d3753ae8a4b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1391,7 +1391,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: ffdd18d0980a3ad49ae4d3753ae8a4b6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1434,7 +1434,7 @@ GameObject:
   - component: {fileID: 1779269734333250562}
   - component: {fileID: 1779269734333250563}
   m_Layer: 5
-  m_Name: 2
+  m_Name: 1.1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1481,28 +1481,43 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tutorialSteps:
   - tipDirection: 0
-    dialogContentType: 2
+    dialogContentType: 0
     tipType: 0
     pointerDirection: 0
-    delay: 1
+    delay: 0
     isLastDialog: 0
     uiPartName: 
     circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: 'Now lets add more Archers to our tower ! Press the add button to procceed,
-      Lets try in action. '
+    tipText: Fighting alone is a tough situation, specially when you have to protect
+      your castle at all costs. Let's learn how to place more of our archers!
     tipTitle: 
-    dialogImage: {fileID: 21300000, guid: 7f0af76708a6dbb4c97fd4b6936090f1, type: 3}
+    dialogImage: {fileID: 0}
+    dialogVideo: {fileID: 0}
+    hintDirection: 0
+  - tipDirection: 2
+    dialogContentType: 0
+    tipType: 1
+    pointerDirection: 0
+    delay: 1
+    isLastDialog: 0
+    uiPartName: AddBtnEnableHint2
+    circleMaskScale: 2
+    isUiInteractible: 0
+    pauseGame: 0
+    tipText: In order to place an archer, click the any other add button.
+    tipTitle: 
+    dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
     hintDirection: 0
   - tipDirection: 0
     dialogContentType: 0
     tipType: 2
     pointerDirection: 2
-    delay: 1
+    delay: 0
     isLastDialog: 0
-    uiPartName: AddArcher
+    uiPartName: AddBtnEnable2
     circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
@@ -1513,7 +1528,8 @@ MonoBehaviour:
     hintDirection: 0
   placing: 1
   tutorialName: 
-  tutorialLevel: 2
+  tutorialLevel: 1
+  tutorialStage: 2
   circleMask: {fileID: 1779269733156085670}
   pointerObject: {fileID: 1779269732763356410}
   pointerIcon: {fileID: 1779269732936580996}
@@ -1771,7 +1787,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 847306227
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 0f6da50733ee7264cbe710d781aa99a8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1792,6 +1808,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1779269734333250562}
     m_Modifications:
+    - target: {fileID: 291197844775520701, guid: f30531c8afdc0064ea1ae787c295fda1,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 0c63251d9deb8134ca2bae3a83486d32, type: 2}
+    - target: {fileID: 291197844823662704, guid: f30531c8afdc0064ea1ae787c295fda1,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 2100000, guid: 0c63251d9deb8134ca2bae3a83486d32, type: 2}
     - target: {fileID: 6186013543279369216, guid: f30531c8afdc0064ea1ae787c295fda1,
         type: 3}
       propertyPath: m_Pivot.x

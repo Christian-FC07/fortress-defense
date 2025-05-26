@@ -38,7 +38,8 @@ public class MenuManager : MonoBehaviour, IListener
     
     private void Awake()
     {
-        Instance = this;
+        if (gameObject.activeInHierarchy)
+            Instance = this;
         StartUI.SetActive(false);
         VictotyUI.SetActive(false);
         FailUI.SetActive(false);
