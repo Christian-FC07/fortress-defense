@@ -50,7 +50,8 @@ public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
 
     private void CheckStatus()
     {
-        addIcon.SetActive(Players[0].upgradedCharacterID.price <= GameManager.Instance.currentExp && currentPlayer == -1);
+        bool is_addIcon = Players[0].upgradedCharacterID.price <= GameManager.Instance.currentExp && currentPlayer == -1;
+        addIcon.SetActive(is_addIcon);
         upgradeIcon.SetActive((currentPlayer + 1 < Players.Length)
             && (Players[currentPlayer + 1].upgradedCharacterID.price <= GameManager.Instance.currentExp)
             && currentPlayer > -1);
@@ -80,9 +81,8 @@ public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
             SetPlayer();
             SoundManager.PlaySfx(currentPlayer == 0 ? SoundManager.Instance.soundAddArcher : SoundManager.Instance.soundUpgradeArcher);
         }
-        if (GetComponent<TutorialFinder>())
-        {
-            GetComponent<TutorialFinder>().InitiateTutorialClick();
-        }
+        TryGetComponent(out TutorialFinder tutorialFinder);
+        if (tutorialFinder == null) return;
+        tutorialFinder.InitiateTutorialClick();
     }
 }
