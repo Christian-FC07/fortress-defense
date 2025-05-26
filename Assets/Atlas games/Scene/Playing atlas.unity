@@ -2018,12 +2018,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
         type: 3}
-      propertyPath: GraveHit
-      value: 
-      objectReference: {fileID: 6184028714355178771, guid: 8bb4c34a2f2c81c418550bfb6a730523,
-        type: 3}
-    - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
-        type: 3}
       propertyPath: bossManeger.pc_object
       value: 
       objectReference: {fileID: 1625546738}
@@ -3517,11 +3511,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelEnemyEndless
-      objectReference: {fileID: 0}
-    - target: {fileID: 6534493661185011523, guid: fb464bc0aa95c1f48a242d0ae509120d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6534493661185011523, guid: fb464bc0aa95c1f48a242d0ae509120d,
         type: 3}
