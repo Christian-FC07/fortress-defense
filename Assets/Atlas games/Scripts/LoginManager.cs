@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 using System.Threading.Tasks;
 using TMPro;
 using System;
+using UnityEngine.Video;
 
 public class LoginManager : MonoBehaviour, IKeyboardCall
 {
@@ -23,6 +24,8 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
     public KeyCode Key;
     public KeyCode[] KeyType { get { return new KeyCode[] { Key }; } }
     public int KeyObjectID { get { return gameObject.GetInstanceID(); } }
+    public VideoPlayer videoPlayer;
+    private bool CanLoadScene = false;
 
     public void KeyDown(KeyCode key) {
         if (!username.type<TMP_InputField>().isFocused) {
@@ -34,6 +37,8 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
     // Start is called before the first frame update
     async void Start()
     {
+        videoPlayer.loopPointReached += OnVideoFinished;
+        videoPlayer.Play();
         submit.type<Button>().onClick.AddListener(submitListener);
         showPassword.type<Button>().onClick.AddListener(showPasswordListener);
         await Task.Delay(1);
@@ -42,6 +47,10 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
 
         // Reset GameStartTime
         GlobalValue.GameStartTimerMinutes = 0;
+    }
+    void OnVideoFinished(VideoPlayer vp) {
+        CanLoadScene = true;
+        videoPlayer.transform.parent.gameObject.SetActive(false);
     }
     public void OpenSignUpLink()
     {
@@ -86,8 +95,14 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
         }
         if (auth_result != null)
         {
-            StartCoroutine(APIManager.instance.LoadAsynchronously("Download"));
+            StartCoroutine(LoadSecene());
         }
+    }
+    public IEnumerator LoadSecene() {
+        while (!CanLoadScene) {
+            yield return null;
+        }
+        StartCoroutine(APIManager.instance.LoadAsynchronously("Download"));
     }
     public async Task Auth_with_userpass()
     {
@@ -107,12 +122,12 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
         if (auth_result != null)
         {
             if (!rememberMe.type<Toggle>().isOn)
-                StartCoroutine(APIManager.instance.LoadAsynchronously("Download"));
+                StartCoroutine(LoadSecene());
             else
             {
                 User.Token = auth_result.token;
                 User.Get_user();
-                StartCoroutine(APIManager.instance.LoadAsynchronously("Download"));
+                StartCoroutine(LoadSecene());
             }
         }
     }
