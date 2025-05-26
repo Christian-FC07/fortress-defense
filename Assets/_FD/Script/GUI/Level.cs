@@ -151,6 +151,8 @@ public class Level : MonoBehaviour
 
     public void Play(string _levelSceneName = null)
     {
+
+        SoundManager.Click();
         //if (loadSceneManual && GlobalValue.showComicBossLevel)
         //{
         //    MainMenuHomeScene.Instance.LoadScene(loadSceneName);

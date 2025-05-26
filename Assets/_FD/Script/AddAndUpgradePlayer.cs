@@ -18,8 +18,6 @@ public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
     List<int> prices = new List<int>();
     //public int[] prices;
     public Player_Archer[] Players;
-    public SortingGroup[] archersOrder;
-    public int layer;
 
     int currentPlayer = -1;
 
@@ -49,11 +47,6 @@ public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
             SetPlayer();
         }
         InvokeRepeating("CheckStatus", 0, 0.2f);
-    }
-
-    void Update()
-    {
-        layer = archersOrder[archersOrder.Length].sortingOrder - 1;
     }
 
     private void CheckStatus()
