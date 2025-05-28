@@ -3215,7 +3215,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1756312004691397314}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3224,7 +3224,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030517578, y: -0.00000047683716}
+  m_AnchoredPosition: {x: 0.000030517578, y: 0}
   m_SizeDelta: {x: 64, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &484973417978152526
@@ -21824,10 +21824,11 @@ MonoBehaviour:
   ownBtn: {fileID: 0}
   delayOnStart: 5
   coolDown: 30
-  image: {fileID: 0}
+  image: {fileID: 8909744550669316905}
   timerTxt: {fileID: 6236543549278295465}
   XPTxt: {fileID: 7938906100300515045}
   xp_text_prefix: xp
+  iconImage: {fileID: 8909744550669316905}
   canvasGroup: {fileID: 0}
 --- !u!225 &6236543549221654228
 CanvasGroup:
@@ -22154,7 +22155,6 @@ MonoBehaviour:
   - {fileID: 6236543549221654229}
   - {fileID: 6236543550127161984}
   - {fileID: 6236543549444325940}
-  images: []
   abilityUsed: 0
 --- !u!1 &6236543549399796123
 GameObject:
@@ -22433,13 +22433,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   key: 99
   affectType: 0
-  ownBtn: {fileID: 0}
+  ownBtn: {fileID: 6236543549444325941}
   delayOnStart: 5
   coolDown: 60
-  image: {fileID: 0}
+  image: {fileID: 5641396378836672953}
   timerTxt: {fileID: 6236543549635560683}
   XPTxt: {fileID: 1795211530525380326}
   xp_text_prefix: xp
+  iconImage: {fileID: 5641396378836672953}
   canvasGroup: {fileID: 0}
 --- !u!225 &6236543549444325939
 CanvasGroup:
@@ -23187,10 +23188,11 @@ MonoBehaviour:
   ownBtn: {fileID: 0}
   delayOnStart: 5
   coolDown: 45
-  image: {fileID: 0}
+  image: {fileID: 7487511962820111032}
   timerTxt: {fileID: 6236543550205237777}
   XPTxt: {fileID: 4147075441961143487}
   xp_text_prefix: xp
+  iconImage: {fileID: 7487511962820111032}
   canvasGroup: {fileID: 0}
 --- !u!225 &6236543550127162015
 CanvasGroup:
@@ -23945,7 +23947,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6282644466667383109}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -23954,7 +23956,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015258789, y: 0.0000009536743}
+  m_AnchoredPosition: {x: -0.000015258789, y: 0}
   m_SizeDelta: {x: 59.8559, y: 59.8559}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7882523364917544852
@@ -25368,7 +25370,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7206721827768425570}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -25377,7 +25379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000045776367, y: 0.00000047683716}
+  m_AnchoredPosition: {x: -0.000045776367, y: 0}
   m_SizeDelta: {x: 64.1316, y: 64.1316}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3758722933723734972
