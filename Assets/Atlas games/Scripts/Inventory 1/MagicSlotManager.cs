@@ -21,8 +21,9 @@ public class MagicSlotManager : MonoBehaviour
 
         for (int i = 0; i < slots.Length; i++)
         {
-            slots[i].GetComponent<Image>().sprite = GetMagicData(_chosenMagics[i]).buttonImage;
-            switch (GetMagicData(_chosenMagics[i]).itemName)
+            var Data = GetMagicData(_chosenMagics[i]);
+            slots[i].image.sprite = Data.buttonImage;
+            switch (Data.itemName)
             {
                 case "Lightning":
                     slots[i].affectType = AffectZoneType.Lighting;

@@ -112,7 +112,7 @@ Transform:
   m_GameObject: {fileID: 2789857919601847532}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.73, y: 0.66, z: 0}
+  m_LocalPosition: {x: -0.13, y: 0.91, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -383,11 +383,10 @@ MonoBehaviour:
   upgradedCharacterID: {fileID: 0}
   enemyType: 0
   is_boss: 0
+  boss_ui: {fileID: 0}
   useGravity: 0
   gravity: 35
   walkSpeed: 0.7
-  walkSpeed2: 1
-  enemyScaleSelf: 1
   attackType: 1
   startBehavior: 3
   dieBehavior: 0
@@ -395,7 +394,6 @@ MonoBehaviour:
   spawnDelay: 1
   multipleSpeed: 1
   health: 750
-  health2: 750
   dieFX: {fileID: 0}
   hitFX: {fileID: 0}
   disableFX: {fileID: 6338145615417356351, guid: 2e064da420e915d45ae6569a3ed46339,
@@ -485,7 +483,7 @@ MonoBehaviour:
     m_Bits: 256
   checkPoint: {fileID: 2789857919601847533}
   maxTargetPerHit: 1
-  radiusCheck: 0.1
+  radiusCheck: 1.16
   dealDamage: 50
   criticalPercent: 10
   meleeRate: 3

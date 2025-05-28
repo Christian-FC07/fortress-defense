@@ -20486,8 +20486,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7228837994798261612}
   - {fileID: 5830564041264486993}
+  - {fileID: 7228837994798261612}
   m_Father: {fileID: 6236543549352406154}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -20594,7 +20594,7 @@ MonoBehaviour:
   ownBtn: {fileID: 0}
   delayOnStart: 5
   coolDown: 30
-  image: {fileID: 0}
+  image: {fileID: 8909744550669316905}
   timerTxt: {fileID: 6236543549278295465}
   XPTxt: {fileID: 7938906100300515045}
   xp_text_prefix: xp
@@ -20925,10 +20925,6 @@ MonoBehaviour:
   - {fileID: 6236543549221654229}
   - {fileID: 6236543550127161984}
   - {fileID: 6236543549444325940}
-  images:
-  - {fileID: 1756312004691397314}
-  - {fileID: 6282644466667383109}
-  - {fileID: 7206721827768425570}
   abilityUsed: 0
 --- !u!1 &6236543549399796123
 GameObject:
@@ -21210,7 +21206,7 @@ MonoBehaviour:
   ownBtn: {fileID: 0}
   delayOnStart: 5
   coolDown: 60
-  image: {fileID: 0}
+  image: {fileID: 5641396378836672953}
   timerTxt: {fileID: 6236543549635560683}
   XPTxt: {fileID: 1795211530525380326}
   xp_text_prefix: xp
@@ -21528,6 +21524,7 @@ MonoBehaviour:
   enemy: {fileID: 0}
   miniboss: {fileID: 6236543549023691446}
   boss: {fileID: 6236543549607985783}
+  targetFill: 1
   fill_speed: 10
 --- !u!1 &6236543549771711374
 GameObject:
@@ -21960,7 +21957,7 @@ MonoBehaviour:
   ownBtn: {fileID: 0}
   delayOnStart: 5
   coolDown: 45
-  image: {fileID: 0}
+  image: {fileID: 7487511962820111032}
   timerTxt: {fileID: 6236543550205237777}
   XPTxt: {fileID: 4147075441961143487}
   xp_text_prefix: xp
