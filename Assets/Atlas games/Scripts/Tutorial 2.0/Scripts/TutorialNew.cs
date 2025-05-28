@@ -85,7 +85,7 @@ public class TutorialNew : MonoBehaviour
 
     public void ApplyNewStep(bool previous)
     {
-        GameObject nextUIPart = new GameObject();
+        GameObject nextUIPart = null;
         instanses.Add(nextUIPart);
         Transform buttonParent;
         int childIndex = 0;
@@ -97,6 +97,7 @@ public class TutorialNew : MonoBehaviour
                 if (uiPart.GetComponent<TutorialFinder>().uiPartName == tutorialSteps[tipOrder].uiPartName)
                 {
                     nextUIPart = uiPart.gameObject;
+                    break;
                 }
             }
         }
@@ -104,12 +105,17 @@ public class TutorialNew : MonoBehaviour
         switch (tutorialSteps[tipOrder].tipType)
         {
             case TipType.Dialog:
+                Debug.Log("Opening dialog for step: " + tutorialSteps[tipOrder].uiPartName);
                 dialog.DialogChange(tutorialSteps[tipOrder], !previous ? DialogAction.Next : DialogAction.Previous, tutorialSteps[tipOrder], this);
                 clickPreventer.GetComponent<Image>().color = darkBackground;
                 circleMask.gameObject.SetActive(false);
                 Time.timeScale = 0;
                 break;
             case TipType.Hint:
+                if (nextUIPart == null) {
+                    Debug.LogError("No UI part found with name: " + tutorialSteps[tipOrder].uiPartName);
+                    break;
+                }
                 hint.Show(tutorialSteps[tipOrder].tipText, tutorialSteps[tipOrder].tipDirection,this,   nextUIPart.GetComponent<RectTransform>().position, tutorialSteps[tipOrder].circleMaskScale, tipOrder);
                 Time.timeScale = 0;
                 circleMask.gameObject.SetActive(true);
@@ -119,6 +125,10 @@ public class TutorialNew : MonoBehaviour
                 StartCoroutine(SmoothTransition(nextUIPart.transform.position, tutorialSteps[tipOrder].circleMaskScale));
                 break;
             case TipType.Task:
+                if (nextUIPart == null) {
+                    Debug.LogError("No UI part found with name: " + tutorialSteps[tipOrder].uiPartName);
+                    break;
+                }
                 circleMask.gameObject.SetActive(false);
                 Time.timeScale = tutorialSteps[tipOrder].pauseGame ? 0 : 1;
                                     if (!tutorialSteps[tipOrder].isUiInteractible && nextUIPart.GetComponent<Button>())
@@ -270,7 +280,6 @@ public class TutorialNew : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(tutorialSteps[tipOrder].delay);
         ApplyNewStep(false);
-
     }
 
     public void PreviousStep()
