@@ -19,6 +19,8 @@ public class MapControllerUI : MonoBehaviour
     public GameObject life_prefab;
     public Transform life_parent;
     public GameObject[] lifes;
+    public Transform clouds;
+    double divider = 8.5;
     // Use this for initialization
     void Start()
     {
@@ -84,6 +86,8 @@ public class MapControllerUI : MonoBehaviour
             lifes[LifeTTRSource.Life].GetComponent<Image>().fillAmount = 1 - APIManager.instance.lifeTTR.TTLPercent;
             UpdateLifes();
         }
+
+        clouds.position = new Vector2(step, clouds.position.y);
     }
     // void OnDisable()
     // {

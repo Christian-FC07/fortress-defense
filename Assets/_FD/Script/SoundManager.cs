@@ -10,6 +10,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip beginSoundInMainMenu;
     [Tooltip("Play music clip when start")]
     public AudioClip musicsGame;
+    public AudioClip musicsMap;
     public AudioClip BossMusicClip;
     public AudioClip BossDeath;
     [Range(0, 1)]
