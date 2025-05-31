@@ -38,6 +38,11 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
     async void Start()
     {
         videoPlayer.loopPointReached += OnVideoFinished;
+        videoPlayer.errorReceived += (vp, message) => {
+            Debug.LogError($"VideoPlayer Error: {message}");
+            CanLoadScene = true;
+            videoPlayer.transform.parent.gameObject.SetActive(false);
+        };
         videoPlayer.Play();
         submit.type<Button>().onClick.AddListener(submitListener);
         showPassword.type<Button>().onClick.AddListener(showPasswordListener);

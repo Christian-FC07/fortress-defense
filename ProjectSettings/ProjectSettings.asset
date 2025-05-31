@@ -765,7 +765,7 @@ PlayerSettings:
   gcWBarrierValidation: 0
   apiCompatibilityLevelPerPlatform:
     Android: 6
-    Standalone: 6
+    Standalone: 3
     iPhone: 3
   editorAssembliesCompatibilityLevel: 2
   m_RenderingPath: 1
