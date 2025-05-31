@@ -24,8 +24,8 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
     public KeyCode Key;
     public KeyCode[] KeyType { get { return new KeyCode[] { Key }; } }
     public int KeyObjectID { get { return gameObject.GetInstanceID(); } }
-    public VideoPlayer videoPlayer;
-    private bool CanLoadScene = false;
+    // public VideoPlayer videoPlayer;
+    // private bool CanLoadScene = false;
 
     public void KeyDown(KeyCode key) {
         if (!username.type<TMP_InputField>().isFocused) {
@@ -37,13 +37,13 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
     // Start is called before the first frame update
     async void Start()
     {
-        videoPlayer.loopPointReached += OnVideoFinished;
-        videoPlayer.errorReceived += (vp, message) => {
-            Debug.LogError($"VideoPlayer Error: {message}");
-            CanLoadScene = true;
-            videoPlayer.transform.parent.gameObject.SetActive(false);
-        };
-        videoPlayer.Play();
+        // videoPlayer.loopPointReached += OnVideoFinished;
+        // videoPlayer.errorReceived += (vp, message) => {
+        //     Debug.LogError($"VideoPlayer Error: {message}");
+        //     CanLoadScene = true;
+        //     videoPlayer.transform.parent.gameObject.SetActive(false);
+        // };
+        // videoPlayer.Play();
         submit.type<Button>().onClick.AddListener(submitListener);
         showPassword.type<Button>().onClick.AddListener(showPasswordListener);
         await Task.Delay(1);
@@ -53,10 +53,10 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
         // Reset GameStartTime
         GlobalValue.GameStartTimerMinutes = 0;
     }
-    void OnVideoFinished(VideoPlayer vp) {
-        CanLoadScene = true;
-        videoPlayer.transform.parent.gameObject.SetActive(false);
-    }
+    // void OnVideoFinished(VideoPlayer vp) {
+    //     CanLoadScene = true;
+    //     videoPlayer.transform.parent.gameObject.SetActive(false);
+    // }
     public void OpenSignUpLink()
     {
         Application.OpenURL("https://atlasgames.org/");
@@ -104,9 +104,10 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
         }
     }
     public IEnumerator LoadSecene() {
-        while (!CanLoadScene) {
-            yield return null;
-        }
+        // while (!CanLoadScene) {
+        //     yield return null;
+        // }
+        yield return new WaitForEndOfFrame();
         StartCoroutine(APIManager.instance.LoadAsynchronously("Download"));
     }
     public async Task Auth_with_userpass()
