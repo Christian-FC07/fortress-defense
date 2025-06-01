@@ -917,6 +917,12 @@ PrefabInstance:
       objectReference: {fileID: 1002210742}
     - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
         type: 3}
+      propertyPath: EnemyWaves.Array.data[0].enemySpawns.Array.data[0].enemy
+      value: 
+      objectReference: {fileID: 3697426553599540029, guid: 3b5a6a7b21aef38439778f0321128db0,
+        type: 3}
+    - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
+        type: 3}
       propertyPath: EnemyWaves.Array.data[0].enemySpawns.Array.data[0].spawnFromUnderground
       value: 0
       objectReference: {fileID: 0}
@@ -1073,6 +1079,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1990600879159635180, guid: 2bf74b55ce29e004d87d0765ff719bcd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 42.600098
       objectReference: {fileID: 0}
     - target: {fileID: 4268700710011939086, guid: 2bf74b55ce29e004d87d0765ff719bcd,
         type: 3}
@@ -1248,6 +1259,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342942794106219746, guid: 2bf74b55ce29e004d87d0765ff719bcd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -103.8999
+      objectReference: {fileID: 0}
+    - target: {fileID: 7342942794106219746, guid: 2bf74b55ce29e004d87d0765ff719bcd,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 38.30005
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1625,16 +1646,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LevelEnemyEndless
       objectReference: {fileID: 0}
-    - target: {fileID: 1480071122214238694, guid: fb464bc0aa95c1f48a242d0ae509120d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6534493661185011523, guid: fb464bc0aa95c1f48a242d0ae509120d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6534493661185011523, guid: fb464bc0aa95c1f48a242d0ae509120d,
         type: 3}
       propertyPath: WaveCountUI
@@ -2006,6 +2017,102 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[1].stateFortrestSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[1].stateFortrestSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[1].stateFortrestSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[1].stateFortrestSprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[2].stateFortrestSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[2].stateFortrestSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[2].stateFortrestSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[2].stateFortrestSprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[3].stateFortrestSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[3].stateFortrestSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[3].stateFortrestSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[3].stateFortrestSprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[4].stateFortrestSprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[4].stateFortrestSprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[4].stateFortrestSprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
+        type: 3}
+    - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: 'fortrestLevels.Array.data[4].stateFortrestSprites.Array.data[3]'
+      value: 
+      objectReference: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
+        type: 3}
     - target: {fileID: 2859291877774657223, guid: 6a4ee2e5a83e4834c9039c1606411f05,
         type: 3}
       propertyPath: m_Name

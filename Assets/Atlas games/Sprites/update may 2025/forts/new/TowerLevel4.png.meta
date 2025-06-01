@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6eb2af81141ff084188f0a6540a89df0
+guid: 970e99dc8e188884ab568418a64bd3b1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6598999534393466011
-    second: LvlMap02 (nocloud)_0
+      213: -2026495550341769638
+    second: TowerLevel4_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LvlMap02 (nocloud)_0
+      name: TowerLevel4_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 385
+        width: 946
+        height: 945
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 563628fe2e4ab64a0800000000000000
-      internalID: -6598999534393466011
+      spriteID: a5618f6a80170e3e0800000000000000
+      internalID: -2026495550341769638
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      LvlMap02 (nocloud)_0: -6598999534393466011
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
