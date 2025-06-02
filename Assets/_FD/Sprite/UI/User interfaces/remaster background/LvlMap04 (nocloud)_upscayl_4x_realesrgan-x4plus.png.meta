@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      LvlMap04 (nocloud)_upscayl_4x_realesrgan-x4plus_0: -8810110740695034024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
