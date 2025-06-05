@@ -432,8 +432,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: AddBtnEnable2
-  countDown: 0
-  stage: 2
+  _isClicked: 0
   isClickable: 0
 --- !u!4 &6590284593495180638 stripped
 Transform:
@@ -1919,10 +1918,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2068260188277932610}
-    - targetCorrespondingSourceObject: {fileID: 9053768314264433023, guid: d1f8bad16af5bd6408637fda60294854,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4155135794468398764}
     - targetCorrespondingSourceObject: {fileID: 7556888976348562354, guid: d1f8bad16af5bd6408637fda60294854,
         type: 3}
       insertIndex: -1
@@ -1971,8 +1966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: AddBtnEnable
-  countDown: 0
-  stage: 1
+  _isClicked: 0
   isClickable: 0
 --- !u!4 &6309423691656046344 stripped
 Transform:
@@ -1980,26 +1974,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2068260188277932615}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6995952789625549624 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9053768314264433023, guid: d1f8bad16af5bd6408637fda60294854,
-    type: 3}
-  m_PrefabInstance: {fileID: 2068260188277932615}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4155135794468398764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6995952789625549624}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 471613d457aa21e4d9cf625466645bc1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  uiPartName: AddBtnEnable
-  isClickable: 0
 --- !u!210 &8253082784919278176 stripped
 SortingGroup:
   m_CorrespondingSourceObject: {fileID: 7943004756767854631, guid: d1f8bad16af5bd6408637fda60294854,
@@ -2025,6 +1999,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Upgrade
-  countDown: 0
-  stage: 1
+  _isClicked: 0
   isClickable: 0

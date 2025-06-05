@@ -153,7 +153,7 @@ MonoBehaviour:
   checkTargetType: 0
   targetLayer:
     serializedVersion: 2
-    m_Bits: 10
+    m_Bits: 2
   checkPoint: {fileID: 3505094655897797194}
   detectDistance: 5
   width: 2.65
@@ -177,11 +177,10 @@ MonoBehaviour:
   upgradedCharacterID: {fileID: 0}
   enemyType: 0
   is_boss: 0
+  boss_ui: {fileID: 0}
   useGravity: 0
   gravity: 35
   walkSpeed: 1
-  walkSpeed2: 1
-  enemyScaleSelf: 1
   attackType: 1
   startBehavior: 4
   dieBehavior: 0
@@ -189,7 +188,6 @@ MonoBehaviour:
   spawnDelay: 1
   multipleSpeed: 1
   health: 120
-  health2: 100
   dieFX: {fileID: 0}
   hitFX: {fileID: 0}
   disableFX: {fileID: 6338145615417356351, guid: 2e064da420e915d45ae6569a3ed46339,
@@ -276,7 +274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetLayer:
     serializedVersion: 2
-    m_Bits: 10
+    m_Bits: 2
   checkPoint: {fileID: 4142133550533764231}
   maxTargetPerHit: 1
   radiusCheck: 0.5
