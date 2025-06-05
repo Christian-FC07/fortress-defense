@@ -87,7 +87,7 @@ public class MapControllerUI : MonoBehaviour
             UpdateLifes();
         }
 
-        clouds.position = new Vector2(step, clouds.position.y);
+        // clouds.position = new Vector2(step, clouds.position.y);
     }
     // void OnDisable()
     // {
