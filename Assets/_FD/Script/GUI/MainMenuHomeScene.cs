@@ -103,6 +103,7 @@ public class MainMenuHomeScene : MonoBehaviour
     public void OpenMap(bool open)
     {
         SoundManager.Click();
+        SoundManager.PlayMusic(SoundManager.Instance.musicsMap);
         StartCoroutine(OpenMapCo(open));
     }
 

@@ -279,7 +279,7 @@ MonoBehaviour:
   - wait: 0
     enemySpawns:
     - wait: 0
-      enemy: {fileID: 3697426553599540029, guid: 61fea0f2db067ad4c998eeeec568bb35,
+      enemy: {fileID: 3697426553599540029, guid: 3b5a6a7b21aef38439778f0321128db0,
         type: 3}
       numberEnemy: 1
       rate: 0
