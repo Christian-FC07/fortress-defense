@@ -15,6 +15,9 @@ public class MainMenuHomeScene : MonoBehaviour
     public GameObject Loading;
     public GameObject Settings;
     public GameObject inventory;
+    public GameObject GuideBook;
+    public GameObject FriendGuide;
+    public GameObject EnemyGuide;
     public string facebookLink;
     public string twitterLink = "https://twitter.com/";
     public string playingLevelName = "Playing atlas";
@@ -112,6 +115,21 @@ public class MainMenuHomeScene : MonoBehaviour
         SoundManager.Click();
         StartCoroutine(OpenInventoryCo(open));
     }
+    public void OpenGuideBook(bool open)
+    {
+        SoundManager.Click();
+        StartCoroutine(OpenGuideBookCo(open));
+    }
+    public void OpenFriendGuide(bool open)
+    {
+        SoundManager.Click();
+        StartCoroutine(OpenFriendGuideCo(open));
+    }
+    public void OpenEnemyGuide(bool open)
+    {
+        SoundManager.Click();
+        StartCoroutine(OpenEnemyGuideCo(open));
+    }
 
     IEnumerator OpenInventoryCo(bool open)
     {
@@ -126,6 +144,27 @@ public class MainMenuHomeScene : MonoBehaviour
         yield return null;
         BlackScreenUI.instance.Show(0.2f);
         MapUI.SetActive(open);
+        BlackScreenUI.instance.Hide(0.2f);
+    }
+    IEnumerator OpenGuideBookCo(bool open)
+    {
+        yield return null;
+        BlackScreenUI.instance.Show(0.2f);
+        GuideBook.SetActive(open);
+        BlackScreenUI.instance.Hide(0.2f);
+    }
+    IEnumerator OpenFriendGuideCo(bool open)
+    {
+        yield return null;
+        BlackScreenUI.instance.Show(0.2f);
+        FriendGuide.SetActive(open);
+        BlackScreenUI.instance.Hide(0.2f);
+    }
+    IEnumerator OpenEnemyGuideCo(bool open)
+    {
+        yield return null;
+        BlackScreenUI.instance.Show(0.2f);
+        EnemyGuide.SetActive(open);
         BlackScreenUI.instance.Hide(0.2f);
     }
 
