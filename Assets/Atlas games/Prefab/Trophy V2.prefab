@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 085d81daa0e0743c3b660219d6d2314c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e3981b9cb767f473ca77c056b9b60e57, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -501,8 +501,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Challenge name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 81a2b324c8221dd458342e1ee2075677, type: 2}
-  m_sharedMaterial: {fileID: -3856574555563964670, guid: 81a2b324c8221dd458342e1ee2075677,
+  m_fontAsset: {fileID: 11400000, guid: 6904041684dcbd745be3391b091c5b95, type: 2}
+  m_sharedMaterial: {fileID: -2933980174550972376, guid: 6904041684dcbd745be3391b091c5b95,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -531,8 +531,8 @@ MonoBehaviour:
   m_fontSizeBase: 41.6
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 43.4
-  m_fontSizeMax: 80
+  m_fontSizeMin: 80
+  m_fontSizeMax: 90.2
   m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
@@ -753,8 +753,8 @@ MonoBehaviour:
     first world.asdawdawdawd\nTrophy detials....asdasdawdawd\nlike 10 kills asd\nor
     pass the first world."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 81a2b324c8221dd458342e1ee2075677, type: 2}
-  m_sharedMaterial: {fileID: -3856574555563964670, guid: 81a2b324c8221dd458342e1ee2075677,
+  m_fontAsset: {fileID: 11400000, guid: 6904041684dcbd745be3391b091c5b95, type: 2}
+  m_sharedMaterial: {fileID: -2933980174550972376, guid: 6904041684dcbd745be3391b091c5b95,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -779,11 +779,11 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
+  m_fontSize: 45.8
   m_fontSizeBase: 31.46
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 50
+  m_fontSizeMin: 45.8
   m_fontSizeMax: 70
   m_fontStyle: 1
   m_HorizontalAlignment: 1
@@ -1132,8 +1132,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 470.03, y: 17.600998}
-  m_SizeDelta: {x: -1001.6, y: 72.387}
+  m_AnchoredPosition: {x: 468.70322, y: 17.600998}
+  m_SizeDelta: {x: -961.7952, y: 113.29}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!222 &7398085494788268622
 CanvasRenderer:
@@ -1165,8 +1165,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00:00:00:00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 1c9fdfd94ee20884a9f6c903107d523b, type: 2}
-  m_sharedMaterial: {fileID: 6099125810672038236, guid: 1c9fdfd94ee20884a9f6c903107d523b,
+  m_fontAsset: {fileID: 11400000, guid: 6904041684dcbd745be3391b091c5b95, type: 2}
+  m_sharedMaterial: {fileID: -2933980174550972376, guid: 6904041684dcbd745be3391b091c5b95,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1191,15 +1191,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 58
+  m_fontSize: 64.8
   m_fontSizeBase: 33.09
   m_fontWeight: 400
   m_enableAutoSizing: 1
-  m_fontSizeMin: 18
+  m_fontSizeMin: 26
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 1024
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
