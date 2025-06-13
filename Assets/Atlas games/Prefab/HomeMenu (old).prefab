@@ -952,6 +952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: ONETIME
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &195287968261526548
 GameObject:
@@ -2308,6 +2309,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Tower
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &351109002324458617
 GameObject:
@@ -5171,6 +5173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: NORMAL
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &776710379606026984
 GameObject:
@@ -7240,6 +7243,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Settings
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &1249269513464915278
 GameObject:
@@ -8424,6 +8428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Events
+  _isClicked: 0
   isClickable: 0
 --- !u!114 &7509728890956022555
 MonoBehaviour:
@@ -10689,6 +10694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: DAILY
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &1886275912244897502
 GameObject:
@@ -11347,6 +11353,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Magic
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &2016660636837221594
 GameObject:
@@ -13976,6 +13983,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Items
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &2392727476834681768
 GameObject:
@@ -15512,6 +15520,7 @@ MonoBehaviour:
   - {fileID: 6917274272566352590}
   - {fileID: 3199593483203271912}
   - {fileID: 772767012083860215}
+  clouds: {fileID: 0}
 --- !u!1 &2690320867399445766
 GameObject:
   m_ObjectHideFlags: 0
@@ -18082,6 +18091,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: LEGENDARY
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &3117388932095332666
 GameObject:
@@ -21240,6 +21250,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: SinglePlayer
+  _isClicked: 0
   isClickable: 0
 --- !u!114 &790465566478793608
 MonoBehaviour:
@@ -22618,6 +22629,7 @@ MonoBehaviour:
   facebookLink: http://facebook.com
   twitterLink: https://twitter.com/
   playingLevelName: Playing atlas
+  device_type: 0
   coinTxt:
   - {fileID: 3773461158803172625}
   soundImage: {fileID: 2631095929899434273}
@@ -23619,6 +23631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: EXPIRED
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &4097502292066017245
 GameObject:
@@ -25021,6 +25034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: WEEKLY
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &4382872130052742256
 GameObject:
@@ -25741,6 +25755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: COMPELETE
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &4596708487780863867
 GameObject:
@@ -31269,6 +31284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Pets
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &5870359641600888447
 GameObject:
@@ -36602,6 +36618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: PERMENENT
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &6647897593334908651
 GameObject:
@@ -39263,6 +39280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Challenges
+  _isClicked: 0
   isClickable: 0
 --- !u!114 &1060438819834462659
 MonoBehaviour:
@@ -44233,6 +44251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Shop
+  _isClicked: 0
   isClickable: 0
 --- !u!114 &9112099337148121522
 MonoBehaviour:
@@ -46600,6 +46619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: EPIC
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &8395355126508226176
 GameObject:
@@ -48814,6 +48834,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: RARE
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &8801973011417210361
 GameObject:
@@ -49741,6 +49762,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Items
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &8953582385588624839
 GameObject:
@@ -50124,6 +50146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Multiplayer
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &9047735739137845681
 GameObject:
@@ -50762,6 +50785,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Challenges
+  _isClicked: 0
   isClickable: 0
 --- !u!114 &419826304833569901
 MonoBehaviour:
@@ -85363,6 +85387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: FinalLevel
+  _isClicked: 0
   isClickable: 0
 --- !u!1001 &5670975633251255645
 PrefabInstance:
@@ -90759,6 +90784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: HalfWorld
+  _isClicked: 0
   isClickable: 0
 --- !u!224 &6781275462087102720 stripped
 RectTransform:
