@@ -2115,8 +2115,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 106.479065, y: 42}
-  m_SizeDelta: {x: 108, y: 115}
+  m_AnchoredPosition: {x: 158, y: 57.44}
+  m_SizeDelta: {x: 162, y: 172.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8560231670963969557
 CanvasRenderer:
@@ -2225,6 +2225,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Twitter
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &492304888090019746
 GameObject:
@@ -7222,6 +7223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Magic
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &1557642363736362335
 GameObject:
@@ -8790,8 +8792,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -73, y: -1219}
-  m_SizeDelta: {x: 439.1595, y: 439.1595}
+  m_AnchoredPosition: {x: -32, y: -1203.4}
+  m_SizeDelta: {x: 502.27, y: 502.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4305529359877716305
 CanvasRenderer:
@@ -9499,8 +9501,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -41, y: -126}
-  m_SizeDelta: {x: 263, y: 174.80005}
+  m_AnchoredPosition: {x: -100.150024, y: -348.71997}
+  m_SizeDelta: {x: 526, y: 349.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3650697013305216975
 CanvasRenderer:
@@ -9643,6 +9645,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Shop
+  _isClicked: 0
   isClickable: 0
 --- !u!114 &6337989796212278761
 MonoBehaviour:
@@ -11318,8 +11321,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 41, y: 42}
-  m_SizeDelta: {x: 108, y: 115}
+  m_AnchoredPosition: {x: 53, y: 57.44}
+  m_SizeDelta: {x: 162, y: 172.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5274298881848423104
 CanvasRenderer:
@@ -11563,6 +11566,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: DAILY
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &2178457922476228034
 GameObject:
@@ -11773,6 +11777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Items
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &2206983296257178378
 GameObject:
@@ -11811,8 +11816,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -42.384033, y: 498.28998}
-  m_SizeDelta: {x: 129.19995, y: 121.79999}
+  m_AnchoredPosition: {x: -100.150024, y: 416.2}
+  m_SizeDelta: {x: 258.4, y: 243.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &511726723495892540
 CanvasRenderer:
@@ -12306,6 +12311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: COMPELETE
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &2247481585605103615
 GameObject:
@@ -12942,6 +12948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: EXPIRED
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &2382662116116620117
 GameObject:
@@ -15785,8 +15792,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: -57}
-  m_SizeDelta: {x: 232.93494, y: 71.6723}
+  m_AnchoredPosition: {x: 0.000023842, y: -31.6}
+  m_SizeDelta: {x: 349.40234, y: 107.50845}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5397690393210880143
 CanvasRenderer:
@@ -15895,6 +15902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Events
+  _isClicked: 0
   isClickable: 0
 --- !u!114 &7975885885558955998
 MonoBehaviour:
@@ -16139,8 +16147,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 129.4}
-  m_SizeDelta: {x: 232.93494, y: 71.6723}
+  m_AnchoredPosition: {x: 0.000023842, y: 253}
+  m_SizeDelta: {x: 349.40234, y: 107.50845}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5038828877890271652
 CanvasRenderer:
@@ -16283,6 +16291,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: SinglePlayer
+  _isClicked: 0
   isClickable: 0
 --- !u!114 &7399857192877910160
 MonoBehaviour:
@@ -16655,6 +16664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: RARE
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &3040691305452752796
 GameObject:
@@ -16901,8 +16911,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -41, y: -310.86002}
-  m_SizeDelta: {x: 140.1001, y: 140.09998}
+  m_AnchoredPosition: {x: -100.15, y: -761}
+  m_SizeDelta: {x: 280.2002, y: 280.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3408989798295325254
 CanvasRenderer:
@@ -17033,6 +17043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Settings
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &3120998432527749185
 GameObject:
@@ -20757,6 +20768,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: WEEKLY
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &3568387502068521738
 GameObject:
@@ -23528,6 +23540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: EPIC
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &3989238657012035114
 GameObject:
@@ -23793,8 +23806,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.0000076, y: -7.600006}
-  m_SizeDelta: {x: 311.5, y: 439.1595}
+  m_AnchoredPosition: {x: 7.4336, y: 37.68}
+  m_SizeDelta: {x: 467.25, y: 592.515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6216655019300316541
 CanvasRenderer:
@@ -23873,8 +23886,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -42.384033, y: 323.77997}
-  m_SizeDelta: {x: 127.099976, y: 123.599976}
+  m_AnchoredPosition: {x: -100.15, y: -9.9858}
+  m_SizeDelta: {x: 254.2, y: 247.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8703886690941296945
 CanvasRenderer:
@@ -24007,6 +24020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Challenges
+  _isClicked: 0
   isClickable: 0
 --- !u!114 &3113962543291142349
 MonoBehaviour:
@@ -26536,6 +26550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Tower
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &4485227549696599905
 GameObject:
@@ -28239,6 +28254,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Challenges
+  _isClicked: 0
   isClickable: 0
 --- !u!114 &8733659694846733972
 MonoBehaviour:
@@ -29186,8 +29202,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 125, y: -64}
-  m_SizeDelta: {x: 439.15942, y: 439.1595}
+  m_AnchoredPosition: {x: 64, y: -516.30927}
+  m_SizeDelta: {x: 581.493, y: 871.906}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2494796013044556906
 CanvasRenderer:
@@ -29210,16 +29226,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5529412}
+  m_Color: {r: 0.01886791, g: 0.01886791, b: 0.01886791, a: 0.5529412}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 3497605927527027091, guid: 666ee0c51230d68479bb2aed79ece931,
-    type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -30459,6 +30474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: ONETIME
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &4885788286231134233
 GameObject:
@@ -31193,6 +31209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: NORMAL
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &5036040162590638607
 GameObject:
@@ -36081,6 +36098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Items
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &5995011007138621175
 GameObject:
@@ -41490,6 +41508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Pets
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &6797103821680036668
 GameObject:
@@ -48259,6 +48278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: PERMENENT
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &7963985125807146155
 GameObject:
@@ -50054,6 +50074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: LEGENDARY
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &8130699747163586305
 GameObject:
@@ -52468,8 +52489,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.5070076, y: -149.3}
-  m_SizeDelta: {x: 229.69, y: 70.6725}
+  m_AnchoredPosition: {x: 0.000010967, y: -175}
+  m_SizeDelta: {x: 344.535, y: 106.00875}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7658213168910841211
 CanvasRenderer:
@@ -54513,8 +54534,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5.0000076, y: 36.199993}
-  m_SizeDelta: {x: 232.93494, y: 71.6723}
+  m_AnchoredPosition: {x: 0.000054359, y: 113.1}
+  m_SizeDelta: {x: 349.40234, y: 107.50845}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &736440655591085994
 CanvasRenderer:
@@ -54645,6 +54666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Multiplayer
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &9036928758396816788
 GameObject:
@@ -68971,6 +68993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: HalfWorld
+  _isClicked: 0
   isClickable: 0
 --- !u!224 &3450379190839946979 stripped
 RectTransform:
@@ -71915,6 +71938,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: FinalLevel
+  _isClicked: 0
   isClickable: 0
 --- !u!1001 &3970641619064400422
 PrefabInstance:
