@@ -17,7 +17,8 @@ public class guideBook : MonoBehaviour
     public GameObject cover;
     public static GameObject lockIconStatic;
     public static GameObject coverStatic;
-    public float timer;
+    float timer;
+    public float timer2;
 
     public void Start()
     {
@@ -27,15 +28,18 @@ public class guideBook : MonoBehaviour
     }
     public void Update()
     {
-        updateText();
-        add();
-
-        timer = Time.deltaTime;
-
-        if(GlobalValue.LevelPass == (int)timer)
+        timer += Time.deltaTime;
+        timer2 = timer;
+        if((int)timer == GlobalValue.LevelPass)
         {
-            Debug.Log("no");
+            unlocked();
+            Debug.Log("yes");
         }
+        else
+        {
+            locked();
+        }
+        add();
     }
 
     public void add()
@@ -55,16 +59,13 @@ public class guideBook : MonoBehaviour
             buttonScr.nTag++;
         }
     }
-
-    public void updateText()
+    public void unlocked()
     {
-        if(Input.GetKey("k"))
-        {
-            enemyProf.sprite = guideInfo.enemiesInfo[buttonScr.nTag].EnemyProfile;
-        }
-        else
-        {
-            enemyProf.sprite = guideInfo.enemiesInfo[(guideInfo.enemiesInfo.Length) - 1].EnemyProfile;
-        }
+        enemyProf.sprite = guideInfo.enemiesInfo[buttonScr.nTag].EnemyProfile;
+        Debug.Log("no");
+    }
+    public void locked()
+    {
+        enemyProf.sprite = guideInfo.enemiesInfo[(guideInfo.enemiesInfo.Length) - 1].EnemyProfile;
     }
 }

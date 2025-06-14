@@ -5493,7 +5493,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5797792292154627364}
         m_TargetAssemblyTypeName: MainMenuHomeScene, Assembly-CSharp
-        m_MethodName: OpenEnemyGuide
+        m_MethodName: OpenFriendGuide
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15590,8 +15590,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 455.38733, y: 0}
-  m_SizeDelta: {x: 87.1836, y: 100}
+  m_AnchoredPosition: {x: 380.837, y: -115.809}
+  m_SizeDelta: {x: 63.315, y: 40.293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7718966338651425828
 CanvasRenderer:
@@ -18214,7 +18214,7 @@ RectTransform:
   m_GameObject: {fileID: 2803455369953099582}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
+  m_LocalScale: {x: 1.1, y: 1.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1115200524101262253}
@@ -18252,7 +18252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6473013637101471423, guid: f7a741f2753bbac489c7010b5cf1f6c4,
+  m_Sprite: {fileID: 1547295944305074330, guid: fa061c184d3100549998950097134371,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -21842,7 +21842,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8336414019247587640
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25057,7 +25057,7 @@ MonoBehaviour:
   enemyDamage: {fileID: 5074640944836839633}
   enemyPower: {fileID: 2570416441370253277}
   enemiesScr: {fileID: 1840619849513043051}
-  guideInfo: {fileID: 11400000, guid: 18fcfb55004fb674590777c95dc58811, type: 2}
+  guideInfo: {fileID: 11400000, guid: 253f086f66708d0428c84d9da35b7de5, type: 2}
   EnemyProf: {fileID: 472356480078388434}
   contents: {fileID: 7496323734714535629}
 --- !u!1 &3785466204484586705
@@ -25135,6 +25135,7 @@ MonoBehaviour:
   guideInfo: {fileID: 11400000, guid: 18fcfb55004fb674590777c95dc58811, type: 2}
   lockIcon: {fileID: 8748534054074363568}
   cover: {fileID: 5315680627993923545}
+  timer: 0
 --- !u!1 &3792835433561198325
 GameObject:
   m_ObjectHideFlags: 0
@@ -37991,8 +37992,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 455.38733, y: 0}
-  m_SizeDelta: {x: 87.1836, y: 100}
+  m_AnchoredPosition: {x: 380.837, y: -115.809}
+  m_SizeDelta: {x: 63.315, y: 40.293}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5330833653953039383
 CanvasRenderer:
@@ -39327,7 +39328,7 @@ RectTransform:
   m_GameObject: {fileID: 5509825368816920641}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.386353, y: 0.386353, z: 0.5519328}
+  m_LocalScale: {x: 0.45, y: 0.45, z: 0.5519328}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7453552918509479248}
@@ -39365,7 +39366,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 357749872346554099, guid: deb8ccd4304bc424b96119557adf8a6a, type: 3}
+  m_Sprite: {fileID: 1547295944305074330, guid: fa061c184d3100549998950097134371,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -46190,7 +46192,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 1555.6064, y: -167.62}
+  m_AnchoredPosition: {x: 1366, y: -167.62}
   m_SizeDelta: {x: 726.7908, y: 744.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3581283205486412019
@@ -46277,7 +46279,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5797792292154627364}
         m_TargetAssemblyTypeName: MainMenuHomeScene, Assembly-CSharp
-        m_MethodName: OpenEnemyGuide
+        m_MethodName: OpenFriendGuide
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -49684,7 +49686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7033551604582451955
 RectTransform:
   m_ObjectHideFlags: 0
@@ -49742,6 +49744,7 @@ MonoBehaviour:
   guideInfo: {fileID: 11400000, guid: 253f086f66708d0428c84d9da35b7de5, type: 2}
   lockIcon: {fileID: 812371375074660228}
   cover: {fileID: 2519234238108659700}
+  timer: 0
 --- !u!1 &7022809880376646432
 GameObject:
   m_ObjectHideFlags: 0

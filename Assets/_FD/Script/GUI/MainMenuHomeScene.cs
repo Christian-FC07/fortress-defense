@@ -96,7 +96,6 @@ public class MainMenuHomeScene : MonoBehaviour
     void Update()
     {
         CheckSoundMusic();
-
         foreach (var ct in coinTxt)
         {
             ct.text = User.Coin + "";
