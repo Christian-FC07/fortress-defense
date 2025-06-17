@@ -11,7 +11,7 @@ public class scroll : MonoBehaviour
 
         if(contentCount <= 2)
         {
-            contents.transform.position = new Vector2(transform.position.x, transform.position.y /*+ 1584*/);
+            contents.transform.position = new Vector2(transform.position.x, transform.position.y + 1584);
         }
         else
         {
@@ -25,7 +25,7 @@ public class scroll : MonoBehaviour
 
         if(contentCount >= 1)
         {
-            contents.transform.position = new Vector2(transform.position.x, transform.position.y /*- 1584*/);
+            contents.transform.position = new Vector2(transform.position.x, transform.position.y - 1584);
         }
         else
         {

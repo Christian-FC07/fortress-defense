@@ -25,6 +25,7 @@ public class enemyClasses : ScriptableObject
         public int damage;
         public power power;
         public Sprite EnemyProfile;
+        public int levelUnlocked;
     }
 
     public info[] enemiesInfo;

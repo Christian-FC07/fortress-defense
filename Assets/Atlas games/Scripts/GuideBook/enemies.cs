@@ -18,7 +18,7 @@ public class enemies : MonoBehaviour
     {
         //each button has uniqe tag with is attatched to it as an script. each button gets a new teg as its beng cloned and tags will
         //stay there forever since theyre scripts. pressing each button will use its own tag to set picture and information of an enemy.
-        if(Input.GetKey("k"))
+        if(GlobalValue.LevelPass >= guideInfo.enemiesInfo[enemiesScr.nTag].levelUnlocked)
         {
             enemyNameB.text = guideInfo.enemiesInfo[enemiesScr.nTag].name;
             enemySpeed.text = guideInfo.enemiesInfo[enemiesScr.nTag].speed.ToString();
@@ -39,6 +39,8 @@ public class enemies : MonoBehaviour
             
             guideBook.lockIconStatic.SetActive(true);
             guideBook.coverStatic.SetActive(true);
+
+            Debug.Log("ggg");
         }
 
         SoundManager.PlaySfx(SoundManager.Instance.soundClick);
