@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1917839224130678367}
   - component: {fileID: 2099158811917897767}
   - component: {fileID: 6826214467434400533}
-  - component: {fileID: 2887951647752544678}
   m_Layer: 0
   m_Name: LevelChanges
   m_TagString: Untagged
@@ -66,19 +65,66 @@ MonoBehaviour:
   nightLight: {fileID: 0}
   nightLightAnim: {fileID: 0}
   rndm: 0
---- !u!114 &2887951647752544678
+--- !u!1 &5007832188781114849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3082196095237013262}
+  - component: {fileID: 492349297388175253}
+  m_Layer: 5
+  m_Name: tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3082196095237013262
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5007832188781114849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6168901444282779543}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &492349297388175253
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4014463748691432394}
+  m_GameObject: {fileID: 5007832188781114849}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62f59901ebbce9c41bf7ff1e230fc183, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ee9e6f001d115942b972de9e68f5995, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorials: {fileID: 11400000, guid: 62c2c5cd3f7589a4993bf3b88cfad74e, type: 2}
+  tutorials: {fileID: 11400000, guid: 238a10396a2ca8d47a3f0a8428b5c8e4, type: 2}
+  UI: {fileID: 0}
+  blur: {fileID: 0}
+  archerManager: {fileID: 0}
+  timer: 0
+  menuParts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &6168901444282779541
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,6 +158,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1917839224130678367}
+  - {fileID: 3082196095237013262}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6168901444282779542

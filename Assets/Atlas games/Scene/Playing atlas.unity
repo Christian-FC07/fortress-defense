@@ -209,12 +209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b050c7e6cad25be4c84067c1994eceec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &266719250 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4344118775394563644, guid: 265427fa6c28f5e41ae8ebe3130dcf1a,
-    type: 3}
-  m_PrefabInstance: {fileID: 6706300739900195717}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &276968868 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6401542171816945080, guid: b78bbba641d6e6545a5e818d9f1e96f9,
@@ -1170,6 +1164,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1625546736}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1625546740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6236543548730150190, guid: 2bf74b55ce29e004d87d0765ff719bcd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1625546736}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1799645781 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6065274684843345902, guid: b78bbba641d6e6545a5e818d9f1e96f9,
@@ -1337,6 +1337,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Volume
       objectReference: {fileID: 0}
+    - target: {fileID: 8006041283194222070, guid: 12e27b58b1dd65844ae8c3821cd0d115,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8834372005933342037, guid: 12e27b58b1dd65844ae8c3821cd0d115,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1392,6 +1397,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12e27b58b1dd65844ae8c3821cd0d115, type: 3}
+--- !u!1 &1978392848614609910 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8006041283194222070, guid: 12e27b58b1dd65844ae8c3821cd0d115,
+    type: 3}
+  m_PrefabInstance: {fileID: 1978392848614609909}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2068260186806026854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1460,6 +1471,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b78bbba641d6e6545a5e818d9f1e96f9, type: 3}
+--- !u!1 &2068260186806026855 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2068260188661768743, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2068260186806026854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2530890270796625837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1760,6 +1777,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 492349297388175253, guid: c944f95f26027e34a9597b919fcef8ee,
+        type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 1625546740}
+    - target: {fileID: 492349297388175253, guid: c944f95f26027e34a9597b919fcef8ee,
+        type: 3}
+      propertyPath: blur
+      value: 
+      objectReference: {fileID: 1978392848614609910}
+    - target: {fileID: 492349297388175253, guid: c944f95f26027e34a9597b919fcef8ee,
+        type: 3}
+      propertyPath: archerManager
+      value: 
+      objectReference: {fileID: 2068260186806026855}
     - target: {fileID: 6168901444282779541, guid: c944f95f26027e34a9597b919fcef8ee,
         type: 3}
       propertyPath: m_Name
@@ -1815,23 +1847,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6826214467434400533, guid: c944f95f26027e34a9597b919fcef8ee,
-        type: 3}
-      propertyPath: dayLight
-      value: 
-      objectReference: {fileID: 266719250}
-    - target: {fileID: 6826214467434400533, guid: c944f95f26027e34a9597b919fcef8ee,
-        type: 3}
-      propertyPath: nightLight
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 6826214467434400533, guid: c944f95f26027e34a9597b919fcef8ee,
-        type: 3}
-      propertyPath: nightLightAnim
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2887951647752544678, guid: c944f95f26027e34a9597b919fcef8ee, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
