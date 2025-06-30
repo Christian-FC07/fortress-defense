@@ -113,6 +113,10 @@ public class MainMenuHomeScene : MonoBehaviour
         SoundManager.Click();
         SoundManager.PlayMusic(SoundManager.Instance.musicsMap);
         StartCoroutine(OpenMapCo(open));
+        if(open == false)
+        {
+            SoundManager.PlayMusic(SoundManager.Instance.musicsGame);
+        }
     }
 
     public void OpenInventory(bool open)
