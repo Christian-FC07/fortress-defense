@@ -30,7 +30,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
-  - itemName: Fire 1
+  - itemName: Fire
     itemImage: {fileID: 21300000, guid: 7e8782bfba03c57418c692b9203858d5, type: 3}
     buttonImage: {fileID: 21300000, guid: 7e8782bfba03c57418c692b9203858d5, type: 3}
     itemPrice: 1650
@@ -47,143 +47,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
-  - itemName: Fire 2
-    itemImage: {fileID: 21300000, guid: 99b6634a1dd49cd4b9d5e1bce960d42c, type: 3}
-    buttonImage: {fileID: 21300000, guid: 99b6634a1dd49cd4b9d5e1bce960d42c, type: 3}
-    itemPrice: 2150
-    itemMaxValue: 2150
-    hasMaxValue: 1
-    type: 2
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 1000
-    id: 3
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Fire 3
-    itemImage: {fileID: 21300000, guid: fec3ab5692df38440aeccab77a18356e, type: 3}
-    buttonImage: {fileID: 21300000, guid: fec3ab5692df38440aeccab77a18356e, type: 3}
-    itemPrice: 4250
-    itemMaxValue: 4250
-    hasMaxValue: 1
-    type: 2
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 1000
-    id: 4
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Aero 1
-    itemImage: {fileID: 21300000, guid: a6be6a3b9fcf11341a7b773df00511d0, type: 3}
-    buttonImage: {fileID: 21300000, guid: a6be6a3b9fcf11341a7b773df00511d0, type: 3}
-    itemPrice: 1650
-    itemMaxValue: 1650
-    hasMaxValue: 1
-    type: 2
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 1
-    id: 5
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Aero 2
-    itemImage: {fileID: 21300000, guid: 455fb6f49244ce14bae7ae5ff20a1102, type: 3}
-    buttonImage: {fileID: 21300000, guid: 455fb6f49244ce14bae7ae5ff20a1102, type: 3}
-    itemPrice: 2150
-    itemMaxValue: 2150
-    hasMaxValue: 1
-    type: 2
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 1000
-    id: 6
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Aero 3
-    itemImage: {fileID: 21300000, guid: 82fd7f8b5bd6147498262c56bb606462, type: 3}
-    buttonImage: {fileID: 21300000, guid: 82fd7f8b5bd6147498262c56bb606462, type: 3}
-    itemPrice: 4250
-    itemMaxValue: 4250
-    hasMaxValue: 1
-    type: 2
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 1000
-    id: 7
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Magnet 1
-    itemImage: {fileID: 21300000, guid: 2e5a62c39f3286c46bc910843067790e, type: 3}
-    buttonImage: {fileID: 21300000, guid: 2e5a62c39f3286c46bc910843067790e, type: 3}
-    itemPrice: 1650
-    itemMaxValue: 1650
-    hasMaxValue: 1
-    type: 2
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 1
-    id: 8
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Magnet 2
-    itemImage: {fileID: 21300000, guid: d0856249b9dad484f8f02b4b1f8ad06a, type: 3}
-    buttonImage: {fileID: 21300000, guid: d0856249b9dad484f8f02b4b1f8ad06a, type: 3}
-    itemPrice: 2150
-    itemMaxValue: 2150
-    hasMaxValue: 1
-    type: 2
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 1000
-    id: 9
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Magnet 3
-    itemImage: {fileID: 21300000, guid: 100fdc5d35d9b394b90a88c35a4d54f9, type: 3}
-    buttonImage: {fileID: 21300000, guid: 100fdc5d35d9b394b90a88c35a4d54f9, type: 3}
-    itemPrice: 4250
-    itemMaxValue: 4250
-    hasMaxValue: 1
-    type: 2
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 1000
-    id: 10
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Dark 1
+  - itemName: Dark
     itemImage: {fileID: 21300000, guid: 455fb6f49244ce14bae7ae5ff20a1102, type: 3}
     buttonImage: {fileID: 21300000, guid: 455fb6f49244ce14bae7ae5ff20a1102, type: 3}
     itemPrice: 1650
@@ -195,40 +59,6 @@ MonoBehaviour:
     levelLock: 0
     levelToUnlock: 1
     id: 11
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Dark 2
-    itemImage: {fileID: 21300000, guid: 5a9b4bfb995e880489fc97e3443ff2f2, type: 3}
-    buttonImage: {fileID: 21300000, guid: 5a9b4bfb995e880489fc97e3443ff2f2, type: 3}
-    itemPrice: 2150
-    itemMaxValue: 2150
-    hasMaxValue: 1
-    type: 2
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 1000
-    id: 12
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Dark 3
-    itemImage: {fileID: 21300000, guid: fb28bbc4174591a4e907100e38459740, type: 3}
-    buttonImage: {fileID: 21300000, guid: fb28bbc4174591a4e907100e38459740, type: 3}
-    itemPrice: 4250
-    itemMaxValue: 4250
-    hasMaxValue: 1
-    type: 2
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 1000
-    id: 13
     isFree: 0
     oneTimePurchase: 1
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
