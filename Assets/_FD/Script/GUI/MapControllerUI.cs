@@ -92,7 +92,7 @@ public class MapControllerUI : MonoBehaviour
             UpdateLifes();
         }
 
-        if(newPosX == -7680)
+        if(newPosX == -5760)
         {
             nxtButton.SetActive(false);
         }

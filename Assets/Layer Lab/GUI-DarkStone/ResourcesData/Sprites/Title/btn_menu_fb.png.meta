@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      btn_menu_fb_0: 6355131206369710808
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

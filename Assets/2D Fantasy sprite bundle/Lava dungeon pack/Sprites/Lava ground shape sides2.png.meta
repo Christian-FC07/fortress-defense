@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Lava ground shape sides2_0: 5243855136507114279
+      Lava ground shape sides2_1: -7184868838125224209
+      Lava ground shape sides2_10: -5515338506580461761
+      Lava ground shape sides2_11: -1451994360316504239
+      Lava ground shape sides2_12: 5024835295941776168
+      Lava ground shape sides2_13: -5320380652363634548
+      Lava ground shape sides2_2: -5897099366128980780
+      Lava ground shape sides2_3: 8242481296877773992
+      Lava ground shape sides2_4: 7143175640983721880
+      Lava ground shape sides2_5: -4101339038463170093
+      Lava ground shape sides2_6: 2673675234895132800
+      Lava ground shape sides2_7: -8835449838387444260
+      Lava ground shape sides2_8: -6982713839408196780
+      Lava ground shape sides2_9: -8355802998961728090
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
