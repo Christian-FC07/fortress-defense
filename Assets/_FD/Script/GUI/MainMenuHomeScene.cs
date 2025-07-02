@@ -152,12 +152,10 @@ public class MainMenuHomeScene : MonoBehaviour
     {
         yield return null;
         GlobalValue.menuPart = "Map";
-        showTutorial.isTutorialOn = open;
         BlackScreenUI.instance.Show(0.2f);
         MapUI.SetActive(open);
 
         BlackScreenUI.instance.Hide(0.2f);
-        showTutorial.isTutorialOn = !open;
     }
     IEnumerator OpenGuideBookCo(bool open)
     {
@@ -209,7 +207,6 @@ public class MainMenuHomeScene : MonoBehaviour
     {
         SoundManager.Click();
         GlobalValue.menuPart = "Store";
-        showTutorial.isTutorialOn = open;
         StoreUI.SetActive(open);
         StoreUI.GetComponent<Shop>().OpenMenu("features");
     }
@@ -260,29 +257,20 @@ public class MainMenuHomeScene : MonoBehaviour
     {
         LeaderBoard leaderBoard = LeaderBoardUI.GetComponent<LeaderBoard>();
         GlobalValue.menuPart = "Store";
-        showTutorial.isTutorialOn = open;
         LeaderBoardUI.SetActive(open);
         if(!open) leaderBoard.ClearList();
-
-        showTutorial.isTutorialOn = !open;
     }
     public void OpenTrophyV2(bool open)
     {
         SoundManager.Click();
         GlobalValue.menuPart = "Trophy";
-        showTutorial.isTutorialOn = open;
         TrophyUIV2.SetActive(open);
-
-        showTutorial.isTutorialOn = !open;
     }
     public void OpenEvent(bool open)
     {
         SoundManager.Click();
         GlobalValue.menuPart = "Events";
-        showTutorial.isTutorialOn = open;
         EventUI.SetActive(open);
-
-        showTutorial.isTutorialOn = !open;
     }
     public void OpenCoinShop(bool open)
     {
