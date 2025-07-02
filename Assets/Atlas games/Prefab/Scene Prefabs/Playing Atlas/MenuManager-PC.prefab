@@ -2747,7 +2747,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 35ac6113c69f88748bea19b90b47e13a, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -14381,6 +14381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Spped Up Game
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &5982782697990930304
 GameObject:
@@ -20383,7 +20384,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 281f8729befff496bb788002ca7333af, type: 3}
-  m_Type: 3
+  m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -20483,6 +20484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Thunder
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &6236543549278295463
 GameObject:
@@ -20995,7 +20997,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 281f8729befff496bb788002ca7333af, type: 3}
-  m_Type: 3
+  m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
@@ -21095,6 +21097,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Blizzard
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &6236543549542715545
 GameObject:
@@ -21746,11 +21749,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 281f8729befff496bb788002ca7333af, type: 3}
-  m_Type: 3
+  m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
-  m_FillAmount: 0.63
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
@@ -21846,6 +21849,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Poison
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &6236543550136385053
 GameObject:
@@ -22614,7 +22618,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 5924f119676f9414090a8e61140b1555, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -23962,7 +23966,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 529362b7510fa614186315aa9b9aeef1, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -27709,6 +27713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Help
+  _isClicked: 0
   isClickable: 0
 --- !u!1001 &518672286262709892
 PrefabInstance:

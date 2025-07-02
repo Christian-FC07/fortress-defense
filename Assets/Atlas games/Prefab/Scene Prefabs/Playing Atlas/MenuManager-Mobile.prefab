@@ -21828,7 +21828,6 @@ MonoBehaviour:
   timerTxt: {fileID: 6236543549278295465}
   XPTxt: {fileID: 7938906100300515045}
   xp_text_prefix: xp
-  iconImage: {fileID: 8909744550669316905}
   canvasGroup: {fileID: 0}
 --- !u!225 &6236543549221654228
 CanvasGroup:
@@ -21855,6 +21854,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Thunder
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &6236543549278295463
 GameObject:
@@ -22440,7 +22440,6 @@ MonoBehaviour:
   timerTxt: {fileID: 6236543549635560683}
   XPTxt: {fileID: 1795211530525380326}
   xp_text_prefix: xp
-  iconImage: {fileID: 5641396378836672953}
   canvasGroup: {fileID: 0}
 --- !u!225 &6236543549444325939
 CanvasGroup:
@@ -22467,6 +22466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Blizzard
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &6236543549542715545
 GameObject:
@@ -23192,7 +23192,6 @@ MonoBehaviour:
   timerTxt: {fileID: 6236543550205237777}
   XPTxt: {fileID: 4147075441961143487}
   xp_text_prefix: xp
-  iconImage: {fileID: 7487511962820111032}
   canvasGroup: {fileID: 0}
 --- !u!225 &6236543550127162015
 CanvasGroup:
@@ -23219,6 +23218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPartName: Poison
+  _isClicked: 0
   isClickable: 0
 --- !u!1 &6236543550136385053
 GameObject:
