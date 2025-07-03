@@ -651,6 +651,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4849a0f023c99b42b2c0baf4f80ef71, type: 3}
+--- !u!1 &1293823008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2360964821349286863, guid: 5da6134de5a9f494f91c5ebead7f6a13,
+    type: 3}
+  m_PrefabInstance: {fileID: 1477775784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1361165628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 432900437094538066, guid: 5da6134de5a9f494f91c5ebead7f6a13,
+    type: 3}
+  m_PrefabInstance: {fileID: 1477775784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1477775784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -664,6 +676,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HomeMenu-PC
       objectReference: {fileID: 0}
+    - target: {fileID: 717430161748143853, guid: 5da6134de5a9f494f91c5ebead7f6a13,
+        type: 3}
+      propertyPath: rewardTooltip
+      value: 
+      objectReference: {fileID: 2080769186}
     - target: {fileID: 4677290180107626091, guid: 5da6134de5a9f494f91c5ebead7f6a13,
         type: 3}
       propertyPath: m_Pivot.x
@@ -769,11 +786,43 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 1169036909}
+    - target: {fileID: 6394208524555025626, guid: 5da6134de5a9f494f91c5ebead7f6a13,
+        type: 3}
+      propertyPath: lastMapPosX
+      value: -5760
+      objectReference: {fileID: 0}
+    - target: {fileID: 6459398609036344956, guid: 5da6134de5a9f494f91c5ebead7f6a13,
+        type: 3}
+      propertyPath: rewardTooltip
+      value: 
+      objectReference: {fileID: 1743601117}
+    - target: {fileID: 6705039904918039598, guid: 5da6134de5a9f494f91c5ebead7f6a13,
+        type: 3}
+      propertyPath: rewardTooltip
+      value: 
+      objectReference: {fileID: 1361165628}
+    - target: {fileID: 8921413284664652979, guid: 5da6134de5a9f494f91c5ebead7f6a13,
+        type: 3}
+      propertyPath: rewardTooltip
+      value: 
+      objectReference: {fileID: 1293823008}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5da6134de5a9f494f91c5ebead7f6a13, type: 3}
+--- !u!1 &1743601117 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 191554907408926976, guid: 5da6134de5a9f494f91c5ebead7f6a13,
+    type: 3}
+  m_PrefabInstance: {fileID: 1477775784}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2080769186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5978594536018074001, guid: 5da6134de5a9f494f91c5ebead7f6a13,
+    type: 3}
+  m_PrefabInstance: {fileID: 1477775784}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1316338209778846945
 PrefabInstance:
   m_ObjectHideFlags: 0

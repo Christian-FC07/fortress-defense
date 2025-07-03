@@ -16,8 +16,8 @@ public class enemies : MonoBehaviour
 
     public void enemyName()
     {
-        //each button has uniqe tag with is attatched to it as an script. each button gets a new teg as its beng cloned and tags will
-        //stay there forever since theyre scripts. pressing each button will use its own tag to set picture and information of an enemy.
+        //each button has uniqe tag which is attatched to itself as an script. each button gets a new teg as its being cloned and tags will
+        //stay there forever since they're scripts. pressing each button will use its own tag to set a picture and related information of an enemy.
         if(GlobalValue.LevelPass >= guideInfo.enemiesInfo[enemiesScr.nTag].levelUnlocked)
         {
             enemyNameB.text = guideInfo.enemiesInfo[enemiesScr.nTag].name;
@@ -31,11 +31,11 @@ public class enemies : MonoBehaviour
         }
         else
         {
-            enemyNameB.text = guideInfo.enemiesInfo[(guideInfo.enemiesInfo.Length) - 1].name;
-            enemySpeed.text = guideInfo.enemiesInfo[(guideInfo.enemiesInfo.Length) - 1].speed.ToString();
-            enemyDamage.text = guideInfo.enemiesInfo[(guideInfo.enemiesInfo.Length) - 1].damage.ToString();
-            enemyPower.text = guideInfo.enemiesInfo[(guideInfo.enemiesInfo.Length) - 1].power.ToString();
-            EnemyProf.sprite = guideInfo.enemiesInfo[(guideInfo.enemiesInfo.Length) - 1].EnemyProfile;
+            enemyNameB.text = guideInfo.enemiesInfo[guideInfo.enemiesInfo.Length - 1].name;
+            enemySpeed.text = guideInfo.enemiesInfo[guideInfo.enemiesInfo.Length - 1].speed.ToString();
+            enemyDamage.text = guideInfo.enemiesInfo[guideInfo.enemiesInfo.Length - 1].damage.ToString();
+            enemyPower.text = guideInfo.enemiesInfo[guideInfo.enemiesInfo.Length - 1].power.ToString();
+            EnemyProf.sprite = guideInfo.enemiesInfo[guideInfo.enemiesInfo.Length - 1].EnemyProfile;
             
             guideBook.lockIconStatic.SetActive(true);
             guideBook.coverStatic.SetActive(true);
@@ -44,28 +44,5 @@ public class enemies : MonoBehaviour
         }
 
         SoundManager.PlaySfx(SoundManager.Instance.soundClick);
-
-        /*if(enemyNameB.text == "Locked")
-        {
-            guideBook.lockIconStatic.SetActive(true);
-            guideBook.coverStatic.SetActive(true);
-        }
-        else
-        {
-            guideBook.lockIconStatic.SetActive(false);
-            guideBook.coverStatic.SetActive(false);
-        }*/
     }
-
-    /*public void Update()
-    {
-        if(enemyNameB.text == "Locked")
-        {
-            guideBook.lockIconStatic.SetActive(true);
-        }
-        else
-        {
-            guideBook.lockIconStatic.SetActive(false);
-        }
-    }*/
 }

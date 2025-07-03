@@ -11,6 +11,8 @@ public class MapControllerUI : MonoBehaviour
     public float step = 720f;
 
     private float newPosX = 0;
+    public float firstMapPosX = 0;
+    public float lastMapPosX = 0;
     public Text worldTxt;
     int currentPos = 0;
     public static event Action<int,bool> OnMapChange;
@@ -92,7 +94,7 @@ public class MapControllerUI : MonoBehaviour
             UpdateLifes();
         }
 
-        if(newPosX == -5760)
+        if(newPosX == lastMapPosX)
         {
             nxtButton.SetActive(false);
         }
@@ -100,7 +102,7 @@ public class MapControllerUI : MonoBehaviour
         {
             nxtButton.SetActive(true);
         }
-        if(newPosX == 0)
+        if(newPosX == firstMapPosX)
         {
             prvButton.SetActive(false);
             //nxtButtonPos.position = new Vector2 (prvButtonPos.position.x, nxtButtonPos.position.y);

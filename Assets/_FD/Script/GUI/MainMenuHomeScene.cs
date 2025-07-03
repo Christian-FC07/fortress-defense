@@ -127,17 +127,17 @@ public class MainMenuHomeScene : MonoBehaviour
     public void OpenGuideBook(bool open)
     {
         SoundManager.Click();
-        StartCoroutine(OpenGuideBookCo(open));
+        OpenGuideBookCo(open);
     }
     public void OpenFriendGuide(bool open)
     {
         SoundManager.Click();
-        StartCoroutine(OpenFriendGuideCo(open));
+        OpenFriendGuideCo(open);
     }
     public void OpenEnemyGuide(bool open)
     {
         SoundManager.Click();
-        StartCoroutine(OpenEnemyGuideCo(open));
+        OpenEnemyGuideCo(open);
     }
 
     IEnumerator OpenInventoryCo(bool open)
@@ -157,23 +157,20 @@ public class MainMenuHomeScene : MonoBehaviour
 
         BlackScreenUI.instance.Hide(0.2f);
     }
-    IEnumerator OpenGuideBookCo(bool open)
+    public void OpenGuideBookCo(bool open)
     {
-        yield return null;
         BlackScreenUI.instance.Show(0.2f);
         GuideBook.SetActive(open);
         BlackScreenUI.instance.Hide(0.2f);
     }
-    IEnumerator OpenFriendGuideCo(bool open)
+    public void OpenFriendGuideCo(bool open)
     {
-        yield return null;
         BlackScreenUI.instance.Show(0.2f);
         FriendGuide.SetActive(open);
         BlackScreenUI.instance.Hide(0.2f);
     }
-    IEnumerator OpenEnemyGuideCo(bool open)
+    public void OpenEnemyGuideCo(bool open)
     {
-        yield return null;
         BlackScreenUI.instance.Show(0.2f);
         EnemyGuide.SetActive(open);
         BlackScreenUI.instance.Hide(0.2f);
