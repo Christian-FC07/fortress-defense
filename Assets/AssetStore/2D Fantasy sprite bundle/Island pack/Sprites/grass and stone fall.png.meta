@@ -534,7 +534,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grass and stone fall_0: 7748830430366762509
+      grass and stone fall_1: -8158831344746053380
+      grass and stone fall_10: -2823903496487097031
+      grass and stone fall_11: 7808375501184959082
+      grass and stone fall_12: 2177764232732301161
+      grass and stone fall_13: -7790427266453560731
+      grass and stone fall_14: -5329498915071331765
+      grass and stone fall_15: -2138909202341591062
+      grass and stone fall_16: 6014064268038243915
+      grass and stone fall_2: -2442407410983752145
+      grass and stone fall_3: -1793945152580498309
+      grass and stone fall_4: 6991989252782730600
+      grass and stone fall_5: 8595486645665597481
+      grass and stone fall_6: 8355718272104654993
+      grass and stone fall_7: 290517720608092421
+      grass and stone fall_8: -3503400115539698649
+      grass and stone fall_9: 3753563511922201010
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

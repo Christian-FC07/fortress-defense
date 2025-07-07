@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      slot_lock_upscayl_16x_realesrgan-x4plus3_0: -4702990608409887147
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

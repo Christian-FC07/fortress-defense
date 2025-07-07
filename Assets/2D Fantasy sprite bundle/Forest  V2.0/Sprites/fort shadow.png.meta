@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      fort shadow_0: -7847836175556770066
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

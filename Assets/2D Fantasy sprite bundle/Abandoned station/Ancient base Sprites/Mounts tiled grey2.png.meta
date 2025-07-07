@@ -234,7 +234,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mounts tiled grey2_0: 7343515604029875179
+      Mounts tiled grey2_1: -6627330573131398251
+      Mounts tiled grey2_2: 32430030300374431
+      Mounts tiled grey2_3: -1556500063873859566
+      Mounts tiled grey2_4: -8066368744721921313
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

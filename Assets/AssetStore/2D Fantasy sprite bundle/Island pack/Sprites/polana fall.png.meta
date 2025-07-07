@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      polana fall_0: -8248463643557719900
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
