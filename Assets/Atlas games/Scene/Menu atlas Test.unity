@@ -572,6 +572,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cce96df245dbe834fb47e03590c41d6e, type: 3}
+--- !u!1 &1169036909 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6264185229643959930, guid: bccaae664c125ec449e793678fddbfcf,
+    type: 3}
+  m_PrefabInstance: {fileID: 6264185229111238490}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1268052993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -753,6 +759,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6394208524555025626, guid: 5da6134de5a9f494f91c5ebead7f6a13,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1169036909}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -834,16 +845,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3034858571291879240, guid: 7686c0ada310fd846bf5c6596abfdcd6,
-        type: 3}
-      propertyPath: musicsMap
-      value: 
-      objectReference: {fileID: 8300000, guid: 4c15393290911394d90352e95b552f3a, type: 3}
-    - target: {fileID: 3034858571291879240, guid: 7686c0ada310fd846bf5c6596abfdcd6,
-        type: 3}
-      propertyPath: musicsGame
-      value: 
-      objectReference: {fileID: 8300000, guid: 40467ada5a8c493408c0451ba72447f1, type: 3}
     - target: {fileID: 3034858571291879241, guid: 7686c0ada310fd846bf5c6596abfdcd6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -898,11 +899,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SoundManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 3034858571291879243, guid: 7686c0ada310fd846bf5c6596abfdcd6,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

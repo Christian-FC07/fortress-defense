@@ -46,7 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beginSoundInMainMenu: {fileID: 8300000, guid: f09d24f5b53fd63418020f68894f4312,
     type: 3}
-  musicsGame: {fileID: 8300000, guid: 03e1557661f15e34bbd363930ac9a45a, type: 3}
+  musicsGame: {fileID: 8300000, guid: 40467ada5a8c493408c0451ba72447f1, type: 3}
+  musicsMap: {fileID: 8300000, guid: 4c15393290911394d90352e95b552f3a, type: 3}
   BossMusicClip: {fileID: 8300000, guid: 78d215e0f9ac1874d8f41bc706b04bba, type: 3}
   BossDeath: {fileID: 8300000, guid: dc066c79ca588b9449b3cfe9a98109c4, type: 3}
   musicsGameVolume: 0.4
