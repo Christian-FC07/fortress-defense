@@ -15,6 +15,9 @@ public class MainMenuHomeScene : MonoBehaviour
     public GameObject Loading;
     public GameObject Settings;
     public GameObject inventory;
+    public GameObject GuideBook;
+    public GameObject FriendGuide;
+    public GameObject EnemyGuide;
     public string facebookLink;
     public string twitterLink = "https://twitter.com/";
     public string playingLevelName = "Playing atlas";
@@ -26,6 +29,7 @@ public class MainMenuHomeScene : MonoBehaviour
     public Image soundImage;
     public Image musicImage;
     public Sprite soundImageOn, soundImageOff, musicImageOn, musicImageOff;
+    bool mainMenuLimiter = false;
 
     void Awake()
     {
@@ -93,10 +97,14 @@ public class MainMenuHomeScene : MonoBehaviour
     void Update()
     {
         CheckSoundMusic();
-
         foreach (var ct in coinTxt)
         {
             ct.text = User.Coin + "";
+        }
+        if(HomeUI.activeInHierarchy == true && mainMenuLimiter == false)
+        {
+            GlobalValue.menuPart = "Home";
+            mainMenuLimiter = true;
         }
     }
 
@@ -105,12 +113,31 @@ public class MainMenuHomeScene : MonoBehaviour
         SoundManager.Click();
         SoundManager.PlayMusic(SoundManager.Instance.musicsMap);
         StartCoroutine(OpenMapCo(open));
+        if(open == false)
+        {
+            SoundManager.PlayMusic(SoundManager.Instance.musicsGame);
+        }
     }
 
     public void OpenInventory(bool open)
     {
         SoundManager.Click();
         StartCoroutine(OpenInventoryCo(open));
+    }
+    public void OpenGuideBook(bool open)
+    {
+        SoundManager.Click();
+        OpenGuideBookCo(open);
+    }
+    public void OpenFriendGuide(bool open)
+    {
+        SoundManager.Click();
+        OpenFriendGuideCo(open);
+    }
+    public void OpenEnemyGuide(bool open)
+    {
+        SoundManager.Click();
+        OpenEnemyGuideCo(open);
     }
 
     IEnumerator OpenInventoryCo(bool open)
@@ -124,8 +151,28 @@ public class MainMenuHomeScene : MonoBehaviour
     IEnumerator OpenMapCo(bool open)
     {
         yield return null;
+        GlobalValue.menuPart = "Map";
         BlackScreenUI.instance.Show(0.2f);
         MapUI.SetActive(open);
+
+        BlackScreenUI.instance.Hide(0.2f);
+    }
+    public void OpenGuideBookCo(bool open)
+    {
+        BlackScreenUI.instance.Show(0.2f);
+        GuideBook.SetActive(open);
+        BlackScreenUI.instance.Hide(0.2f);
+    }
+    public void OpenFriendGuideCo(bool open)
+    {
+        BlackScreenUI.instance.Show(0.2f);
+        FriendGuide.SetActive(open);
+        BlackScreenUI.instance.Hide(0.2f);
+    }
+    public void OpenEnemyGuideCo(bool open)
+    {
+        BlackScreenUI.instance.Show(0.2f);
+        EnemyGuide.SetActive(open);
         BlackScreenUI.instance.Hide(0.2f);
     }
 
@@ -156,6 +203,7 @@ public class MainMenuHomeScene : MonoBehaviour
     public void Store(bool open)
     {
         SoundManager.Click();
+        GlobalValue.menuPart = "Store";
         StoreUI.SetActive(open);
         StoreUI.GetComponent<Shop>().OpenMenu("features");
     }
@@ -205,17 +253,20 @@ public class MainMenuHomeScene : MonoBehaviour
     public void OpenLeaderBoard(bool open)
     {
         LeaderBoard leaderBoard = LeaderBoardUI.GetComponent<LeaderBoard>();
+        GlobalValue.menuPart = "Store";
         LeaderBoardUI.SetActive(open);
         if(!open) leaderBoard.ClearList();
     }
     public void OpenTrophyV2(bool open)
     {
         SoundManager.Click();
+        GlobalValue.menuPart = "Trophy";
         TrophyUIV2.SetActive(open);
     }
     public void OpenEvent(bool open)
     {
         SoundManager.Click();
+        GlobalValue.menuPart = "Events";
         EventUI.SetActive(open);
     }
     public void OpenCoinShop(bool open)
