@@ -147,6 +147,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -559,7 +572,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      grass and stone_upscayl_4x_realesrgan-x4plus_0: 9082751625117299121
+      grass and stone_upscayl_4x_realesrgan-x4plus_1: -7691862940055865866
+      grass and stone_upscayl_4x_realesrgan-x4plus_10: -8200497269833045149
+      grass and stone_upscayl_4x_realesrgan-x4plus_11: -2224559704612861002
+      grass and stone_upscayl_4x_realesrgan-x4plus_12: -7756519249195653624
+      grass and stone_upscayl_4x_realesrgan-x4plus_13: -7951378669910082641
+      grass and stone_upscayl_4x_realesrgan-x4plus_14: 3163193882577712668
+      grass and stone_upscayl_4x_realesrgan-x4plus_15: 959485777798756353
+      grass and stone_upscayl_4x_realesrgan-x4plus_16: -8856225077199397766
+      grass and stone_upscayl_4x_realesrgan-x4plus_17: 2415811126630911944
+      grass and stone_upscayl_4x_realesrgan-x4plus_2: 7103123697913680544
+      grass and stone_upscayl_4x_realesrgan-x4plus_3: 7740266309810552037
+      grass and stone_upscayl_4x_realesrgan-x4plus_4: -3490121224897551658
+      grass and stone_upscayl_4x_realesrgan-x4plus_5: -3848365983441133938
+      grass and stone_upscayl_4x_realesrgan-x4plus_6: 4021540265855652292
+      grass and stone_upscayl_4x_realesrgan-x4plus_7: -8618348071743305784
+      grass and stone_upscayl_4x_realesrgan-x4plus_8: 3644497948816155926
+      grass and stone_upscayl_4x_realesrgan-x4plus_9: 26478095941621649
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

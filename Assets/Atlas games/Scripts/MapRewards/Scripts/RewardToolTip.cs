@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class RewardToolTip : MonoBehaviour
 {
     public Image rewardImage;
-    //public GameObject rewardTooltip;
+    public GameObject rewardTooltip;
    // public GameObject rewardIcon;
     public GameObject rewardTick;
     public GameObject mysteryGiftIcon;
