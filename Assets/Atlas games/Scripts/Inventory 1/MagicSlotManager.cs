@@ -28,6 +28,15 @@ public class MagicSlotManager : MonoBehaviour
                 case "Lightning":
                     slots[i].affectType = AffectZoneType.Lighting;
                     break;
+                case "Fire":
+                    slots[i].affectType = AffectZoneType.Fire;
+                    break;
+                case "Frozen":
+                    slots[i].affectType = AffectZoneType.Frozen;
+                    break;
+                case "Dark":
+                    slots[i].affectType = AffectZoneType.Dark;
+                    break;
                 case "Aero":
                     slots[i].affectType = AffectZoneType.Aero;
                     break;
