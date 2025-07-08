@@ -22,7 +22,6 @@ public class MapControllerUI : MonoBehaviour
     public Transform life_parent;
     public GameObject[] lifes;
     public Transform clouds;
-    public GameObject mainCamera;
     public GameObject nxtButton;
     public GameObject prvButton;
     public Transform nxtButtonPos;
