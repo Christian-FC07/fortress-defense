@@ -11,6 +11,8 @@ public class MapControllerUI : MonoBehaviour
     public float step = 720f;
 
     private float newPosX = 0;
+    public float firstMapPosX = 0;
+    public float lastMapPosX = 0;
     public Text worldTxt;
     int currentPos = 0;
     public static event Action<int,bool> OnMapChange;
@@ -20,6 +22,10 @@ public class MapControllerUI : MonoBehaviour
     public Transform life_parent;
     public GameObject[] lifes;
     public Transform clouds;
+    public GameObject nxtButton;
+    public GameObject prvButton;
+    public Transform nxtButtonPos;
+    public Transform prvButtonPos;
     double divider = 8.5;
     // Use this for initialization
     void Start()
@@ -87,6 +93,25 @@ public class MapControllerUI : MonoBehaviour
             UpdateLifes();
         }
 
+        if(newPosX == lastMapPosX)
+        {
+            nxtButton.SetActive(false);
+        }
+        else
+        {
+            nxtButton.SetActive(true);
+        }
+        if(newPosX == firstMapPosX)
+        {
+            prvButton.SetActive(false);
+            //nxtButtonPos.position = new Vector2 (prvButtonPos.position.x, nxtButtonPos.position.y);
+        }
+        else
+        {
+            prvButton.SetActive(true);
+            //nxtButtonPos.position = new Vector2 (-770f, nxtButtonPos.position.y);
+        }
+
         // clouds.position = new Vector2(step, clouds.position.y);
     }
     // void OnDisable()
@@ -150,11 +175,11 @@ public class MapControllerUI : MonoBehaviour
 
         }
 
-        BlackScreenUI.instance.Show(shadow_oppasity);
+        //BlackScreenUI.instance.Show(shadow_oppasity);
 
-        yield return new WaitForSeconds(shadow_delay);
+        //yield return new WaitForSeconds(shadow_delay);
         SetMapPosition();
-        BlackScreenUI.instance.Hide(shadow_oppasity);
+        //BlackScreenUI.instance.Hide(shadow_oppasity);
 
         SetWorldNumber();
 
@@ -195,11 +220,11 @@ public class MapControllerUI : MonoBehaviour
 
         }
 
-        BlackScreenUI.instance.Show(shadow_oppasity);
+        //BlackScreenUI.instance.Show(shadow_oppasity);
 
-        yield return new WaitForSeconds(shadow_delay);
+        //yield return new WaitForSeconds(shadow_delay);
         SetMapPosition();
-        BlackScreenUI.instance.Hide(shadow_oppasity);
+        //BlackScreenUI.instance.Hide(shadow_oppasity);
 
         SetWorldNumber();
 

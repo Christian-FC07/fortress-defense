@@ -101,4 +101,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   background: {fileID: 11400000, guid: a56a4e7e87da08b44be6a083fce5129f, type: 2}
+  volume: {fileID: 11400000, guid: d7d57a6c3f936484db972db939d09b8f, type: 2}
   detail: {fileID: 11400000, guid: 9749165f765b22c43986534010ad69a5, type: 2}
