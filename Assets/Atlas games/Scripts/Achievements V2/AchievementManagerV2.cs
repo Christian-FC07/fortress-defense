@@ -36,6 +36,7 @@ public class AchievementManagerV2 : MonoBehaviour
     public TextMeshProUGUI trophyCount;
     public Image ringBar;
     public bool trophycheck;
+    public GameObject _obj;
 
     public void ReloadPage(int index)
     {
@@ -93,9 +94,11 @@ public class AchievementManagerV2 : MonoBehaviour
     void Add(AchievementModel trophy)
     {
         GameObject obj = Instantiate(rootObject, parent, false);
+        _obj = obj;
         ChildInParent.GetChild(obj.transform, NameIndex).GetComponent<TextMeshProUGUI>().text = trophy.name;
-        ChildInParent.GetChild(obj.transform, DescriptionIndex).GetComponent<TextMeshProUGUI>().text = trophy.description.Replace(TextPlaceHolder, ColorTag.Replace(ColorTagPlaceHolder, trophy.checkpoint.ToString()));
-        ChildInParent.GetChild(obj.transform, BackgroundIndex).GetComponent<Image>().color = BackgroundColor.Evaluate((float)trophy.type / (float)AchievementType.LEGENDARY);
+        //ChildInParent.GetChild(obj.transform, DescriptionIndex).GetComponent<TextMeshProUGUI>().text = trophy.description.Replace(TextPlaceHolder, ColorTag.Replace(ColorTagPlaceHolder, trophy.checkpoint.ToString()));
+        ChildInParent.GetChild(obj.transform, DescriptionIndex).GetComponent<TextMeshProUGUI>().text = trophy.description.Replace(TextPlaceHolder, trophy.checkpoint.ToString());
+        //ChildInParent.GetChild(obj.transform, BackgroundIndex).GetComponent<Image>().color = BackgroundColor.Evaluate((float)trophy.type / (float)AchievementType.LEGENDARY);
         ChildInParent.GetChild(obj.transform, RewardIndex).GetComponent<TextMeshProUGUI>().text = RewardPrefix + trophy.reward.ToString();
         ChildInParent.GetChild(obj.transform, RewardIndex).GetComponent<TextMeshProUGUI>().color = OppositeColors.Evaluate((float)trophy.type / (float)AchievementType.LEGENDARY);
 
@@ -112,7 +115,7 @@ public class AchievementManagerV2 : MonoBehaviour
             }
             else
                 ChildInParent.GetChild(obj.transform, TimerIndex).GetComponent<AvhievementTimerClock>().StartTheClock(scheduleModel.ExpireDate);
-            ChildInParent.GetChild(obj.transform, TimerIndex).GetComponent<TextMeshProUGUI>().color = OppositeColors.Evaluate((float)trophy.type / (float)AchievementType.LEGENDARY);
+            //ChildInParent.GetChild(obj.transform, TimerIndex).GetComponent<TextMeshProUGUI>().color = OppositeColors.Evaluate((float)trophy.type / (float)AchievementType.LEGENDARY);
         }
 
         AchievementTasksV2.self.TryGetEvent(trophy._id, out AchievementEventsV2 Events);
@@ -150,7 +153,7 @@ public class AchievementManagerV2 : MonoBehaviour
     {
         ChildInParent.GetChild(obj.transform, ClaimIndex).gameObject.SetActive(state == ClaimIndex);
         ChildInParent.GetChild(obj.transform, SliderIndex).gameObject.SetActive(state == SliderIndex);
-        ChildInParent.GetChild(obj.transform, DoneIndex).gameObject.SetActive(state == DoneIndex);
+        //ChildInParent.GetChild(obj.transform, DoneIndex).gameObject.SetActive(state == DoneIndex);
     }
 
     int TotalTrophies()
@@ -170,6 +173,11 @@ public class AchievementManagerV2 : MonoBehaviour
         trophyCount.text = AchievedTrophies() + " out of " + TotalTrophies();
         ringBar.fillAmount = (float)AchievedTrophies() / (float)TotalTrophies();
 
+    }
+
+    void claim()
+    {
+        ChildInParent.GetChild(_obj.transform, DoneIndex).gameObject.SetActive(true);
     }
 
 }
