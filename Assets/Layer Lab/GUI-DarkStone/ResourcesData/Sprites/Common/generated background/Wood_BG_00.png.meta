@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b8a3888bc00eacf409c56b857aa14127
+guid: 3cbeb28f641e7d74a990cd3e94815e0e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3698781276131722299
-    second: btn_help_guidebook_0
+      213: 4340087147678860571
+    second: Wood_BG_00_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: btn_help_guidebook_0
+      name: Wood_BG_00_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 201
-        height: 210
+        width: 1920
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5cb7d4eb60a4bacc0800000000000000
-      internalID: -3698781276131722299
+      spriteID: b1503ab14461b3c30800000000000000
+      internalID: 4340087147678860571
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      btn_help_guidebook_0: -3698781276131722299
+      Wood_BG_00_0: 4340087147678860571
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
