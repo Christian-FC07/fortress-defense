@@ -1164,6 +1164,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
         type: 3}
+      propertyPath: bossManeger.pc_object
+      value: 
+      objectReference: {fileID: 1625546740}
+    - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
+        type: 3}
+      propertyPath: bossManeger.mobile_object
+      value: 
+      objectReference: {fileID: 1625546740}
+    - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
+        type: 3}
       propertyPath: EnemyWaves.Array.data[0].enemySpawns.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -1176,7 +1186,7 @@ PrefabInstance:
         type: 3}
       propertyPath: EnemyWaves.Array.data[0].enemySpawns.Array.data[0].enemy
       value: 
-      objectReference: {fileID: 3697426553599540029, guid: 7dfdda48220dd5944b956539ff4680ee,
+      objectReference: {fileID: 3697426553599540029, guid: ad3c9fb4b2945fb498fa1479e92a5f03,
         type: 3}
     - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
         type: 3}
@@ -1187,6 +1197,11 @@ PrefabInstance:
     - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
         type: 3}
       propertyPath: EnemyWaves.Array.data[0].enemySpawns.Array.data[1].boosType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
+        type: 3}
+      propertyPath: EnemyWaves.Array.data[0].enemySpawns.Array.data[0].customSpeed
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
@@ -1663,6 +1678,12 @@ GameObject:
 --- !u!1 &1625546739 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6236543548493764085, guid: 2bf74b55ce29e004d87d0765ff719bcd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1625546736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1625546740 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6236543549714592265, guid: 2bf74b55ce29e004d87d0765ff719bcd,
     type: 3}
   m_PrefabInstance: {fileID: 1625546736}
   m_PrefabAsset: {fileID: 0}
@@ -2486,6 +2507,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2583819630124595366, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
+      value: -0.7555913
+      objectReference: {fileID: 0}
+    - target: {fileID: 2583819630124595366, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
+      value: 4.791307
+      objectReference: {fileID: 0}
+    - target: {fileID: 2583819630124595366, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
+      value: -0.8239153
+      objectReference: {fileID: 0}
     - target: {fileID: 2859291877774657217, guid: 6a4ee2e5a83e4834c9039c1606411f05,
         type: 3}
       propertyPath: m_LocalPosition.x
