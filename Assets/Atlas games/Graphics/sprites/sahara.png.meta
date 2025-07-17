@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fda71c81addb6094cb1d8ba2c0fcf3b6
+guid: 5e3f79391448e04499a18743e9b16f24
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -249435226218364478
-    second: Ice_BG_01_0
+      213: 5823484276992852418
+    second: sahara_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ice_BG_01_0
+      name: sahara_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1536
-        height: 1024
+        x: 26
+        y: 42
+        width: 1848
+        height: 650
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2c109cabbf3d98cf0800000000000000
-      internalID: -249435226218364478
+      spriteID: 2c14b35881c21d050800000000000000
+      internalID: 5823484276992852418
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ice_BG_01_0: -249435226218364478
+      sahara_0: 5823484276992852418
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
