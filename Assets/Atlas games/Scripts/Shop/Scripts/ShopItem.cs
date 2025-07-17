@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Cysharp.Threading.Tasks.Triggers;
 using DynamicScrollRect;
 using UnityEngine;
 using UnityEngine.UI;
@@ -55,6 +56,7 @@ public class ShopItem : ScrollItem<ScrollItemData>
                 itemCountTag.SetActive(false);
                 levelLockBG.SetActive(true);
                 levelLockText.text = "Reach Level " + itemData.levelToUnlock + " To Unlock!";
+                
             }
             else
             {
@@ -74,6 +76,7 @@ public class ShopItem : ScrollItem<ScrollItemData>
                 {
                     expImage.SetActive(true);
                     coinImage.SetActive(false);
+
                 }
 
                 Vector2 originalSize =
@@ -109,6 +112,7 @@ public class ShopItem : ScrollItem<ScrollItemData>
             {
                 coinImage.SetActive(true);
                 expImage.SetActive(false);
+
             }
             else
             {
