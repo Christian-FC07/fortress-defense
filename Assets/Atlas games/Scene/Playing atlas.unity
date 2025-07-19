@@ -1186,7 +1186,7 @@ PrefabInstance:
         type: 3}
       propertyPath: EnemyWaves.Array.data[0].enemySpawns.Array.data[0].enemy
       value: 
-      objectReference: {fileID: 3697426553599540029, guid: ad3c9fb4b2945fb498fa1479e92a5f03,
+      objectReference: {fileID: 3697426553599540029, guid: 08c25d185db4ecd4e8c93471a77ea748,
         type: 3}
     - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
         type: 3}
@@ -1207,12 +1207,17 @@ PrefabInstance:
     - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
         type: 3}
       propertyPath: EnemyWaves.Array.data[0].enemySpawns.Array.data[0].numberEnemy
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
         type: 3}
       propertyPath: EnemyWaves.Array.data[0].enemySpawns.Array.data[1].numberEnemy
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
+        type: 3}
+      propertyPath: EnemyWaves.Array.data[0].enemySpawns.Array.data[0].spawnFromUnderground
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2108,6 +2113,56 @@ PrefabInstance:
       propertyPath: 'Players.Array.data[0]'
       value: 
       objectReference: {fileID: 1617385040}
+    - target: {fileID: 6995952787937973923, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995952788094176943, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995952788236016706, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6995952789625549624, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7920822934197604718, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389249335307649525, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389249336597245583, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389249336998411362, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8389249337104475246, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8689253831430955939, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:

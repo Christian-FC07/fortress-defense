@@ -69,6 +69,7 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                         spawnPos = (Vector2)spawnPositions[Random.Range(0, spawnPositions.Length)].position;
                     else
                         spawnPos = (Vector2)BossSpawnPoint.position;
+                        yield return new WaitForSeconds(3/(j+1));
                     GameObject _temp = Instantiate(enemySpawn.enemy,spawnPos,Quaternion.identity) as GameObject;
                     var isEnemy = (Enemy)_temp.GetComponent(typeof(Enemy));
                     if (isEnemy != null)
