@@ -45,7 +45,7 @@ public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
             currentPlayer = beginPlayer;
             SetPlayer();
         }
-        InvokeRepeating("CheckStatus", 0, 0.2f);
+        InvokeRepeating("CheckStatus", 0, 0.1f);
     }
 
     private void CheckStatus()
@@ -54,7 +54,8 @@ public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
         addIcon.SetActive(is_addIcon);
         upgradeIcon.SetActive((currentPlayer + 1 < Players.Length)
             && (Players[currentPlayer + 1].upgradedCharacterID.price <= GameManager.Instance.currentExp)
-            && currentPlayer > -1);
+            && currentPlayer > -1
+            && Players[currentPlayer + 1].upgradedCharacterID.levelUnlock <= GlobalValue.levelPlaying);
     }
 
     void SetPlayer()
