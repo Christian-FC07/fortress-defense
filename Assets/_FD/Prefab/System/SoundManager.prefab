@@ -74,7 +74,7 @@ MonoBehaviour:
   thunderSFX: {fileID: 8300000, guid: 83e013d69d240d14d8084c158d621d69, type: 3}
   rain: {fileID: 8300000, guid: 071ac8bda018d66439241fed63321e19, type: 3}
   world:
-  - {fileID: 8300000, guid: b6eab4112a811214192c4b922fdc9cc0, type: 3}
+  - {fileID: 8300000, guid: 492ba57b9233e6c4ab12b8754a9fbac9, type: 3}
   - {fileID: 8300000, guid: c035d2e835f904b4aa92a0553c4b353d, type: 3}
   - {fileID: 8300000, guid: a30961033a9bd9742a23240430c7bdba, type: 3}
   - {fileID: 8300000, guid: 300ebee5bccb8a84c95a9dad5616de63, type: 3}
