@@ -25,7 +25,7 @@ public class guideBook : MonoBehaviour
         lockIconStatic = lockIcon;
         coverStatic = cover;
     }
-    public void Awake()
+    public void Update()
     {
         StartCoroutine(enemyListCo());
     }
