@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4480874347891268793}
   - component: {fileID: 5727891113898780265}
+  - component: {fileID: -7236319895828434309}
   m_Layer: 0
   m_Name: Global Volume (zombieland)
   m_TagString: Untagged
@@ -133,4 +134,26 @@ MonoBehaviour:
   priority: 1
   blendDistance: 0
   weight: 1
-  sharedProfile: {fileID: 11400000, guid: 25aea5419d6d1f548bf7a8d6dcdde9ad, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 4b7950046923c4747a3c4dd98df9124c, type: 2}
+--- !u!95 &-7236319895828434309
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9162472307505580610}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c209554cd17a81d48b56e7703e91dfc4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

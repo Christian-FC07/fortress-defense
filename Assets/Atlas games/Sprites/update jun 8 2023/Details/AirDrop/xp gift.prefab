@@ -180,6 +180,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mouse: 323
-  gift: 150
+  gift: 75
   speed: 2
   clickDrop: 0

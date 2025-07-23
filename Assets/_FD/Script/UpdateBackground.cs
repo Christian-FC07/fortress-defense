@@ -26,6 +26,7 @@ public class UpdateBackground : MonoBehaviour
         else if(GlobalValue.levelPlaying > 1000)
         {
             Instantiate(background.endlessBackground[(int)((GlobalValue.levelPlaying) - 1001)], new Vector2(0, 0), Quaternion.identity);
+            Instantiate(volume.endlessVolumes[(int)((GlobalValue.levelPlaying) - 1001)], new Vector2(0, 0), Quaternion.identity);
 
         }
     }

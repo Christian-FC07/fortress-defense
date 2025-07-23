@@ -7,6 +7,9 @@ public class levelChanges2 : MonoBehaviour
 
     //public LevelWave[] Levels;
 
+    public GameObject airDrop;
+    bool oneTime = true;
+
     void Start()
     {
         //GameLevelSetupScr = GameLevelSetupObj.GetComponent<GameLevelSetup>();
@@ -34,6 +37,11 @@ public class levelChanges2 : MonoBehaviour
                SoundManager.Instance.PauseMusic(true);
                Debug.Log("p is pressed");
            }
+        if(GlobalValue.levelPlaying > 1002 && oneTime)
+        {
+            airDrop.SetActive(true);
+            oneTime = false;
+        }
     }
 
     void wplayMusic()

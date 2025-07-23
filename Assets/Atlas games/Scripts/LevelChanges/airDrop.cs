@@ -32,7 +32,7 @@ public class airDrop : MonoBehaviour
             xPosition = Random.Range(-9f, 4f);
             spawnAirDrop();
             Destroy(clone, destroyTime);
-            destroyAirDrop1();
+            //destroyAirDrop1();
         }
     }
 
@@ -41,7 +41,7 @@ public class airDrop : MonoBehaviour
         clone = Instantiate(xpBox, new Vector3(xPosition, 5f, 0), Quaternion.identity);
     }
 
-    void destroyAirDrop1() {
+    void Update() {
         addXP addxp;
         clone.TryGetComponent<addXP>(out addxp);
 

@@ -778,11 +778,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7114820371159929400, guid: 5da6134de5a9f494f91c5ebead7f6a13,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1093599768789038304, guid: 5da6134de5a9f494f91c5ebead7f6a13, type: 3}
@@ -1131,31 +1126,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HomeMenu-Mobile
       objectReference: {fileID: 0}
-    - target: {fileID: 175416222874014435, guid: 2561b79b7284f2844a441c212c25f94a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1708690919205843450, guid: 2561b79b7284f2844a441c212c25f94a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 19.30896
-      objectReference: {fileID: 0}
-    - target: {fileID: 1708690919205843450, guid: 2561b79b7284f2844a441c212c25f94a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -16.89508
-      objectReference: {fileID: 0}
-    - target: {fileID: 2328583912514855186, guid: 2561b79b7284f2844a441c212c25f94a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -23.850098
-      objectReference: {fileID: 0}
-    - target: {fileID: 2328583912514855186, guid: 2561b79b7284f2844a441c212c25f94a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 41.32007
-      objectReference: {fileID: 0}
     - target: {fileID: 4677290180107626091, guid: 2561b79b7284f2844a441c212c25f94a,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1255,21 +1225,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6690207628414856286, guid: 2561b79b7284f2844a441c212c25f94a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -2.605957
-      objectReference: {fileID: 0}
-    - target: {fileID: 6945457269421441401, guid: 2561b79b7284f2844a441c212c25f94a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -61.899902
-      objectReference: {fileID: 0}
-    - target: {fileID: 7468469383961269624, guid: 2561b79b7284f2844a441c212c25f94a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 61.364746
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
