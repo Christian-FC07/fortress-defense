@@ -4,4 +4,5 @@ using UnityEngine;
 public class volume : ScriptableObject
 {
     public GameObject[] volumes;
+    public GameObject[] endlessVolumes;
 }

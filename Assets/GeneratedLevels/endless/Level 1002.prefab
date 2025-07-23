@@ -45,66 +45,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemiesList:
-  - enemyObject: {fileID: 3697426553599540029, guid: e609431dd0248d042a395795efcddcbe,
+  - enemyObject: {fileID: 3697426553599540029, guid: 7dfdda48220dd5944b956539ff4680ee,
       type: 3}
     initialCount: 4
-  - enemyObject: {fileID: 3697426553599540029, guid: 537f35228a5264848b3121aa9fefeed5,
+  - enemyObject: {fileID: 3697426553599540029, guid: ad3c9fb4b2945fb498fa1479e92a5f03,
       type: 3}
     initialCount: 5
-  - enemyObject: {fileID: 3697426553599540029, guid: 5339f2b27ed1dd64cb896451eefc9527,
+  - enemyObject: {fileID: 3697426553599540029, guid: 27bba435961afe240b40b456adade0db,
       type: 3}
     initialCount: 3
-  - enemyObject: {fileID: 3697426553599540029, guid: df766cef53ab92644a732a8278935bc3,
-      type: 3}
-    initialCount: 4
-  - enemyObject: {fileID: 3697426553599540029, guid: 2aa2dc7703541024c8499380eecdb0c1,
-      type: 3}
-    initialCount: 6
-  - enemyObject: {fileID: 3697426553599540029, guid: 9a05675c952f08045a5a3b7787e522ed,
-      type: 3}
-    initialCount: 5
-  - enemyObject: {fileID: 3697426553599540029, guid: ba2f9661050f02f48a26aee34992be82,
-      type: 3}
-    initialCount: 6
-  - enemyObject: {fileID: 3697426553599540029, guid: 8aa11a9cc6457064fa956fa1b68a4f57,
-      type: 3}
-    initialCount: 6
-  - enemyObject: {fileID: 3697426553599540029, guid: 914091abf1349174da470874e2df4a29,
-      type: 3}
-    initialCount: 5
-  - enemyObject: {fileID: 3697426553599540029, guid: 146ac991bd4171f43b286bb8f9ba0d22,
-      type: 3}
-    initialCount: 3
-  - enemyObject: {fileID: 3697426553599540029, guid: 050fe6578c9571b46affb3feba8aae05,
-      type: 3}
-    initialCount: 4
-  - enemyObject: {fileID: 3697426553599540029, guid: 427daa829d528e34ca63ee46083c4ae3,
-      type: 3}
-    initialCount: 4
   - enemyObject: {fileID: 3697426553599540029, guid: b2f6fb48edaece2488a54de4c7f54173,
       type: 3}
-    initialCount: 3
-  - enemyObject: {fileID: 3697426553599540029, guid: a45934357c935694d89f80cb76fa5057,
-      type: 3}
-    initialCount: 5
-  - enemyObject: {fileID: 3697426553599540029, guid: c47adc789fb57b140ae8e85a39b32010,
-      type: 3}
-    initialCount: 6
-  - enemyObject: {fileID: 3697426553599540029, guid: 08c25d185db4ecd4e8c93471a77ea748,
-      type: 3}
-    initialCount: 6
-  - enemyObject: {fileID: 3697426553599540029, guid: 5925716a212a8b44886fd359ed734c8d,
-      type: 3}
-    initialCount: 5
-  - enemyObject: {fileID: 3697426553599540029, guid: 5ee2b02c971c2834eb0c8140eb661953,
-      type: 3}
     initialCount: 4
-  - enemyObject: {fileID: 3697426553599540029, guid: 2aa2dc7703541024c8499380eecdb0c1,
+  - enemyObject: {fileID: 3697426553599540029, guid: ebf5b7a6fb18dad4c971446be774d569,
       type: 3}
-    initialCount: 3
-  - enemyObject: {fileID: 3697426553599540029, guid: e2c5be5d9fa697e4f8cb54298ff477f4,
+    initialCount: 6
+  - enemyObject: {fileID: 3697426553599540029, guid: 845e2df4539fa2843af77a0c331c1484,
       type: 3}
     initialCount: 5
+  - enemyObject: {fileID: 3697426553599540029, guid: 126cff94c6aa80f428ec3a8f88d6cb2f,
+      type: 3}
+    initialCount: 6
+  - enemyObject: {fileID: 3697426553599540029, guid: 688999ab3046d2048ba7e3e680f4e863,
+      type: 3}
+    initialCount: 6
   type: 0
   defaultExp: 300
   Waves: []

@@ -625,6 +625,11 @@ PrefabInstance:
       propertyPath: 'world.Array.data[10]'
       value: 
       objectReference: {fileID: 8300000, guid: 492ba57b9233e6c4ab12b8754a9fbac9, type: 3}
+    - target: {fileID: 3034858571291879240, guid: 7686c0ada310fd846bf5c6596abfdcd6,
+        type: 3}
+      propertyPath: 'endlessworld.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 4e4709eea248d08478b5a063cfca19a7, type: 3}
     - target: {fileID: 3034858571291879241, guid: 7686c0ada310fd846bf5c6596abfdcd6,
         type: 3}
       propertyPath: m_LocalPosition.x
