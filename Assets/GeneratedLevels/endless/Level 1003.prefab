@@ -70,13 +70,13 @@ MonoBehaviour:
       type: 3}
     initialCount: 6
   type: 0
-  defaultExp: 0
+  defaultExp: 150
   Waves: []
   increaseEnemySpeedDifficultyRate: 0.1
   increaseEnemyAttackDifficultyRate: 0.001
   increaseEnemyHealthDifficultyRate: 0.1
   increaseEnemyAmountDifficultyRate: 1
-  increaseEnemyWaitDifficultyRate: 0.2
+  increaseEnemyWaitDifficultyRate: 0.1
   initialWaitAmount: 1
   level: 1003
   backgroundSprite: {fileID: 21300000, guid: 16084e46c1bd857498837807db7899ce, type: 3}
