@@ -20,3 +20,4 @@ MonoBehaviour:
   endlessVolumes:
   - {fileID: 9162472307505580610, guid: 18907e3644ebffe4e8720f293e33ded6, type: 3}
   - {fileID: 9162472307505580610, guid: dc90fd7e4d0e653469119c55febf22a5, type: 3}
+  - {fileID: 9162472307505580610, guid: a087fe121618a9d4b94831e8467161c5, type: 3}
