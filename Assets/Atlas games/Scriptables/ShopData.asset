@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ShopData:
   - itemName: Gunner
-    itemImage: {fileID: 21300000, guid: 9f7bbe2eeaa770f41957a094b25bda9f, type: 3}
+    itemImage: {fileID: 21300000, guid: 0bb9dda66f02346938e16c8fe9d6b054, type: 3}
     buttonImage: {fileID: 21300000, guid: 9f7bbe2eeaa770f41957a094b25bda9f, type: 3}
     itemPrice: 999
     itemMaxValue: 999
@@ -65,7 +65,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Health
-    itemImage: {fileID: 21300000, guid: 8ccb643ce99232a48ad91289b2028a00, type: 3}
+    itemImage: {fileID: 21300000, guid: 2ee84863a109245b69e2fd89e8a2f3b6, type: 3}
     buttonImage: {fileID: 21300000, guid: 8ccb643ce99232a48ad91289b2028a00, type: 3}
     itemPrice: 1650
     itemMaxValue: 1650
@@ -82,7 +82,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Shield
-    itemImage: {fileID: 21300000, guid: 392cd14c223846d40b0bd1749af9bae6, type: 3}
+    itemImage: {fileID: 21300000, guid: e00201374ca2040ee847d9d26dadbcbe, type: 3}
     buttonImage: {fileID: 21300000, guid: 392cd14c223846d40b0bd1749af9bae6, type: 3}
     itemPrice: 1650
     itemMaxValue: 1650
@@ -99,7 +99,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Potion 1
-    itemImage: {fileID: 21300000, guid: b0073b4a54024f14d9aa458a8a2e31b1, type: 3}
+    itemImage: {fileID: 21300000, guid: 3f33b437288e9450aa6fc71ff5ecea9f, type: 3}
     buttonImage: {fileID: 21300000, guid: b0073b4a54024f14d9aa458a8a2e31b1, type: 3}
     itemPrice: 1650
     itemMaxValue: 1650
@@ -116,7 +116,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Potion 2
-    itemImage: {fileID: 21300000, guid: 5c25c7c560b84f542a9cf475ea768802, type: 3}
+    itemImage: {fileID: 21300000, guid: 3f33b437288e9450aa6fc71ff5ecea9f, type: 3}
     buttonImage: {fileID: 21300000, guid: 5c25c7c560b84f542a9cf475ea768802, type: 3}
     itemPrice: 1650
     itemMaxValue: 1650
@@ -125,7 +125,7 @@ MonoBehaviour:
     isTimed: 0
     purchaseType: 1
     levelLock: 1
-    levelToUnlock: 1000
+    levelToUnlock: 300
     id: 17
     isFree: 0
     oneTimePurchase: 1
@@ -133,7 +133,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Potion 3
-    itemImage: {fileID: 21300000, guid: d218f92c3a64f6148913676e1e5a86d5, type: 3}
+    itemImage: {fileID: 21300000, guid: 2ee84863a109245b69e2fd89e8a2f3b6, type: 3}
     buttonImage: {fileID: 21300000, guid: d218f92c3a64f6148913676e1e5a86d5, type: 3}
     itemPrice: 1650
     itemMaxValue: 1650
@@ -142,7 +142,7 @@ MonoBehaviour:
     isTimed: 0
     purchaseType: 1
     levelLock: 1
-    levelToUnlock: 1000
+    levelToUnlock: 300
     id: 18
     isFree: 0
     oneTimePurchase: 1
@@ -159,7 +159,7 @@ MonoBehaviour:
     isTimed: 0
     purchaseType: 1
     levelLock: 1
-    levelToUnlock: 1000
+    levelToUnlock: 300
     id: 19
     isFree: 0
     oneTimePurchase: 1
@@ -167,7 +167,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Wolf
-    itemImage: {fileID: 21300000, guid: a5e4d80d280d94648b1bde315757f224, type: 3}
+    itemImage: {fileID: 21300000, guid: d0e9695c0153948809694226675d9b29, type: 3}
     buttonImage: {fileID: 21300000, guid: a5e4d80d280d94648b1bde315757f224, type: 3}
     itemPrice: 1850
     itemMaxValue: 1850
@@ -184,7 +184,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Viking
-    itemImage: {fileID: 21300000, guid: f39ae11be539f1248acda3f54b6587ee, type: 3}
+    itemImage: {fileID: 21300000, guid: 0bb9dda66f02346938e16c8fe9d6b054, type: 3}
     buttonImage: {fileID: 21300000, guid: f39ae11be539f1248acda3f54b6587ee, type: 3}
     itemPrice: 3450
     itemMaxValue: 3450
@@ -201,7 +201,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Rockman
-    itemImage: {fileID: 21300000, guid: 85adeee7c2c2eb54f8434775c5ead006, type: 3}
+    itemImage: {fileID: 21300000, guid: d0e9695c0153948809694226675d9b29, type: 3}
     buttonImage: {fileID: 21300000, guid: 85adeee7c2c2eb54f8434775c5ead006, type: 3}
     itemPrice: 5100
     itemMaxValue: 5100
@@ -218,7 +218,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Mystery Box 1
-    itemImage: {fileID: 21300000, guid: 230b7d23ce4bc9047a522f8407bd42ee, type: 3}
+    itemImage: {fileID: 21300000, guid: 503132a8a8e964a4f8619530b41b5384, type: 3}
     buttonImage: {fileID: 21300000, guid: 230b7d23ce4bc9047a522f8407bd42ee, type: 3}
     itemPrice: 500
     itemMaxValue: 500
@@ -235,7 +235,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Mystery Box 2
-    itemImage: {fileID: 21300000, guid: 230b7d23ce4bc9047a522f8407bd42ee, type: 3}
+    itemImage: {fileID: 21300000, guid: 503132a8a8e964a4f8619530b41b5384, type: 3}
     buttonImage: {fileID: 21300000, guid: 230b7d23ce4bc9047a522f8407bd42ee, type: 3}
     itemPrice: 700
     itemMaxValue: 700
@@ -252,7 +252,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Mystery Boxe 3
-    itemImage: {fileID: 21300000, guid: 230b7d23ce4bc9047a522f8407bd42ee, type: 3}
+    itemImage: {fileID: 21300000, guid: 503132a8a8e964a4f8619530b41b5384, type: 3}
     buttonImage: {fileID: 21300000, guid: 230b7d23ce4bc9047a522f8407bd42ee, type: 3}
     itemPrice: 1200
     itemMaxValue: 1200
@@ -320,7 +320,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: SlowDown
-    itemImage: {fileID: 21300000, guid: 8b89eceb0e0282e45b2c9d1a01551bc3, type: 3}
+    itemImage: {fileID: 21300000, guid: 715d6ea1f8c8a45c487d18da0f6ec237, type: 3}
     buttonImage: {fileID: 21300000, guid: 8b89eceb0e0282e45b2c9d1a01551bc3, type: 3}
     itemPrice: 15
     itemMaxValue: 20
@@ -405,7 +405,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Shield
-    itemImage: {fileID: 21300000, guid: d6b6e2b84a89c5a49aca1ebd62f97b7a, type: 3}
+    itemImage: {fileID: 21300000, guid: e00201374ca2040ee847d9d26dadbcbe, type: 3}
     buttonImage: {fileID: 21300000, guid: d6b6e2b84a89c5a49aca1ebd62f97b7a, type: 3}
     itemPrice: 15
     itemMaxValue: 20
@@ -507,7 +507,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: DoubleArrow
-    itemImage: {fileID: 21300000, guid: 46de0d94d79c06547bdf4b5cc4cee428, type: 3}
+    itemImage: {fileID: 21300000, guid: f9370a85701a54a6694e1269307d1681, type: 3}
     buttonImage: {fileID: 21300000, guid: 1e3b79979d2b88e41a161c998ac6f5f5, type: 3}
     itemPrice: 15
     itemMaxValue: 20
@@ -524,7 +524,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: FrozenArrow
-    itemImage: {fileID: 21300000, guid: f4d7c9fca7fb0d3459c8e7e63696cb49, type: 3}
+    itemImage: {fileID: 21300000, guid: f9370a85701a54a6694e1269307d1681, type: 3}
     buttonImage: {fileID: 21300000, guid: f4d7c9fca7fb0d3459c8e7e63696cb49, type: 3}
     itemPrice: 15
     itemMaxValue: 20
@@ -541,7 +541,7 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: PoisonArrow
-    itemImage: {fileID: 21300000, guid: f5eb013065c863543a42c34e3f3cdb5b, type: 3}
+    itemImage: {fileID: 21300000, guid: f9370a85701a54a6694e1269307d1681, type: 3}
     buttonImage: {fileID: 21300000, guid: f5eb013065c863543a42c34e3f3cdb5b, type: 3}
     itemPrice: 15
     itemMaxValue: 20

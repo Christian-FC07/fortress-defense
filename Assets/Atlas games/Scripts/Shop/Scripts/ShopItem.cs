@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using DynamicScrollRect;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ShopItem : ScrollItem<ScrollItemData>
 {
@@ -11,16 +12,16 @@ public class ShopItem : ScrollItem<ScrollItemData>
     [HideInInspector] public int itemPrice;
     [HideInInspector] public bool hasMaxValue;
     [HideInInspector] public int maxAmount;
-    public Text itemPriceText;
-    public Text itemCountText;
-    public Text itemNameText;
+    public TextMeshProUGUI itemPriceText;
+    public TextMeshProUGUI itemCountText;
+    public TextMeshProUGUI itemNameText;
     public Button purchaseButton;
     public Image itemImage;
     public ShopPopup popup;
     public GameObject coinImage;
     public GameObject expImage;
     private Shop.ItemPurchaseType _purchaseType;
-    public Text levelLockText;
+    public TextMeshProUGUI levelLockText;
     public GameObject itemCountTag;
     public GameObject levelLockBG;
     private bool _oneTimePurchase;
