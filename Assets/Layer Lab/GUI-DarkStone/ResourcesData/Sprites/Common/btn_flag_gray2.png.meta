@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      btn_flag_gray2_0: 6090266051373783559
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

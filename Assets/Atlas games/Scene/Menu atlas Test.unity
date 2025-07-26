@@ -653,9 +653,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: HomeMenu-PC
       objectReference: {fileID: 0}
-    - target: {fileID: 3958277083158902776, guid: 5da6134de5a9f494f91c5ebead7f6a13,
+    - target: {fileID: 3233803307426593173, guid: 5da6134de5a9f494f91c5ebead7f6a13,
         type: 3}
-      propertyPath: m_IsActive
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4677290180107626091, guid: 5da6134de5a9f494f91c5ebead7f6a13,
@@ -1102,6 +1102,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HomeMenu-Mobile
+      objectReference: {fileID: 0}
+    - target: {fileID: 175416222874014435, guid: 2561b79b7284f2844a441c212c25f94a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1708690919205843450, guid: 2561b79b7284f2844a441c212c25f94a,
         type: 3}
