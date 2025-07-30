@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 646a5e4faaa30b548b221f0a1a04ff0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  airDrop: {fileID: 0}
 --- !u!114 &6826214467434400533
 MonoBehaviour:
   m_ObjectHideFlags: 0
