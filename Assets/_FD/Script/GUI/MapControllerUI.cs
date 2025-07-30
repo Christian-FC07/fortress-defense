@@ -37,7 +37,7 @@ public class MapControllerUI : MonoBehaviour
 
     void fixMapPos()
     {
-        newPosX = -1920 * (((int)(GlobalValue.LevelPass / 10)));
+        newPosX = -step * (int)(GlobalValue.LevelPass / 10);
         BlockLevel.anchoredPosition = new Vector2(newPosX, BlockLevel.anchoredPosition.y);
         Debug.Log(newPosX);
     }
@@ -145,11 +145,6 @@ public class MapControllerUI : MonoBehaviour
     public void SetMapPosition()
     {
         BlockLevel.anchoredPosition = new Vector2(newPosX, BlockLevel.anchoredPosition.y);
-    }
-
-    public void FixMapPosition()
-    {
-
     }
 
     bool allowPressButton = true;
