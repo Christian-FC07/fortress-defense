@@ -79,7 +79,8 @@ public class Level : MonoBehaviour
             return;
         }
 
-        numberTxt.text = level + "";
+        if (numberTxt)
+            numberTxt.text = level + "";
         var openLevel = isUnlock ? true : GlobalValue.LevelPass + 1 >= level;
         //		var levelUnlocked = isUnlock ? true : GlobalValue.isLevelUnlocked (levelSceneName);	
         var stars = GlobalValue.LevelStar(level);       //get the stars of the current level

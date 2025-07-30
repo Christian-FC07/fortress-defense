@@ -2373,21 +2373,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2583819630124595366, guid: 6a4ee2e5a83e4834c9039c1606411f05,
-        type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].x
-      value: -0.7555913
-      objectReference: {fileID: 0}
-    - target: {fileID: 2583819630124595366, guid: 6a4ee2e5a83e4834c9039c1606411f05,
-        type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[0].y
-      value: 4.791307
-      objectReference: {fileID: 0}
-    - target: {fileID: 2583819630124595366, guid: 6a4ee2e5a83e4834c9039c1606411f05,
-        type: 3}
-      propertyPath: m_Points.m_Paths.Array.data[0].Array.data[1].x
-      value: -0.8239153
-      objectReference: {fileID: 0}
     - target: {fileID: 2859291877774657217, guid: 6a4ee2e5a83e4834c9039c1606411f05,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2442,11 +2427,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: The Fortrest's PLAYER
-      objectReference: {fileID: 0}
-    - target: {fileID: 2859291877774657223, guid: 6a4ee2e5a83e4834c9039c1606411f05,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
