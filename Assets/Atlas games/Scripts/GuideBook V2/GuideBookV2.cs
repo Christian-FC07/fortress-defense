@@ -37,6 +37,8 @@ public class GuideBookV2 : MonoBehaviour
         {
             Destroy(item.gameObject);
         }
+        if (items.Count > 0)
+            SetCharacterDetails(items[0]);
         foreach (CharacterClasses.Info item in items)
         {
             GameObject obj = Instantiate(Prefab, Parent, false);
