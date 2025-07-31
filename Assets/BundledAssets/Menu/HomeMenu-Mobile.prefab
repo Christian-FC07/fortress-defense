@@ -1395,7 +1395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4677290180107626091
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1522,6 +1522,7 @@ MonoBehaviour:
   GuideBook: {fileID: 0}
   FriendGuide: {fileID: 0}
   EnemyGuide: {fileID: 0}
+  GuideBookV2: {fileID: 0}
   facebookLink: https://www.instagram.com/atlasgamesio/
   twitterLink: https://x.com/atlasgamesio
   playingLevelName: Playing atlas
@@ -35488,7 +35489,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.982}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -51, y: 142}
+  m_AnchoredPosition: {x: -50.99994, y: 142}
   m_SizeDelta: {x: 439.15942, y: 439.1595}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4528502229545144486
@@ -45451,7 +45452,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -43, y: -218.00098}
+  m_AnchoredPosition: {x: -42.99994, y: -218.00098}
   m_SizeDelta: {x: 439.15942, y: 439.1595}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1262665259773090284
@@ -52710,7 +52711,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -39.488037, y: -26.000977}
+  m_AnchoredPosition: {x: -39.487976, y: -26.000977}
   m_SizeDelta: {x: -787.5, y: -232}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8600048591277032760
