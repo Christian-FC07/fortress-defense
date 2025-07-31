@@ -37,7 +37,7 @@ public class MapControllerUI : MonoBehaviour
 
     void fixMapPos()
     {
-        newPosX = -step * (((int)(GlobalValue.LevelPass / 10)));
+        newPosX = -step * (int)(GlobalValue.LevelPass / 10);
         BlockLevel.anchoredPosition = new Vector2(newPosX, BlockLevel.anchoredPosition.y);
     }
 
