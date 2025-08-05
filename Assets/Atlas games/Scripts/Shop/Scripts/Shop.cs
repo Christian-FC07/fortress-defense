@@ -31,30 +31,30 @@ public class Shop : MonoBehaviour
         {
             case "pets":
                 _chosenType = ItemTypes.Pet;
-                ShopTab.SetText("pets");
+                ShopTab.SetText("Pets");
                 break;
             case "items":
                 _chosenType = ItemTypes.Item;
-                ShopTab.SetText("items");
+                ShopTab.SetText("Items");
                 break;
             case "magics":
                 _chosenType = ItemTypes.Magic;
-                ShopTab.SetText("magics");
+                ShopTab.SetText("Magics");
 
                 break;
             case "monsters":
                 _chosenType = ItemTypes.Monster;
-                ShopTab.SetText("monsters");
+                ShopTab.SetText("Monsters");
 
                 break;
             case "website":
                 _chosenType = ItemTypes.Website;
-                ShopTab.SetText("website");
+                ShopTab.SetText("Website");
 
                 break;
             case "tower":
                 _chosenType = ItemTypes.Towers;
-                ShopTab.SetText("tower");
+                ShopTab.SetText("Towers");
 
                 break;
         }
@@ -92,3 +92,4 @@ public class Shop : MonoBehaviour
         User.Coin = 1000;
     }
 }
+
