@@ -2,6 +2,7 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using TMPro;
 public class MapControllerUI : MonoBehaviour
 {
     //	public Transform BlockLevel;
@@ -21,6 +22,7 @@ public class MapControllerUI : MonoBehaviour
     public GameObject life_prefab;
     public Transform life_parent;
     public GameObject[] lifes;
+    public TextMeshProUGUI life;
     public Transform clouds;
     public GameObject nxtButton;
     public GameObject prvButton;
@@ -73,8 +75,9 @@ public class MapControllerUI : MonoBehaviour
     void OnEnable()
     {
         SoundManager.PlayMusic(music);
-        createLifes();
-        UpdateLifes();
+        // createLifes();
+        // UpdateLifes();
+        life.text = $"{LifeTTRSource.Life}/{APIManager.instance.maxLife}";
     }
     void UpdateLifes()
     {
@@ -94,11 +97,11 @@ public class MapControllerUI : MonoBehaviour
     }
     void Update()
     {
-        if (APIManager.instance.lifeTTR.TTL() > 0)
-        {
-            lifes[LifeTTRSource.Life].GetComponent<Image>().fillAmount = 1 - APIManager.instance.lifeTTR.TTLPercent;
-            UpdateLifes();
-        }
+        // if (APIManager.instance.lifeTTR.TTL() > 0)
+        // {
+        //     lifes[LifeTTRSource.Life].GetComponent<Image>().fillAmount = 1 - APIManager.instance.lifeTTR.TTLPercent;
+        //     UpdateLifes();
+        // }
 
         if(newPosX == lastMapPosX)
         {
