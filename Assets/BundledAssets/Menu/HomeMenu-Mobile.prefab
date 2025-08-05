@@ -26441,6 +26441,7 @@ MonoBehaviour:
   dynamicScrollRect: {fileID: 8334910208940583599}
   content: {fileID: 6026634568722045440}
   scrollContentParent: {fileID: 5133160443236943071}
+  ShopTab: {fileID: 0}
   data: {fileID: 11400000, guid: b375ab648a098ff4cbec24ecfb1b5061, type: 2}
 --- !u!1 &4428983368653880217
 GameObject:
