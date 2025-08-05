@@ -66,7 +66,7 @@ MonoBehaviour:
     - wait: 3
       enemy: {fileID: 3697426553599540029, guid: a45934357c935694d89f80cb76fa5057,
         type: 3}
-      numberEnemy: 117
+      numberEnemy: 3
       rate: 0
       customHealth: 91
       customSpeed: 0

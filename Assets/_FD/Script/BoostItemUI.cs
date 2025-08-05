@@ -62,6 +62,7 @@ public class BoostItemUI : MonoBehaviour, IKeyboardCall
     //  public Text FA_timerTxt;
     
     public int FA_Time = 30;
+    int animCheck = 0;
     [ReadOnly] public float FA_TimeCounter = 0;
 
     [Header("Boost Item")]
@@ -137,6 +138,8 @@ public class BoostItemUI : MonoBehaviour, IKeyboardCall
                 itemButtons[i].image.sprite = GetItemData(_chosenItems[i]).buttonImage;
                 itemRemainingTexts[i].text = "x" + GlobalValue.GetChosenShopItem(GetItemData(_chosenItems[i]).itemName);
             }
+
+            boostItemAnim.SetInteger("show/hide", 3);
         }
         
     //   DA_remainTxt.text = "x" + GlobalValue.ItemDoubleArrow;
@@ -421,7 +424,7 @@ public class BoostItemUI : MonoBehaviour, IKeyboardCall
     IEnumerator BoostItemHideCoDo;
     public void BoostItem()
     {
-        if (boostItemAnim.GetBool("show"))
+        /*if (boostItemAnim.GetBool("show"))
         {
             HideBoostPanel();
         }
@@ -431,7 +434,20 @@ public class BoostItemUI : MonoBehaviour, IKeyboardCall
             boostItemAnim.SetBool("show", true);
             boostButtonAnim.SetBool("on", true);
             RunTimerAutoHideBoostPanel();
+        }*/
+        if(animCheck == 0)
+        {
+            boostItemAnim.SetInteger("show/hide", 1);
+            animCheck = 1;
         }
+        else if(animCheck == 1)
+        {
+            boostItemAnim.SetInteger("show/hide", 2);
+            animCheck = 0;
+        }
+
+        Debug.Log("pressed");
+        //animCheck = 1;
     }
 
     void RunTimerAutoHideBoostPanel()

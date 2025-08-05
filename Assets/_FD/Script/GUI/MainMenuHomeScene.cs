@@ -18,6 +18,7 @@ public class MainMenuHomeScene : MonoBehaviour
     public GameObject GuideBook;
     public GameObject FriendGuide;
     public GameObject EnemyGuide;
+    public GameObject GuideBookV2;
     public string facebookLink;
     public string twitterLink = "https://twitter.com/";
     public string playingLevelName = "Playing atlas";
@@ -155,6 +156,12 @@ public class MainMenuHomeScene : MonoBehaviour
         BlackScreenUI.instance.Show(0.2f);
         MapUI.SetActive(open);
 
+        BlackScreenUI.instance.Hide(0.2f);
+    }
+    public void OpenGuideBookV2(bool open)
+    {
+        BlackScreenUI.instance.Show(0.2f);
+        GuideBookV2.SetActive(open);
         BlackScreenUI.instance.Hide(0.2f);
     }
     public void OpenGuideBookCo(bool open)

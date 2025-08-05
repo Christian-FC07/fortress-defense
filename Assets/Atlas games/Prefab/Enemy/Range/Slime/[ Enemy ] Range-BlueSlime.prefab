@@ -542,7 +542,7 @@ MonoBehaviour:
   shootingPoint: {fileID: 1315889782}
   damage: 30
   detectDistance: 5
-  bullet: {fileID: 5032857821712884110, guid: 433004efad2f1b7469ce4a162c45f643, type: 3}
+  bullet: {fileID: 414578797556809647, guid: cd4234632ef382840b879be95b95b645, type: 3}
   shootingRate: 2
   multiShoot: 1
   multiShootRate: 0.2

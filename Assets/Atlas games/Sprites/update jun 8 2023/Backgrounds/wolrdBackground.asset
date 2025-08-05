@@ -25,4 +25,5 @@ MonoBehaviour:
   - {fileID: 5516121105000887575, guid: b902fd7e55af53a46ae9afab6ab5879d, type: 3}
   endlessBackground:
   - {fileID: 521221421157979490, guid: f1cde1576aac71b4888ef3a47e468c50, type: 3}
-  - {fileID: 9201454128335231799, guid: a45a9bf7ba2e1a54a84f88c69a026e05, type: 3}
+  - {fileID: 2527542697392180860, guid: 5ff6b7f34129a5e459acd96b91be7f6f, type: 3}
+  - {fileID: 3249765244880398360, guid: 5b1dafda47341854c8f601b01859d1e1, type: 3}

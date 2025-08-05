@@ -34,6 +34,13 @@ public class MapControllerUI : MonoBehaviour
     {
         //SetDots();
         SetWorldNumber();
+        fixMapPos();
+    }
+
+    void fixMapPos()
+    {
+        newPosX = -step * (int)(GlobalValue.LevelPass / 10);
+        BlockLevel.anchoredPosition = new Vector2(newPosX, BlockLevel.anchoredPosition.y);
     }
 
     void SetWorldNumber()
@@ -163,7 +170,6 @@ public class MapControllerUI : MonoBehaviour
             OnMapChange?.Invoke(currentPos,true);
             newPosX -= step;
             newPosX = Mathf.Clamp(newPosX, -step * (howManyBlocks - 1), 0);
-
         }
         else
         {

@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class Level : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class Level : MonoBehaviour
     public int world = 1;
     public int level = 1;
     public bool isUnlock = false;
-    public Text numberTxt;
+    public TextMeshProUGUI numberTxt;
     public GameObject imgLock, imgOpen, imgPass;
 
     public GameObject starGroup;
@@ -78,7 +79,8 @@ public class Level : MonoBehaviour
             return;
         }
 
-        numberTxt.text = level + "";
+        if (numberTxt)
+            numberTxt.text = level + "";
         var openLevel = isUnlock ? true : GlobalValue.LevelPass + 1 >= level;
         //		var levelUnlocked = isUnlock ? true : GlobalValue.isLevelUnlocked (levelSceneName);	
         var stars = GlobalValue.LevelStar(level);       //get the stars of the current level
@@ -98,7 +100,7 @@ public class Level : MonoBehaviour
             if (GlobalValue.LevelPass + 1 == level)
             {
                 imgOpen.SetActive(true);
-                FindFirstObjectByType<MapControllerUI>().SetCurrentWorld(world);
+                //FindFirstObjectByType<MapControllerUI>().SetCurrentWorld(world);
             }
             else
             {
