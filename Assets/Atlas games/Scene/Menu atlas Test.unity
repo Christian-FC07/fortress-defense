@@ -653,11 +653,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: HomeMenu-PC
       objectReference: {fileID: 0}
-    - target: {fileID: 930644565280427318, guid: 5da6134de5a9f494f91c5ebead7f6a13,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4677290180107626091, guid: 5da6134de5a9f494f91c5ebead7f6a13,
         type: 3}
       propertyPath: m_Pivot.x
@@ -758,15 +753,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8826723591052832092, guid: 5da6134de5a9f494f91c5ebead7f6a13,
+    - target: {fileID: 6394208524555025626, guid: 5da6134de5a9f494f91c5ebead7f6a13,
         type: 3}
-      propertyPath: m_SizeDelta.x
-      value: -496.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8826723591052832092, guid: 5da6134de5a9f494f91c5ebead7f6a13,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: -605.2177
+      propertyPath: lastMapPosX
+      value: -13440
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
