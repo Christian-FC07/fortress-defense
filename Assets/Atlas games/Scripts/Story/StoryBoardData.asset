@@ -12,16 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86ced64e669fbc94cb3bce5384dedaa0, type: 3}
   m_Name: StoryBoardData
   m_EditorClassIdentifier: 
-  storyBoardDataSets:
-  - title: Level 0
-    description: aslkdj
-    level: 1
-    scene: {fileID: 8135377291036808378, guid: de326c56a1adf9b4ea350c16da51201e, type: 3}
-  - title: Level 0
-    description: aslkdj
-    level: 1
-    scene: {fileID: 8135377291036808378, guid: 514c05a16b17b2947a6d1b081be49379, type: 3}
-  - title: Level 5
-    description: aslkdj
-    level: 5
-    scene: {fileID: 8135377291036808378, guid: 514c05a16b17b2947a6d1b081be49379, type: 3}
+  storyBoardDataSets: []
