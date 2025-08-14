@@ -1090,11 +1090,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5659647873374551293, guid: 2bf74b55ce29e004d87d0765ff719bcd,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6236543548493764089, guid: 2bf74b55ce29e004d87d0765ff719bcd,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2426,9 +2421,9 @@ SceneRoots:
   - {fileID: 649034434}
   - {fileID: 6168901443506814116}
   - {fileID: 8673832288181271789}
-  - {fileID: 900228026843511936}
   - {fileID: 7849257185910687055}
   - {fileID: 8214555431268762529}
+  - {fileID: 900228026843511936}
   - {fileID: 460101550}
   - {fileID: 5819173854667223568}
   - {fileID: 1347806396}
