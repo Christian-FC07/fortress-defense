@@ -36,7 +36,7 @@ public class AchievementManagerV2 : MonoBehaviour
     public TextMeshProUGUI trophyCount;
     public Image ringBar;
     public bool trophycheck;
-    public GameObject _obj;
+    public GameObject LoadingCover;
 
     public void ReloadPage(int index)
     {
@@ -44,6 +44,9 @@ public class AchievementManagerV2 : MonoBehaviour
     }
     IEnumerator StartEnum(int index)
     {
+        // Show loading cover
+        LoadingCover?.SetActive(true);
+
         // Get all child objects
         GameObject[] children = new GameObject[parent.transform.childCount];
         for (int i = 0; i < parent.transform.childCount; i++)
@@ -82,11 +85,13 @@ public class AchievementManagerV2 : MonoBehaviour
             Add(model);
             yield return null;
         }
+        // Hide loading cover
+        LoadingCover?.SetActive(false);
     }
     public void ClaimAchievement(AchievementModel foundedModel, GameObject obj)
     {
         if (foundedModel == null || !foundedModel.isActive || !((int)foundedModel.status >= 2)) return;
-        User.Coin = foundedModel.reward;
+        User.Gem = foundedModel.reward;
         foundedModel.status = TrophyStatus.PAYED;
         BasePlayerPrefs<AchievementModel>.Update(foundedModel._id, foundedModel);
         SetUpButtons(obj, DoneIndex);
@@ -94,7 +99,6 @@ public class AchievementManagerV2 : MonoBehaviour
     void Add(AchievementModel trophy)
     {
         GameObject obj = Instantiate(rootObject, parent, false);
-        _obj = obj;
         ChildInParent.GetChild(obj.transform, NameIndex).GetComponent<TextMeshProUGUI>().text = trophy.name;
         //ChildInParent.GetChild(obj.transform, DescriptionIndex).GetComponent<TextMeshProUGUI>().text = trophy.description.Replace(TextPlaceHolder, ColorTag.Replace(ColorTagPlaceHolder, trophy.checkpoint.ToString()));
         ChildInParent.GetChild(obj.transform, DescriptionIndex).GetComponent<TextMeshProUGUI>().text = trophy.description.Replace(TextPlaceHolder, trophy.checkpoint.ToString());
@@ -173,11 +177,6 @@ public class AchievementManagerV2 : MonoBehaviour
         trophyCount.text = AchievedTrophies() + " out of " + TotalTrophies();
         ringBar.fillAmount = (float)AchievedTrophies() / (float)TotalTrophies();
 
-    }
-
-    void claim()
-    {
-        ChildInParent.GetChild(_obj.transform, DoneIndex).gameObject.SetActive(true);
     }
 
 }
