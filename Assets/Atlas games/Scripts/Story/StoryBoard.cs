@@ -17,7 +17,8 @@ public class StoryBoard : MonoBehaviour
     private RectTransform content;
     private RectTransform viewport;
     [ReadOnly] public int totalPages, currentPage;
-    [ReadOnly]public float pageHeight;
+    [ReadOnly] public float pageHeight;
+    [ReadOnly] public float currentTimeScale;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void OnEnable() {
@@ -42,6 +43,7 @@ public class StoryBoard : MonoBehaviour
     }
     void OnDisable()
     {
+        Time.timeScale = currentTimeScale;
         Skip.onClick.RemoveAllListeners();
         Skip.gameObject.SetActive(false);
         Skip.interactable = false;
@@ -66,6 +68,8 @@ public class StoryBoard : MonoBehaviour
         }
         if (currentDataSet.Length > 1) StartCoroutine(SetUpPagination());
         StartCoroutine(EnableSkip());
+        currentTimeScale = Time.timeScale;
+        Time.timeScale = 0;
     }
     IEnumerator SetUpPagination()
     {
