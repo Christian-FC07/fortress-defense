@@ -103,7 +103,7 @@ MonoBehaviour:
       BossMaxExp: 0
       spawnFromUnderground: 1
     - wait: 9
-      enemy: {fileID: 3697426553599540029, guid: ab2dc94a8d8066e4488a0ed42459800e,
+      enemy: {fileID: 3697426553599540029, guid: 13d7e518da68d044c9b22b3009a2cd16,
         type: 3}
       numberEnemy: 5
       rate: 0

@@ -62,7 +62,7 @@ MonoBehaviour:
       BossScale: 1
       BossMinExp: 0
       BossMaxExp: 0
-      spawnFromUnderground: 0
+      spawnFromUnderground: 1
     - wait: 3
       enemy: {fileID: 3697426553599540029, guid: 9a05675c952f08045a5a3b7787e522ed,
         type: 3}
@@ -114,7 +114,7 @@ MonoBehaviour:
       BossScale: 1
       BossMinExp: 0
       BossMaxExp: 0
-      spawnFromUnderground: 0
+      spawnFromUnderground: 1
     - wait: 11
       enemy: {fileID: 3697426553599540029, guid: 9a05675c952f08045a5a3b7787e522ed,
         type: 3}
@@ -131,7 +131,7 @@ MonoBehaviour:
   - wait: 3
     enemySpawns:
     - wait: 0
-      enemy: {fileID: 3697426553599540029, guid: dd9a979b88a4d5344a028c4242e69c7b,
+      enemy: {fileID: 3697426553599540029, guid: 441fa882c7dca9c4f82f8548015e8ebb,
         type: 3}
       numberEnemy: 5
       rate: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
       BossMaxExp: 0
       spawnFromUnderground: 0
     - wait: 2
-      enemy: {fileID: 3697426553599540029, guid: dd9a979b88a4d5344a028c4242e69c7b,
+      enemy: {fileID: 3697426553599540029, guid: 441fa882c7dca9c4f82f8548015e8ebb,
         type: 3}
       numberEnemy: 5
       rate: 0

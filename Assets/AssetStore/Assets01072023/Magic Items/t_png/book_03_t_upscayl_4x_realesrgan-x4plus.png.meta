@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      book_03_t_upscayl_4x_realesrgan-x4plus_0: -2738601935065960432
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
