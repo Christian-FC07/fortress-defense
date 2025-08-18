@@ -33,8 +33,8 @@ MonoBehaviour:
   - itemName: Fire
     itemImage: {fileID: 21300000, guid: 7e8782bfba03c57418c692b9203858d5, type: 3}
     buttonImage: {fileID: 21300000, guid: 7e8782bfba03c57418c692b9203858d5, type: 3}
-    itemPrice: 1650
-    itemMaxValue: 1650
+    itemPrice: 1500
+    itemMaxValue: 1500
     hasMaxValue: 1
     type: 2
     isTimed: 0
@@ -67,8 +67,8 @@ MonoBehaviour:
   - itemName: Health
     itemImage: {fileID: 21300000, guid: 2ee84863a109245b69e2fd89e8a2f3b6, type: 3}
     buttonImage: {fileID: 21300000, guid: 8ccb643ce99232a48ad91289b2028a00, type: 3}
-    itemPrice: 1650
-    itemMaxValue: 1650
+    itemPrice: 200
+    itemMaxValue: 200
     hasMaxValue: 1
     type: 1
     isTimed: 0
@@ -84,8 +84,8 @@ MonoBehaviour:
   - itemName: Shield
     itemImage: {fileID: 21300000, guid: e00201374ca2040ee847d9d26dadbcbe, type: 3}
     buttonImage: {fileID: 21300000, guid: 392cd14c223846d40b0bd1749af9bae6, type: 3}
-    itemPrice: 1650
-    itemMaxValue: 1650
+    itemPrice: 150
+    itemMaxValue: 150
     hasMaxValue: 1
     type: 1
     isTimed: 0
@@ -169,14 +169,14 @@ MonoBehaviour:
   - itemName: Wolf
     itemImage: {fileID: 21300000, guid: d0e9695c0153948809694226675d9b29, type: 3}
     buttonImage: {fileID: 21300000, guid: a5e4d80d280d94648b1bde315757f224, type: 3}
-    itemPrice: 1850
-    itemMaxValue: 1850
+    itemPrice: 3000
+    itemMaxValue: 3000
     hasMaxValue: 1
     type: 0
     isTimed: 0
     purchaseType: 1
     levelLock: 0
-    levelToUnlock: 1
+    levelToUnlock: 25
     id: 20
     isFree: 0
     oneTimePurchase: 1
@@ -186,14 +186,14 @@ MonoBehaviour:
   - itemName: Viking
     itemImage: {fileID: 21300000, guid: 0bb9dda66f02346938e16c8fe9d6b054, type: 3}
     buttonImage: {fileID: 21300000, guid: f39ae11be539f1248acda3f54b6587ee, type: 3}
-    itemPrice: 3450
-    itemMaxValue: 3450
+    itemPrice: 5500
+    itemMaxValue: 5500
     hasMaxValue: 1
     type: 0
     isTimed: 0
     purchaseType: 1
     levelLock: 0
-    levelToUnlock: 1
+    levelToUnlock: 25
     id: 21
     isFree: 0
     oneTimePurchase: 1
@@ -271,8 +271,8 @@ MonoBehaviour:
   - itemName: Poison
     itemImage: {fileID: 21300000, guid: 9eb424efeafa1ab4e97a99ecdb4f0d62, type: 3}
     buttonImage: {fileID: 21300000, guid: 9eb424efeafa1ab4e97a99ecdb4f0d62, type: 3}
-    itemPrice: 20
-    itemMaxValue: 20
+    itemPrice: 200
+    itemMaxValue: 200
     hasMaxValue: 1
     type: 2
     isTimed: 0
@@ -288,8 +288,8 @@ MonoBehaviour:
   - itemName: Lightning
     itemImage: {fileID: 21300000, guid: e5f65e010d320e441ba7bb7c7bf2a206, type: 3}
     buttonImage: {fileID: 21300000, guid: e5f65e010d320e441ba7bb7c7bf2a206, type: 3}
-    itemPrice: 20
-    itemMaxValue: 20
+    itemPrice: 2250
+    itemMaxValue: 2250
     hasMaxValue: 1
     type: 2
     isTimed: 0
@@ -322,8 +322,8 @@ MonoBehaviour:
   - itemName: SlowDown
     itemImage: {fileID: 21300000, guid: 715d6ea1f8c8a45c487d18da0f6ec237, type: 3}
     buttonImage: {fileID: 21300000, guid: 8b89eceb0e0282e45b2c9d1a01551bc3, type: 3}
-    itemPrice: 15
-    itemMaxValue: 20
+    itemPrice: 300
+    itemMaxValue: 300
     hasMaxValue: 1
     type: 1
     isTimed: 0
@@ -356,8 +356,8 @@ MonoBehaviour:
   - itemName: Tower 2
     itemImage: {fileID: 21300000, guid: ebc9712108472e9468a28fa1ce98f1c2, type: 3}
     buttonImage: {fileID: 21300000, guid: ebc9712108472e9468a28fa1ce98f1c2, type: 3}
-    itemPrice: 10000
-    itemMaxValue: 10000
+    itemPrice: 1000
+    itemMaxValue: 1000
     hasMaxValue: 1
     type: 5
     isTimed: 0
@@ -373,8 +373,8 @@ MonoBehaviour:
   - itemName: Tower 3
     itemImage: {fileID: 21300000, guid: cfe5294bee5a8114e82efb97a8a1536a, type: 3}
     buttonImage: {fileID: 21300000, guid: cfe5294bee5a8114e82efb97a8a1536a, type: 3}
-    itemPrice: 20000
-    itemMaxValue: 20000
+    itemPrice: 2200
+    itemMaxValue: 2200
     hasMaxValue: 1
     type: 5
     isTimed: 0
@@ -390,8 +390,8 @@ MonoBehaviour:
   - itemName: Tower 4
     itemImage: {fileID: 21300000, guid: 0c410db751870d14cb9c2c2628557df6, type: 3}
     buttonImage: {fileID: 21300000, guid: 0c410db751870d14cb9c2c2628557df6, type: 3}
-    itemPrice: 30000
-    itemMaxValue: 30000
+    itemPrice: 3800
+    itemMaxValue: 3800
     hasMaxValue: 1
     type: 5
     isTimed: 0
@@ -458,8 +458,8 @@ MonoBehaviour:
   - itemName: Aero
     itemImage: {fileID: 21300000, guid: df8121d4034378149a30d86521019a81, type: 3}
     buttonImage: {fileID: 21300000, guid: df8121d4034378149a30d86521019a81, type: 3}
-    itemPrice: 15
-    itemMaxValue: 20
+    itemPrice: 1600
+    itemMaxValue: 1600
     hasMaxValue: 1
     type: 2
     isTimed: 0
@@ -509,8 +509,8 @@ MonoBehaviour:
   - itemName: DoubleArrow
     itemImage: {fileID: 21300000, guid: f9370a85701a54a6694e1269307d1681, type: 3}
     buttonImage: {fileID: 21300000, guid: 1e3b79979d2b88e41a161c998ac6f5f5, type: 3}
-    itemPrice: 15
-    itemMaxValue: 20
+    itemPrice: 150
+    itemMaxValue: 150
     hasMaxValue: 1
     type: 1
     isTimed: 0
@@ -526,8 +526,8 @@ MonoBehaviour:
   - itemName: FrozenArrow
     itemImage: {fileID: 21300000, guid: f9370a85701a54a6694e1269307d1681, type: 3}
     buttonImage: {fileID: 21300000, guid: f4d7c9fca7fb0d3459c8e7e63696cb49, type: 3}
-    itemPrice: 15
-    itemMaxValue: 20
+    itemPrice: 200
+    itemMaxValue: 200
     hasMaxValue: 1
     type: 1
     isTimed: 0
@@ -613,8 +613,8 @@ MonoBehaviour:
   - itemName: DoubleXp1H
     itemImage: {fileID: 21300000, guid: 0ff358643dea9a54aae53a4d3ff1434e, type: 3}
     buttonImage: {fileID: 21300000, guid: 0ff358643dea9a54aae53a4d3ff1434e, type: 3}
-    itemPrice: 15
-    itemMaxValue: 20
+    itemPrice: 150
+    itemMaxValue: 150
     hasMaxValue: 1
     type: 1
     isTimed: 1
@@ -634,8 +634,8 @@ MonoBehaviour:
       type: 3}
     buttonImage: {fileID: -7250195882505504687, guid: 9de4d07c0e891d94eaf976c14b00e6e0,
       type: 3}
-    itemPrice: 15
-    itemMaxValue: 1
+    itemPrice: 2000
+    itemMaxValue: 2000
     hasMaxValue: 1
     type: 2
     isTimed: 0
