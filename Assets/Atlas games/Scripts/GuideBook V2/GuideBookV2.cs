@@ -14,7 +14,6 @@ public class GuideBookV2 : MonoBehaviour
     public CharacterClasses Classes;
     public TextMeshProUGUI Name, Speed, Damage, Power, Type, Weakness, Strength;
     public Image PreviewImage;
-    public GameObject cover;
     [Tooltip("Button to move to the next page")] public Button nextButton;
     [Tooltip("Button to move to the previous page")] public Button prevButton;
 
@@ -65,8 +64,6 @@ public class GuideBookV2 : MonoBehaviour
         Weakness.text = EFFECTS.get(info.Weakness);
         Strength.text = EFFECTS.get(info.Strength);
         PreviewImage.sprite = info.EnemyProfile;
-
-        if(Name.text == "Locked") Debug.Log("hiii");
     }
     IEnumerator SetUpPagination()
     {
