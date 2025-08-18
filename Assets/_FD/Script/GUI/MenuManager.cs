@@ -20,6 +20,7 @@ public class MenuManager : MonoBehaviour, IListener
     public GameObject LoadingUI;
     public GameObject HelperUI;
     public GameObject Boss;
+    public StoryBoard StoryBoard;
     public string HomeMenuName = "Menu atlas";
     [Header("Sound and Music")]
     public Image soundImage;
@@ -150,6 +151,11 @@ public class MenuManager : MonoBehaviour, IListener
         }
         SoundManager.Instance.PauseMusic(true);
         VictotyUI.SetActive(true);
+        if (StoryBoard.storyBoardData.GetStoryBoardDataSet(GlobalValue.levelPlaying).Length > 0)
+        {
+            StoryBoard.gameObject.SetActive(true);
+            StoryBoard.Init();
+        }
     }
     public void OpenVictoryMenu()
     {
@@ -198,7 +204,7 @@ public class MenuManager : MonoBehaviour, IListener
         if (LifeTTRSource.Life <= 0)
         {
             // reset the level reached to the first of world
-            GlobalValue.LevelPass = GlobalValue.WorldPass * 10 - 10;
+            // GlobalValue.LevelPass = GlobalValue.WorldPass * 10 - 10;
             //GlobalValue.Life = 2;
         }
     }
