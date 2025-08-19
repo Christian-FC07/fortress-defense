@@ -36,7 +36,8 @@ public class GameTutorialManager : MonoBehaviour
        {
             for (int a = 0; a < setup.tutorials.Length; a++)
             {
-                if (setup.tutorials[a].GetComponent<TutorialNew>().placing == TutorialPlacing.Menu && setup.tutorials[a].GetComponent<TutorialNew>().tutorialName == placing)
+                var tutorial = setup.tutorials[a].GetComponent<TutorialNew>();
+                if (tutorial.placing == TutorialPlacing.Menu && tutorial.tutorialName == placing && tutorial.AfterLevel < GlobalValue.LevelPass)
                 {
                     _tutorialObj = setup.tutorials[a].gameObject;
                 }

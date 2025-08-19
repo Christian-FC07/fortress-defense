@@ -172,25 +172,8 @@ MonoBehaviour:
     circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: Leaderboard is the place where you can compare yourself to all of the
-      players around the world. The more score you earn, the better place you will
-      get in the board!
-    tipTitle: 
-    dialogImage: {fileID: 0}
-    dialogVideo: {fileID: 0}
-    hintDirection: 0
-  - tipDirection: 0
-    dialogContentType: 0
-    tipType: 0
-    pointerDirection: 0
-    delay: 0
-    isLastDialog: 0
-    uiPartName: 
-    circleMaskScale: 0
-    isUiInteractible: 0
-    pauseGame: 0
-    tipText: Leaderboard is showing you states based on your total score on the event
-      mode.
+    tipText: Here you can view your latest score along with your place among other
+      players.
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
@@ -198,6 +181,7 @@ MonoBehaviour:
   placing: 0
   tutorialName: Leaderboard
   tutorialLevel: 16
+  AfterLevel: 0
   circleMask: {fileID: 1942228435416083188}
   pointerObject: {fileID: 1269302232089196246}
   pointerIcon: {fileID: 6603281269577699574}

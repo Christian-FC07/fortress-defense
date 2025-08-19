@@ -1730,8 +1730,7 @@ MonoBehaviour:
     circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: Here you can check all of the available challenges. By completing each
-      one will earn you will earn yourself a trophy!
+    tipText: In order to view your trophies, you can use the Achievements tab.
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
@@ -1746,8 +1745,7 @@ MonoBehaviour:
     circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: In order to check each challenge category, select its type button (e.g.
-      daily challenges).
+    tipText: Keep playing to earn more rewards.
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
@@ -1762,22 +1760,7 @@ MonoBehaviour:
     circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: You will earn yourself some gold as well by finishing each challenge.
-    tipTitle: 
-    dialogImage: {fileID: 0}
-    dialogVideo: {fileID: 0}
-    hintDirection: 0
-  - tipDirection: 0
-    dialogContentType: 0
-    tipType: 0
-    pointerDirection: 0
-    delay: 0
-    isLastDialog: 0
-    uiPartName: 
-    circleMaskScale: 0
-    isUiInteractible: 0
-    pauseGame: 0
-    tipText: Time-based challenges will get updated every week, so stay tuned!
+    tipText: Any given trophies will earn you some Gold.
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
@@ -1785,6 +1768,7 @@ MonoBehaviour:
   placing: 0
   tutorialName: Trophies
   tutorialLevel: 16
+  AfterLevel: 0
   circleMask: {fileID: 631300854953505198}
   pointerObject: {fileID: 8647203140545272142}
   pointerIcon: {fileID: 8647203141518044324}

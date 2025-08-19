@@ -13,6 +13,7 @@ public class TutorialNew : MonoBehaviour
     public TutorialPlacing placing;
     [SerializeField] public string tutorialName;
     [SerializeField] public int tutorialLevel;
+    public int AfterLevel = 0;
 
     [Header("UI Elements")]
     [Space(3)]
