@@ -1213,8 +1213,8 @@ MonoBehaviour:
     circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: 'Welcome to the world of Atlas Defense! Here you can challenge yourself
-      against enemies, and save yourself along with your castle! '
+    tipText: Welcome to the World of Atlas! Here you can challange yourself to protect
+      your poeple from the hands of the devil
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
@@ -1226,10 +1226,10 @@ MonoBehaviour:
     delay: 0
     isLastDialog: 0
     uiPartName: SinglePlayer
-    circleMaskScale: 1
+    circleMaskScale: 2
     isUiInteractible: 0
     pauseGame: 0
-    tipText: In order to start playing, press the Single Player button.
+    tipText: 'In order to play career mode, select Story.  '
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
@@ -1241,56 +1241,10 @@ MonoBehaviour:
     delay: 0
     isLastDialog: 0
     uiPartName: Events
-    circleMaskScale: 0
+    circleMaskScale: 2
     isUiInteractible: 0
     pauseGame: 0
-    tipText: In order to play the challenge mode, press the Event button.
-    tipTitle: 
-    dialogImage: {fileID: 0}
-    dialogVideo: {fileID: 0}
-    hintDirection: 0
-  - tipDirection: 2
-    dialogContentType: 0
-    tipType: 1
-    pointerDirection: 0
-    delay: 0
-    isLastDialog: 0
-    uiPartName: Challenges
-    circleMaskScale: 1
-    isUiInteractible: 0
-    pauseGame: 0
-    tipText: 'To check all of the challenges, press the Trophy button. '
-    tipTitle: 
-    dialogImage: {fileID: 0}
-    dialogVideo: {fileID: 0}
-    hintDirection: 0
-  - tipDirection: 2
-    dialogContentType: 0
-    tipType: 1
-    pointerDirection: 0
-    delay: 0
-    isLastDialog: 0
-    uiPartName: Shop
-    circleMaskScale: 1
-    isUiInteractible: 0
-    pauseGame: 0
-    tipText: Feel like baying something, check the store!
-    tipTitle: 
-    dialogImage: {fileID: 0}
-    dialogVideo: {fileID: 0}
-    hintDirection: 0
-  - tipDirection: 5
-    dialogContentType: 0
-    tipType: 1
-    pointerDirection: 0
-    delay: 0
-    isLastDialog: 0
-    uiPartName: Twitter
-    circleMaskScale: 1
-    isUiInteractible: 0
-    pauseGame: 0
-    tipText: Don't forget to checkout our social media so that you won't miss nay
-      of our   recent events!
+    tipText: In order to play the challange mode, select Events.
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
@@ -1298,6 +1252,7 @@ MonoBehaviour:
   placing: 0
   tutorialName: MainMenu
   tutorialLevel: 16
+  AfterLevel: 0
   circleMask: {fileID: 2059681597314616117}
   pointerObject: {fileID: 7806611968594830293}
   pointerIcon: {fileID: 7806611968427333183}
@@ -2032,12 +1987,12 @@ PrefabInstance:
     - target: {fileID: 6562141443933814669, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 2839.814
       objectReference: {fileID: 0}
     - target: {fileID: 6562141443933814669, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -456.0885
       objectReference: {fileID: 0}
     - target: {fileID: 6562141443971328224, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
@@ -2057,12 +2012,12 @@ PrefabInstance:
     - target: {fileID: 6562141444622895168, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 2865.2532
       objectReference: {fileID: 0}
     - target: {fileID: 6562141444622895168, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -455.422
       objectReference: {fileID: 0}
     - target: {fileID: 6562141445316944186, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
@@ -2082,12 +2037,12 @@ PrefabInstance:
     - target: {fileID: 6562141445316944188, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1068.203
       objectReference: {fileID: 0}
     - target: {fileID: 6562141445316944188, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -787.732
       objectReference: {fileID: 0}
     - target: {fileID: 6562141445441558737, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
@@ -2102,12 +2057,12 @@ PrefabInstance:
     - target: {fileID: 6562141445441558737, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 1042.764
       objectReference: {fileID: 0}
     - target: {fileID: 6562141445441558737, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -786.099
       objectReference: {fileID: 0}
     - target: {fileID: 6562141445441558739, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}

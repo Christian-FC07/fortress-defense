@@ -307,84 +307,7 @@ MonoBehaviour:
     circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: Welcome to the atlas world! Let's learn the basics. Your goal is to
-      protect your castle at all costs! So be careful out there!
-    tipTitle: 
-    dialogImage: {fileID: 0}
-    dialogVideo: {fileID: 0}
-    hintDirection: 0
-  - tipDirection: 2
-    dialogContentType: 0
-    tipType: 1
-    pointerDirection: 0
-    delay: 1
-    isLastDialog: 0
-    uiPartName: AddBtnEnableHint
-    circleMaskScale: 2
-    isUiInteractible: 0
-    pauseGame: 0
-    tipText: In order to place an archer, click the add button.
-    tipTitle: 
-    dialogImage: {fileID: 0}
-    dialogVideo: {fileID: 0}
-    hintDirection: 0
-  - tipDirection: 0
-    dialogContentType: 0
-    tipType: 2
-    pointerDirection: 0
-    delay: 0
-    isLastDialog: 0
-    uiPartName: AddBtnEnable
-    circleMaskScale: 0
-    isUiInteractible: 0
-    pauseGame: 0
-    tipText: 
-    tipTitle: 
-    dialogImage: {fileID: 0}
-    dialogVideo: {fileID: 0}
-    hintDirection: 0
-  - tipDirection: 0
-    dialogContentType: 0
-    tipType: 0
-    pointerDirection: 0
-    delay: 2
-    isLastDialog: 0
-    uiPartName: 
-    circleMaskScale: 0
-    isUiInteractible: 0
-    pauseGame: 0
-    tipText: Fighting alone is a tough situation, specially when you have to protect
-      your castle at all costs. Let's learn how to place more of our archers!
-    tipTitle: 
-    dialogImage: {fileID: 0}
-    dialogVideo: {fileID: 0}
-    hintDirection: 0
-  - tipDirection: 6
-    dialogContentType: 0
-    tipType: 1
-    pointerDirection: 0
-    delay: 0
-    isLastDialog: 0
-    uiPartName: AddBtnEnableHint2
-    circleMaskScale: 1
-    isUiInteractible: 0
-    pauseGame: 0
-    tipText: In order to place an archer, click the any other add button.
-    tipTitle: 
-    dialogImage: {fileID: 0}
-    dialogVideo: {fileID: 0}
-    hintDirection: 0
-  - tipDirection: 0
-    dialogContentType: 0
-    tipType: 2
-    pointerDirection: 2
-    delay: 2
-    isLastDialog: 0
-    uiPartName: AddBtnEnable2
-    circleMaskScale: 0
-    isUiInteractible: 0
-    pauseGame: 0
-    tipText: 
+    tipText: In order to place an archer, press the Add button.
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
@@ -392,6 +315,7 @@ MonoBehaviour:
   placing: 1
   tutorialName: 
   tutorialLevel: 1
+  AfterLevel: 0
   circleMask: {fileID: 1834032460820314285}
   pointerObject: {fileID: 7615612770633535565}
   pointerIcon: {fileID: 7615612769996285351}

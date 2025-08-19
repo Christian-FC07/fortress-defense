@@ -1565,8 +1565,10 @@ MonoBehaviour:
     circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: Feel a little tired in the battlefield? Need more man power or something
-      powerful t wipe all the enemies? This is the right place for you!
+    tipText: Sometimes the amount of enemies will be too much, which brings a very
+      tough battle! Archers might need some extra help from you or their other allies.
+      In order to be prepared for any situation, you can buy a few extra items from
+      the shop!
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
@@ -1581,7 +1583,7 @@ MonoBehaviour:
     circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: Checkout different sections in order to buy supplies.
+    tipText: In here you can by any desired item
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
@@ -1596,8 +1598,22 @@ MonoBehaviour:
     circleMaskScale: 0
     isUiInteractible: 0
     pauseGame: 0
-    tipText: Some of the items are purchasable using coins, while for some others
-      you will have to use gem.
+    tipText: Choose your desired section.
+    tipTitle: 
+    dialogImage: {fileID: 0}
+    dialogVideo: {fileID: 0}
+    hintDirection: 0
+  - tipDirection: 0
+    dialogContentType: 0
+    tipType: 0
+    pointerDirection: 0
+    delay: 0
+    isLastDialog: 0
+    uiPartName: 
+    circleMaskScale: 0
+    isUiInteractible: 0
+    pauseGame: 0
+    tipText: Press Purchase to buy the item you were looking for.
     tipTitle: 
     dialogImage: {fileID: 0}
     dialogVideo: {fileID: 0}
@@ -1605,6 +1621,7 @@ MonoBehaviour:
   placing: 0
   tutorialName: Shop
   tutorialLevel: 16
+  AfterLevel: 3
   circleMask: {fileID: 7777969568463872049}
   pointerObject: {fileID: 1959975845160732881}
   pointerIcon: {fileID: 1959975845529533755}
@@ -1821,12 +1838,12 @@ PrefabInstance:
     - target: {fileID: 6562141443933814669, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 921.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6562141443933814669, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -519.78754
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6562141444622895168, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
@@ -1841,12 +1858,12 @@ PrefabInstance:
     - target: {fileID: 6562141444622895168, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 943.5625
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6562141444622895168, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -519.78754
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6562141445316944188, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
@@ -1861,12 +1878,12 @@ PrefabInstance:
     - target: {fileID: 6562141445316944188, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2674.6125
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6562141445316944188, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -519.78754
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6562141445441558737, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
@@ -1881,12 +1898,12 @@ PrefabInstance:
     - target: {fileID: 6562141445441558737, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2654.707
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6562141445441558737, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -519.78754
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6562141445468586194, guid: f3d59a576aa214c48a16bbd159141dd5,
         type: 3}
