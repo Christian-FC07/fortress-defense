@@ -201,7 +201,7 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
     public virtual void Start()
     {
         int initialHealth = health;
-        if (GameLevelSetup.Instance && GameLevelSetup.Instance && GameLevelSetup.Instance.NightMode())
+        if (GameLevelSetup.self && GameLevelSetup.self && GameLevelSetup.self.NightMode())
         {
             if (useCustomNightMultiplier)
             {
@@ -209,7 +209,7 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
             }
             else
             {
-                health = Mathf.RoundToInt(GameLevelSetup.Instance.NightModeXpMultiplier());
+                health = Mathf.RoundToInt(GameLevelSetup.self.NightModeXpMultiplier());
             }
         }
         

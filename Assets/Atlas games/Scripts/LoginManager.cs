@@ -85,7 +85,7 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
         UserResponse auth_result = null;
         try
         {
-            auth_result = await APIManager.instance.Check_token();
+            auth_result = await APIManager.self.Check_token();
         }
         catch (System.Net.WebException)
         {
@@ -103,7 +103,7 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
         //     yield return null;
         // }
         yield return new WaitForEndOfFrame();
-        StartCoroutine(APIManager.instance.LoadAsynchronously("Menu atlas Test"));
+        StartCoroutine(APIManager.self.LoadAsynchronously("Menu atlas Test"));
     }
     public async Task Auth_with_userpass()
     {
@@ -113,7 +113,7 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
         AuthenticationResponse auth_result = null;
         try
         {
-            auth_result = await APIManager.instance.Authenticate(auth);
+            auth_result = await APIManager.self.Authenticate(auth);
         }
         catch (System.Net.WebException)
         {

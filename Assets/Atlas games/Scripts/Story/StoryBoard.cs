@@ -33,8 +33,8 @@ public class StoryBoard : MonoBehaviour
         if (Skip == null) throw new System.Exception("Skip button is not assigned in the inspector.");
         Skip.onClick.AddListener(() =>
         {
-            if (APIManager.instance == null) return;
-            APIManager.instance.LoadAsynchronously(sceneToLoad);
+            if (APIManager.self == null) return;
+            APIManager.self.LoadAsynchronously(sceneToLoad);
         });
     }
     IEnumerator EnableSkip()

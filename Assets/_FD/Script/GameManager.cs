@@ -93,8 +93,8 @@ public class GameManager : MonoBehaviour
         //		if (AdsController.instance)
         //			AdsController.instance.HideBanner ();
 
-        if (GameLevelSetup.Instance)
-            currentExp = GameLevelSetup.Instance.GetCurrentLevelExp();
+        if (GameLevelSetup.self)
+            currentExp = GameLevelSetup.self.GetCurrentLevelExp();
 
 
 

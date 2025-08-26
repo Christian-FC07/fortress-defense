@@ -77,7 +77,7 @@ public class MapControllerUI : MonoBehaviour
         SoundManager.PlayMusic(music);
         // createLifes();
         // UpdateLifes();
-        life.text = $"{LifeTTRSource.Life}/{APIManager.instance.maxLife}";
+        life.text = $"{LifeTTRSource.Life}/{APIManager.self.maxLife}";
     }
     void UpdateLifes()
     {
@@ -90,7 +90,7 @@ public class MapControllerUI : MonoBehaviour
         {
             lifes[i - 1].SetActive(true);
         }
-        if (APIManager.instance.lifeTTR.TTL() > 0)
+        if (APIManager.self.lifeTTR.TTL() > 0)
         {
             lifes[LifeTTRSource.Life].SetActive(true);
         }

@@ -71,6 +71,6 @@ public class Menu_Victory : MonoBehaviour
         Menu.SetActive(true);
         //Restart.SetActive(true);
         //Next.SetActive(true);
-        Next.SetActive(GameLevelSetup.Instance && !GameLevelSetup.Instance.isFinalLevel());
+        Next.SetActive(GameLevelSetup.self && !GameLevelSetup.self.isFinalLevel());
     }
 }

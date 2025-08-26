@@ -198,7 +198,7 @@ public class MenuManager : MonoBehaviour, IListener
         if (LifeTTRSource.Life > 0)
         {
             // remove a life from player
-            APIManager.instance.lifeTTR.addLifeTTR(LifeTTRSource.Life);
+            APIManager.self.lifeTTR.addLifeTTR(LifeTTRSource.Life);
             LifeTTRSource.Life -= 1;
         }
         if (LifeTTRSource.Life <= 0)
