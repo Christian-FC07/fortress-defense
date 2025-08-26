@@ -26,14 +26,14 @@ public class LevelEnemyManager : MonoBehaviour, IListener
     // Start is called before the first frame update
     void Start()
     {
-        if (GameLevelSetup.Instance)
+        if (GameLevelSetup.self)
         {
-        levelType = GameLevelSetup.Instance.type();
+        levelType = GameLevelSetup.self.type();
             if (levelType == LevelWave.LevelType.Endless) {
                 this.enabled = false;
                 return;
             }
-            EnemyWaves = GameLevelSetup.Instance.GetLevelWave();
+            EnemyWaves = GameLevelSetup.self.GetLevelWave();
         }
 
         //calculate number of enemies

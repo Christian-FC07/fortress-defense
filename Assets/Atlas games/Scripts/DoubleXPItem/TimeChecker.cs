@@ -36,14 +36,14 @@ public class TimeChecker : MonoBehaviour
 
         while (!_fetchedTime)
         {
-            if (APIManager.instance == null) {// If APIManager is not initialized, we can use a fallback
+            if (APIManager.self == null) {// If APIManager is not initialized, we can use a fallback
                 Debug.LogWarning("APIManager not initialized, using local time as fallback.");
                 TimeAndDateResponseModel time = new TimeAndDateResponseModel();
                 time.datetime = DateTime.Now.ToString();
                 _globalDate = time;
                 break;
             }
-            _globalDate = await APIManager.instance.GetCurrentDateAndTime();
+            _globalDate = await APIManager.self.GetCurrentDateAndTime();
             if (_globalDate.datetime != null)
             {
                 _fetchedTime = true;

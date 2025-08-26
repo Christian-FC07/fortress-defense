@@ -73,7 +73,7 @@ public class Level : MonoBehaviour
     {
 
         //check if this level > allowing level then disable it
-        if (GameLevelSetup.Instance && level > GameLevelSetup.Instance.getTotalLevels())
+        if (GameLevelSetup.self && level > GameLevelSetup.self.getTotalLevels())
         {
             gameObject.SetActive(false);
             return;

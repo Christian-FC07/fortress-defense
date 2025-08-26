@@ -16,7 +16,7 @@ using UnityEngine.Android;
 
 public class APIManager : MonoBehaviour
 {
-    public static APIManager instance;
+    public static APIManager self;
     public string timeApiUrl = "https://worldtimeapi.org/api/timezone/Asia/Tehran";
     public string BASE_URL = "https://hokm-url.herokuapp.com", assetbundle_dir = "DownloadedBundles";
     public static readonly string GAME_ID = "11";
@@ -34,7 +34,12 @@ public class APIManager : MonoBehaviour
     public int maxLife = 5;
     public void Awake()
     {
-        instance = this;
+       if (self == null) {
+           self = this;
+           DontDestroyOnLoad(gameObject);
+       } else {
+           Destroy(gameObject);
+       }
         lifeTTR = new LifeTTR(lifeTTL, maxLife);
         lifeTTR.Inintilize();
         tokenSource = new CancellationTokenSource();
@@ -92,7 +97,8 @@ public class APIManager : MonoBehaviour
     }
     public void OnDisable()
     {
-        tokenSource.Cancel();
+        if (tokenSource != null)
+            tokenSource.Cancel();
     }
 
     #region Public API Client

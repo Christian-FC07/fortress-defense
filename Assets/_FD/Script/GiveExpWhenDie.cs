@@ -20,7 +20,7 @@ public class GiveExpWhenDie : MonoBehaviour
         if (time_checker) _data = time_checker.data.ShopData;
         int initialExpMin = expMin;
         int initialExpMax = expMax;
-        if (GameLevelSetup.Instance && GameLevelSetup.Instance.NightMode())
+        if (GameLevelSetup.self && GameLevelSetup.self.NightMode())
         {
             if (useCustomNightMultiplierOnly)
                 {
@@ -29,8 +29,8 @@ public class GiveExpWhenDie : MonoBehaviour
                 }
                 else
                 {
-                    expMax =  Mathf.RoundToInt(GameLevelSetup.Instance.NightModeXpMultiplier() * initialExpMax);
-                    expMin = Mathf.RoundToInt(GameLevelSetup.Instance.NightModeXpMultiplier() * initialExpMin);
+                    expMax =  Mathf.RoundToInt(GameLevelSetup.self.NightModeXpMultiplier() * initialExpMax);
+                    expMin = Mathf.RoundToInt(GameLevelSetup.self.NightModeXpMultiplier() * initialExpMin);
                 }
         }
         else

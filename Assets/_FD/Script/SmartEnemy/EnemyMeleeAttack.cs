@@ -27,7 +27,7 @@ public class EnemyMeleeAttack : MonoBehaviour
     void Start()
     {
         float initialDamage = dealDamage;
-        if (GameLevelSetup.Instance && GameLevelSetup.Instance.NightMode())
+        if (GameLevelSetup.self && GameLevelSetup.self.NightMode())
         {
             if (useCustomNightMultiplierOnly)
             {
@@ -35,7 +35,7 @@ public class EnemyMeleeAttack : MonoBehaviour
             }
             else
             {
-                dealDamage = initialDamage * GameLevelSetup.Instance.NightModeXpMultiplier();
+                dealDamage = initialDamage * GameLevelSetup.self.NightModeXpMultiplier();
             }
         }
     }
