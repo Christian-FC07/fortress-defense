@@ -103,7 +103,7 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
         //     yield return null;
         // }
         yield return new WaitForEndOfFrame();
-        StartCoroutine(APIManager.instance.LoadAsynchronously("Download"));
+        StartCoroutine(APIManager.instance.LoadAsynchronously("Menu atlas Test"));
     }
     public async Task Auth_with_userpass()
     {

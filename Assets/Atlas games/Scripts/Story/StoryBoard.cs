@@ -20,13 +20,19 @@ public class StoryBoard : MonoBehaviour
     [ReadOnly] public float pageHeight;
     [ReadOnly] public float currentTimeScale;
 
+    private void Awake() {
+        currentTimeScale = Time.timeScale;
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private void OnEnable() {
+    private void OnEnable()
+    {
+        currentTimeScale = Time.timeScale;
         if (storyBoardData == null) throw new System.Exception("StoryBoardData is not assigned.");
         if (scrollRect == null) throw new System.Exception("ScrollRect is not assigned.");
         currentDataSet = storyBoardData.GetStoryBoardDataSet(GlobalValue.levelPlaying);
         if (Skip == null) throw new System.Exception("Skip button is not assigned in the inspector.");
-        Skip.onClick.AddListener(() => {
+        Skip.onClick.AddListener(() =>
+        {
             if (APIManager.instance == null) return;
             APIManager.instance.LoadAsynchronously(sceneToLoad);
         });
@@ -37,13 +43,10 @@ public class StoryBoard : MonoBehaviour
         Skip.gameObject.SetActive(true);
         Skip.interactable = true;
     }
-    ~StoryBoard()
-    {
-        OnDisable();
-    }
     void OnDisable()
     {
-        Time.timeScale = currentTimeScale;
+        if (currentTimeScale > 0)
+            Time.timeScale = currentTimeScale;
         Skip.onClick.RemoveAllListeners();
         Skip.gameObject.SetActive(false);
         Skip.interactable = false;
