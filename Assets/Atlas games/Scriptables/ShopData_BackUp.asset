@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4637a5e8a9919254aba4286e07db313c, type: 3}
-  m_Name: ShopData
+  m_Name: ShopData_BackUp
   m_EditorClassIdentifier: 
   ShopData:
   - itemName: Gunner
@@ -336,11 +336,9 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
-  - itemName: Stone Tower
-    itemImage: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
-      type: 3}
-    buttonImage: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
-      type: 3}
+  - itemName: Tower
+    itemImage: {fileID: 21300000, guid: 780bd17f3d9de6347b0eb6249b2b2e69, type: 3}
+    buttonImage: {fileID: 21300000, guid: 780bd17f3d9de6347b0eb6249b2b2e69, type: 3}
     itemPrice: 15
     itemMaxValue: 20
     hasMaxValue: 1
@@ -355,11 +353,9 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
-  - itemName: Iron Tower
-    itemImage: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
-      type: 3}
-    buttonImage: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
-      type: 3}
+  - itemName: Tower 2
+    itemImage: {fileID: 21300000, guid: ebc9712108472e9468a28fa1ce98f1c2, type: 3}
+    buttonImage: {fileID: 21300000, guid: ebc9712108472e9468a28fa1ce98f1c2, type: 3}
     itemPrice: 1000
     itemMaxValue: 1000
     hasMaxValue: 1
@@ -374,11 +370,9 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
-  - itemName: Ice Tower
-    itemImage: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
-      type: 3}
-    buttonImage: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
-      type: 3}
+  - itemName: Tower 3
+    itemImage: {fileID: 21300000, guid: cfe5294bee5a8114e82efb97a8a1536a, type: 3}
+    buttonImage: {fileID: 21300000, guid: cfe5294bee5a8114e82efb97a8a1536a, type: 3}
     itemPrice: 2200
     itemMaxValue: 2200
     hasMaxValue: 1
@@ -393,11 +387,9 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
-  - itemName: Volcanic door
-    itemImage: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
-      type: 3}
-    buttonImage: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
-      type: 3}
+  - itemName: Tower 4
+    itemImage: {fileID: 21300000, guid: 0c410db751870d14cb9c2c2628557df6, type: 3}
+    buttonImage: {fileID: 21300000, guid: 0c410db751870d14cb9c2c2628557df6, type: 3}
     itemPrice: 3800
     itemMaxValue: 3800
     hasMaxValue: 1
