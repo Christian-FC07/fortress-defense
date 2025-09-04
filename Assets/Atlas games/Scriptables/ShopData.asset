@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: ShopData
   m_EditorClassIdentifier: 
   ShopData:
-  - itemName: Gunner
-    itemImage: {fileID: 21300000, guid: 0bb9dda66f02346938e16c8fe9d6b054, type: 3}
+  - itemName: Slugmaw
+    itemImage: {fileID: -5693930522163591640, guid: 337ad3e868a4f9142b198920ce76b1aa,
+      type: 3}
     buttonImage: {fileID: 21300000, guid: 9f7bbe2eeaa770f41957a094b25bda9f, type: 3}
     itemPrice: 999
     itemMaxValue: 999
@@ -28,6 +29,60 @@ MonoBehaviour:
     isFree: 0
     oneTimePurchase: 1
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
+    duration: 0
+    otherTimedItems: []
+  - itemName: Crushmaw
+    itemImage: {fileID: 963370536445355227, guid: ef9b5ea047566ea4db63b15769a25e21,
+      type: 3}
+    buttonImage: {fileID: 21300000, guid: 9291c353003347e4289c40e3f7ce1ae8, type: 3}
+    itemPrice: 5100
+    itemMaxValue: 5100
+    hasMaxValue: 1
+    type: 0
+    isTimed: 0
+    purchaseType: 1
+    levelLock: 0
+    levelToUnlock: 25
+    id: 21
+    isFree: 0
+    oneTimePurchase: 1
+    pet: {fileID: 5848783413869001439, guid: 47a3389ea7fcd80408b82752901fef1c, type: 3}
+    duration: 0
+    otherTimedItems: []
+  - itemName: Gravemaul
+    itemImage: {fileID: -8345276867160947558, guid: 2847fae2d8429cf4697834c26e633259,
+      type: 3}
+    buttonImage: {fileID: 21300000, guid: 85adeee7c2c2eb54f8434775c5ead006, type: 3}
+    itemPrice: 5900
+    itemMaxValue: 5900
+    hasMaxValue: 1
+    type: 0
+    isTimed: 0
+    purchaseType: 1
+    levelLock: 0
+    levelToUnlock: 1
+    id: 22
+    isFree: 0
+    oneTimePurchase: 1
+    pet: {fileID: 8885830814786365834, guid: 8a42c3f4494766942b7362c1737df6f9, type: 3}
+    duration: 0
+    otherTimedItems: []
+  - itemName: Warrior
+    itemImage: {fileID: -8180171696930044909, guid: bd5e3e6e0b6d7fb488884fd891977597,
+      type: 3}
+    buttonImage: {fileID: 21300000, guid: 090edeefef3fb634c90c30eef91e3f60, type: 3}
+    itemPrice: 15
+    itemMaxValue: 20
+    hasMaxValue: 1
+    type: 0
+    isTimed: 0
+    purchaseType: 1
+    levelLock: 0
+    levelToUnlock: 0
+    id: 46
+    isFree: 1
+    oneTimePurchase: 0
+    pet: {fileID: 7410894354902345084, guid: 0456569c346a8cc40b693ef04ff40a03, type: 3}
     duration: 0
     otherTimedItems: []
   - itemName: Fire
@@ -181,40 +236,6 @@ MonoBehaviour:
     isFree: 0
     oneTimePurchase: 1
     pet: {fileID: 3505094654918231060, guid: 93b3a96647087d54085a68ddee065188, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Viking
-    itemImage: {fileID: 21300000, guid: 0bb9dda66f02346938e16c8fe9d6b054, type: 3}
-    buttonImage: {fileID: 21300000, guid: f39ae11be539f1248acda3f54b6587ee, type: 3}
-    itemPrice: 5500
-    itemMaxValue: 5500
-    hasMaxValue: 1
-    type: 0
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 25
-    id: 21
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 5848783413869001439, guid: 47a3389ea7fcd80408b82752901fef1c, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Rockman
-    itemImage: {fileID: 21300000, guid: d0e9695c0153948809694226675d9b29, type: 3}
-    buttonImage: {fileID: 21300000, guid: 85adeee7c2c2eb54f8434775c5ead006, type: 3}
-    itemPrice: 5100
-    itemMaxValue: 5100
-    hasMaxValue: 1
-    type: 0
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 1
-    id: 22
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 8885830814786365834, guid: 8a42c3f4494766942b7362c1737df6f9, type: 3}
     duration: 0
     otherTimedItems: []
   - itemName: Mystery Box 1
@@ -563,23 +584,6 @@ MonoBehaviour:
     isFree: 0
     oneTimePurchase: 0
     pet: {fileID: 0}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Warrior
-    itemImage: {fileID: 21300000, guid: 090edeefef3fb634c90c30eef91e3f60, type: 3}
-    buttonImage: {fileID: 21300000, guid: 090edeefef3fb634c90c30eef91e3f60, type: 3}
-    itemPrice: 15
-    itemMaxValue: 20
-    hasMaxValue: 1
-    type: 0
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 0
-    id: 46
-    isFree: 1
-    oneTimePurchase: 0
-    pet: {fileID: 7410894354902345084, guid: 0456569c346a8cc40b693ef04ff40a03, type: 3}
     duration: 0
     otherTimedItems: []
   - itemName: DefenseWall
