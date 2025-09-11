@@ -85,9 +85,199 @@ MonoBehaviour:
     pet: {fileID: 7410894354902345084, guid: 0456569c346a8cc40b693ef04ff40a03, type: 3}
     duration: 0
     otherTimedItems: []
-  - itemName: Fire
-    itemImage: {fileID: 21300000, guid: 7e8782bfba03c57418c692b9203858d5, type: 3}
-    buttonImage: {fileID: 21300000, guid: 7e8782bfba03c57418c692b9203858d5, type: 3}
+  - itemName: Stone Tower
+    itemImage: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
+      type: 3}
+    buttonImage: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
+      type: 3}
+    itemPrice: 15
+    itemMaxValue: 20
+    hasMaxValue: 1
+    type: 5
+    isTimed: 0
+    purchaseType: 1
+    levelLock: 0
+    levelToUnlock: 10
+    id: 33
+    isFree: 1
+    oneTimePurchase: 0
+    pet: {fileID: 0}
+    duration: 0
+    otherTimedItems: []
+  - itemName: Iron Tower
+    itemImage: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
+      type: 3}
+    buttonImage: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
+      type: 3}
+    itemPrice: 1000
+    itemMaxValue: 1000
+    hasMaxValue: 1
+    type: 5
+    isTimed: 0
+    purchaseType: 1
+    levelLock: 1
+    levelToUnlock: 10
+    id: 34
+    isFree: 0
+    oneTimePurchase: 1
+    pet: {fileID: 0}
+    duration: 0
+    otherTimedItems: []
+  - itemName: Ice Tower
+    itemImage: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
+      type: 3}
+    buttonImage: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
+      type: 3}
+    itemPrice: 2200
+    itemMaxValue: 2200
+    hasMaxValue: 1
+    type: 5
+    isTimed: 0
+    purchaseType: 1
+    levelLock: 1
+    levelToUnlock: 20
+    id: 35
+    isFree: 0
+    oneTimePurchase: 1
+    pet: {fileID: 0}
+    duration: 0
+    otherTimedItems: []
+  - itemName: Volcanic door
+    itemImage: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
+      type: 3}
+    buttonImage: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
+      type: 3}
+    itemPrice: 3800
+    itemMaxValue: 3800
+    hasMaxValue: 1
+    type: 5
+    isTimed: 0
+    purchaseType: 1
+    levelLock: 1
+    levelToUnlock: 30
+    id: 36
+    isFree: 0
+    oneTimePurchase: 1
+    pet: {fileID: 0}
+    duration: 0
+    otherTimedItems: []
+  - itemName: Health
+    itemImage: {fileID: -476841812353779665, guid: c28e489b5aeda5740b950e738a8a8151,
+      type: 3}
+    buttonImage: {fileID: -476841812353779665, guid: c28e489b5aeda5740b950e738a8a8151,
+      type: 3}
+    itemPrice: 500
+    itemMaxValue: 500
+    hasMaxValue: 1
+    type: 1
+    isTimed: 0
+    purchaseType: 1
+    levelLock: 0
+    levelToUnlock: 1
+    id: 14
+    isFree: 0
+    oneTimePurchase: 1
+    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
+    duration: 0
+    otherTimedItems: []
+  - itemName: Shield
+    itemImage: {fileID: -6717884257390833292, guid: f9d8be3158115ed4788461428780c42a,
+      type: 3}
+    buttonImage: {fileID: -6717884257390833292, guid: f9d8be3158115ed4788461428780c42a,
+      type: 3}
+    itemPrice: 300
+    itemMaxValue: 300
+    hasMaxValue: 1
+    type: 1
+    isTimed: 0
+    purchaseType: 1
+    levelLock: 0
+    levelToUnlock: 1
+    id: 15
+    isFree: 0
+    oneTimePurchase: 1
+    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
+    duration: 0
+    otherTimedItems: []
+  - itemName: Archer Potion
+    itemImage: {fileID: 3550858703209524254, guid: 9449de7795f01d044bc69c69e801301a,
+      type: 3}
+    buttonImage: {fileID: 3550858703209524254, guid: 9449de7795f01d044bc69c69e801301a,
+      type: 3}
+    itemPrice: 1650
+    itemMaxValue: 1650
+    hasMaxValue: 1
+    type: 1
+    isTimed: 0
+    purchaseType: 1
+    levelLock: 0
+    levelToUnlock: 1
+    id: 16
+    isFree: 0
+    oneTimePurchase: 1
+    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
+    duration: 0
+    otherTimedItems: []
+  - itemName: DoubleXp1H
+    itemImage: {fileID: 1969876612119718785, guid: e607ee1a67e6e1b40a4af0dc6429f635,
+      type: 3}
+    buttonImage: {fileID: 1969876612119718785, guid: e607ee1a67e6e1b40a4af0dc6429f635,
+      type: 3}
+    itemPrice: 150
+    itemMaxValue: 150
+    hasMaxValue: 1
+    type: 1
+    isTimed: 1
+    purchaseType: 1
+    levelLock: 0
+    levelToUnlock: 0
+    id: 49
+    isFree: 0
+    oneTimePurchase: 0
+    pet: {fileID: 7410894354902345084, guid: 0456569c346a8cc40b693ef04ff40a03, type: 3}
+    duration: 1
+    otherTimedItems:
+    - DoubleXp1D
+    - DoubleXp1H
+  - itemName: SlowDown
+    itemImage: {fileID: 21300000, guid: 715d6ea1f8c8a45c487d18da0f6ec237, type: 3}
+    buttonImage: {fileID: 21300000, guid: 8b89eceb0e0282e45b2c9d1a01551bc3, type: 3}
+    itemPrice: 300
+    itemMaxValue: 300
+    hasMaxValue: 1
+    type: 1
+    isTimed: 0
+    purchaseType: 1
+    levelLock: 0
+    levelToUnlock: 10
+    id: 32
+    isFree: 0
+    oneTimePurchase: 0
+    pet: {fileID: 0}
+    duration: 0
+    otherTimedItems: []
+  - itemName: Log
+    itemImage: {fileID: 21300000, guid: 55da1d7ff18c9864a8a0b7dda12ddb79, type: 3}
+    buttonImage: {fileID: 21300000, guid: 0c6b82178d13b514fbd46a0a8180e70e, type: 3}
+    itemPrice: 15
+    itemMaxValue: 20
+    hasMaxValue: 1
+    type: 1
+    isTimed: 0
+    purchaseType: 1
+    levelLock: 0
+    levelToUnlock: 10
+    id: 41
+    isFree: 0
+    oneTimePurchase: 0
+    pet: {fileID: 0}
+    duration: 0
+    otherTimedItems: []
+  - itemName: Firestrike
+    itemImage: {fileID: 1098286324429101383, guid: eeec659a04aef2a41b97775c06ab31bf,
+      type: 3}
+    buttonImage: {fileID: 1098286324429101383, guid: eeec659a04aef2a41b97775c06ab31bf,
+      type: 3}
     itemPrice: 1500
     itemMaxValue: 1500
     hasMaxValue: 1
@@ -114,91 +304,6 @@ MonoBehaviour:
     levelLock: 0
     levelToUnlock: 1
     id: 11
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Health
-    itemImage: {fileID: 21300000, guid: 2ee84863a109245b69e2fd89e8a2f3b6, type: 3}
-    buttonImage: {fileID: 21300000, guid: 8ccb643ce99232a48ad91289b2028a00, type: 3}
-    itemPrice: 200
-    itemMaxValue: 200
-    hasMaxValue: 1
-    type: 1
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 1
-    id: 14
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Shield
-    itemImage: {fileID: 21300000, guid: e00201374ca2040ee847d9d26dadbcbe, type: 3}
-    buttonImage: {fileID: 21300000, guid: 392cd14c223846d40b0bd1749af9bae6, type: 3}
-    itemPrice: 150
-    itemMaxValue: 150
-    hasMaxValue: 1
-    type: 1
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 1
-    id: 15
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Potion 1
-    itemImage: {fileID: 21300000, guid: 3f33b437288e9450aa6fc71ff5ecea9f, type: 3}
-    buttonImage: {fileID: 21300000, guid: b0073b4a54024f14d9aa458a8a2e31b1, type: 3}
-    itemPrice: 1650
-    itemMaxValue: 1650
-    hasMaxValue: 1
-    type: 1
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 1
-    id: 16
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Potion 2
-    itemImage: {fileID: 21300000, guid: 3f33b437288e9450aa6fc71ff5ecea9f, type: 3}
-    buttonImage: {fileID: 21300000, guid: 5c25c7c560b84f542a9cf475ea768802, type: 3}
-    itemPrice: 1650
-    itemMaxValue: 1650
-    hasMaxValue: 1
-    type: 1
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 300
-    id: 17
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Potion 3
-    itemImage: {fileID: 21300000, guid: 2ee84863a109245b69e2fd89e8a2f3b6, type: 3}
-    buttonImage: {fileID: 21300000, guid: d218f92c3a64f6148913676e1e5a86d5, type: 3}
-    itemPrice: 1650
-    itemMaxValue: 1650
-    hasMaxValue: 1
-    type: 1
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 300
-    id: 18
     isFree: 0
     oneTimePurchase: 1
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
@@ -340,99 +445,6 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
-  - itemName: SlowDown
-    itemImage: {fileID: 21300000, guid: 715d6ea1f8c8a45c487d18da0f6ec237, type: 3}
-    buttonImage: {fileID: 21300000, guid: 8b89eceb0e0282e45b2c9d1a01551bc3, type: 3}
-    itemPrice: 300
-    itemMaxValue: 300
-    hasMaxValue: 1
-    type: 1
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 10
-    id: 32
-    isFree: 0
-    oneTimePurchase: 0
-    pet: {fileID: 0}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Stone Tower
-    itemImage: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
-      type: 3}
-    buttonImage: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
-      type: 3}
-    itemPrice: 15
-    itemMaxValue: 20
-    hasMaxValue: 1
-    type: 5
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 10
-    id: 33
-    isFree: 1
-    oneTimePurchase: 0
-    pet: {fileID: 0}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Iron Tower
-    itemImage: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
-      type: 3}
-    buttonImage: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
-      type: 3}
-    itemPrice: 1000
-    itemMaxValue: 1000
-    hasMaxValue: 1
-    type: 5
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 10
-    id: 34
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 0}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Ice Tower
-    itemImage: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
-      type: 3}
-    buttonImage: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
-      type: 3}
-    itemPrice: 2200
-    itemMaxValue: 2200
-    hasMaxValue: 1
-    type: 5
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 20
-    id: 35
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 0}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Volcanic door
-    itemImage: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
-      type: 3}
-    buttonImage: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
-      type: 3}
-    itemPrice: 3800
-    itemMaxValue: 3800
-    hasMaxValue: 1
-    type: 5
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 30
-    id: 36
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 0}
-    duration: 0
-    otherTimedItems: []
   - itemName: Shield
     itemImage: {fileID: 21300000, guid: e00201374ca2040ee847d9d26dadbcbe, type: 3}
     buttonImage: {fileID: 21300000, guid: d6b6e2b84a89c5a49aca1ebd62f97b7a, type: 3}
@@ -498,23 +510,6 @@ MonoBehaviour:
     id: 40
     isFree: 0
     oneTimePurchase: 1
-    pet: {fileID: 0}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Log
-    itemImage: {fileID: 21300000, guid: 55da1d7ff18c9864a8a0b7dda12ddb79, type: 3}
-    buttonImage: {fileID: 21300000, guid: 0c6b82178d13b514fbd46a0a8180e70e, type: 3}
-    itemPrice: 15
-    itemMaxValue: 20
-    hasMaxValue: 1
-    type: 1
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 10
-    id: 41
-    isFree: 0
-    oneTimePurchase: 0
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
@@ -619,25 +614,6 @@ MonoBehaviour:
     oneTimePurchase: 0
     pet: {fileID: 7410894354902345084, guid: 0456569c346a8cc40b693ef04ff40a03, type: 3}
     duration: 0
-    otherTimedItems:
-    - DoubleXp1D
-    - DoubleXp1H
-  - itemName: DoubleXp1H
-    itemImage: {fileID: 21300000, guid: 0ff358643dea9a54aae53a4d3ff1434e, type: 3}
-    buttonImage: {fileID: 21300000, guid: 0ff358643dea9a54aae53a4d3ff1434e, type: 3}
-    itemPrice: 150
-    itemMaxValue: 150
-    hasMaxValue: 1
-    type: 1
-    isTimed: 1
-    purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 0
-    id: 49
-    isFree: 0
-    oneTimePurchase: 0
-    pet: {fileID: 7410894354902345084, guid: 0456569c346a8cc40b693ef04ff40a03, type: 3}
-    duration: 1
     otherTimedItems:
     - DoubleXp1D
     - DoubleXp1H
