@@ -235,13 +235,15 @@ MonoBehaviour:
     isFree: 0
     oneTimePurchase: 0
     pet: {fileID: 7410894354902345084, guid: 0456569c346a8cc40b693ef04ff40a03, type: 3}
-    duration: 1
+    duration: 2
     otherTimedItems:
     - DoubleXp1D
     - DoubleXp1H
   - itemName: SlowDown
-    itemImage: {fileID: 21300000, guid: 715d6ea1f8c8a45c487d18da0f6ec237, type: 3}
-    buttonImage: {fileID: 21300000, guid: 8b89eceb0e0282e45b2c9d1a01551bc3, type: 3}
+    itemImage: {fileID: -8440998258694248052, guid: 03a9b31493aedd44d8786431e6422d0c,
+      type: 3}
+    buttonImage: {fileID: -8440998258694248052, guid: 03a9b31493aedd44d8786431e6422d0c,
+      type: 3}
     itemPrice: 300
     itemMaxValue: 300
     hasMaxValue: 1
@@ -257,8 +259,10 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Log
-    itemImage: {fileID: 21300000, guid: 55da1d7ff18c9864a8a0b7dda12ddb79, type: 3}
-    buttonImage: {fileID: 21300000, guid: 0c6b82178d13b514fbd46a0a8180e70e, type: 3}
+    itemImage: {fileID: 2368875588930414890, guid: a56195c825c5ab74ca68362b73b43281,
+      type: 3}
+    buttonImage: {fileID: 2368875588930414890, guid: a56195c825c5ab74ca68362b73b43281,
+      type: 3}
     itemPrice: 15
     itemMaxValue: 20
     hasMaxValue: 1
@@ -441,23 +445,6 @@ MonoBehaviour:
     levelToUnlock: 10
     id: 31
     isFree: 1
-    oneTimePurchase: 0
-    pet: {fileID: 0}
-    duration: 0
-    otherTimedItems: []
-  - itemName: Shield
-    itemImage: {fileID: 21300000, guid: e00201374ca2040ee847d9d26dadbcbe, type: 3}
-    buttonImage: {fileID: 21300000, guid: d6b6e2b84a89c5a49aca1ebd62f97b7a, type: 3}
-    itemPrice: 15
-    itemMaxValue: 20
-    hasMaxValue: 1
-    type: 1
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 10
-    id: 37
-    isFree: 0
     oneTimePurchase: 0
     pet: {fileID: 0}
     duration: 0
