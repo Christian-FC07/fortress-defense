@@ -1355,6 +1355,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1625546736}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1625546741 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6236543548730150190, guid: 2bf74b55ce29e004d87d0765ff719bcd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1625546736}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1799645781 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6065274684843345902, guid: b78bbba641d6e6545a5e818d9f1e96f9,
@@ -1618,6 +1624,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b78bbba641d6e6545a5e818d9f1e96f9, type: 3}
+--- !u!1 &2068260186806026855 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2068260188661768743, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 2068260186806026854}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &2308828188697979768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1844,6 +1856,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TutorialManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3297719557232102739, guid: bcda26b99c0287640b39ec800a254357,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1925,6 +1942,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1558911363981498950, guid: c944f95f26027e34a9597b919fcef8ee,
+        type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 1625546741}
+    - target: {fileID: 1558911363981498950, guid: c944f95f26027e34a9597b919fcef8ee,
+        type: 3}
+      propertyPath: blur
+      value: 
+      objectReference: {fileID: 8390071902059603459}
+    - target: {fileID: 1558911363981498950, guid: c944f95f26027e34a9597b919fcef8ee,
+        type: 3}
+      propertyPath: archerManager
+      value: 
+      objectReference: {fileID: 2068260186806026855}
     - target: {fileID: 2099158811917897767, guid: c944f95f26027e34a9597b919fcef8ee,
         type: 3}
       propertyPath: airDrop
