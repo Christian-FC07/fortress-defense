@@ -20,8 +20,6 @@ public class TimedItemManager : MonoBehaviour
 
     public enum ItemDuration
     {
-        Day,
-        Hour,
         Minute,
         Second
     }
@@ -113,10 +111,6 @@ public class TimedItemManager : MonoBehaviour
     {
         switch (duration)
         {
-            case ItemDuration.Day:
-                return 24 * 3600;
-            case ItemDuration.Hour:
-                return 3600;
             case ItemDuration.Minute:
                 return 60;
             case ItemDuration.Second:
@@ -153,12 +147,6 @@ public class TimedItemManager : MonoBehaviour
 
         switch (duration)
         {
-            case ItemDuration.Day:
-                GlobalValue.SetItemDuration(itemName, 24 * 3600);
-                break;
-            case ItemDuration.Hour:
-                GlobalValue.SetItemDuration(itemName, 3600);
-                break;
             case ItemDuration.Minute:
                 GlobalValue.SetItemDuration(itemName, 60);
                 break;
