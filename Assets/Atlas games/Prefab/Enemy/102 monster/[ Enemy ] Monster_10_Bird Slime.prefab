@@ -314,8 +314,6 @@ MonoBehaviour:
   xDistanceFromEnemy: 1.5
   holeAnimationTime: 0.5
   warriorTag: Warrior
-  gravePrefab: {fileID: 6184028714355178771, guid: 8bb4c34a2f2c81c418550bfb6a730523,
-  type: 3}
   shadow: {fileID: 8835841617553682194}
 --- !u!114 &1950496936
 MonoBehaviour:
@@ -546,7 +544,7 @@ MonoBehaviour:
   disableRenderingOnOverride: 1
   _animationName: Idle
   loop: 1
-  timeScale: 1
+  timeScale: 1.5
 --- !u!1 &8835841617553682194
 GameObject:
   m_ObjectHideFlags: 0
