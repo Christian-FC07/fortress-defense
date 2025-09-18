@@ -291,7 +291,7 @@ MonoBehaviour:
     type: 2
     isTimed: 0
     purchaseType: 1
-    levelLock: 0
+    levelLock: 1
     levelToUnlock: 20
     id: 2
     isFree: 0
