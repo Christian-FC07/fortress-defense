@@ -79,9 +79,20 @@ public class ArrowProjectile : Projectile, IListener, ICanTakeDamage
 
         if (hit.Length > 0)
         {
-            isHit = Hit(hit);
+            for (int i = 0; i < 10; i++)
+            {
+                if (hit[i].transform.gameObject.tag == "enemyArmed")
+                {
+                    isHit = false;
+                    //SoundManager.PlaySfx(SoundManager.Instance.hitArmor);
+                }
+                else
+                {
+                    isHit = Hit(hit);
+                }
+            }
         }
-
+        
         oldPos = transform.position;
 
         if ((timeToLiveCounter -= Time.deltaTime) <= 0)

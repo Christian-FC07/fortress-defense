@@ -801,6 +801,14 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
         if (effect == strength)
             _damage *= strengthMultiplier;
         currentHealth -= (int)_damage;
+        if (this.tag == "enemyArmed")
+        {
+            Debug.Log("armedenemy");
+        }
+        else
+        {
+            Debug.Log("enemy");
+        }
         FloatingTextManager.Instance.ShowText("" + (int)_damage, healthBarOffset, Color.red, transform.position);
 
         //if (_bodyPart == BODYPART.HEAD)
