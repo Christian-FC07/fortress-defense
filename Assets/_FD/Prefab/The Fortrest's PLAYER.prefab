@@ -956,33 +956,26 @@ MonoBehaviour:
   fortrestLevels:
   - maxHealth: 300
     stateFortrestSprites:
-    - {fileID: -4923958591139859374, guid: 5ba10c0f1ee15684fba7ddb24d76d21e, type: 3}
-    - {fileID: -4923958591139859374, guid: 5ba10c0f1ee15684fba7ddb24d76d21e, type: 3}
-    - {fileID: -4923958591139859374, guid: 5ba10c0f1ee15684fba7ddb24d76d21e, type: 3}
-    - {fileID: -4923958591139859374, guid: 5ba10c0f1ee15684fba7ddb24d76d21e, type: 3}
-    fortressId: 33
-  - maxHealth: 450
-    stateFortrestSprites:
     - {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296, type: 3}
     - {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296, type: 3}
     - {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296, type: 3}
     - {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296, type: 3}
     fortressId: 34
-  - maxHealth: 650
+  - maxHealth: 500
     stateFortrestSprites:
     - {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69, type: 3}
     - {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69, type: 3}
     - {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69, type: 3}
     - {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69, type: 3}
     fortressId: 35
-  - maxHealth: 900
+  - maxHealth: 700
     stateFortrestSprites:
     - {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1, type: 3}
     - {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1, type: 3}
     - {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1, type: 3}
     - {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1, type: 3}
     fortressId: 36
-  - maxHealth: 1200
+  - maxHealth: 1000
     stateFortrestSprites:
     - {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4, type: 3}
     - {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4, type: 3}
