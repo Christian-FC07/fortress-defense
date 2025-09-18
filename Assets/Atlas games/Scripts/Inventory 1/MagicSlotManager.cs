@@ -25,10 +25,10 @@ public class MagicSlotManager : MonoBehaviour
             slots[i].image.sprite = Data.buttonImage;
             switch (Data.itemName)
             {
-                case "Lightning":
+                case "Lightning Strick":
                     slots[i].affectType = AffectZoneType.Lighting;
                     break;
-                case "Fire":
+                case "Fire Strike":
                     slots[i].affectType = AffectZoneType.Fire;
                     break;
                 case "Frozen":
@@ -37,19 +37,19 @@ public class MagicSlotManager : MonoBehaviour
                 case "Dark":
                     slots[i].affectType = AffectZoneType.Dark;
                     break;
-                case "Aero":
+                case "Gale":
                     slots[i].affectType = AffectZoneType.Aero;
                     break;
                 case "Poison":
                     slots[i].affectType = AffectZoneType.Poison;
                     break;
-                case "Ice":
+                case "Ice Spike":
                     slots[i].affectType = AffectZoneType.Frozen;
                     break;
                 case "Cure":
                     slots[i].affectType = AffectZoneType.Cure;
                     break;
-                case "Magnet":
+                case "Magnet Pull":
                     slots[i].affectType = AffectZoneType.Magnet;
                     break;
                 case "LightningAll":

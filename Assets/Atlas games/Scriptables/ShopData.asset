@@ -273,7 +273,7 @@ MonoBehaviour:
     isTimed: 0
     purchaseType: 1
     levelLock: 1
-    levelToUnlock: 100
+    levelToUnlock: 1000
     id: 41
     isFree: 0
     oneTimePurchase: 0
@@ -291,7 +291,7 @@ MonoBehaviour:
     type: 2
     isTimed: 0
     purchaseType: 1
-    levelLock: 1
+    levelLock: 0
     levelToUnlock: 20
     id: 2
     isFree: 0
@@ -311,7 +311,7 @@ MonoBehaviour:
     isTimed: 0
     purchaseType: 1
     levelLock: 1
-    levelToUnlock: 100
+    levelToUnlock: 1000
     id: 40
     isFree: 0
     oneTimePurchase: 1
