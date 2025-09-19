@@ -37,36 +37,6 @@ MonoBehaviour:
     LevelNumber: 5
     Delay: 1
     MenuPart: 0
-  - TutorialPrefab: {fileID: 6383901390142351076, guid: 963f983ec5380ac4ebcd956cbcd7c7cb,
-      type: 3}
-    Model: 1
-    LevelNumber: 0
-    Delay: 1
-    MenuPart: 1
-  - TutorialPrefab: {fileID: 6383901390142351076, guid: 0b03ba14b2a97e8409413e5bab081749,
-      type: 3}
-    Model: 1
-    LevelNumber: 0
-    Delay: 1
-    MenuPart: 3
-  - TutorialPrefab: {fileID: 6383901390142351076, guid: 0048580625c82be4f8fcf6342140225e,
-      type: 3}
-    Model: 1
-    LevelNumber: 0
-    Delay: 5
-    MenuPart: 2
-  - TutorialPrefab: {fileID: 6383901390142351076, guid: 06b0069e5fea5734e8110ce7eef78cf3,
-      type: 3}
-    Model: 1
-    LevelNumber: 0
-    Delay: 1
-    MenuPart: 6
-  - TutorialPrefab: {fileID: 6383901390142351076, guid: abda80d251069164aa1a67ace72d3297,
-      type: 3}
-    Model: 1
-    LevelNumber: 0
-    Delay: 1
-    MenuPart: 5
   - TutorialPrefab: {fileID: 6383901390142351076, guid: 82d3fa5ab5534c742b87660b421d39e0,
       type: 3}
     Model: 0
@@ -85,6 +55,36 @@ MonoBehaviour:
     LevelNumber: 10
     Delay: 1
     MenuPart: 0
+  - TutorialPrefab: {fileID: 6383901390142351076, guid: 963f983ec5380ac4ebcd956cbcd7c7cb,
+      type: 3}
+    Model: 1
+    LevelNumber: 0
+    Delay: 1
+    MenuPart: 1
+  - TutorialPrefab: {fileID: 6383901390142351076, guid: 0b03ba14b2a97e8409413e5bab081749,
+      type: 3}
+    Model: 1
+    LevelNumber: 0
+    Delay: 1
+    MenuPart: 3
+  - TutorialPrefab: {fileID: 6383901390142351076, guid: 0048580625c82be4f8fcf6342140225e,
+      type: 3}
+    Model: 1
+    LevelNumber: 0
+    Delay: 1
+    MenuPart: 2
+  - TutorialPrefab: {fileID: 6383901390142351076, guid: 06b0069e5fea5734e8110ce7eef78cf3,
+      type: 3}
+    Model: 1
+    LevelNumber: 0
+    Delay: 1
+    MenuPart: 6
+  - TutorialPrefab: {fileID: 6383901390142351076, guid: abda80d251069164aa1a67ace72d3297,
+      type: 3}
+    Model: 1
+    LevelNumber: 0
+    Delay: 1
+    MenuPart: 5
   - TutorialPrefab: {fileID: 6383901390142351076, guid: acac173949ed7b24fa43bd7f3cbc8dde,
       type: 3}
     Model: 1
