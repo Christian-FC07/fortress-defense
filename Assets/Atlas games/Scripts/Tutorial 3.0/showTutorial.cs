@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -16,13 +16,7 @@ public class showTutorial : MonoBehaviour
     public GameObject[] menuParts;
 
     public static bool isTutorialOn = false;
-    public static bool isTutorialOn2 = false;
     public static bool isTutorialoff2 = false;
-
-    Dictionary<int, GameObject> levelCheck = new Dictionary<int, GameObject>()
-    {
-        //{1, tutorials.infoT[1].TutorialPrefab},
-    };
 
     public void Start()
     {
@@ -34,7 +28,7 @@ public class showTutorial : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        for (int i = 0; i < 50; i++)
+        for (int i = 0; i < tutorials.infoT.Length; i++)
         {
             int levelRef = tutorials.infoT[i].LevelNumber;
             var tutorialObj = tutorials.infoT[i].TutorialPrefab;
@@ -42,9 +36,10 @@ public class showTutorial : MonoBehaviour
             var modelRef = tutorials.infoT[i].Model.ToString();
             var partRef = tutorials.infoT[i].MenuPart.ToString();
 
+            // ================= InGame Tutorials =================
             if (modelRef == "InGame" && scene.name == "Playing atlas")
             {
-                if (levelRef == GlobalValue.levelPlaying && isTutorialOn2 == false)
+                if (levelRef == GlobalValue.levelPlaying && isTutorialOn == false)
                 {
                     if (timer > delayTime)
                     {
@@ -53,8 +48,7 @@ public class showTutorial : MonoBehaviour
                         archerManager.SetActive(false);
                         blur.SetActive(true);
 
-                        // run only once
-                        isTutorialOn2 = true;
+                        isTutorialOn = true;
                     }
                 }
                 else if (isTutorialoff2 == false && buttonCheck.press)
@@ -65,32 +59,31 @@ public class showTutorial : MonoBehaviour
                     archerManager.SetActive(true);
                     blur.SetActive(false);
 
-                    // run only once
                     isTutorialoff2 = true;
                     buttonCheck.press = false;
                 }
             }
+            // ================= InMenu Tutorials =================
             else if (modelRef == "InMenu" && scene.name == "Menu atlas Test")
             {
-                if (partRef == GlobalValue.menuPart && isTutorialOn == false)
+                string tutorialKey = "tutorialMenu_" + partRef;
+
+                if (!PlayerPrefs.HasKey(tutorialKey))
                 {
-                    if (timer > delayTime)
+                    if (partRef == GlobalValue.menuPart && timer > delayTime)
                     {
                         newTutorialCLone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
 
-                        // run only once
-                        isTutorialOn = true;
+                        PlayerPrefs.SetInt(tutorialKey, 1);
+                        PlayerPrefs.Save();
                     }
                 }
-                else if (buttonCheck.press)
+
+                if (buttonCheck.press)
                 {
                     Destroy(newTutorialCLone, 0.1f);
-
                     buttonCheck.press = false;
                 }
-
-                PlayerPrefs.SetInt("tutorialMenu", 1);
-                PlayerPrefs.Save();
             }
         }
     }
@@ -101,7 +94,6 @@ public class showTutorial : MonoBehaviour
     private void ResetTutorialFlags()
     {
         isTutorialOn = false;
-        isTutorialOn2 = false;
         isTutorialoff2 = false;
         timer = 0f;
     }
