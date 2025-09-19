@@ -239,7 +239,7 @@ MonoBehaviour:
     isFree: 0
     oneTimePurchase: 0
     pet: {fileID: 7410894354902345084, guid: 0456569c346a8cc40b693ef04ff40a03, type: 3}
-    duration: 2
+    duration: 0
     otherTimedItems:
     - Double XP Min
     - Double XP Sec
