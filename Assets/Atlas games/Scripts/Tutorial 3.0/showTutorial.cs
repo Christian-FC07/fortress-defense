@@ -16,7 +16,6 @@ public class showTutorial : MonoBehaviour
     public GameObject[] menuParts;
 
     public static bool isTutorialOn = false;
-    //public static bool isTutorialoff = false;
     public static bool isTutorialOn2 = false;
     public static bool isTutorialoff2 = false;
 
@@ -28,13 +27,14 @@ public class showTutorial : MonoBehaviour
     public void Start()
     {
         scene = SceneManager.GetActiveScene();
+        ResetTutorialFlags();
     }
 
     public void Update()
     {
         timer += Time.deltaTime;
 
-        for(int i = 0; i < 50; i++)
+        for (int i = 0; i < 50; i++)
         {
             int levelRef = tutorials.infoT[i].LevelNumber;
             var tutorialObj = tutorials.infoT[i].TutorialPrefab;
@@ -42,24 +42,22 @@ public class showTutorial : MonoBehaviour
             var modelRef = tutorials.infoT[i].Model.ToString();
             var partRef = tutorials.infoT[i].MenuPart.ToString();
 
-            if(modelRef == "InGame" && scene.name == "Playing atlas")
-            {    
-                if(levelRef == GlobalValue.levelPlaying && isTutorialOn2 == false)
+            if (modelRef == "InGame" && scene.name == "Playing atlas")
+            {
+                if (levelRef == GlobalValue.levelPlaying && isTutorialOn2 == false)
                 {
-                    if(timer > delayTime)
+                    if (timer > delayTime)
                     {
-                        //StartCoroutine(showTutorialInGame());
                         newTutorialCLone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
                         UI.transform.localScale = new Vector2(2, 2);
                         archerManager.SetActive(false);
                         blur.SetActive(true);
 
-                        //run only once
+                        // run only once
                         isTutorialOn2 = true;
                     }
                 }
-
-                else if(isTutorialoff2 == false && buttonCheck.press)
+                else if (isTutorialoff2 == false && buttonCheck.press)
                 {
                     Destroy(newTutorialCLone, 0.1f);
                     Time.timeScale = 1;
@@ -67,27 +65,20 @@ public class showTutorial : MonoBehaviour
                     archerManager.SetActive(true);
                     blur.SetActive(false);
 
-                    //run only once
+                    // run only once
                     isTutorialoff2 = true;
                     buttonCheck.press = false;
                 }
             }
-            else if(modelRef == "InMenu" && scene.name == "Menu atlas Test")
+            else if (modelRef == "InMenu" && scene.name == "Menu atlas Test")
             {
-                Debug.Log(GlobalValue.menuPart);
-                for(int j = 0; j <= 5; j++)
-                {
-                    //if(menuParts[1].activeInHierarchy == true)
-                        Debug.Log("dog");
-                }
-
                 if (partRef == GlobalValue.menuPart && isTutorialOn == false)
                 {
                     if (timer > delayTime)
                     {
                         newTutorialCLone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
-                        
-                        //run only once
+
+                        // run only once
                         isTutorialOn = true;
                     }
                 }
@@ -95,36 +86,23 @@ public class showTutorial : MonoBehaviour
                 {
                     Destroy(newTutorialCLone, 0.1f);
 
-                    //run only once
-                    //isTutorialoff = true;
                     buttonCheck.press = false;
                 }
-                
+
                 PlayerPrefs.SetInt("tutorialMenu", 1);
                 PlayerPrefs.Save();
             }
         }
     }
 
-    /*public IEnumerator showTutorialInGame()
+    /// <summary>
+    /// Reset tutorial states when a new scene or level starts
+    /// </summary>
+    private void ResetTutorialFlags()
     {
-        //var delayTime = (int)tutorials.infoT[levelNum].Delay;
-        yield return new WaitForSeconds(-0.01f);
-
-        //the rest of the code
-        UI.transform.localScale = new Vector2(2, 2);
-        archerManager.SetActive(false);
-        blur.SetActive(true);
-        yield return new WaitForSeconds(1.5f);
-
-        //Time.timeScale = 0;
-    }*/
-
-    /*public IEnumerator showTutorialInMenu()
-    {
-        yield return new WaitForSeconds(1.5f);
-        
-        var tutorialRef = tutorials.infoT[levelNum].TutorialPrefab;
-        var menuPartRef = tutorials.infoT[levelNum].MenuPart.ToString();
-    } */
+        isTutorialOn = false;
+        isTutorialOn2 = false;
+        isTutorialoff2 = false;
+        timer = 0f;
+    }
 }
