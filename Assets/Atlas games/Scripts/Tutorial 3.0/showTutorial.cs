@@ -68,7 +68,7 @@ public class showTutorial : MonoBehaviour
             {
                 string tutorialKey = "tutorialMenu_" + partRef;
 
-                if (!PlayerPrefs.HasKey(tutorialKey))
+                if (PlayerPrefs.GetInt(tutorialKey ,0) == 0)
                 {
                     if (partRef == GlobalValue.menuPart && timer > delayTime)
                     {
