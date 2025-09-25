@@ -27809,7 +27809,7 @@ MonoBehaviour:
   boostButtonAnim: {fileID: 4058779889522655534}
   boostItemautoHide: 3
   SD_Rate: 0
-  SD_Time: 5
+  SD_Time: 8
   TL_Prefab: {fileID: 2993454013138529605, guid: cb4df126299527e49abb80609f0a97c2,
     type: 3}
   L_Time: 5
