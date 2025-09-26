@@ -233,8 +233,8 @@ MonoBehaviour:
     type: 1
     isTimed: 1
     purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 0
+    levelLock: 1
+    levelToUnlock: 20
     id: 49
     isFree: 0
     oneTimePurchase: 0
