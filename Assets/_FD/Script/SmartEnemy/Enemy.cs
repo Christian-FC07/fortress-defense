@@ -108,6 +108,8 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
     public float AutoHealthBarOffset = 0.2f;
     public bool IsAutoHealthBar = true;
 
+    public static bool isAlive = true;
+
     [ReadOnly] public ENEMYSTATE enemyState = ENEMYSTATE.IDLE;
     protected ENEMYEFFECT enemyEffect;
     [Space]
@@ -380,6 +382,7 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
 
     public virtual void Die()
     {
+        isAlive = false;
         isPlaying = false;
         GameManager.Instance.RemoveListener(this);
         isPlayerDetected = false;
@@ -439,7 +442,7 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
 
     private void CheckDamagePerFrame(float _damage)
     {
-        
+
         if (enemyState == ENEMYSTATE.DEATH)
             return;
         currentHealth -= (int)_damage;
@@ -843,7 +846,6 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
                 if (owner.criticalRateTemp >= 0.8f)
                     owner.criticalRateTemp = owner.criticalRate;
             }
-
             Die();
         }
         else

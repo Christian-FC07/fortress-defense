@@ -494,7 +494,6 @@ public class SmartEnemyGrounded : Enemy, ICanTakeDamage, IGetTouchEvent
         if (isPet)
         {
             SetSkeletonAnimation(ANIMATION_STATE.WALK, true);
-            Debug.Log("hello");
         }
         if (isDead)
             return;

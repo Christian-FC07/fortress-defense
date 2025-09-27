@@ -78,7 +78,7 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                         if (enemySpawn.customHealth > 0)
                             isEnemy.health = enemySpawn.customHealth;
                         if (enemySpawn.customSpeed > 0)
-                            isEnemy.walkSpeed = enemySpawn.customSpeed;
+                                isEnemy.walkSpeed = enemySpawn.customSpeed;
                         if (enemySpawn.customAttackDmg > 0)
                         {
                             var rangeAttack = _temp.GetComponent<EnemyRangeAttack>();
@@ -110,26 +110,31 @@ public class LevelEnemyManager : MonoBehaviour, IListener
 
                         if (enemySpawn.boosType != EnemySpawn.isBoss.NONE)
                         {
+                            //Debug.Log("The enemy is boss");
                             BossUIManager bsmng = bossManeger.type<BossUIManager>();
                             bsmng.enemy = _temp.GetComponent<Enemy>();
-                                if (enemySpawn.BossScale > 1) {
-                                    Vector2 scale = new Vector2(enemySpawn.BossScale, enemySpawn.BossScale);
+                            if (enemySpawn.BossScale > 1)
+                            {
+                                Vector2 scale = new Vector2(enemySpawn.BossScale, enemySpawn.BossScale);
                                 bsmng.enemy.gameObject.transform.localScale =
                                  bsmng.enemy.gameObject.transform.localScale * scale;
-                                }
+                            }
                             bsmng.bossType = enemySpawn.boosType;
                             bsmng.enemy.gameObject.TryGetComponent<GiveExpWhenDie>(out GiveExpWhenDie component);
-                            if (component) {
+                            if (component)
+                            {
                                 component.expMin = enemySpawn.BossMinExp;
                                 component.expMax = enemySpawn.BossMaxExp;
                             }
                             bsmng.gameObject.SetActive(true);
                             bsmng.enemy.is_boss = true;
                             bsmng.enemy.boss_ui = bsmng;
-                            AudioClip bossMusic = bsmng.enemy.BossMusic != null
+                            /*AudioClip bossMusic = bsmng.enemy.BossMusic != null
                                 ? bsmng.enemy.BossMusic
-                                : SoundManager.Instance.BossMusicClip;
-                            SoundManager.PlayMusic(SoundManager.Instance.BossMusicClip, 0.5f);
+                                : SoundManager.Instance.BossMusicClip;*/
+                            SoundManager.Instance.PauseMusic(true);
+                            //SoundManager.PlaySfx(SoundManager.Instance.musicsMap);
+                            //SoundManager.PlayMusic(SoundManager.Instance.BossMusicClip, 0.5f);
                         }
                     }
 

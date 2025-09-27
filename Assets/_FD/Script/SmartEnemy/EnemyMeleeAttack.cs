@@ -140,7 +140,8 @@ public class EnemyMeleeAttack : MonoBehaviour
         //meleeDamageObj.SetActive (false);
 
         CancelInvoke();
-        Invoke("EndAttack", 1);
+        //Invoke("EndAttack", 1);
+        EndAttack();
     }
 
     void OnDrawGizmos()
