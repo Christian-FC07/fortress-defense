@@ -22755,6 +22755,9 @@ MonoBehaviour:
   enemy: {fileID: 0}
   miniboss: {fileID: 6236543549023691446}
   boss: {fileID: 6236543549607985783}
+  fortHealth: {fileID: 0}
+  UI_Elements: []
+  healthBarAnim: {fileID: 0}
   targetFill: 1
   fill_speed: 10
 --- !u!1 &6236543549771711374
@@ -23574,7 +23577,7 @@ MonoBehaviour:
   HelperUI: {fileID: 1913664036000662382}
   Boss: {fileID: 6236543549714592265}
   StoryBoard: {fileID: 8573041546123392386}
-  HomeMenuName: Menu atlas
+  HomeMenuName: Menu atlas Test
   soundImage: {fileID: 6702946501758841530}
   musicImage: {fileID: 2794060948850581886}
   soundImageOn: {fileID: 21300000, guid: e27dfa667b940244daf02a3d7911340e, type: 3}
@@ -29556,10 +29559,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6236543550299358240}
     m_Modifications:
+    - target: {fileID: 1237879970123110651, guid: fe65fd386f54d2940a5202a4ccf7ffa5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1237879970123110651, guid: fe65fd386f54d2940a5202a4ccf7ffa5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3942187061361268362, guid: fe65fd386f54d2940a5202a4ccf7ffa5,
         type: 3}
       propertyPath: m_Name
       value: StoryBoard
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429196175840152825, guid: fe65fd386f54d2940a5202a4ccf7ffa5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4429196175840152825, guid: fe65fd386f54d2940a5202a4ccf7ffa5,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9169276577109615836, guid: fe65fd386f54d2940a5202a4ccf7ffa5,
         type: 3}
