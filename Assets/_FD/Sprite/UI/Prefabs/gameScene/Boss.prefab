@@ -132,6 +132,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   miniboss: {fileID: 3347116716053143274}
   boss: {fileID: 3347116714531913259}
+  targetFill: 1
+  fill_speed: 1
 --- !u!1 &3347116715236216666
 GameObject:
   m_ObjectHideFlags: 0

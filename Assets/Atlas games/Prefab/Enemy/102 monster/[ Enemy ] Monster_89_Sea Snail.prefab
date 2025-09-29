@@ -185,7 +185,7 @@ MonoBehaviour:
   disableRenderingOnOverride: 1
   _animationName: Idle
   loop: 1
-  timeScale: 1
+  timeScale: 2
 --- !u!1 &3697426553599540029
 GameObject:
   m_ObjectHideFlags: 0

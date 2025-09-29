@@ -276,21 +276,34 @@ MonoBehaviour:
   - {fileID: 4036194962469018800}
   - {fileID: 2685400789839964046}
   EnemyWaves:
-  - wait: 0
+  - wait: 5
     enemySpawns:
     - wait: 0
-      enemy: {fileID: 3697426553599540029, guid: 08c25d185db4ecd4e8c93471a77ea748,
+      enemy: {fileID: 3697426553599540029, guid: 97d78ecd6c472854796698bed3512866,
         type: 3}
-      numberEnemy: 5
+      numberEnemy: 2
       rate: 0
-      customHealth: 120
+      customHealth: 20
       customSpeed: 0
-      customAttackDmg: 50
+      customAttackDmg: 1
       boosType: 0
-      BossScale: 4
+      BossScale: 0
       BossMinExp: 0
       BossMaxExp: 0
-      spawnFromUnderground: 1
+      spawnFromUnderground: 0
+    - wait: 10
+      enemy: {fileID: 3697426553599540029, guid: 97952852cee0ea84283722045cf61d37,
+        type: 3}
+      numberEnemy: 1
+      rate: 0
+      customHealth: 700
+      customSpeed: 0
+      customAttackDmg: 1
+      boosType: 2
+      BossScale: 1.3
+      BossMinExp: 0
+      BossMaxExp: 0
+      spawnFromUnderground: 0
   bossManeger:
     mobile_object: {fileID: 0}
     pc_object: {fileID: 0}

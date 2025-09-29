@@ -233,11 +233,10 @@ MonoBehaviour:
     type: 3}
   enemyType: 0
   is_boss: 0
+  boss_ui: {fileID: 0}
   useGravity: 0
   gravity: 35
   walkSpeed: 0
-  walkSpeed2: 1
-  enemyScaleSelf: 1
   attackType: 3
   startBehavior: 4
   dieBehavior: 0
@@ -245,7 +244,6 @@ MonoBehaviour:
   spawnDelay: 1
   multipleSpeed: 1
   health: 60
-  health2: 100
   dieFX: {fileID: 0}
   hitFX: {fileID: 0}
   disableFX: {fileID: 0}

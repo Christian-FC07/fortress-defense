@@ -73,11 +73,12 @@ MonoBehaviour:
   soundTimeDown: {fileID: 8300000, guid: 2229462345ca38347b03be209d56aca6, type: 3}
   thunderSFX: {fileID: 8300000, guid: 83e013d69d240d14d8084c158d621d69, type: 3}
   rain: {fileID: 8300000, guid: 071ac8bda018d66439241fed63321e19, type: 3}
+  hitArmor: {fileID: 8300000, guid: 6dc1a674304cdcc47b0a1897cc519ec0, type: 3}
   world:
-  - {fileID: 8300000, guid: b6eab4112a811214192c4b922fdc9cc0, type: 3}
-  - {fileID: 8300000, guid: c035d2e835f904b4aa92a0553c4b353d, type: 3}
-  - {fileID: 8300000, guid: a30961033a9bd9742a23240430c7bdba, type: 3}
-  - {fileID: 8300000, guid: 300ebee5bccb8a84c95a9dad5616de63, type: 3}
+  - {fileID: 8300000, guid: 0186ded0b3182634b95f3886ad22a227, type: 3}
+  - {fileID: 8300000, guid: ffc7bde2b9f24df4fa286744f4411da4, type: 3}
+  - {fileID: 8300000, guid: f07e6eeefaa29af438fdbfc8300f4fb1, type: 3}
+  - {fileID: 8300000, guid: ec5c52d354613ff4bafc23c3174ff679, type: 3}
   - {fileID: 8300000, guid: 26274e213e2dce2439b145464580b42b, type: 3}
   - {fileID: 8300000, guid: 54b5e802aeb69764cb28024ab7021b29, type: 3}
   - {fileID: 8300000, guid: 5d173f7bed4184849ac94381c1135b71, type: 3}
@@ -86,7 +87,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a30961033a9bd9742a23240430c7bdba, type: 3}
   - {fileID: 8300000, guid: 492ba57b9233e6c4ab12b8754a9fbac9, type: 3}
   endlessworld:
-  - {fileID: 8300000, guid: 92396860365030249888ef222948c47e, type: 3}
-  - {fileID: 8300000, guid: 4e4709eea248d08478b5a063cfca19a7, type: 3}
-  - {fileID: 8300000, guid: a30961033a9bd9742a23240430c7bdba, type: 3}
+  - {fileID: 8300000, guid: c1a9da2e17e340b4db24210aa75576f1, type: 3}
+  - {fileID: 8300000, guid: c1a9da2e17e340b4db24210aa75576f1, type: 3}
+  - {fileID: 8300000, guid: c1a9da2e17e340b4db24210aa75576f1, type: 3}
   graveHit: {fileID: 8300000, guid: e0126ea820007d147aef8d9f2d0688f5, type: 3}

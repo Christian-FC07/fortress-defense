@@ -9,6 +9,9 @@ public class BossUIManager : MonoBehaviour
     public Image EnemyHealthBar;
     public Enemy enemy;
     public GameObject miniboss, boss;
+    public GameObject fortHealth;
+    public GameObject[] UI_Elements;
+    public Animator healthBarAnim;
     bool isBossDead = false;
     [ReadOnly] public float targetFill = 1;
     public float fill_speed = 1;
@@ -27,9 +30,23 @@ public class BossUIManager : MonoBehaviour
         {
             case EnemySpawn.isBoss.MINIBOSS:
                 miniboss.SetActive(true);
+                fortHealth.SetActive(true);
+                healthBarAnim.SetBool("isBossAttack", true);
+                Time.timeScale = 1;
+                foreach (GameObject uiElement in UI_Elements)
+                {
+                    uiElement.SetActive(false);
+                }
                 break;
             case EnemySpawn.isBoss.BOSS:
                 boss.SetActive(true);
+                fortHealth.SetActive(true);
+                healthBarAnim.SetBool("isBossAttack", true);
+                Time.timeScale = 1;
+                foreach (GameObject uiElement in UI_Elements)
+                {
+                    uiElement.SetActive(false);
+                }
                 break;
             default:
                 break;

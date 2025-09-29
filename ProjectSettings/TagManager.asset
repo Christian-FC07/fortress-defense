@@ -21,6 +21,7 @@ TagManager:
   - UndergroundSpawn
   - Warrior
   - LogSpawnPosition
+  - enemyArmed
   layers:
   - Default
   - TransparentFX
@@ -37,7 +38,7 @@ TagManager:
   - Zone
   - Ground
   - BodyPart
-  - 
+  - EnemyArmed
   - 
   - 
   - 

@@ -53,6 +53,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip soundTimeDown;
     public AudioClip thunderSFX;
     public AudioClip rain;
+    public AudioClip hitArmor;
 
     [Header("WORLD SONGS")]
     public AudioClip[] world;
