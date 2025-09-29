@@ -233,39 +233,45 @@ public class AffectZone : MonoBehaviour
                                 }
                             }
 
-                            // Always push enemies in range every frame
                             for (int i = listEnemyInZone.Count - 1; i >= 0; i--)
                             {
                                 var enemy = listEnemyInZone[i];
                                 if (enemy == null) continue;
 
-                                Vector2 repelDir = (enemy.transform.position - transform.position).normalized;
-
-                                if (!tempMagnetList.Contains(enemy))
-                                    tempMagnetList.Add(enemy);
+                                Vector2 repelDir = (enemy.transform.position - transform.position);
+                                if (repelDir.magnitude < 0.1f)
+                                {
+                                    repelDir = Random.insideUnitCircle.normalized;
+                                    Debug.Log($"[Magnet] Enemy {enemy.name} is too close → random direction applied");
+                                }
+                                else
+                                {
+                                    repelDir = repelDir.normalized;
+                                }
 
                                 Rigidbody2D rb = enemy.GetComponent<Rigidbody2D>();
                                 if (rb != null)
                                 {
-                                    rb.linearVelocity = repelDir * repelSpeed; // constant velocity
+                                    rb.linearVelocity = repelDir * repelSpeed;
                                     rb.AddForce(repelDir * repelForce * Time.deltaTime, ForceMode2D.Impulse);
+                                    Debug.Log($"[Magnet] Enemy {enemy.name} repelled → vel:{rb.linearVelocity}");
                                 }
                                 else
                                 {
                                     enemy.transform.position += (Vector3)(repelDir * repelSpeed * Time.deltaTime);
+                                    Debug.Log($"[Magnet] Enemy {enemy.name} moved manually (no Rigidbody2D).");
                                 }
 
                                 enemy.TakeDamage(magnetDamage * Time.deltaTime, Vector2.zero,
                                     enemy.transform.position, gameObject, BODYPART.NONE, null);
                             }
 
-                            // Play sound at intervals instead of every frame
                             if (Time.time % magnetRate < Time.deltaTime)
                             {
                                 SoundManager.PlaySfx(magnetSound);
                             }
-
                             break;
+
 
 
                         case AffectZoneType.Aero:
@@ -349,8 +355,8 @@ public class AffectZone : MonoBehaviour
                 delay = poisonActiveTime;
                 break;
             case AffectZoneType.Magnet:
-                delay = magnetActiveTime;
-                break;
+                //delay = magnetActiveTime;
+                //break;
             case AffectZoneType.Aero:
                 delay = aeroActiveTime;
                 break;
@@ -371,9 +377,11 @@ public class AffectZone : MonoBehaviour
     {
         if (_magnet)
             Destroy(_magnet);
-        if (tempMagnetList != null)
-            tempMagnetList.Clear();
+
+        listEnemyInZone.Clear();
+        Debug.Log("[Magnet] Magnet stopped → enemy list cleared");
     }
+
     void StopAero()
     {
         if (tempAeroList != null)
@@ -404,15 +412,14 @@ public class AffectZone : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             var enemy = collision.GetComponent<Enemy>();
-            if (enemy != null)
+            if (enemy != null && !listEnemyInZone.Contains(enemy))
             {
-                if (!listEnemyInZone.Contains(enemy))
-                {
-                    listEnemyInZone.Add(enemy);
-                }
+                listEnemyInZone.Add(enemy);
+                Debug.Log($"[Magnet] Enemy entered zone: {enemy.name}");
             }
         }
     }
+
 
     public void ActivateArmagdon()
     {
@@ -446,12 +453,14 @@ public class AffectZone : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             var enemy = collision.GetComponent<Enemy>();
-            if (enemy != null)
+            if (enemy != null && listEnemyInZone.Contains(enemy))
             {
                 listEnemyInZone.Remove(enemy);
+                Debug.Log($"[Magnet] Enemy exited zone: {enemy.name}");
             }
         }
     }
+
 
     private IEnumerator ThrowFireBall(GameObject fireBall, Vector3 startPos, Vector3 target)
     {
