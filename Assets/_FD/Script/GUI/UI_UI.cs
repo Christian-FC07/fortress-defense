@@ -80,8 +80,8 @@ public class UI_UI : MonoBehaviour
 
     public void ActivateShield(float currentShieldHealth, float maxShieldHealth)
     {
-        health.gameObject.SetActive(false);
-        healthSlider.gameObject.SetActive(false);
+        health.gameObject.SetActive(true);
+        healthSlider.gameObject.SetActive(true);
         shieldHealth.gameObject.SetActive(true);
         shieldHealthSlider.gameObject.SetActive(true);
         _shieldhealthValue = Mathf.Clamp01(currentShieldHealth / maxShieldHealth);

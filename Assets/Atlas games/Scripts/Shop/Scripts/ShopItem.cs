@@ -335,7 +335,7 @@ public class ShopItem : ScrollItem<ScrollItemData>
                                 expImage.gameObject.SetActive(false);
                                 coinImage.gameObject.SetActive(false);
                                 itemPriceText.text = "";
-                            GetComponent<TimedItemManager>().ActivateDoubleXp(_duration== TimedItemManager.ItemDuration.Day);
+                            GetComponent<TimedItemManager>().ActivateDoubleXp(_duration);
                                 User.Coin = -itemPrice;
                     }
                     else
@@ -353,7 +353,7 @@ public class ShopItem : ScrollItem<ScrollItemData>
                             expImage.gameObject.SetActive(false);
                             coinImage.gameObject.SetActive(false);
                             itemPriceText.text = "";
-                            GetComponent<TimedItemManager>().ActivateDoubleXp(_duration== TimedItemManager.ItemDuration.Day);
+                            GetComponent<TimedItemManager>().ActivateDoubleXp(_duration);
                             User.Uxp = -itemPrice;
                         
                     }

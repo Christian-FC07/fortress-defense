@@ -71,8 +71,8 @@ public class BoostItemUI : MonoBehaviour, IKeyboardCall
     public float boostItemautoHide = 3;
     
     [Header("Slowdown Enemies")]
-    public float SD_Rate = 0.3f;
-    public float SD_Time = 3f;
+    public float SD_Rate = 0f;
+    public float SD_Time = 5f;
     
     [Header("Log item")]
     public GameObject TL_Prefab;

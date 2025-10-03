@@ -107,7 +107,7 @@ public class TimeChecker : MonoBehaviour
         {
             if (ConvertedStringToDate(GetCurrentDateTimeString()) >
                 ConvertedStringToDate(GlobalValue.ItemOpened(currentData.itemName))
-                    .AddHours(currentData.duration == TimedItemManager.ItemDuration.Day?24:1))
+                    .AddHours(currentData.duration == TimedItemManager.ItemDuration.Minute?60:1))
             {
                 GlobalValue.SetItemState(false,currentData.itemName);
             }
