@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_New Shader Graph
+  m_Name: Shader Graphs_New Shader Graph 1
   m_Shader: {fileID: -6465566751694194690, guid: 4ad25e1fae03a6847ab51bee8e1f2ad9,
     type: 3}
   m_Parent: {fileID: 0}
@@ -60,7 +60,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _Float: 1
-    - _PixelResolutuion: 205
+    - _PixelResolutuion: 237
     m_Colors: []
   m_BuildTextureStacks: []
   m_AllowLocking: 1
