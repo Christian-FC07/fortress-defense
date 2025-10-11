@@ -14,7 +14,7 @@ public class InventoryItem : ScrollItem<ScrollItemData>
     private Vector2 originalSize;
     void Init(ShopItemData.ShopItem data)
     {
-        selectedHighlight.SetActive(false);
+        //selectedHighlight.SetActive(false);
         itemImage.sprite = data.itemImage;
         _itemData = data;
         switch (data.type)
@@ -76,7 +76,7 @@ public class InventoryItem : ScrollItem<ScrollItemData>
                 }
                 break;
         }
-        selectedHighlight.SetActive(_isChosen);
+        //selectedHighlight.SetActive(_isChosen);
          originalSize =
             new Vector2(itemImage.rectTransform.sizeDelta.x, itemImage.rectTransform.sizeDelta.y);
         itemImage.SetNativeSize();

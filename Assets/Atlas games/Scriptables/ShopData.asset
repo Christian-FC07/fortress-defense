@@ -92,8 +92,7 @@ MonoBehaviour:
   - itemName: Stone Tower
     itemImage: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
       type: 3}
-    buttonImage: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
-      type: 3}
+    buttonImage: {fileID: 21300000, guid: 9cec25c03b6b34cb69a72aed6d6bbc92, type: 3}
     itemPrice: 15
     itemMaxValue: 20
     hasMaxValue: 1
@@ -111,8 +110,7 @@ MonoBehaviour:
   - itemName: Iron Tower
     itemImage: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
       type: 3}
-    buttonImage: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
-      type: 3}
+    buttonImage: {fileID: 21300000, guid: 9cec25c03b6b34cb69a72aed6d6bbc92, type: 3}
     itemPrice: 1000
     itemMaxValue: 1000
     hasMaxValue: 1
@@ -128,10 +126,8 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
   - itemName: Ice Tower
-    itemImage: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
-      type: 3}
-    buttonImage: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
-      type: 3}
+    itemImage: {fileID: 21300000, guid: 78e3a26ff9d64f74ca53f548c4ab8ab4, type: 3}
+    buttonImage: {fileID: 21300000, guid: 9cec25c03b6b34cb69a72aed6d6bbc92, type: 3}
     itemPrice: 2200
     itemMaxValue: 2200
     hasMaxValue: 1

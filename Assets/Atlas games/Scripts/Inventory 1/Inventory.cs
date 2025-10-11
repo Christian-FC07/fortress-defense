@@ -253,32 +253,10 @@ public class Inventory : MonoBehaviour
 
     public void partShower(int k)
     {
-        switch (k)
+        foreach (GameObject part in parts)
         {
-            case 0:
-                parts[0].SetActive(true);
-                parts[1].SetActive(false);
-                parts[2].SetActive(false);
-                parts[3].SetActive(false);
-                break;
-            case 1:
-                parts[1].SetActive(true);
-                parts[0].SetActive(false);
-                parts[2].SetActive(false);
-                parts[3].SetActive(false);
-                break;
-            case 2:
-                parts[2].SetActive(true);
-                parts[0].SetActive(false);
-                parts[1].SetActive(false);
-                parts[3].SetActive(false);
-                break;
-            case 3:
-                parts[3].SetActive(true);
-                parts[0].SetActive(false);
-                parts[2].SetActive(false);
-                parts[1].SetActive(false);
-                break;
+            part.SetActive(false);
         }
+        parts[k].SetActive(true);
     }
 }
