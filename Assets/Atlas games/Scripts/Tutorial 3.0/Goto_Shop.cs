@@ -24,6 +24,7 @@ public class Goto_Shop : MonoBehaviour
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        Debug.Log("Scene Loaded: " + scene.name);
         if (scene.name == "Menu Atlas Test")
         {
             Debug.Log("Shop Scene Loaded!");
@@ -31,11 +32,16 @@ public class Goto_Shop : MonoBehaviour
         }
     }
 
+
     private IEnumerator WaitAndFindHomeMenu()
     {
-        yield return new WaitForSeconds(0.5f);  
+        yield return new WaitForSeconds(1f);  
 
         GameObject homeMenu = GameObject.Find("HomeMenu-PC");
+        if (homeMenu == null )
+        {
+            Debug.LogError("Home Menu NOT FOUND");
+        }
         if (homeMenu != null)
         {
             Debug.Log("Home Menu Found");
@@ -59,6 +65,7 @@ public class Goto_Shop : MonoBehaviour
     public void ShopOpener()
     {
         Debug.Log("Opening Shop Scene...");
+        SceneManager.sceneLoaded += (scene, mode) => StartCoroutine(WaitAndFindHomeMenu());
         SceneManager.LoadScene("Menu Atlas Test");
     }
 
