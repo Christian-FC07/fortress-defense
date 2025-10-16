@@ -50,6 +50,7 @@ public class Goto_Shop : MonoBehaviour
             {
                 script.Store(true);
                 Debug.Log("Store function called!");
+                Destroy(this.gameObject);
             }
             else
             {
