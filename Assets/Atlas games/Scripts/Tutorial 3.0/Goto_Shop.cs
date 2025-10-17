@@ -76,6 +76,9 @@ public class Goto_Shop : MonoBehaviour
         press2 = true;
         Debug.Log("pressed");
         Time.timeScale = 1;
-        ShopOpener();
+        if (PlayerPrefs.GetInt("LevelReached") == 4 )
+        {
+            ShopOpener();
+        }
     }
 }

@@ -1223,9 +1223,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3529134695075711302}
-        m_TargetAssemblyTypeName: Goto_Shop, Assembly-CSharp
-        m_MethodName: GoShopPressed
+      - m_Target: {fileID: 6841117695291648886}
+        m_TargetAssemblyTypeName: buttonCheck, Assembly-CSharp
+        m_MethodName: buttonPress
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
