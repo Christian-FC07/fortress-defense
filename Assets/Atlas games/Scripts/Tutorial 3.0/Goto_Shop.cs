@@ -50,7 +50,8 @@ public class Goto_Shop : MonoBehaviour
             {
                 script.Store(true);
                 Debug.Log("Store function called!");
-                Destroy(this.gameObject);
+                //this.gameObject.SetActive(false);
+               // Destroy(this);
             }
             else
             {
@@ -76,9 +77,16 @@ public class Goto_Shop : MonoBehaviour
         press2 = true;
         Debug.Log("pressed");
         Time.timeScale = 1;
-        if (PlayerPrefs.GetInt("LevelReached") == 4 )
+     if (PlayerPrefs.GetInt("LevelReached") == 2  )
         {
             ShopOpener();
+
         }
+        else
+        {
+            Destroy(this.gameObject);
+
+        }
+
     }
 }

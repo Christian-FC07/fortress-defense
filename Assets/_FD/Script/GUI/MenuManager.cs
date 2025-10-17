@@ -351,7 +351,7 @@ public class MenuManager : MonoBehaviour, IListener
             {
                 script.Store(true);
                 Debug.Log("Store function called!");
-                Destroy(this.gameObject);
+                Destroy(this);
             }
             else
             {
