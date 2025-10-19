@@ -8688,6 +8688,8 @@ ParticleSystemRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -8709,6 +8711,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -20601,6 +20604,8 @@ ParticleSystemRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -20622,6 +20627,7 @@ ParticleSystemRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -20855,8 +20861,20 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6236543550299358241}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: MenuManager, Assembly-CSharp
         m_MethodName: LoadNextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3751503654184368032}
+        m_TargetAssemblyTypeName: Goto_Shop, Assembly-CSharp
+        m_MethodName: GoShopPressed
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -23085,7 +23103,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 78d215e0f9ac1874d8f41bc706b04bba, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 78d215e0f9ac1874d8f41bc706b04bba, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.8
@@ -23865,6 +23883,7 @@ GameObject:
   - component: {fileID: 6236543550299358270}
   - component: {fileID: 6236543550299358269}
   - component: {fileID: 6236543550299358241}
+  - component: {fileID: 3751503654184368032}
   m_Layer: 5
   m_Name: MenuManager-PC
   m_TagString: Canves
@@ -24000,6 +24019,18 @@ MonoBehaviour:
   rewardList: {fileID: 11400000, guid: 92f377bc47df0c24aa62679de8db6f66, type: 2}
   slider: {fileID: 8828778167668952691}
   progressText: {fileID: 8828778166786748065}
+--- !u!114 &3751503654184368032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6236543550299358268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1439bb04a416070488fdfbb1eee32119, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Goto_Shop
 --- !u!1 &6248001206415275257
 GameObject:
   m_ObjectHideFlags: 0
@@ -31380,8 +31411,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 343561915223027475, guid: 77cf99582f3a3014d9739b42446b238a,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 343561915223027475, guid: 77cf99582f3a3014d9739b42446b238a,
+        type: 3}
       propertyPath: m_SortingLayer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 345379866346708669, guid: 77cf99582f3a3014d9739b42446b238a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 345379866346708669, guid: 77cf99582f3a3014d9739b42446b238a,
         type: 3}
@@ -31402,6 +31443,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Material
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1048542429044144112, guid: 77cf99582f3a3014d9739b42446b238a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1048542429044144112, guid: 77cf99582f3a3014d9739b42446b238a,
         type: 3}
@@ -31625,8 +31671,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6890023884145822482, guid: 77cf99582f3a3014d9739b42446b238a,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6890023884145822482, guid: 77cf99582f3a3014d9739b42446b238a,
+        type: 3}
       propertyPath: m_SortingLayer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7379504176411534481, guid: 77cf99582f3a3014d9739b42446b238a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7379504176411534481, guid: 77cf99582f3a3014d9739b42446b238a,
         type: 3}
@@ -31650,6 +31706,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8490540518801967581, guid: 77cf99582f3a3014d9739b42446b238a,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490540518801967581, guid: 77cf99582f3a3014d9739b42446b238a,
+        type: 3}
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
@@ -31659,6 +31720,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 41f765b960395416192f6fba79ab2dfe,
         type: 3}
+    - target: {fileID: 8983570875356471875, guid: 77cf99582f3a3014d9739b42446b238a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8983570875356471875, guid: 77cf99582f3a3014d9739b42446b238a,
         type: 3}
       propertyPath: m_SortingLayer

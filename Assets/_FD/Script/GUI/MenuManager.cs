@@ -157,6 +157,10 @@ public class MenuManager : MonoBehaviour, IListener
             StoryBoard.Init();
         }
     }
+    public void VictoryReward()
+    {
+
+    }
     public void OpenVictoryMenu()
     {
         SoundManager.Instance.PauseMusic(true);
@@ -258,10 +262,18 @@ public class MenuManager : MonoBehaviour, IListener
 
     public void LoadNextLevel()
     {
-        SoundManager.Click();
+
+       SoundManager.Click();
         GlobalValue.levelPlaying++;
         OnSceneReloaded?.Invoke();
         StartCoroutine(LoadAsynchronously(SceneManager.GetActiveScene().name));
+        
+ 
+    }
+
+    public void LoadShop()
+    {
+        GoShopPressed();
     }
 
     [Header("Load scene")]
@@ -294,4 +306,84 @@ public class MenuManager : MonoBehaviour, IListener
         HelperUI.SetActive(open);
         Pause(false);
     }
+
+
+    #region Goto_Shop
+
+    private bool press = false;
+    private bool press2 = false;
+
+    private void AwakeGotoShop()
+    {
+        DontDestroyOnLoad(this.gameObject);
+        SceneManager.sceneLoaded += OnShopSceneLoaded;
+    }
+
+    private void OnDisableGotoShop()
+    {
+        SceneManager.sceneLoaded -= OnShopSceneLoaded;
+    }
+
+    private void OnShopSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log("Scene Loaded: " + scene.name);
+        if (scene.name == "Menu Atlas Test")
+        {
+            Debug.Log("Shop Scene Loaded!");
+            StartCoroutine(WaitAndFindHomeMenu());
+        }
+    }
+
+    private IEnumerator WaitAndFindHomeMenu()
+    {
+        yield return new WaitForSeconds(1f);
+
+        GameObject homeMenu = GameObject.Find("HomeMenu-PC");
+        if (homeMenu == null)
+        {
+            Debug.LogError("Home Menu NOT FOUND");
+        }
+        else
+        {
+            Debug.Log("Home Menu Found");
+            var script = homeMenu.GetComponent<MainMenuHomeScene>();
+            if (script != null)
+            {
+                script.Store(true);
+                Debug.Log("Store function called!");
+                Destroy(this);
+            }
+            else
+            {
+                Debug.LogWarning("Script with Store() not found on HomeMenu-PC!");
+            }
+        }
+    }
+
+    private void ShopOpener()
+    {
+        Debug.Log("Opening Shop Scene...");
+        SceneManager.sceneLoaded += (scene, mode) => StartCoroutine(WaitAndFindHomeMenu());
+        SceneManager.LoadScene("Menu Atlas Test");
+    }
+
+    private void GoShopPressed()
+    {
+        press = true;
+        press2 = true;
+        Debug.Log("pressed");
+        Time.timeScale = 1;
+
+        int levelReached = PlayerPrefs.GetInt("LevelReached", 1);
+        if (levelReached == 4)
+        {
+            ShopOpener();
+        }
+    }
+
+    #endregion
+
+
+
+
 }
