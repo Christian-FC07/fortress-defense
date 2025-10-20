@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1917839224130678367}
   - component: {fileID: 2099158811917897767}
   - component: {fileID: 6826214467434400533}
+  - component: {fileID: 5781885895625799923}
   m_Layer: 0
   m_Name: LevelChanges
   m_TagString: Untagged
@@ -66,6 +67,18 @@ MonoBehaviour:
   nightLight: {fileID: 0}
   nightLightAnim: {fileID: 0}
   rndm: 0
+--- !u!114 &5781885895625799923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4014463748691432394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1606f9bac82aff4b99b36ea9aefe8fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6168901444282779541
 GameObject:
   m_ObjectHideFlags: 0
