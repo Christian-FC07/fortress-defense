@@ -144,44 +144,44 @@ public class MainMenuHomeScene : MonoBehaviour
     IEnumerator OpenInventoryCo(bool open)
     {
         yield return null;
-        BlackScreenUI.instance.Show(0.2f);
+        //BlackScreenUI.instance.Show(0.2f);
         inventory.SetActive(open);
         inventory.GetComponent<Inventory>().InitSlots();
-        BlackScreenUI.instance.Hide(0.2f);
+        //BlackScreenUI.instance.Hide(0.2f);
     }
     IEnumerator OpenMapCo(bool open)
     {
         yield return null;
         GlobalValue.menuPart = "Map";
         showTutorial.isTutorialOn = false;
-        BlackScreenUI.instance.Show(0.2f);
+        //BlackScreenUI.instance.Show(0.2f);
         MapUI.SetActive(open);
 
-        BlackScreenUI.instance.Hide(0.2f);
+        //BlackScreenUI.instance.Hide(0.2f);
     }
     public void OpenGuideBookV2(bool open)
     {
-        BlackScreenUI.instance.Show(0.2f);
+        //BlackScreenUI.instance.Show(0.2f);
         GuideBookV2.SetActive(open);
-        BlackScreenUI.instance.Hide(0.2f);
+        //BlackScreenUI.instance.Hide(0.2f);
     }
     public void OpenGuideBookCo(bool open)
     {
-        BlackScreenUI.instance.Show(0.2f);
+        //BlackScreenUI.instance.Show(0.2f);
         GuideBook.SetActive(open);
-        BlackScreenUI.instance.Hide(0.2f);
+        //BlackScreenUI.instance.Hide(0.2f);
     }
     public void OpenFriendGuideCo(bool open)
     {
-        BlackScreenUI.instance.Show(0.2f);
+        //BlackScreenUI.instance.Show(0.2f);
         FriendGuide.SetActive(open);
-        BlackScreenUI.instance.Hide(0.2f);
+        //BlackScreenUI.instance.Hide(0.2f);
     }
     public void OpenEnemyGuideCo(bool open)
     {
-        BlackScreenUI.instance.Show(0.2f);
+        //BlackScreenUI.instance.Show(0.2f);
         EnemyGuide.SetActive(open);
-        BlackScreenUI.instance.Hide(0.2f);
+        //BlackScreenUI.instance.Hide(0.2f);
     }
 
     public void Facebook()

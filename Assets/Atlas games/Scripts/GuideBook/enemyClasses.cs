@@ -23,6 +23,8 @@ public class enemyClasses : ScriptableObject
         public string name;
         public speed speed;
         public int damage;
+        public string type;
+        public int health;
         public power power;
         public Sprite EnemyProfile;
         public int levelUnlocked;

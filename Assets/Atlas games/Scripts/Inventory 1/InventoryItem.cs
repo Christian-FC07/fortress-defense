@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DynamicScrollRect;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,13 +10,19 @@ public class InventoryItem : ScrollItem<ScrollItemData>
     public Image itemImage;
     public Inventory inventory;
     public GameObject selectedHighlight;
+    public GameObject txt;
     private ShopItemData.ShopItem _itemData;
     private bool _isChosen;
     private Vector2 originalSize;
+    public string about;
+    public TextMeshProUGUI info;
+
+    public Image profilePic;
     void Init(ShopItemData.ShopItem data)
     {
-        selectedHighlight.SetActive(false);
+        //selectedHighlight.SetActive(false);
         itemImage.sprite = data.itemImage;
+
         _itemData = data;
         switch (data.type)
         {
@@ -76,7 +83,8 @@ public class InventoryItem : ScrollItem<ScrollItemData>
                 }
                 break;
         }
-        selectedHighlight.SetActive(_isChosen);
+        about = data.about;
+        //selectedHighlight.SetActive(_isChosen);
          originalSize =
             new Vector2(itemImage.rectTransform.sizeDelta.x, itemImage.rectTransform.sizeDelta.y);
         itemImage.SetNativeSize();
@@ -98,6 +106,10 @@ public class InventoryItem : ScrollItem<ScrollItemData>
     }
     public void ChooseItem()
     {
+        //info.text = data2.about;
+
+        profilePic.sprite = itemImage.sprite;
+        info.text = about;
         if (!_isChosen)
         {
             inventory.ChangeChosenItem(_itemData);

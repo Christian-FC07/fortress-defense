@@ -9,6 +9,8 @@ public class enemies : MonoBehaviour
     public TextMeshProUGUI enemySpeed;
     public TextMeshProUGUI enemyDamage;
     public TextMeshProUGUI enemyPower;
+    public TextMeshProUGUI enemyType;
+    public TextMeshProUGUI enemyHealth;
     public buttonTag enemiesScr;
     public enemyClasses guideInfo;
     public Image EnemyProf;
@@ -23,22 +25,26 @@ public class enemies : MonoBehaviour
             enemyNameB.text = guideInfo.enemiesInfo[enemiesScr.nTag].name;
             enemySpeed.text = guideInfo.enemiesInfo[enemiesScr.nTag].speed.ToString();
             enemyDamage.text = guideInfo.enemiesInfo[enemiesScr.nTag].damage.ToString();
+            enemyType.text = guideInfo.enemiesInfo[enemiesScr.nTag].type.ToString();
+            enemyHealth.text = guideInfo.enemiesInfo[enemiesScr.nTag].health.ToString();
             enemyPower.text = guideInfo.enemiesInfo[enemiesScr.nTag].power.ToString();
             EnemyProf.sprite = guideInfo.enemiesInfo[enemiesScr.nTag].EnemyProfile;
 
             guideBook.lockIconStatic.SetActive(false);
-            guideBook.coverStatic.SetActive(false);
+            guideBook.coverStatic.SetActive(true);
         }
         else
         {
             enemyNameB.text = guideInfo.enemiesInfo[guideInfo.enemiesInfo.Length - 1].name;
             enemySpeed.text = guideInfo.enemiesInfo[guideInfo.enemiesInfo.Length - 1].speed.ToString();
             enemyDamage.text = guideInfo.enemiesInfo[guideInfo.enemiesInfo.Length - 1].damage.ToString();
+            enemyType.text = guideInfo.enemiesInfo[guideInfo.enemiesInfo.Length - 1].type.ToString();
+            enemyHealth.text = guideInfo.enemiesInfo[guideInfo.enemiesInfo.Length - 1].health.ToString();
             enemyPower.text = guideInfo.enemiesInfo[guideInfo.enemiesInfo.Length - 1].power.ToString();
             EnemyProf.sprite = guideInfo.enemiesInfo[guideInfo.enemiesInfo.Length - 1].EnemyProfile;
             
             guideBook.lockIconStatic.SetActive(true);
-            guideBook.coverStatic.SetActive(true);
+            guideBook.coverStatic.SetActive(false);
 
             Debug.Log("ggg");
         }

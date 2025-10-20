@@ -30,6 +30,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Fire
     itemImage: {fileID: 21300000, guid: 7e8782bfba03c57418c692b9203858d5, type: 3}
     buttonImage: {fileID: 21300000, guid: 7e8782bfba03c57418c692b9203858d5, type: 3}
@@ -47,6 +48,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Dark
     itemImage: {fileID: 21300000, guid: 455fb6f49244ce14bae7ae5ff20a1102, type: 3}
     buttonImage: {fileID: 21300000, guid: 455fb6f49244ce14bae7ae5ff20a1102, type: 3}
@@ -64,6 +66,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Health
     itemImage: {fileID: 21300000, guid: 2ee84863a109245b69e2fd89e8a2f3b6, type: 3}
     buttonImage: {fileID: 21300000, guid: 8ccb643ce99232a48ad91289b2028a00, type: 3}
@@ -81,6 +84,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Shield
     itemImage: {fileID: 21300000, guid: e00201374ca2040ee847d9d26dadbcbe, type: 3}
     buttonImage: {fileID: 21300000, guid: 392cd14c223846d40b0bd1749af9bae6, type: 3}
@@ -98,6 +102,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Potion 1
     itemImage: {fileID: 21300000, guid: 3f33b437288e9450aa6fc71ff5ecea9f, type: 3}
     buttonImage: {fileID: 21300000, guid: b0073b4a54024f14d9aa458a8a2e31b1, type: 3}
@@ -115,6 +120,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Potion 2
     itemImage: {fileID: 21300000, guid: 3f33b437288e9450aa6fc71ff5ecea9f, type: 3}
     buttonImage: {fileID: 21300000, guid: 5c25c7c560b84f542a9cf475ea768802, type: 3}
@@ -132,6 +138,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Potion 3
     itemImage: {fileID: 21300000, guid: 2ee84863a109245b69e2fd89e8a2f3b6, type: 3}
     buttonImage: {fileID: 21300000, guid: d218f92c3a64f6148913676e1e5a86d5, type: 3}
@@ -149,6 +156,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: EXP
     itemImage: {fileID: 21300000, guid: 4053d8740a17e4949b6e76d237508331, type: 3}
     buttonImage: {fileID: 21300000, guid: 4053d8740a17e4949b6e76d237508331, type: 3}
@@ -166,6 +174,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Wolf
     itemImage: {fileID: 21300000, guid: d0e9695c0153948809694226675d9b29, type: 3}
     buttonImage: {fileID: 21300000, guid: a5e4d80d280d94648b1bde315757f224, type: 3}
@@ -183,6 +192,7 @@ MonoBehaviour:
     pet: {fileID: 3505094654918231060, guid: 93b3a96647087d54085a68ddee065188, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Viking
     itemImage: {fileID: 21300000, guid: 0bb9dda66f02346938e16c8fe9d6b054, type: 3}
     buttonImage: {fileID: 21300000, guid: f39ae11be539f1248acda3f54b6587ee, type: 3}
@@ -200,6 +210,7 @@ MonoBehaviour:
     pet: {fileID: 5848783413869001439, guid: 47a3389ea7fcd80408b82752901fef1c, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Rockman
     itemImage: {fileID: 21300000, guid: d0e9695c0153948809694226675d9b29, type: 3}
     buttonImage: {fileID: 21300000, guid: 85adeee7c2c2eb54f8434775c5ead006, type: 3}
@@ -217,6 +228,7 @@ MonoBehaviour:
     pet: {fileID: 8885830814786365834, guid: 8a42c3f4494766942b7362c1737df6f9, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Mystery Box 1
     itemImage: {fileID: 21300000, guid: 503132a8a8e964a4f8619530b41b5384, type: 3}
     buttonImage: {fileID: 21300000, guid: 230b7d23ce4bc9047a522f8407bd42ee, type: 3}
@@ -234,6 +246,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Mystery Box 2
     itemImage: {fileID: 21300000, guid: 503132a8a8e964a4f8619530b41b5384, type: 3}
     buttonImage: {fileID: 21300000, guid: 230b7d23ce4bc9047a522f8407bd42ee, type: 3}
@@ -251,6 +264,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Mystery Boxe 3
     itemImage: {fileID: 21300000, guid: 503132a8a8e964a4f8619530b41b5384, type: 3}
     buttonImage: {fileID: 21300000, guid: 230b7d23ce4bc9047a522f8407bd42ee, type: 3}
@@ -268,6 +282,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Poison
     itemImage: {fileID: 21300000, guid: 9eb424efeafa1ab4e97a99ecdb4f0d62, type: 3}
     buttonImage: {fileID: 21300000, guid: 9eb424efeafa1ab4e97a99ecdb4f0d62, type: 3}
@@ -285,6 +300,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Lightning
     itemImage: {fileID: 21300000, guid: e5f65e010d320e441ba7bb7c7bf2a206, type: 3}
     buttonImage: {fileID: 21300000, guid: e5f65e010d320e441ba7bb7c7bf2a206, type: 3}
@@ -302,6 +318,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Ice
     itemImage: {fileID: 21300000, guid: 916efd71abde5f24eb01b4c925c1a461, type: 3}
     buttonImage: {fileID: 21300000, guid: 916efd71abde5f24eb01b4c925c1a461, type: 3}
@@ -319,6 +336,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: SlowDown
     itemImage: {fileID: 21300000, guid: 715d6ea1f8c8a45c487d18da0f6ec237, type: 3}
     buttonImage: {fileID: 21300000, guid: 8b89eceb0e0282e45b2c9d1a01551bc3, type: 3}
@@ -336,6 +354,8 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: A nice and inetresing effect that slowes down all the enemies, which gives
+      you the perfect power to deal with all the enemis at once.
   - itemName: Tower
     itemImage: {fileID: 21300000, guid: 780bd17f3d9de6347b0eb6249b2b2e69, type: 3}
     buttonImage: {fileID: 21300000, guid: 780bd17f3d9de6347b0eb6249b2b2e69, type: 3}
@@ -353,6 +373,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Tower 2
     itemImage: {fileID: 21300000, guid: ebc9712108472e9468a28fa1ce98f1c2, type: 3}
     buttonImage: {fileID: 21300000, guid: ebc9712108472e9468a28fa1ce98f1c2, type: 3}
@@ -370,6 +391,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Tower 3
     itemImage: {fileID: 21300000, guid: cfe5294bee5a8114e82efb97a8a1536a, type: 3}
     buttonImage: {fileID: 21300000, guid: cfe5294bee5a8114e82efb97a8a1536a, type: 3}
@@ -387,6 +409,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Tower 4
     itemImage: {fileID: 21300000, guid: 0c410db751870d14cb9c2c2628557df6, type: 3}
     buttonImage: {fileID: 21300000, guid: 0c410db751870d14cb9c2c2628557df6, type: 3}
@@ -404,6 +427,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Shield
     itemImage: {fileID: 21300000, guid: e00201374ca2040ee847d9d26dadbcbe, type: 3}
     buttonImage: {fileID: 21300000, guid: d6b6e2b84a89c5a49aca1ebd62f97b7a, type: 3}
@@ -421,6 +445,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Cure
     itemImage: {fileID: 21300000, guid: 8f08ae81945ba1c498420247c4a05c57, type: 3}
     buttonImage: {fileID: 21300000, guid: 8f08ae81945ba1c498420247c4a05c57, type: 3}
@@ -438,6 +463,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Magnet
     itemImage: {fileID: 21300000, guid: ba385bb410fa8064eb88bc06829608d2, type: 3}
     buttonImage: {fileID: 21300000, guid: 33242080c26e8574ab9d20a6c2c85f53, type: 3}
@@ -455,6 +481,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Aero
     itemImage: {fileID: 21300000, guid: df8121d4034378149a30d86521019a81, type: 3}
     buttonImage: {fileID: 21300000, guid: df8121d4034378149a30d86521019a81, type: 3}
@@ -472,6 +499,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Log
     itemImage: {fileID: 21300000, guid: 55da1d7ff18c9864a8a0b7dda12ddb79, type: 3}
     buttonImage: {fileID: 21300000, guid: 0c6b82178d13b514fbd46a0a8180e70e, type: 3}
@@ -489,6 +517,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: LightningAll
     itemImage: {fileID: 21300000, guid: b905050555552054bbc338cb0fead686, type: 3}
     buttonImage: {fileID: 21300000, guid: 68c34f794ff824595866971c55a8fe2e, type: 3}
@@ -506,6 +535,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: DoubleArrow
     itemImage: {fileID: 21300000, guid: f9370a85701a54a6694e1269307d1681, type: 3}
     buttonImage: {fileID: 21300000, guid: 1e3b79979d2b88e41a161c998ac6f5f5, type: 3}
@@ -523,6 +553,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: FrozenArrow
     itemImage: {fileID: 21300000, guid: f9370a85701a54a6694e1269307d1681, type: 3}
     buttonImage: {fileID: 21300000, guid: f4d7c9fca7fb0d3459c8e7e63696cb49, type: 3}
@@ -540,6 +571,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: PoisonArrow
     itemImage: {fileID: 21300000, guid: f9370a85701a54a6694e1269307d1681, type: 3}
     buttonImage: {fileID: 21300000, guid: f5eb013065c863543a42c34e3f3cdb5b, type: 3}
@@ -557,6 +589,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: Warrior
     itemImage: {fileID: 21300000, guid: 090edeefef3fb634c90c30eef91e3f60, type: 3}
     buttonImage: {fileID: 21300000, guid: 090edeefef3fb634c90c30eef91e3f60, type: 3}
@@ -574,6 +607,7 @@ MonoBehaviour:
     pet: {fileID: 7410894354902345084, guid: 0456569c346a8cc40b693ef04ff40a03, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: DefenseWall
     itemImage: {fileID: 21300000, guid: a2c81ac4ee9548347975960f2716957b, type: 3}
     buttonImage: {fileID: 21300000, guid: a2c81ac4ee9548347975960f2716957b, type: 3}
@@ -591,6 +625,7 @@ MonoBehaviour:
     pet: {fileID: 7410894354902345084, guid: 0456569c346a8cc40b693ef04ff40a03, type: 3}
     duration: 0
     otherTimedItems: []
+    about: 
   - itemName: DoubleXp1D
     itemImage: {fileID: 21300000, guid: 0ff358643dea9a54aae53a4d3ff1434e, type: 3}
     buttonImage: {fileID: 21300000, guid: 0ff358643dea9a54aae53a4d3ff1434e, type: 3}
@@ -610,6 +645,7 @@ MonoBehaviour:
     otherTimedItems:
     - DoubleXp1D
     - DoubleXp1H
+    about: 
   - itemName: DoubleXp1H
     itemImage: {fileID: 21300000, guid: 0ff358643dea9a54aae53a4d3ff1434e, type: 3}
     buttonImage: {fileID: 21300000, guid: 0ff358643dea9a54aae53a4d3ff1434e, type: 3}
@@ -629,6 +665,7 @@ MonoBehaviour:
     otherTimedItems:
     - DoubleXp1D
     - DoubleXp1H
+    about: 
   - itemName: Armagdon
     itemImage: {fileID: -7250195882505504687, guid: 9de4d07c0e891d94eaf976c14b00e6e0,
       type: 3}
@@ -648,3 +685,4 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 1
     otherTimedItems: []
+    about: 

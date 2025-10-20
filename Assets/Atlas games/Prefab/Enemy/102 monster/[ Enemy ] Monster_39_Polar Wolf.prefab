@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 1950496933}
   m_Layer: 10
   m_Name: '[ Enemy ] Monster_39_Polar Wolf'
-  m_TagString: Untagged
+  m_TagString: enemyArmed
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

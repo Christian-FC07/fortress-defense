@@ -32,6 +32,8 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: The perfect gunner for hard core enemies. Just place one and it will 
+      destroy as many enemies as it can.
   - itemName: Crushmaw
     itemImage: {fileID: 963370536445355227, guid: ef9b5ea047566ea4db63b15769a25e21,
       type: 3}
@@ -51,6 +53,8 @@ MonoBehaviour:
     pet: {fileID: 5848783413869001439, guid: 47a3389ea7fcd80408b82752901fef1c, type: 3}
     duration: 0
     otherTimedItems: []
+    about: A literal monster ready to take down any enemy on its path. With this
+      monster, you do not have to be worry about lsoing anymore!
   - itemName: Gravemaul
     itemImage: {fileID: -8345276867160947558, guid: 2847fae2d8429cf4697834c26e633259,
       type: 3}
@@ -70,6 +74,9 @@ MonoBehaviour:
     pet: {fileID: 8885830814786365834, guid: 8a42c3f4494766942b7362c1737df6f9, type: 3}
     duration: 0
     otherTimedItems: []
+    about: Ever wanted to get a pet that just cannot die? this one is for you! With
+      tons of health, rock man will stand a good chance against any boss or mini
+      boss.
   - itemName: Warrior
     itemImage: {fileID: -8180171696930044909, guid: bd5e3e6e0b6d7fb488884fd891977597,
       type: 3}
@@ -89,11 +96,12 @@ MonoBehaviour:
     pet: {fileID: 7410894354902345084, guid: 0456569c346a8cc40b693ef04ff40a03, type: 3}
     duration: 0
     otherTimedItems: []
+    about: As simple as he looks, he destroyes as jmany enemies as he can to buy
+      more time for your archers!
   - itemName: Stone Tower
     itemImage: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
       type: 3}
-    buttonImage: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
-      type: 3}
+    buttonImage: {fileID: 21300000, guid: 9cec25c03b6b34cb69a72aed6d6bbc92, type: 3}
     itemPrice: 15
     itemMaxValue: 20
     hasMaxValue: 1
@@ -108,11 +116,11 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: Upgrade tower level 1. This tower will get you 600 health.
   - itemName: Iron Tower
     itemImage: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
       type: 3}
-    buttonImage: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
-      type: 3}
+    buttonImage: {fileID: 21300000, guid: 9cec25c03b6b34cb69a72aed6d6bbc92, type: 3}
     itemPrice: 1000
     itemMaxValue: 1000
     hasMaxValue: 1
@@ -127,11 +135,10 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: Upgrade tower level 1. This tower will get you 900 health.
   - itemName: Ice Tower
-    itemImage: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
-      type: 3}
-    buttonImage: {fileID: -2026495550341769638, guid: 970e99dc8e188884ab568418a64bd3b1,
-      type: 3}
+    itemImage: {fileID: 21300000, guid: 78e3a26ff9d64f74ca53f548c4ab8ab4, type: 3}
+    buttonImage: {fileID: 21300000, guid: 9cec25c03b6b34cb69a72aed6d6bbc92, type: 3}
     itemPrice: 2200
     itemMaxValue: 2200
     hasMaxValue: 1
@@ -146,6 +153,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: Upgrade tower level 1. This tower will get you 1000 health.
   - itemName: Volcanic door
     itemImage: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
       type: 3}
@@ -165,6 +173,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: Upgrade tower level 1. This tower will get you 1200 health.
   - itemName: Health
     itemImage: {fileID: -476841812353779665, guid: c28e489b5aeda5740b950e738a8a8151,
       type: 3}
@@ -177,13 +186,14 @@ MonoBehaviour:
     isTimed: 0
     purchaseType: 1
     levelLock: 0
-    levelToUnlock: 1
+    levelToUnlock: 80
     id: 14
     isFree: 0
     oneTimePurchase: 1
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: An item ready to increase your towers health in time of danger.
   - itemName: Shield
     itemImage: {fileID: -6717884257390833292, guid: f9d8be3158115ed4788461428780c42a,
       type: 3}
@@ -203,6 +213,8 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: Need a litle bit of cover? Use this item to get 300 more health as a bubble
+      shield around your fort.
   - itemName: Archer Potion
     itemImage: {fileID: 3550858703209524254, guid: 9449de7795f01d044bc69c69e801301a,
       type: 3}
@@ -222,6 +234,8 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: This potion will give you enemies more power so that they can shoot twice
+      as powerfull.
   - itemName: Double XP Min
     itemImage: {fileID: 1969876612119718785, guid: e607ee1a67e6e1b40a4af0dc6429f635,
       type: 3}
@@ -234,7 +248,7 @@ MonoBehaviour:
     isTimed: 1
     purchaseType: 1
     levelLock: 1
-    levelToUnlock: 20
+    levelToUnlock: 80
     id: 49
     isFree: 0
     oneTimePurchase: 0
@@ -243,6 +257,7 @@ MonoBehaviour:
     otherTimedItems:
     - Double XP Min
     - Double XP Sec
+    about: Need more XPs? This item will just bring you that.
   - itemName: SlowDown
     itemImage: {fileID: -8440998258694248052, guid: 03a9b31493aedd44d8786431e6422d0c,
       type: 3}
@@ -262,6 +277,8 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: Wanna play a little game? Use this item so that you can fast travel in
+      time (which in reverse slowes the enemies down).
   - itemName: Log
     itemImage: {fileID: 2368875588930414890, guid: a56195c825c5ab74ca68362b73b43281,
       type: 3}
@@ -274,13 +291,14 @@ MonoBehaviour:
     isTimed: 0
     purchaseType: 1
     levelLock: 1
-    levelToUnlock: 1000
+    levelToUnlock: 80
     id: 41
     isFree: 0
     oneTimePurchase: 0
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: Just a little help form king kong himself.
   - itemName: Fire Strike
     itemImage: {fileID: 1098286324429101383, guid: eeec659a04aef2a41b97775c06ab31bf,
       type: 3}
@@ -300,6 +318,7 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
+    about: Wanna use a cool magic? Make it rain with this one!
   - itemName: Gale
     itemImage: {fileID: -2349569615383979074, guid: 89f6e6e9af81e54499e50fa38a0e04c4,
       type: 3}
@@ -312,32 +331,15 @@ MonoBehaviour:
     isTimed: 0
     purchaseType: 1
     levelLock: 1
-    levelToUnlock: 1000
+    levelToUnlock: 80
     id: 40
     isFree: 0
     oneTimePurchase: 1
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
-  - itemName: Magnet Pull
-    itemImage: {fileID: 1535325516486818496, guid: 5a7c4cb24f25bbf439ed1b4466aa4b4a,
-      type: 3}
-    buttonImage: {fileID: 1535325516486818496, guid: 5a7c4cb24f25bbf439ed1b4466aa4b4a,
-      type: 3}
-    itemPrice: 15
-    itemMaxValue: 20
-    hasMaxValue: 1
-    type: 2
-    isTimed: 0
-    purchaseType: 1
-    levelLock: 1
-    levelToUnlock: 10
-    id: 39
-    isFree: 0
-    oneTimePurchase: 1
-    pet: {fileID: 0}
-    duration: 0
-    otherTimedItems: []
+    about: Turn your enemies around themselves and throw them offscreen with this
+      power.
   - itemName: Lightning Strick
     itemImage: {fileID: -894095381526335850, guid: 003ff60a5bbada948976e9d4bbd79c82,
       type: 3}
@@ -357,6 +359,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: A powerful electricity beam straight from that hands of your ancients.
   - itemName: Poison
     itemImage: {fileID: -4347532159779508366, guid: e6d354f853fd8fa49a848b5dff9da5a6,
       type: 3}
@@ -376,6 +379,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: A very toxic liquide from the mountains of death!
   - itemName: Ice Spike
     itemImage: {fileID: -7560284153744367771, guid: 2dfceeb9ff3293d4792650330c27fa28,
       type: 3}
@@ -395,3 +399,24 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
+    about: Freeze our enemies at any given time with this item.
+  - itemName: Magnet Pull
+    itemImage: {fileID: 1535325516486818496, guid: 5a7c4cb24f25bbf439ed1b4466aa4b4a,
+      type: 3}
+    buttonImage: {fileID: 1535325516486818496, guid: 5a7c4cb24f25bbf439ed1b4466aa4b4a,
+      type: 3}
+    itemPrice: 15
+    itemMaxValue: 20
+    hasMaxValue: 1
+    type: 2
+    isTimed: 0
+    purchaseType: 1
+    levelLock: 1
+    levelToUnlock: 10
+    id: 39
+    isFree: 0
+    oneTimePurchase: 1
+    pet: {fileID: 0}
+    duration: 0
+    otherTimedItems: []
+    about: Pull all the enemies toward a powerful magnet to decrease their health.

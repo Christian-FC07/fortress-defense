@@ -14,9 +14,11 @@ public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
     public int beginPlayer = 0;
     public GameObject addIcon, upgradeIcon;
     public GameObject upgradeFX;
+    private bool isUpgrade;
     List<int> prices = new List<int>();
     //public int[] prices;
     public Player_Archer[] Players;
+    public Animator anim;
 
     int currentPlayer = -1;
 
@@ -45,14 +47,24 @@ public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
             currentPlayer = beginPlayer;
             SetPlayer();
         }
-        InvokeRepeating("CheckStatus", 0, 0.1f);
+        InvokeRepeating("CheckAddStatus", 0, 0.01f);
+        InvokeRepeating("CheckUpdateStatus", 0, 5f);
     }
 
-    private void CheckStatus()
+    private void CheckAddStatus()
     {
         bool is_addIcon = Players[0].upgradedCharacterID.price <= GameManager.Instance.currentExp && currentPlayer == -1;
         addIcon.SetActive(is_addIcon);
+    }
+
+    private void CheckUpdateStatus()
+    {
         upgradeIcon.SetActive((currentPlayer + 1 < Players.Length)
+            && (Players[currentPlayer + 1].upgradedCharacterID.price <= GameManager.Instance.currentExp)
+            && currentPlayer > -1
+            && Players[currentPlayer + 1].upgradedCharacterID.levelUnlock <= GlobalValue.levelPlaying);
+
+        anim.SetBool("upgradeFlash", (currentPlayer + 1 < Players.Length)
             && (Players[currentPlayer + 1].upgradedCharacterID.price <= GameManager.Instance.currentExp)
             && currentPlayer > -1
             && Players[currentPlayer + 1].upgradedCharacterID.levelUnlock <= GlobalValue.levelPlaying);

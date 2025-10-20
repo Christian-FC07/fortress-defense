@@ -11,7 +11,7 @@ public class Inventory : MonoBehaviour
     public InventorySlot[] petSlotsUI;
     public InventorySlot[] towerSlotsUI;
     [HideInInspector] public int[] chosenMagics;
-     public int[] chosenItems;
+    public int[] chosenItems;
     [HideInInspector] public int[] chosenPet;
     [HideInInspector] public int[] chosenTower;
     public int[] chosenInitialItemsID;
@@ -20,10 +20,12 @@ public class Inventory : MonoBehaviour
     public int[] chosenInitialTowersID;
     private int _editingSlot;
     private Shop.ItemTypes _edittedType;
-  // void Start()
-  // {
-  //     InitSlots();
-  // }
+
+    public GameObject[] parts;
+    // void Start()
+    // {
+    //     InitSlots();
+    // }
 
     public void InitSlots()
     {
@@ -75,7 +77,7 @@ public class Inventory : MonoBehaviour
                 }
             }
         }
-        
+
         // choose pets from saved
         string[] chosenPetsDecode = GlobalValue.inventoryPets.Split(',');
         for (int i = 0; i < chosenPetsDecode.Length; i++)
@@ -97,7 +99,7 @@ public class Inventory : MonoBehaviour
         {
             if (GlobalValue.GetChosenShopItem(shopData.itemName) > 0 && shopData.type == Shop.ItemTypes.Item)
             {
-                    itemIds.Add(shopData.id);
+                itemIds.Add(shopData.id);
             }
         }
         for (int i = 0; i < itemSlotsUI.Length; i++)
@@ -116,12 +118,12 @@ public class Inventory : MonoBehaviour
         {
             if (int.Parse(chosenItemsDecode[i]) != 0)
             {
-                if (int.Parse(chosenItemsDecode[i]) == -1 || GlobalValue.GetChosenShopItem(GetShopItem(int.Parse(chosenItemsDecode[i])).itemName) <=0)
+                if (int.Parse(chosenItemsDecode[i]) == -1 || GlobalValue.GetChosenShopItem(GetShopItem(int.Parse(chosenItemsDecode[i])).itemName) <= 0)
                 {
                     bool choseFallbackItem = false;
                     for (int j = 0; j < itemIds.Count; j++)
                     {
-                        if (!chosenItemsDecode.Contains(itemIds[j].ToString())&& !choseFallbackItem)
+                        if (!chosenItemsDecode.Contains(itemIds[j].ToString()) && !choseFallbackItem)
                         {
                             chosenItemsDecode[i] = itemIds[j].ToString();
                             itemSlotsUI[i].chosenItemImage.gameObject.SetActive(true);
@@ -133,7 +135,7 @@ public class Inventory : MonoBehaviour
                         }
                     }
                 }
-                else if(int.Parse(chosenItemsDecode[i]) != -1 && GlobalValue.GetChosenShopItem(GetShopItem(int.Parse(chosenItemsDecode[i])).itemName) >0)
+                else if (int.Parse(chosenItemsDecode[i]) != -1 && GlobalValue.GetChosenShopItem(GetShopItem(int.Parse(chosenItemsDecode[i])).itemName) > 0)
                 {
                     itemSlotsUI[i].chosenItemImage.gameObject.SetActive(true);
                     itemSlotsUI[i].Init(GetShopItem(int.Parse(chosenItemsDecode[i])).itemImage);
@@ -141,35 +143,35 @@ public class Inventory : MonoBehaviour
 
             }
         }
-    
-      //  if (itemIds.Count>0)
-      //  {
-      //      for (int i = 0; i < chosenItems.Length; i++)
-      //      {
-      //          chosenItems[i] = -1;
-      //      }
-      //     
-      //      for (int i = 0; i < itemIds.Count; i++)
-      //      {
-      //              itemSlotsUI[i].chosenItemImage.gameObject.SetActive(true);
-      //              itemSlotsUI[i].Init(GetShopItem(itemIds[i]).itemImage);
-      //              _editingSlot = i;
-      //              _edittedType = Shop.ItemTypes.Item;
-      //              ChangeChosenItem(GetShopItem(itemIds[i]));
-      //      }
-      //  }
-   
 
-          
+        //  if (itemIds.Count>0)
+        //  {
+        //      for (int i = 0; i < chosenItems.Length; i++)
+        //      {
+        //          chosenItems[i] = -1;
+        //      }
+        //     
+        //      for (int i = 0; i < itemIds.Count; i++)
+        //      {
+        //              itemSlotsUI[i].chosenItemImage.gameObject.SetActive(true);
+        //              itemSlotsUI[i].Init(GetShopItem(itemIds[i]).itemImage);
+        //              _editingSlot = i;
+        //              _edittedType = Shop.ItemTypes.Item;
+        //              ChangeChosenItem(GetShopItem(itemIds[i]));
+        //      }
+        //  }
 
-        
+
+
+
+
     }
 
     public void OpenPets()
     {
         SoundManager.Click();
         itemPicker.gameObject.SetActive(true);
-        itemPicker.Init(data,chosenPet,Shop.ItemTypes.Pet);
+        itemPicker.Init(data, chosenPet, Shop.ItemTypes.Pet);
         _editingSlot = 0;
         _edittedType = Shop.ItemTypes.Pet;
     }
@@ -180,7 +182,7 @@ public class Inventory : MonoBehaviour
         _editingSlot = slot;
         _edittedType = Shop.ItemTypes.Item;
         itemPicker.gameObject.SetActive(true);
-        itemPicker.Init(data, chosenItems,Shop.ItemTypes.Item);
+        itemPicker.Init(data, chosenItems, Shop.ItemTypes.Item);
     }
 
     public void OpenMagics(int slot)
@@ -189,7 +191,7 @@ public class Inventory : MonoBehaviour
         _editingSlot = slot;
         _edittedType = Shop.ItemTypes.Magic;
         itemPicker.gameObject.SetActive(true);
-        itemPicker.Init(data,chosenMagics,Shop.ItemTypes.Magic);
+        itemPicker.Init(data, chosenMagics, Shop.ItemTypes.Magic);
     }
 
     public void OpenTowers()
@@ -198,7 +200,7 @@ public class Inventory : MonoBehaviour
         _editingSlot = 0;
         _edittedType = Shop.ItemTypes.Towers;
         itemPicker.gameObject.SetActive(true);
-        itemPicker.Init(data,chosenTower,Shop.ItemTypes.Towers);
+        itemPicker.Init(data, chosenTower, Shop.ItemTypes.Towers);
     }
 
     public void CloseItemPicker()
@@ -234,7 +236,7 @@ public class Inventory : MonoBehaviour
         }
         CloseItemPicker();
     }
-    
+
     ShopItemData.ShopItem GetShopItem(int itemID)
     {
         ShopItemData.ShopItem item = null;
@@ -247,5 +249,14 @@ public class Inventory : MonoBehaviour
         }
 
         return item;
+    }
+
+    public void partShower(int k)
+    {
+        foreach (GameObject part in parts)
+        {
+            part.SetActive(false);
+        }
+        parts[k].SetActive(true);
     }
 }
