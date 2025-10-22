@@ -35,3 +35,13 @@ MonoBehaviour:
     shopItemName: Healing Spell
     amount: 1
     icon: {fileID: 21300000, guid: 5953b0a94ebe43e40a8f470670a0a527, type: 3}
+  - rewardLevel: 6
+    type: 2
+    shopItemName: Healing Spell
+    amount: 1
+    icon: {fileID: 21300000, guid: 5953b0a94ebe43e40a8f470670a0a527, type: 3}
+  - rewardLevel: 7
+    type: 2
+    shopItemName: Healing Spell
+    amount: 1
+    icon: {fileID: 21300000, guid: 5953b0a94ebe43e40a8f470670a0a527, type: 3}
