@@ -10,7 +10,7 @@ public class Goto_Shop : MonoBehaviour
 
     private void Awake()
     {
-
+        DontDestroyOnLoad(this.gameObject);
     }
 
     private void OnEnable()
@@ -50,8 +50,10 @@ public class Goto_Shop : MonoBehaviour
             {
                 script.Store(true);
                 Debug.Log("Store function called!");
-
-                //Destroy(this.gameObject , 2f);
+                this.gameObject.SetActive(false);
+                //Destroy(script);
+                Destroy(this.gameObject);
+                Destroy(this.gameObject , 1f);
             }
             else
             {
@@ -63,6 +65,15 @@ public class Goto_Shop : MonoBehaviour
             Debug.LogWarning("GameObject 'HomeMenu-PC' not found in scene!");
         }
     }
+
+
+    private IEnumerator DestroyAfterDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        Destroy(this.gameObject );  
+
+    }
+
 
     public void ShopOpener()
     {

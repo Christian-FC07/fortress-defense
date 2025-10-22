@@ -215,6 +215,14 @@ public class MainMenuHomeScene : MonoBehaviour
         showTutorial.isTutorialOn = false;
         StoreUI.SetActive(open);
         StoreUI.GetComponent<Shop>().OpenMenu("features");
+        GameObject homeMenu = GameObject.Find("MenuManager-PC");
+        if (homeMenu == null )
+        {
+            Debug.LogError("MenuManager-PC Not Found!!!");
+        }
+        Destroy(homeMenu );
+        
+
     }
     public void OpenUpgradeUI(bool open)
     {
