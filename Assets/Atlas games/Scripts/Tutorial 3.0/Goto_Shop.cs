@@ -6,11 +6,11 @@ public class Goto_Shop : MonoBehaviour
 {
     public static bool press = false;
     public static bool press2 = false;
-    public GameObject Menu;
+    //public GameObject Menu;
 
     private void Awake()
     {
-       // DontDestroyOnLoad(this.gameObject);
+
     }
 
     private void OnEnable()
@@ -51,13 +51,7 @@ public class Goto_Shop : MonoBehaviour
                 script.Store(true);
                 Debug.Log("Store function called!");
 
-                // 🕒 صبر کن ۵ ثانیه بعد از اجرای Store()
-                yield return new WaitForSeconds(5f);
-
-                Debug.Log("5 seconds passed after Store() → Destroying Goto_Shop!");
-                Destroy(this.gameObject);
-                //Destroy(homeMenu);
-               // Destroy(Menu);
+                //Destroy(this.gameObject , 2f);
             }
             else
             {

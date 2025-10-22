@@ -20872,7 +20872,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 3751503654184368032}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Goto_Shop, Assembly-CSharp
         m_MethodName: GoShopPressed
         m_Mode: 1
@@ -24031,7 +24031,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1439bb04a416070488fdfbb1eee32119, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Goto_Shop
-  Menu: {fileID: 6236543550299358268}
 --- !u!1 &6248001206415275257
 GameObject:
   m_ObjectHideFlags: 0
