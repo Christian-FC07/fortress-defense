@@ -48,7 +48,7 @@ public class AddAndUpgradePlayer : MonoBehaviour, IGetTouchEvent, IKeyboardCall
             SetPlayer();
         }
         InvokeRepeating("CheckAddStatus", 0, 0.01f);
-        InvokeRepeating("CheckUpdateStatus", 0, 5f);
+        InvokeRepeating("CheckUpdateStatus", 0, 0.01f);
     }
 
     private void CheckAddStatus()

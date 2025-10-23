@@ -10,12 +10,14 @@ public class MainMenuHomeScene : MonoBehaviour
     public GameObject MapUI;
     public GameObject ShopUI;
     public GameObject TrophyUI,TrophyUIV2;
-    public GameObject EventUI, CoinShopUI, UpgradeUI,LeaderBoardUI;
+    public GameObject CoinShopUI, UpgradeUI;
+    public GameObject[] EventUI;
+    public GameObject[] LeaderBoardUI;
     public GameObject StoreUI;
     public GameObject Loading;
     public GameObject Settings;
-    public GameObject inventory;
-    public GameObject GuideBook;
+    public GameObject[] inventory;
+    public GameObject[] GuideBook;
     public GameObject FriendGuide;
     public GameObject EnemyGuide;
     public GameObject GuideBookV2;
@@ -39,7 +41,7 @@ public class MainMenuHomeScene : MonoBehaviour
         } else {
             Instance = this;
         }
-        if (HomeUI)
+        /*if (HomeUI)
             HomeUI.SetActive(false);
         if (Loading != null)
             Loading.SetActive(false);
@@ -60,7 +62,7 @@ public class MainMenuHomeScene : MonoBehaviour
         if (UpgradeUI)
             UpgradeUI.SetActive(false);
         if (LeaderBoardUI)
-            LeaderBoardUI.SetActive(false);
+            LeaderBoardUI.SetActive(false);*/
     }
 
     public void LoadScene()
@@ -145,8 +147,17 @@ public class MainMenuHomeScene : MonoBehaviour
     {
         yield return null;
         //BlackScreenUI.instance.Show(0.2f);
-        inventory.SetActive(open);
-        inventory.GetComponent<Inventory>().InitSlots();
+        switch (uiElements.aspectRatio)
+        {
+            case 169f:
+                inventory[0].SetActive(open);
+                inventory[0].GetComponent<Inventory>().InitSlots();
+                break;
+            case 32f:
+                inventory[1].SetActive(open);
+                inventory[1].GetComponent<Inventory>().InitSlots();
+                break;
+        }
         //BlackScreenUI.instance.Hide(0.2f);
     }
     IEnumerator OpenMapCo(bool open)
@@ -168,7 +179,15 @@ public class MainMenuHomeScene : MonoBehaviour
     public void OpenGuideBookCo(bool open)
     {
         //BlackScreenUI.instance.Show(0.2f);
-        GuideBook.SetActive(open);
+        switch (uiElements.aspectRatio)
+        {
+            case 169f:
+                GuideBook[0].SetActive(open);
+                break;
+            case 32f:
+                GuideBook[1].SetActive(open);
+                break;
+        }
         //BlackScreenUI.instance.Hide(0.2f);
     }
     public void OpenFriendGuideCo(bool open)
@@ -269,11 +288,21 @@ public class MainMenuHomeScene : MonoBehaviour
 
     public void OpenLeaderBoard(bool open)
     {
-        LeaderBoard leaderBoard = LeaderBoardUI.GetComponent<LeaderBoard>();
         GlobalValue.menuPart = "Leaderboard";
         showTutorial.isTutorialOn = false;
-        LeaderBoardUI.SetActive(open);
-        if(!open) leaderBoard.ClearList();
+        switch (uiElements.aspectRatio)
+        {
+            case 169f:
+                LeaderBoardUI[0].SetActive(open);
+                LeaderBoard leaderBoard = LeaderBoardUI[0].GetComponent<LeaderBoard>();
+                if(!open) leaderBoard.ClearList();
+                break;
+            case 32f:
+                LeaderBoardUI[1].SetActive(open);
+                LeaderBoard leaderBoard1 = LeaderBoardUI[1].GetComponent<LeaderBoard>();
+                if(!open) leaderBoard1.ClearList();
+                break;
+        }
     }
     public void OpenTrophyV2(bool open)
     {
@@ -287,7 +316,15 @@ public class MainMenuHomeScene : MonoBehaviour
         SoundManager.Click();
         GlobalValue.menuPart = "Events";
         showTutorial.isTutorialOn = false;
-        EventUI.SetActive(open);
+        switch (uiElements.aspectRatio)
+        {
+            case 169f:
+                EventUI[0].SetActive(open);
+                break;
+            case 32f:
+                EventUI[1].SetActive(open);
+                break;
+        }
     }
     public void OpenCoinShop(bool open)
     {

@@ -4,7 +4,7 @@ public class uiElements : MonoBehaviour
 {
     public static float aspectRatio = 0f;
 
-    void Update()
+    void Start()
     {
         if (Camera.main.aspect >= 1.7)
         {
