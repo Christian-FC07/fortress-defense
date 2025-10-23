@@ -267,10 +267,16 @@ public class MenuManager : MonoBehaviour, IListener
         GlobalValue.levelPlaying++;
         OnSceneReloaded?.Invoke();
         StartCoroutine(LoadAsynchronously(SceneManager.GetActiveScene().name));
-        
+        ComplexDestroy();
  
     }
+    public void ComplexDestroy()
+    {
+        Destroy(Instance);
+        Destroy(this);
+        Destroy(this.gameObject);
 
+    }
     public void LoadShop()
     {
         GoShopPressed();

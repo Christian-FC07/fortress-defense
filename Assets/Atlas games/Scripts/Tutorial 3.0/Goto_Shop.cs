@@ -6,6 +6,7 @@ public class Goto_Shop : MonoBehaviour
 {
     public static bool press = false;
     public static bool press2 = false;
+    //public GameObject Menu;
 
     private void Awake()
     {
@@ -32,13 +33,12 @@ public class Goto_Shop : MonoBehaviour
         }
     }
 
-
     private IEnumerator WaitAndFindHomeMenu()
     {
-        yield return new WaitForSeconds(1f);  
+        yield return new WaitForSeconds(1f);
 
         GameObject homeMenu = GameObject.Find("HomeMenu-PC");
-        if (homeMenu == null )
+        if (homeMenu == null)
         {
             Debug.LogError("Home Menu NOT FOUND");
         }
@@ -50,8 +50,10 @@ public class Goto_Shop : MonoBehaviour
             {
                 script.Store(true);
                 Debug.Log("Store function called!");
-                //this.gameObject.SetActive(false);
-               // Destroy(this);
+                this.gameObject.SetActive(false);
+                //Destroy(script);
+                Destroy(this.gameObject);
+                Destroy(this.gameObject , 1f);
             }
             else
             {
@@ -63,6 +65,15 @@ public class Goto_Shop : MonoBehaviour
             Debug.LogWarning("GameObject 'HomeMenu-PC' not found in scene!");
         }
     }
+
+
+    private IEnumerator DestroyAfterDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        Destroy(this.gameObject );  
+
+    }
+
 
     public void ShopOpener()
     {
@@ -77,16 +88,15 @@ public class Goto_Shop : MonoBehaviour
         press2 = true;
         Debug.Log("pressed");
         Time.timeScale = 1;
-     if (PlayerPrefs.GetInt("LevelReached") == 2  )
+        Debug.LogError(GlobalValue.levelPlaying);
+
+        if (GlobalValue.levelPlaying == 4)
         {
             ShopOpener();
-
         }
         else
         {
             Destroy(this.gameObject);
-
         }
-
     }
 }
