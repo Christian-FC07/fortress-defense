@@ -6,17 +6,17 @@ using UnityEngine.SceneManagement;
 public class ShowComic : MonoBehaviour
 {
     [Header("Refrences (Be to be changed)")]
-    public Comics tutorials;
+    public Comics comics;
     public GameObject UI;
     public GameObject blur;
     public GameObject archerManager;
     private Scene scene;
-    GameObject newTutorialCLone;
+    GameObject newComicClone;
     public float timer;
     public GameObject[] menuParts;
 
-    public static bool isTutorialOn = false;
-    public static bool isTutorialoff2 = false;
+    public static bool isComicOn = false;
+    public static bool isComicOff2 = false;
 
     public void Start()
     {
@@ -28,38 +28,38 @@ public class ShowComic : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        for (int i = 0; i < tutorials.infoT.Length; i++)
+        for (int i = 0; i < comics.infoT.Length; i++)
         {
-            int levelRef = tutorials.infoT[i].LevelNumber;
-            var tutorialObj = tutorials.infoT[i].TutorialPrefab;
-            int delayTime = (int)tutorials.infoT[i].Delay;
-            var modelRef = tutorials.infoT[i].Model.ToString();
-            var partRef = tutorials.infoT[i].MenuPart.ToString();
+            int levelRef = comics.infoT[i].LevelNumber;
+            var tutorialObj = comics.infoT[i].ComicPrefab;
+            int delayTime = (int)comics.infoT[i].Delay;
+            var modelRef = comics.infoT[i].Model.ToString();
+            var partRef = comics.infoT[i].MenuPart.ToString();
 
             // ================= InGame Tutorials =================
             if (modelRef == "InGame" && scene.name == "Playing atlas")
             {
-                if (levelRef == GlobalValue.levelPlaying && isTutorialOn == false)
+                if (levelRef == GlobalValue.levelPlaying && isComicOn == false)
                 {
                     if (timer > delayTime)
                     {
-                        newTutorialCLone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
+                        newComicClone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
                         UI.transform.localScale = new Vector2(2, 2);
                         archerManager.SetActive(false);
                         blur.SetActive(true);
 
-                        isTutorialOn = true;
+                        isComicOn = true;
                     }
                 }
-                else if (isTutorialoff2 == false && buttonCheck.press)
+                else if (isComicOff2 == false && buttonCheck.press)
                 {
-                    Destroy(newTutorialCLone, 0.1f);
+                    Destroy(newComicClone, 0.1f);
                     Time.timeScale = 1;
                     UI.transform.localScale = new Vector2(1, 1);
                     archerManager.SetActive(true);
                     blur.SetActive(false);
 
-                    isTutorialoff2 = true;
+                    isComicOff2 = true;
                     buttonCheck.press = false;
                 }
             }
@@ -72,7 +72,7 @@ public class ShowComic : MonoBehaviour
                 {
                     if (partRef == GlobalValue.menuPart && timer > delayTime)
                     {
-                        newTutorialCLone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
+                        newComicClone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
 
                         PlayerPrefs.SetInt(tutorialKey, 1);
                         PlayerPrefs.Save();
@@ -81,7 +81,7 @@ public class ShowComic : MonoBehaviour
 
                 if (buttonCheck.press)
                 {
-                    Destroy(newTutorialCLone, 0.1f);
+                    Destroy(newComicClone, 0.1f);
                     buttonCheck.press = false;
                 }
             }
@@ -93,8 +93,8 @@ public class ShowComic : MonoBehaviour
     /// </summary>
     private void ResetTutorialFlags()
     {
-        isTutorialOn = false;
-        isTutorialoff2 = false;
+        isComicOn = false;
+        isComicOff2 = false;
         timer = 0f;
     }
 }
