@@ -11,4 +11,13 @@ public class buttonCheck : MonoBehaviour
         Debug.Log("pressed");
         Time.timeScale = 1;
     }
+    public static bool Comicpress = false;
+    public static bool Comicpress2 = false;
+    public void ComicButtonPress()
+    {
+        Comicpress = true;
+        Comicpress2 = true;
+        Debug.Log("Comic pressed");
+        Time.timeScale = 1;
+    }
 }

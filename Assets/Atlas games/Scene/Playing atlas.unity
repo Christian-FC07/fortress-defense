@@ -1117,6 +1117,11 @@ PrefabInstance:
       objectReference: {fileID: 1551794755}
     - target: {fileID: 3189513195143062343, guid: 6e69e2da07082314d8d7c9011ac95a59,
         type: 3}
+      propertyPath: tutorialManager
+      value: 
+      objectReference: {fileID: 6168901443506814118}
+    - target: {fileID: 3189513195143062343, guid: 6e69e2da07082314d8d7c9011ac95a59,
+        type: 3}
       propertyPath: menuParts.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -1124,6 +1129,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Comic_Display
+      objectReference: {fileID: 0}
+    - target: {fileID: 3393786442053462523, guid: 6e69e2da07082314d8d7c9011ac95a59,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3914775154079806286, guid: 6e69e2da07082314d8d7c9011ac95a59,
         type: 3}
@@ -1186,6 +1196,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1490660542}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1490660544 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3189513195143062343, guid: 6e69e2da07082314d8d7c9011ac95a59,
+    type: 3}
+  m_PrefabInstance: {fileID: 1490660542}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 498391921d2555a47b7d28384bd80239, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShowComic
 --- !u!1001 &1534333898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2189,6 +2211,17 @@ PrefabInstance:
       objectReference: {fileID: 8390071902059603459}
     - target: {fileID: 1558911363981498950, guid: c944f95f26027e34a9597b919fcef8ee,
         type: 3}
+      propertyPath: Comics
+      value: 
+      objectReference: {fileID: 11400000, guid: bea43d53b06eb1d4f8f9a933eabb6717,
+        type: 2}
+    - target: {fileID: 1558911363981498950, guid: c944f95f26027e34a9597b919fcef8ee,
+        type: 3}
+      propertyPath: ComicManager
+      value: 
+      objectReference: {fileID: 1490660544}
+    - target: {fileID: 1558911363981498950, guid: c944f95f26027e34a9597b919fcef8ee,
+        type: 3}
       propertyPath: archerManager
       value: 
       objectReference: {fileID: 1551794755}
@@ -2272,6 +2305,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6168901443506814116}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6168901443506814118 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1558911363981498950, guid: c944f95f26027e34a9597b919fcef8ee,
+    type: 3}
+  m_PrefabInstance: {fileID: 6168901443506814116}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e825ab92dd2744fb09ae9c722535ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6320282220373068746
 PrefabInstance:
   m_ObjectHideFlags: 0
