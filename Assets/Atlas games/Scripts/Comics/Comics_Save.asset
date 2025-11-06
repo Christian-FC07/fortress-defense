@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Comics_Save
   m_EditorClassIdentifier: Assembly-CSharp::Comics
   infoT:
-  - ComicPrefab: {fileID: 0}
+  - ComicPrefab: {fileID: 4039481563653763584, guid: 95baa41fee820284bbc9310449e5d2b2,
+      type: 3}
     Model: 0
-    LevelNumber: 0
-    Delay: 0
+    LevelNumber: 1
+    Delay: 5
     MenuPart: 0
