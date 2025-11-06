@@ -17,7 +17,7 @@ MonoBehaviour:
       type: 3}
     Model: 0
     LevelNumber: 1
-    Delay: 3
+    Delay: 6
     MenuPart: 0
   - TutorialPrefab: {fileID: 6383901390142351076, guid: 18160878181528747acc42cdb19542d1,
       type: 3}

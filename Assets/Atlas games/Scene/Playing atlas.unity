@@ -1106,6 +1106,12 @@ PrefabInstance:
       objectReference: {fileID: 8390071902059603459}
     - target: {fileID: 3189513195143062343, guid: 6e69e2da07082314d8d7c9011ac95a59,
         type: 3}
+      propertyPath: Comics
+      value: 
+      objectReference: {fileID: 11400000, guid: bea43d53b06eb1d4f8f9a933eabb6717,
+        type: 2}
+    - target: {fileID: 3189513195143062343, guid: 6e69e2da07082314d8d7c9011ac95a59,
+        type: 3}
       propertyPath: comics
       value: 
       objectReference: {fileID: 11400000, guid: bea43d53b06eb1d4f8f9a933eabb6717,
@@ -1133,7 +1139,7 @@ PrefabInstance:
     - target: {fileID: 3393786442053462523, guid: 6e69e2da07082314d8d7c9011ac95a59,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3914775154079806286, guid: 6e69e2da07082314d8d7c9011ac95a59,
         type: 3}
