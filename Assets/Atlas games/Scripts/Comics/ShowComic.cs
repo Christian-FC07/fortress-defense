@@ -59,9 +59,7 @@ public class ShowComic : MonoBehaviour
                     {
                         Destroy(newComicClone);
                         buttonCheck.Comicpress = false;
-                        Timer.comicClosed = true;
-                        Timer.isCounting = true;
-                        Debug.Log("Vars Changed");
+
                     }
 
 
