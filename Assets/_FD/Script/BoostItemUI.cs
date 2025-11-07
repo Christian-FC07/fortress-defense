@@ -231,9 +231,17 @@ public class BoostItemUI : MonoBehaviour, IKeyboardCall
                 StartCoroutine(RunCoolDown(fixedCoolDownTime ? coolDownTime : AD_Time));
                 break;
             case "SlowDown":
-                SlowDownEnemies();
+                /*SlowDownEnemies();
                 StartCoroutine(RunTimerCo(itemIcons[index],itemTimerTexts[index],SD_Time,index,itemButtons[index],GetItemData(_chosenItems[index]).id));
-                StartCoroutine(RunCoolDown(fixedCoolDownTime ? coolDownTime : SD_Time));
+                StartCoroutine(RunCoolDown(fixedCoolDownTime ? coolDownTime : SD_Time));*/
+            case "Add25XP":
+                add25XP();
+                break;
+            case "Add50XP":
+                add50XP();
+                break;
+            case "Add75XP":
+                add75XP();
                 break;
         }
         GlobalValue.DecrementChosenShopItem(GetItemData(_chosenItems[index]).itemName);
@@ -498,6 +506,21 @@ public class BoostItemUI : MonoBehaviour, IKeyboardCall
     public void ActivateFortressShield()
     {
         FindFirstObjectByType<TheFortrest>().ActivateShield(FS_health);
+    }
+    #endregion
+
+    #region Fortress Shield
+    public void add25XP()
+    {
+        GameManager.Instance.currentExp += 25;
+    }
+    public void add50XP()
+    {
+        GameManager.Instance.currentExp += 50;
+    }
+    public void add75XP()
+    {
+        GameManager.Instance.currentExp += 75;
     }
     #endregion
     

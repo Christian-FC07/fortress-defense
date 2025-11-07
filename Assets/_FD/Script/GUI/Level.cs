@@ -25,6 +25,7 @@ public class Level : MonoBehaviour
     public GameObject bossGroup;
     public GameObject miniBoss;
     public GameObject boss;
+
     public IsBoss is_boss = IsBoss.NONE;
 
     public bool loadSceneManual = false;
