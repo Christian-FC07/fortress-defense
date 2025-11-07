@@ -14,6 +14,8 @@ public class ShowComic : MonoBehaviour
     GameObject newComicClone;
     public float timer;
     public GameObject[] menuParts;
+    public CoTu_Timer Timer;
+
 
     public static bool isComicOn = false;
     public static bool isComicOff2 = false;

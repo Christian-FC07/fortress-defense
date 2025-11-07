@@ -14,6 +14,7 @@ public class showTutorial : MonoBehaviour
     GameObject newTutorialCLone;
     public float timer;
     public GameObject[] menuParts;
+    public CoTu_Timer Timer;
 
     public static bool isTutorialOn = false;
     public static bool isTutorialoff2 = false;
