@@ -25,7 +25,7 @@ public class MainMenuHomeScene : MonoBehaviour
     public GameObject GuideBookV2;
     public GameObject[] BuyHeartsOption;
     public TextMeshProUGUI heartsAmount;
-    public GameObject endlessOption;
+    public GameObject[] endlessOption;
     public string facebookLink;
     public string twitterLink = "https://twitter.com/";
     public string websiteUrl;
@@ -135,14 +135,30 @@ public class MainMenuHomeScene : MonoBehaviour
     {
         SoundManager.Click();
         StartCoroutine(OpenInventoryCo(open));
-
+    }
+    public void OpenEndlessInventoy(int level)
+    {
         if (EventUI[0].activeInHierarchy || EventUI[1].activeInHierarchy)
         {
-            endlessOption.SetActive(true);
+            switch(level)
+            {
+                case 0:
+                    endlessOption[0].SetActive(true);
+                    break;
+                case 1:
+                    endlessOption[1].SetActive(true);
+                    break;
+                case 2:
+                    endlessOption[2].SetActive(true);
+                    break;
+            }
         }
         else
         {
-            endlessOption.SetActive(false);
+            foreach(var option in endlessOption)
+            {
+                option.SetActive(false);
+            }
         }
     }
     public void OpenGuideBook(bool open)
