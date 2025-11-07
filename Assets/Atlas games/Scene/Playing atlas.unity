@@ -1106,6 +1106,11 @@ PrefabInstance:
       objectReference: {fileID: 8390071902059603459}
     - target: {fileID: 3189513195143062343, guid: 6e69e2da07082314d8d7c9011ac95a59,
         type: 3}
+      propertyPath: Timer
+      value: 
+      objectReference: {fileID: 1619435036}
+    - target: {fileID: 3189513195143062343, guid: 6e69e2da07082314d8d7c9011ac95a59,
+        type: 3}
       propertyPath: Comics
       value: 
       objectReference: {fileID: 11400000, guid: bea43d53b06eb1d4f8f9a933eabb6717,
@@ -1298,6 +1303,92 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6428091623809692427}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1619435034
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 6168901443506814117}
+    m_Modifications:
+    - target: {fileID: 4355013831264684356, guid: ca7acdc1ecfef444fa915767900c406c,
+        type: 3}
+      propertyPath: m_Name
+      value: CoTu_Timer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942962804765912401, guid: ca7acdc1ecfef444fa915767900c406c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 844.619
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942962804765912401, guid: ca7acdc1ecfef444fa915767900c406c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 589.568
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942962804765912401, guid: ca7acdc1ecfef444fa915767900c406c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942962804765912401, guid: ca7acdc1ecfef444fa915767900c406c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942962804765912401, guid: ca7acdc1ecfef444fa915767900c406c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942962804765912401, guid: ca7acdc1ecfef444fa915767900c406c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942962804765912401, guid: ca7acdc1ecfef444fa915767900c406c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942962804765912401, guid: ca7acdc1ecfef444fa915767900c406c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942962804765912401, guid: ca7acdc1ecfef444fa915767900c406c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6942962804765912401, guid: ca7acdc1ecfef444fa915767900c406c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca7acdc1ecfef444fa915767900c406c, type: 3}
+--- !u!4 &1619435035 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6942962804765912401, guid: ca7acdc1ecfef444fa915767900c406c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1619435034}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1619435036 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4465912728488296499, guid: ca7acdc1ecfef444fa915767900c406c,
+    type: 3}
+  m_PrefabInstance: {fileID: 1619435034}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ab467b90c1bd654e8cdb0cf03fd344c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CoTu_Timer
 --- !u!1001 &1625546736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2217,6 +2308,11 @@ PrefabInstance:
       objectReference: {fileID: 8390071902059603459}
     - target: {fileID: 1558911363981498950, guid: c944f95f26027e34a9597b919fcef8ee,
         type: 3}
+      propertyPath: Timer
+      value: 
+      objectReference: {fileID: 1619435036}
+    - target: {fileID: 1558911363981498950, guid: c944f95f26027e34a9597b919fcef8ee,
+        type: 3}
       propertyPath: Comics
       value: 
       objectReference: {fileID: 11400000, guid: bea43d53b06eb1d4f8f9a933eabb6717,
@@ -2303,6 +2399,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1490660543}
+    - targetCorrespondingSourceObject: {fileID: 6168901444282779543, guid: c944f95f26027e34a9597b919fcef8ee,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1619435035}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c944f95f26027e34a9597b919fcef8ee, type: 3}
 --- !u!4 &6168901443506814117 stripped

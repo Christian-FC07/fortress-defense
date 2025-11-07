@@ -15,6 +15,7 @@ public class ShowComic : MonoBehaviour
     public float timer;
     public GameObject[] menuParts;
     public CoTu_Timer Timer;
+    //public showTutorial showTutorial;
 
 
     public static bool isComicOn = false;
@@ -53,10 +54,14 @@ public class ShowComic : MonoBehaviour
                         isComicOn = true;
                     }
 
+                    // فقط قسمت مربوط به فشردن دکمه را جایگزین کن (باقی کد شما بدون تغییر)
                     if (buttonCheck.Comicpress)
                     {
                         Destroy(newComicClone);
                         buttonCheck.Comicpress = false;
+                        Timer.comicClosed = true;
+                        Timer.isCounting = true;
+                        Debug.Log("Vars Changed");
                     }
 
 

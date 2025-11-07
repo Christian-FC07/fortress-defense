@@ -4,6 +4,7 @@ public class buttonCheck : MonoBehaviour
 {
     public static bool press = false;
     public static bool press2 = false;
+    public CoTu_Timer Timer;
     public void buttonPress()
     {
         press = true;
@@ -16,9 +17,13 @@ public class buttonCheck : MonoBehaviour
 
     public void ComicButtonPress()
     {
+        Timer = GameObject.FindAnyObjectByType<CoTu_Timer>();
         Comicpress = true;
         Comicpress2 = true;
         Debug.Log("Comic pressed");
+        Timer.comicClosed = true;
+        Timer.isCounting = true;
+        Debug.Log("Vars Changed");
         Time.timeScale = 1;
     }
 }
