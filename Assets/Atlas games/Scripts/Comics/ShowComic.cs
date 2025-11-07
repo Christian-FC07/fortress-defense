@@ -51,15 +51,15 @@ public class ShowComic : MonoBehaviour
                         isComicOn = true;
                     }
 
-                    if (ComicbuttonCheck.press)
+                    if (buttonCheck.Comicpress)
                     {
                         Destroy(newComicClone);
-                        ComicbuttonCheck.press = false;
+                        buttonCheck.Comicpress = false;
                     }
 
 
                 }
-                else if (isComicOff2 == false && ComicbuttonCheck.press)
+                else if (isComicOff2 == false && buttonCheck.Comicpress)
                 {
                     Destroy(newComicClone, 0.1f);
                     Time.timeScale = 1;
@@ -68,7 +68,7 @@ public class ShowComic : MonoBehaviour
                     blur.SetActive(false);
 
                     isComicOff2 = true;
-                    ComicbuttonCheck.press = false;
+                    buttonCheck.Comicpress = false;
                 }
             }
             // ================= InMenu Tutorials =================

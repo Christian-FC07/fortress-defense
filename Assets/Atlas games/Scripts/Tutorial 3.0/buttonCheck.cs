@@ -13,6 +13,7 @@ public class buttonCheck : MonoBehaviour
     }
     public static bool Comicpress = false;
     public static bool Comicpress2 = false;
+
     public void ComicButtonPress()
     {
         Comicpress = true;
