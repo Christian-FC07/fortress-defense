@@ -103,10 +103,10 @@ TextureImporter:
       name: btn_pets_gray2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 201
-        height: 210
+        x: 40
+        y: 51
+        width: 118
+        height: 112
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
