@@ -44,20 +44,22 @@ public class ShowComic : MonoBehaviour
             {
                 if (levelRef == GlobalValue.levelPlaying && isComicOn == false)
                 {
-                    if (timer > delayTime)
+                    if (isComicOn == false)
                     {
-                        newComicClone = Instantiate(comicObj, transform.position, Quaternion.identity);
-                        UI.transform.localScale = new Vector2(2, 2);
+                       //newComicClone = Instantiate(comicObj, transform.position, Quaternion.identity);
+                       newComicClone = Instantiate(comicObj);
+                       // UI.transform.localScale = new Vector2(2, 2);
                         archerManager.SetActive(false);
                         blur.SetActive(true);
-
                         isComicOn = true;
+                        Time.timeScale = 0;
                     }
 
                     // فقط قسمت مربوط به فشردن دکمه را جایگزین کن (باقی کد شما بدون تغییر)
                     if (buttonCheck.Comicpress)
                     {
                         Destroy(newComicClone);
+                        Time.timeScale = 1;
                         buttonCheck.Comicpress = false;
 
                     }

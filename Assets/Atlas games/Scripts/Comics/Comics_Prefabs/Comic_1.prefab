@@ -574,6 +574,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ea212515e92aca4599054e7c0061ab0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Timer: {fileID: 0}
 --- !u!1 &6810512721934498453
 GameObject:
   m_ObjectHideFlags: 0
@@ -773,7 +774,7 @@ Animator:
   m_GameObject: {fileID: 8788878204744207896}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 52eaa13d1ab52d944a479801e5e78f66, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
