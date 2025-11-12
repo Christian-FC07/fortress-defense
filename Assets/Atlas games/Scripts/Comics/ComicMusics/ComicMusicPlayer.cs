@@ -16,11 +16,19 @@ public class ComicMusicPlayer : MonoBehaviour
         GlobalValue.isMusic = false;
         SoundManager.MusicVolume = GlobalValue.isMusic ? SoundManager.Instance.musicsGameVolume : 1f;
         Debug.Log("Music Played Now!");
+        StopComicMusic();
     }
+   
+
     public void StartComicMusic()
     {
         ComicAudioSource.clip = ComicMusic;
         ComicAudioSource.Play();
+    }
+    public void StopComicMusic()
+    {
+        ComicAudioSource.clip = ComicMusic;
+        ComicAudioSource.Stop();
     }
     public void StopGameMusic()
     {

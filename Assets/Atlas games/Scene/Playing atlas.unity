@@ -2086,7 +2086,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ComicMusic
       value: 
-      objectReference: {fileID: 8300000, guid: 623a9ad8d910ffa4cb5a7614b4ae7cd1, type: 3}
+      objectReference: {fileID: 8300000, guid: aa654f1687827354b869b714ccbed93f, type: 3}
     - target: {fileID: 7314741681035245468, guid: fe07f16acff50a24986f266734e16891,
         type: 3}
       propertyPath: ComicAudioSource
