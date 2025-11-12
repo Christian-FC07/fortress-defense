@@ -15,6 +15,7 @@ public class ShowComic : MonoBehaviour
     public float timer;
     public GameObject[] menuParts;
     public CoTu_Timer Timer;
+    public ComicMusicPlayer MusicController;
     //public showTutorial showTutorial;
 
 
@@ -53,14 +54,18 @@ public class ShowComic : MonoBehaviour
                         blur.SetActive(true);
                         isComicOn = true;
                         Time.timeScale = 0;
+                        MusicController.StopGameMusic();
+
+
                     }
 
-                    // فقط قسمت مربوط به فشردن دکمه را جایگزین کن (باقی کد شما بدون تغییر)
                     if (buttonCheck.Comicpress)
                     {
+                        MusicController.StartGameMusic();
                         Destroy(newComicClone);
                         Time.timeScale = 1;
                         buttonCheck.Comicpress = false;
+
 
                     }
 

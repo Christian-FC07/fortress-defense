@@ -5,6 +5,7 @@ public class buttonCheck : MonoBehaviour
     public static bool press = false;
     public static bool press2 = false;
     public CoTu_Timer Timer;
+    public ComicMusicPlayer MusicController;
     public void buttonPress()
     {
         press = true;
@@ -17,6 +18,8 @@ public class buttonCheck : MonoBehaviour
 
     public void ComicButtonPress()
     {
+        MusicController = GameObject.FindAnyObjectByType<ComicMusicPlayer>();
+        MusicController.StartGameMusic();
         Timer = GameObject.FindAnyObjectByType<CoTu_Timer>();
         Comicpress = true;
         Comicpress2 = true;
