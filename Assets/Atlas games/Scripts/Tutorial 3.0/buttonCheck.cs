@@ -5,7 +5,8 @@ public class buttonCheck : MonoBehaviour
     public static bool press = false;
     public static bool press2 = false;
     public CoTu_Timer Timer;
-    public ComicMusicPlayer MusicController;
+    public SoundManager SoundManagerAtScene;
+    private AudioClip ComicMusicFile;
     public void buttonPress()
     {
         press = true;
@@ -18,8 +19,10 @@ public class buttonCheck : MonoBehaviour
 
     public void ComicButtonPress()
     {
-        MusicController = GameObject.FindAnyObjectByType<ComicMusicPlayer>();
-        MusicController.StartGameMusic();
+        SoundManagerAtScene = GameObject.FindAnyObjectByType<SoundManager>();
+        //SoundManager.PlayMusic(SoundManagerAtScene.world[GlobalValue.worldPlaying]);
+        SoundManager.PlayMusic(SoundManagerAtScene.world[(int)((GlobalValue.levelPlaying - 0.1) / 10)]);
+
         Timer = GameObject.FindAnyObjectByType<CoTu_Timer>();
         Comicpress = true;
         Comicpress2 = true;

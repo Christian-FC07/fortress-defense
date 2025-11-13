@@ -16,6 +16,7 @@ public class ShowComic : MonoBehaviour
     public GameObject[] menuParts;
     public CoTu_Timer Timer;
     public ComicMusicPlayer MusicController;
+    public SoundManager SoundManagerAtScene;
     //public showTutorial showTutorial;
 
 
@@ -54,14 +55,17 @@ public class ShowComic : MonoBehaviour
                         blur.SetActive(true);
                         isComicOn = true;
                         Time.timeScale = 0;
-                        MusicController.StopGameMusic();
-
+                        //MusicController.StopGameMusic();
+                        SoundManagerAtScene = GameObject.FindAnyObjectByType<SoundManager>();
+                        //SoundManagerAtScene.PauseMusic(true);
+                      //  SoundManager.Instance.PauseMusic(true);
+                        SoundManager.PlayMusic(SoundManagerAtScene.ComicMusic);
 
                     }
 
                     if (buttonCheck.Comicpress)
                     {
-                        MusicController.StartGameMusic();
+                        //MusicController.StartGameMusic();
                         Destroy(newComicClone);
                         Time.timeScale = 1;
                         buttonCheck.Comicpress = false;
