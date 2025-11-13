@@ -546,6 +546,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3034858571291879240, guid: 7686c0ada310fd846bf5c6596abfdcd6,
         type: 3}
+      propertyPath: ComicMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: aa654f1687827354b869b714ccbed93f, type: 3}
+    - target: {fileID: 3034858571291879240, guid: 7686c0ada310fd846bf5c6596abfdcd6,
+        type: 3}
       propertyPath: 'world.Array.data[4]'
       value: 
       objectReference: {fileID: 8300000, guid: 0186ded0b3182634b95f3886ad22a227, type: 3}

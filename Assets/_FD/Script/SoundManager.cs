@@ -13,6 +13,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip musicsMap;
     public AudioClip BossMusicClip;
     public AudioClip BossDeath;
+    public AudioClip ComicMusic;
     [Range(0, 1)]
     public float musicsGameVolume = 0.3f;
 
