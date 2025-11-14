@@ -264,7 +264,11 @@ public class GlobalValue : MonoBehaviour
     {
         get { return PlayerPrefs.GetInt("LightningUsage", 0); }
         set { PlayerPrefs.SetInt("LightningUsage", value); }
+
     }
+
+ 
+
 
     public static int GameStartTimerMinutes
     {
