@@ -91,3 +91,9 @@ MonoBehaviour:
     LevelNumber: 21
     Delay: 1
     MenuPart: 0
+  - TutorialPrefab: {fileID: 6383901390142351076, guid: c88dbd66ced80ea4d8ad047945b24dad,
+      type: 3}
+    Model: 0
+    LevelNumber: 31
+    Delay: 1
+    MenuPart: 0
