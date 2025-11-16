@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Rendering.Universal.Internal;
 public class MapControllerUI : MonoBehaviour
 {
     //	public Transform BlockLevel;
@@ -14,6 +15,7 @@ public class MapControllerUI : MonoBehaviour
     private float newPosX = 0;
     public float firstMapPosX = 0;
     public float lastMapPosX = 0;
+    public int finalLevel;
     public Text worldTxt;
     int currentPos = 0;
     public static event Action<int,bool> OnMapChange;
@@ -39,7 +41,14 @@ public class MapControllerUI : MonoBehaviour
 
     void fixMapPos()
     {
-        newPosX = -step * (int)(GlobalValue.LevelPass / 10);
+        if(GlobalValue.LevelPass <= finalLevel - 1)
+        {
+            newPosX = -step * (int)(GlobalValue.LevelPass / 10);
+        }
+        else
+        {
+            newPosX = lastMapPosX;
+        }
         BlockLevel.anchoredPosition = new Vector2(newPosX, BlockLevel.anchoredPosition.y);
     }
 
