@@ -179,10 +179,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "This is the place to challange youself with all kind of enemies! The fight
-    will go on non stop, \nso that you can fight as many enemies as you can and show
-    your skills to other player! In order to play any event, \nyou must purchase
-    it using Gold. Check your place among other players in the Leaderboard."
+  m_text: 'This is the place to challange youself with all kind of enemies! The fight
+    will go on non stop,  so that you can fight as many enemies as you can and show
+    your skills to other player!
+
+    In order to play any event, you must purchase
+    it using Gold.
+
+    You can check your inventory by pressing Play, and if you
+    are ready, press Let''s Play!
+
+    Check your place among other players in the
+    Leaderboard.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 81a2b324c8221dd458342e1ee2075677, type: 2}
   m_sharedMaterial: {fileID: -3856574555563964670, guid: 81a2b324c8221dd458342e1ee2075677,

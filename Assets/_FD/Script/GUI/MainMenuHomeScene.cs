@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class MainMenuHomeScene : MonoBehaviour
 {
@@ -16,13 +17,17 @@ public class MainMenuHomeScene : MonoBehaviour
     public GameObject StoreUI;
     public GameObject Loading;
     public GameObject Settings;
-    public GameObject[] inventory;
+    public GameObject inventory;
     public GameObject[] GuideBook;
     public GameObject FriendGuide;
     public GameObject EnemyGuide;
     public GameObject GuideBookV2;
+    public GameObject[] BuyHeartsOption;
+    public TextMeshProUGUI heartsAmount;
+    public GameObject[] endlessOption;
     public string facebookLink;
     public string twitterLink = "https://twitter.com/";
+    public string websiteUrl;
     public string playingLevelName = "Playing atlas";
     public DeviceType device_type;
 
@@ -104,11 +109,14 @@ public class MainMenuHomeScene : MonoBehaviour
         {
             ct.text = User.Coin + "";
         }
-        if(HomeUI.activeInHierarchy == true && mainMenuLimiter == false)
+        if (HomeUI.activeInHierarchy == true && mainMenuLimiter == false)
         {
             GlobalValue.menuPart = "Home";
             mainMenuLimiter = true;
         }
+
+        /*if (Input.GetKey("l"))
+            LifeTTRSource.Life = 5; heartsAmount.text = "5/5";*/
     }
 
     public void OpenMap(bool open)
@@ -127,6 +135,31 @@ public class MainMenuHomeScene : MonoBehaviour
         SoundManager.Click();
         StartCoroutine(OpenInventoryCo(open));
     }
+    public void OpenEndlessInventoy(int level)
+    {
+        if (EventUI[0].activeInHierarchy || EventUI[1].activeInHierarchy)
+        {
+            switch(level)
+            {
+                case 0:
+                    endlessOption[0].SetActive(true);
+                    break;
+                case 1:
+                    endlessOption[1].SetActive(true);
+                    break;
+                case 2:
+                    endlessOption[2].SetActive(true);
+                    break;
+            }
+        }
+        else
+        {
+            foreach(var option in endlessOption)
+            {
+                option.SetActive(false);
+            }
+        }
+    }
     public void OpenGuideBook(bool open)
     {
         SoundManager.Click();
@@ -142,12 +175,23 @@ public class MainMenuHomeScene : MonoBehaviour
         SoundManager.Click();
         OpenEnemyGuideCo(open);
     }
+    public void HeartsOption(bool open)
+    {
+        SoundManager.Click();
+        HeartsOptionCo(open);
+    }
+    public void buyHearts()
+    {
+        User.Coin = -100;
+        LifeTTRSource.Life = 5;
+        heartsAmount.text = "5/5";
+    }
 
     IEnumerator OpenInventoryCo(bool open)
     {
         yield return null;
         //BlackScreenUI.instance.Show(0.2f);
-        switch (uiElements.aspectRatio)
+        /*switch (uiElements.aspectRatio)
         {
             case 169f:
                 inventory[0].SetActive(open);
@@ -157,7 +201,13 @@ public class MainMenuHomeScene : MonoBehaviour
                 inventory[1].SetActive(open);
                 inventory[1].GetComponent<Inventory>().InitSlots();
                 break;
-        }
+        }*/
+        //BlackScreenUI.instance.Hide(0.2f);
+
+        yield return null;
+        //BlackScreenUI.instance.Show(0.2f);
+        inventory.SetActive(open);
+        inventory.GetComponent<Inventory>().InitSlots();
         //BlackScreenUI.instance.Hide(0.2f);
     }
     IEnumerator OpenMapCo(bool open)
@@ -200,6 +250,20 @@ public class MainMenuHomeScene : MonoBehaviour
     {
         //BlackScreenUI.instance.Show(0.2f);
         EnemyGuide.SetActive(open);
+        //BlackScreenUI.instance.Hide(0.2f);
+    }
+
+    public void HeartsOptionCo(bool open)
+    {
+        //BlackScreenUI.instance.Show(0.2f);
+        if (LifeTTRSource.Life >= 5)
+        {
+            BuyHeartsOption[1].SetActive(open);
+        }
+        else
+        {
+            BuyHeartsOption[0].SetActive(open);
+        }
         //BlackScreenUI.instance.Hide(0.2f);
     }
 
@@ -250,26 +314,27 @@ public class MainMenuHomeScene : MonoBehaviour
     }
 
     #region Music and Sound
-    public void TurnSound()
+    public void OpenWebsite()
     {
-        GlobalValue.isSound = !GlobalValue.isSound;
-        soundImage.sprite = GlobalValue.isSound ? soundImageOn : soundImageOff;
-
-        SoundManager.SoundVolume = GlobalValue.isSound ? 1 : 0;
+        SoundManager.Click();
+        Application.OpenURL(websiteUrl);
     }
 
     public void TurnMusic()
     {
         GlobalValue.isMusic = !GlobalValue.isMusic;
         musicImage.sprite = GlobalValue.isMusic ? musicImageOn : musicImageOff;
+        GlobalValue.isSound = !GlobalValue.isSound;
+        //soundImage.sprite = GlobalValue.isSound ? soundImageOn : soundImageOff;
 
+        SoundManager.SoundVolume = GlobalValue.isSound ? 1 : 0;
         SoundManager.MusicVolume = GlobalValue.isMusic ? SoundManager.Instance.musicsGameVolume : 0;
     }
     #endregion
 
     private void CheckSoundMusic()
     {
-        soundImage.sprite = GlobalValue.isSound ? soundImageOn : soundImageOff;
+        //soundImage.sprite = GlobalValue.isSound ? soundImageOn : soundImageOff;
         musicImage.sprite = GlobalValue.isMusic ? musicImageOn : musicImageOff;
         SoundManager.SoundVolume = GlobalValue.isSound ? 1 : 0;
         SoundManager.MusicVolume = GlobalValue.isMusic ? SoundManager.Instance.musicsGameVolume : 0;
