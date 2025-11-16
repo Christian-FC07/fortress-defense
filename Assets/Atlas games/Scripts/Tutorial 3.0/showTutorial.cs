@@ -5,98 +5,109 @@ using UnityEngine.SceneManagement;
 
 public class showTutorial : MonoBehaviour
 {
-    [Header("Refrences (Be to be changed)")]
+    [Header("References")]
     public tutorials tutorials;
     public GameObject UI;
     public GameObject blur;
     public GameObject archerManager;
-    private Scene scene;
-    GameObject newTutorialCLone;
-    public float timer;
-    public GameObject[] menuParts;
     public CoTu_Timer Timer;
+
+    private Scene scene;
+    private GameObject newTutorialClone;
+    private float timer;
 
     public static bool isTutorialOn = false;
     public static bool isTutorialoff2 = false;
 
-    public void Start()
+    void Start()
     {
         scene = SceneManager.GetActiveScene();
         ResetTutorialFlags();
     }
 
-    public void Update()
+    void Update()
     {
-        if (Timer.comicClosed == true)
-        {
+        bool isMenu = scene.name == "Menu atlas Test";
+
+        // ========== Timer Logic Fix ==========
+        if (Timer.comicClosed || isMenu)
             timer += Time.deltaTime;
-            for (int i = 0; i < tutorials.infoT.Length; i++)
+
+        for (int i = 0; i < tutorials.infoT.Length; i++)
+        {
+            var info = tutorials.infoT[i];
+
+            int levelRef = info.LevelNumber;
+            GameObject tutorialObj = info.TutorialPrefab;
+            float delayTime = info.Delay;
+            string modelRef = info.Model.ToString();
+            string partRef = info.MenuPart.ToString();
+
+            // ========================================================
+            // ===================== IN GAME ==========================
+            // ========================================================
+            if (modelRef == "InGame" && scene.name == "Playing atlas")
             {
-                int levelRef = tutorials.infoT[i].LevelNumber;
-                var tutorialObj = tutorials.infoT[i].TutorialPrefab;
-                int delayTime = (int)tutorials.infoT[i].Delay;
-                var modelRef = tutorials.infoT[i].Model.ToString();
-                var partRef = tutorials.infoT[i].MenuPart.ToString();
-
-                // ================= InGame Tutorials =================
-                if (modelRef == "InGame" && scene.name == "Playing atlas")
+                if (levelRef == GlobalValue.levelPlaying && !isTutorialOn)
                 {
-                    if (levelRef == GlobalValue.levelPlaying && isTutorialOn == false)
+                    if (timer >= delayTime)
                     {
-                        if (timer > delayTime)
-                        {
-                            newTutorialCLone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
-                            UI.transform.localScale = new Vector2(2, 2);
-                            archerManager.SetActive(false);
-                            blur.SetActive(true);
+                        newTutorialClone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
 
-                            isTutorialOn = true;
-                        }
-                    }
-                    else if (isTutorialoff2 == false && buttonCheck.press)
-                    {
-                        Destroy(newTutorialCLone, 0.1f);
-                        Time.timeScale = 1;
-                        UI.transform.localScale = new Vector2(1, 1);
-                        archerManager.SetActive(true);
-                        blur.SetActive(false);
+                        UI.transform.localScale = new Vector2(2, 2);
+                        archerManager.SetActive(false);
+                        blur.SetActive(true);
 
-                        isTutorialoff2 = true;
-                        buttonCheck.press = false;
+                        isTutorialOn = true;
                     }
                 }
-                // ================= InMenu Tutorials =================
-                else if (modelRef == "InMenu" && scene.name == "Menu atlas Test")
+                else if (!isTutorialoff2 && buttonCheck.press)
                 {
-                    string tutorialKey = "tutorialMenu_" + partRef;
+                    if (newTutorialClone != null)
+                        Destroy(newTutorialClone);
 
-                    if (PlayerPrefs.GetInt(tutorialKey, 0) == 0)
-                    {
-                        if (partRef == GlobalValue.menuPart && timer > delayTime)
-                        {
-                            newTutorialCLone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
+                    Time.timeScale = 1;
+                    UI.transform.localScale = new Vector2(1, 1);
+                    archerManager.SetActive(true);
+                    blur.SetActive(false);
 
-                            PlayerPrefs.SetInt(tutorialKey, 1);
-                            PlayerPrefs.Save();
-                        }
-                    }
-
-                    if (buttonCheck.press)
-                    {
-                        Destroy(newTutorialCLone, 0.1f);
-                        buttonCheck.press = false;
-                    }
+                    isTutorialoff2 = true;
+                    buttonCheck.press = false;
                 }
             }
 
+            // ========================================================
+            // ===================== IN MENU ==========================
+            // ========================================================
+            else if (modelRef == "InMenu" && isMenu)
+            {
+                string tutorialKey = "tutorialMenu_" + partRef;
 
+                if (PlayerPrefs.GetInt(tutorialKey, 0) == 0)
+                {
+                    if (partRef == GlobalValue.menuPart && timer >= delayTime)
+                    {
+                        newTutorialClone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
+
+                        PlayerPrefs.SetInt(tutorialKey, 1);
+                        PlayerPrefs.Save();
+                    }
+                }
+
+                if (buttonCheck.press)
+                {
+                    if (newTutorialClone != null)
+                        Destroy(newTutorialClone);
+
+                    buttonCheck.press = false;
+                }
+            }
         }
-
     }
 
-    /// <summary>
-    /// Reset tutorial states when a new scene or level starts
-    /// </summary>
+    // ========================================================
+    // =============== RESET FLAGS ============================
+    // ========================================================
     private void ResetTutorialFlags()
     {
         isTutorialOn = false;

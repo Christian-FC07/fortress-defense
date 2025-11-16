@@ -2,7 +2,8 @@
 
 public class CoTu_Timer : MonoBehaviour
 {
-    public float timer = 0f;
+    public float InGameTimer = 0f;
+    public float InMenuTimer = 0f;  
     public bool isCounting = false;
     public bool comicClosed = false;
     public bool hasStartedTutorial = false;
@@ -16,13 +17,13 @@ public class CoTu_Timer : MonoBehaviour
         }
 
         if (isCounting)
-            timer += Time.deltaTime;
+            InGameTimer += Time.deltaTime;
     }
 
     private void StartTimer()
     {
         isCounting = true;
-        timer = 0f;
+        InGameTimer = 0f;
         Debug.Log("📗 Tutorial timer started!");
     }
 
