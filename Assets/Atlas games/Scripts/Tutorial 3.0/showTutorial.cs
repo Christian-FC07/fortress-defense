@@ -11,6 +11,7 @@ public class showTutorial : MonoBehaviour
     public GameObject blur;
     public GameObject archerManager;
     public CoTu_Timer Timer;
+    public Comics ComicsList;
 
     private Scene scene;
     private GameObject newTutorialClone;
@@ -36,6 +37,7 @@ public class showTutorial : MonoBehaviour
         for (int i = 0; i < tutorials.infoT.Length; i++)
         {
             var info = tutorials.infoT[i];
+            var comicInfo = ComicsList.infoT[i];
 
             int levelRef = info.LevelNumber;
             GameObject tutorialObj = info.TutorialPrefab;
@@ -50,7 +52,7 @@ public class showTutorial : MonoBehaviour
             {
                 if (levelRef == GlobalValue.levelPlaying && !isTutorialOn)
                 {
-                    if (timer >= delayTime)
+                    if (timer >= delayTime || GlobalValue.levelPlaying != comicInfo.LevelNumber)
                     {
                         newTutorialClone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
 
