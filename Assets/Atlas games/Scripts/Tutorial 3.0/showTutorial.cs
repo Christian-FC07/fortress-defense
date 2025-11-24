@@ -30,14 +30,13 @@ public class showTutorial : MonoBehaviour
     {
         bool isMenu = scene.name == "Menu atlas Test";
 
-        // ========== Timer Logic Fix ==========
+        // Timer only increases after comic is closed or in menu
         if (Timer.comicClosed || isMenu)
             timer += Time.deltaTime;
 
         for (int i = 0; i < tutorials.infoT.Length; i++)
         {
             var info = tutorials.infoT[i];
-            var comicInfo = ComicsList.infoT[i];
 
             int levelRef = info.LevelNumber;
             GameObject tutorialObj = info.TutorialPrefab;
@@ -52,7 +51,11 @@ public class showTutorial : MonoBehaviour
             {
                 if (levelRef == GlobalValue.levelPlaying && !isTutorialOn)
                 {
-                    if (timer >= delayTime || GlobalValue.levelPlaying != comicInfo.LevelNumber)
+                    bool hasComic = HasComicForLevel(GlobalValue.levelPlaying);
+
+                    // اگر کمیک برای این لول وجود ندارد → فوراً توتوریال پخش می‌شود
+                    // اگر کمیک وجود دارد → بعد از تایمر
+                    if (!hasComic || timer >= delayTime)
                     {
                         newTutorialClone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
 
@@ -105,6 +108,19 @@ public class showTutorial : MonoBehaviour
                 }
             }
         }
+    }
+
+    // ========================================================
+    // =============== CHECK IF COMIC EXISTS ==================
+    // ========================================================
+    private bool HasComicForLevel(int level)
+    {
+        for (int i = 0; i < ComicsList.infoT.Length; i++)
+        {
+            if (ComicsList.infoT[i].LevelNumber == level)
+                return true;
+        }
+        return false;
     }
 
     // ========================================================
