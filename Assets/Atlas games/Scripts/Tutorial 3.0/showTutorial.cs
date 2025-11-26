@@ -53,8 +53,6 @@ public class showTutorial : MonoBehaviour
                 {
                     bool hasComic = HasComicForLevel(GlobalValue.levelPlaying);
 
-                    // اگر کمیک برای این لول وجود ندارد → فوراً توتوریال پخش می‌شود
-                    // اگر کمیک وجود دارد → بعد از تایمر
                     if (!hasComic || timer >= delayTime)
                     {
                         newTutorialClone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
@@ -80,6 +78,27 @@ public class showTutorial : MonoBehaviour
                     buttonCheck.press = false;
                 }
             }
+
+
+            else if (modelRef == "Endless" && scene.name == "Playing atlas" && GlobalValue.levelType == Level.LeveType.EVENT && !isTutorialOn)
+            {
+                bool hasComic = HasComicForLevel(GlobalValue.levelPlaying);
+
+                if (!hasComic || timer >= delayTime)
+                {
+                    newTutorialClone = Instantiate(tutorialObj, transform.position, Quaternion.identity);
+
+                    UI.transform.localScale = new Vector2(2, 2);
+                    archerManager.SetActive(false);
+                    blur.SetActive(true);
+
+                    isTutorialOn = true;
+                }
+
+
+
+
+                }
 
             // ========================================================
             // ===================== IN MENU ==========================
