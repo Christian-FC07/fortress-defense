@@ -21,8 +21,9 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
     public DeviceDependentReference login;
     [DeviceDependent]
     public DeviceDependentReference loading;
+    public GameObject warning;
     public KeyCode Key;
-    public TextMeshProUGUI[] userInfo;
+    public string websiteUrl;
     public KeyCode[] KeyType { get { return new KeyCode[] { Key }; } }
     public int KeyObjectID { get { return gameObject.GetInstanceID(); } }
     // public VideoPlayer videoPlayer;
@@ -45,6 +46,10 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
         await Task.Delay(1);
         await auth_with_token();
         // StartCoroutine(LoadAsynchronously("Download"));
+        
+        //load if box was checked
+        if (PlayerPrefs.GetInt("RememberMe", 0) == 1)
+        StartCoroutine(LoadSecene());
 
         // Reset GameStartTime
         GlobalValue.GameStartTimerMinutes = 0;
@@ -55,7 +60,7 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
     // }
     public void OpenSignUpLink()
     {
-        Application.OpenURL("https://atlasgames.org/");
+        Application.OpenURL(websiteUrl);
     }
     void showPasswordListener()
     {
@@ -108,6 +113,7 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
     }
     public async Task Auth_with_userpass()
     {
+        warning.SetActive(false);
         loadingUI(true);
         submit.type<Button>().interactable = false;
         Authentication auth = new Authentication { username = username.type<TMP_InputField>().text, password = password.type<TMP_InputField>().text };
@@ -121,17 +127,29 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
             submit.type<Button>().interactable = true;
         }
         submit.type<Button>().interactable = true;
+
         if (auth_result != null)
         {
             //if (!rememberMe.type<Toggle>().isOn)
             if (rememberMe.type<Toggle>().isOn)
-                {StartCoroutine(LoadSecene()); Debug.Log("hellow");}
+            {
+                {StartCoroutine(LoadSecene());}
+                PlayerPrefs.SetInt("RememberMe", 1);
+                PlayerPrefs.Save();
+            }
             else
             {
                 User.Token = auth_result.token;
                 User.Get_user();
                 StartCoroutine(LoadSecene());
+                PlayerPrefs.SetInt("RememberMe", 0);
+                PlayerPrefs.Save();
             }
+        }
+        else
+        {
+            warning.SetActive(true);
+            loadingUI(false);
         }
     }
 
