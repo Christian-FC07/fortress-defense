@@ -106,7 +106,7 @@ MonoBehaviour:
       type: 3}
     initialCount: 5
   type: 0
-  defaultExp: 300
+  defaultExp: 1200
   Waves: []
   increaseEnemySpeedDifficultyRate: 0.2
   increaseEnemyAttackDifficultyRate: 0.1
