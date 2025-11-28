@@ -6,6 +6,7 @@ using System.Collections;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.ComponentModel;
 
 public class Level : MonoBehaviour
 {
@@ -136,6 +137,7 @@ public class Level : MonoBehaviour
 
     public void Play()
     {
+        Debug.Log("play");
         SoundManager.Click();
         GlobalValue.levelPlaying = level;
         GlobalValue.levelType = levelType;
@@ -149,12 +151,13 @@ public class Level : MonoBehaviour
 
         if (LifeTTRSource.Life > 0)
             MainMenuHomeScene.Instance.LoadScene();
+        else
+            MainMenuHomeScene.warningSt.SetActive(true);
 
     }
 
     public void Play(string _levelSceneName = null)
     {
-
         SoundManager.Click();
         //if (loadSceneManual && GlobalValue.showComicBossLevel)
         //{

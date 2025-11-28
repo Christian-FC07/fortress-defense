@@ -264,6 +264,8 @@ public class AffectZone : MonoBehaviour
 
                                 enemy.TakeDamage(magnetDamage * Time.deltaTime, Vector2.zero,
                                     enemy.transform.position, gameObject, BODYPART.NONE, null);
+
+                                enemy.Die();
                             }
 
                             if (Time.time % magnetRate < Time.deltaTime)

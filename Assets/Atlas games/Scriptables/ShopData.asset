@@ -98,10 +98,11 @@ MonoBehaviour:
     otherTimedItems: []
     about: As simple as he looks, he destroyes as jmany enemies as he can to buy
       more time for your archers!
-  - itemName: Stone Tower
-    itemImage: {fileID: 6307013072239914657, guid: 0aeb379bb361a6e4f89b861b10aa2296,
+  - itemName: Wooden Tower
+    itemImage: {fileID: -4923958591139859374, guid: 35065226368eb7b4881586aebc3d2436,
       type: 3}
-    buttonImage: {fileID: 21300000, guid: 9cec25c03b6b34cb69a72aed6d6bbc92, type: 3}
+    buttonImage: {fileID: -4923958591139859374, guid: 35065226368eb7b4881586aebc3d2436,
+      type: 3}
     itemPrice: 15
     itemMaxValue: 20
     hasMaxValue: 1
@@ -116,13 +117,14 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
-    about: Upgrade tower level 1. This tower will get you 600 health.
-  - itemName: Iron Tower
-    itemImage: {fileID: 7237022269627846259, guid: c305695c308e39d4c898d2f7d317eb69,
+    about: Upgrade tower level 2. This tower will get you 600 health.
+  - itemName: Metal Tower
+    itemImage: {fileID: 7292455604328384115, guid: 62856e3033a27ad4e9f3b40f8dc673f4,
       type: 3}
-    buttonImage: {fileID: 21300000, guid: 9cec25c03b6b34cb69a72aed6d6bbc92, type: 3}
-    itemPrice: 1000
-    itemMaxValue: 1000
+    buttonImage: {fileID: 7292455604328384115, guid: 62856e3033a27ad4e9f3b40f8dc673f4,
+      type: 3}
+    itemPrice: 20
+    itemMaxValue: 25
     hasMaxValue: 1
     type: 5
     isTimed: 0
@@ -135,12 +137,14 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
-    about: Upgrade tower level 1. This tower will get you 900 health.
-  - itemName: Ice Tower
-    itemImage: {fileID: 21300000, guid: 78e3a26ff9d64f74ca53f548c4ab8ab4, type: 3}
-    buttonImage: {fileID: 21300000, guid: 9cec25c03b6b34cb69a72aed6d6bbc92, type: 3}
-    itemPrice: 2200
-    itemMaxValue: 2200
+    about: Upgrade tower level 3. This tower will get you 900 health.
+  - itemName: Stone Tower
+    itemImage: {fileID: -4923958591139859374, guid: fe02d03be8ca33f41a8f59efd326d58d,
+      type: 3}
+    buttonImage: {fileID: -4923958591139859374, guid: fe02d03be8ca33f41a8f59efd326d58d,
+      type: 3}
+    itemPrice: 30
+    itemMaxValue: 40
     hasMaxValue: 1
     type: 5
     isTimed: 0
@@ -153,9 +157,9 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
-    about: Upgrade tower level 1. This tower will get you 1000 health.
-  - itemName: Volcanic door
-    itemImage: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
+    about: Upgrade tower level 4. This tower will get you 1000 health.
+  - itemName: Mixed Tower
+    itemImage: {fileID: -2636986280714855558, guid: 0d60c86a682c7c44f8872ebf482476c2,
       type: 3}
     buttonImage: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
       type: 3}
@@ -173,7 +177,7 @@ MonoBehaviour:
     pet: {fileID: 0}
     duration: 0
     otherTimedItems: []
-    about: Upgrade tower level 1. This tower will get you 1200 health.
+    about: Upgrade tower level 5. This tower will get you 1200 health.
   - itemName: Health
     itemImage: {fileID: -476841812353779665, guid: c28e489b5aeda5740b950e738a8a8151,
       type: 3}

@@ -30,22 +30,22 @@ public class BossUIManager : MonoBehaviour
         {
             case EnemySpawn.isBoss.MINIBOSS:
                 miniboss.SetActive(true);
-                fortHealth.SetActive(true);
+                //fortHealth.SetActive(true);
                 healthBarAnim.SetBool("isBossAttack", true);
                 Time.timeScale = 1;
                 foreach (GameObject uiElement in UI_Elements)
                 {
-                    uiElement.SetActive(false);
+                    //uiElement.SetActive(false);
                 }
                 break;
             case EnemySpawn.isBoss.BOSS:
                 boss.SetActive(true);
-                fortHealth.SetActive(true);
+                //fortHealth.SetActive(true);
                 healthBarAnim.SetBool("isBossAttack", true);
                 Time.timeScale = 1;
                 foreach (GameObject uiElement in UI_Elements)
                 {
-                    uiElement.SetActive(false);
+                    //uiElement.SetActive(false);
                 }
                 break;
             default:

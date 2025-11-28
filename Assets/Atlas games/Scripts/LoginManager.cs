@@ -22,6 +22,7 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
     [DeviceDependent]
     public DeviceDependentReference loading;
     public KeyCode Key;
+    public TextMeshProUGUI[] userInfo;
     public KeyCode[] KeyType { get { return new KeyCode[] { Key }; } }
     public int KeyObjectID { get { return gameObject.GetInstanceID(); } }
     // public VideoPlayer videoPlayer;
@@ -122,8 +123,9 @@ public class LoginManager : MonoBehaviour, IKeyboardCall
         submit.type<Button>().interactable = true;
         if (auth_result != null)
         {
-            if (!rememberMe.type<Toggle>().isOn)
-                StartCoroutine(LoadSecene());
+            //if (!rememberMe.type<Toggle>().isOn)
+            if (rememberMe.type<Toggle>().isOn)
+                {StartCoroutine(LoadSecene()); Debug.Log("hellow");}
             else
             {
                 User.Token = auth_result.token;

@@ -25,6 +25,9 @@ public class MainMenuHomeScene : MonoBehaviour
     public GameObject[] BuyHeartsOption;
     public TextMeshProUGUI heartsAmount;
     public GameObject[] endlessOption;
+    public GameObject warning;
+    public static GameObject warningSt;
+
     public string facebookLink;
     public string twitterLink = "https://twitter.com/";
     public string websiteUrl;
@@ -100,6 +103,7 @@ public class MainMenuHomeScene : MonoBehaviour
         }
         yield return new WaitForSeconds(1);
         HomeUI.SetActive(true);
+        warningSt = warning;
     }
 
     void Update()
@@ -139,6 +143,9 @@ public class MainMenuHomeScene : MonoBehaviour
     {
         if (EventUI[0].activeInHierarchy || EventUI[1].activeInHierarchy)
         {
+            //lookout! each option has a different function for the 'Let's go!' button! Don't remove all the replace with only one!
+            //this is because we have 3 different play buttons for 3 different levels, although each one opnes
+            // the same inventory page, the 'Let's go!' should open a different level for each one!
             switch(level)
             {
                 case 0:
@@ -179,6 +186,11 @@ public class MainMenuHomeScene : MonoBehaviour
     {
         SoundManager.Click();
         HeartsOptionCo(open);
+    }
+    public void heartWarning()
+    {
+        SoundManager.Click();
+        warningSt.SetActive(false);
     }
     public void buyHearts()
     {
