@@ -132,7 +132,7 @@ public class LevelEnemyManager : MonoBehaviour, IListener
                             /*AudioClip bossMusic = bsmng.enemy.BossMusic != null
                                 ? bsmng.enemy.BossMusic
                                 : SoundManager.Instance.BossMusicClip;*/
-                            SoundManager.Instance.PauseMusic(true);
+                            //SoundManager.Instance.PauseMusic(true);
                             //SoundManager.PlaySfx(SoundManager.Instance.musicsMap);
                             //SoundManager.PlayMusic(SoundManager.Instance.BossMusicClip, 0.5f);
                         }

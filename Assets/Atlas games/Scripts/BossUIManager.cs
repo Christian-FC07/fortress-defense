@@ -33,6 +33,7 @@ public class BossUIManager : MonoBehaviour
                 //fortHealth.SetActive(true);
                 healthBarAnim.SetBool("isBossAttack", true);
                 Time.timeScale = 1;
+                SoundManager.PlayMusic(SoundManager.Instance.BossMusicClip);
                 foreach (GameObject uiElement in UI_Elements)
                 {
                     //uiElement.SetActive(false);
@@ -43,6 +44,7 @@ public class BossUIManager : MonoBehaviour
                 //fortHealth.SetActive(true);
                 healthBarAnim.SetBool("isBossAttack", true);
                 Time.timeScale = 1;
+                SoundManager.PlayMusic(SoundManager.Instance.BossMusicClip);
                 foreach (GameObject uiElement in UI_Elements)
                 {
                     //uiElement.SetActive(false);

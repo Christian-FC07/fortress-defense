@@ -29,6 +29,7 @@ public class AffectZoneButton : MonoBehaviour, IKeyboardCall
     int XPConsume;
     public string xp_text_prefix = "xp";
     float holdCounter = 0;
+    public GameObject magicActive;
 
     private MagicSlotManager _magicSlotManager;
 
@@ -167,12 +168,13 @@ public class AffectZoneButton : MonoBehaviour, IKeyboardCall
     {
         allowCounting = true;
         coolDownCounter = custom_cooldown > 0 ? custom_cooldown : coolDown;
+        magicActive.SetActive(false);
     }
 
     
     private void OnBtnClick()
     {
-
+        magicActive.SetActive(true);
         _magicSlotManager.OnFirstMagicUse();
         if (!canUse)
             return;

@@ -99,9 +99,9 @@ MonoBehaviour:
     about: As simple as he looks, he destroyes as jmany enemies as he can to buy
       more time for your archers!
   - itemName: Wooden Tower
-    itemImage: {fileID: -4923958591139859374, guid: 35065226368eb7b4881586aebc3d2436,
+    itemImage: {fileID: -7393992498400636253, guid: 21847f5d70e088f4b9371896da8a4560,
       type: 3}
-    buttonImage: {fileID: -4923958591139859374, guid: 35065226368eb7b4881586aebc3d2436,
+    buttonImage: {fileID: -7393992498400636253, guid: 21847f5d70e088f4b9371896da8a4560,
       type: 3}
     itemPrice: 15
     itemMaxValue: 20
@@ -119,9 +119,9 @@ MonoBehaviour:
     otherTimedItems: []
     about: Upgrade tower level 2. This tower will get you 600 health.
   - itemName: Metal Tower
-    itemImage: {fileID: 7292455604328384115, guid: 62856e3033a27ad4e9f3b40f8dc673f4,
+    itemImage: {fileID: -429167057990535834, guid: 116273641bfbeed45a1e6ad195fed697,
       type: 3}
-    buttonImage: {fileID: 7292455604328384115, guid: 62856e3033a27ad4e9f3b40f8dc673f4,
+    buttonImage: {fileID: -429167057990535834, guid: 116273641bfbeed45a1e6ad195fed697,
       type: 3}
     itemPrice: 20
     itemMaxValue: 25
@@ -139,9 +139,9 @@ MonoBehaviour:
     otherTimedItems: []
     about: Upgrade tower level 3. This tower will get you 900 health.
   - itemName: Stone Tower
-    itemImage: {fileID: -4923958591139859374, guid: fe02d03be8ca33f41a8f59efd326d58d,
+    itemImage: {fileID: -429167057990535834, guid: 116273641bfbeed45a1e6ad195fed697,
       type: 3}
-    buttonImage: {fileID: -4923958591139859374, guid: fe02d03be8ca33f41a8f59efd326d58d,
+    buttonImage: {fileID: -429167057990535834, guid: 116273641bfbeed45a1e6ad195fed697,
       type: 3}
     itemPrice: 30
     itemMaxValue: 40

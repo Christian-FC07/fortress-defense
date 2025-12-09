@@ -673,26 +673,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: HomeMenu-PC
       objectReference: {fileID: 0}
-    - target: {fileID: 369090412930511527, guid: 5da6134de5a9f494f91c5ebead7f6a13,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 369090412930511527, guid: 5da6134de5a9f494f91c5ebead7f6a13,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: heartWarning
-      objectReference: {fileID: 0}
     - target: {fileID: 550064214772077120, guid: 5da6134de5a9f494f91c5ebead7f6a13,
         type: 3}
       propertyPath: Timer
       value: 
       objectReference: {fileID: 1683177251}
-    - target: {fileID: 2957605473558505058, guid: 5da6134de5a9f494f91c5ebead7f6a13,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -42.447998
-      objectReference: {fileID: 0}
     - target: {fileID: 4677290180107626091, guid: 5da6134de5a9f494f91c5ebead7f6a13,
         type: 3}
       propertyPath: m_Pivot.x
