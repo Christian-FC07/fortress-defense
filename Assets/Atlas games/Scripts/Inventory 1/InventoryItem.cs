@@ -16,12 +16,14 @@ public class InventoryItem : ScrollItem<ScrollItemData>
     private Vector2 originalSize;
     public string about;
     public TextMeshProUGUI info;
+    public int idInstance;
 
     public Image profilePic;
     void Init(ShopItemData.ShopItem data)
     {
         //selectedHighlight.SetActive(false);
         itemImage.sprite = data.itemImage;
+        idInstance = data.id;
 
         _itemData = data;
         switch (data.type)
@@ -107,7 +109,7 @@ public class InventoryItem : ScrollItem<ScrollItemData>
     public void ChooseItem()
     {
         //info.text = data2.about;
-
+        Debug.Log(idInstance);
         profilePic.sprite = itemImage.sprite;
         info.text = about;
         if (!_isChosen)

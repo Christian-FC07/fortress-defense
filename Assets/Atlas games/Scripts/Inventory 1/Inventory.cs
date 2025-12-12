@@ -7,10 +7,12 @@ public class Inventory : MonoBehaviour
     public ShopItemData data;
     public ItemPicker itemPicker;
     public InventorySlot[] magicSlotsUI;
+    public InventorySlot[] archerSlotsUI;
     public InventorySlot[] itemSlotsUI;
     public InventorySlot[] petSlotsUI;
     public InventorySlot[] towerSlotsUI;
     [HideInInspector] public int[] chosenMagics;
+    [HideInInspector] public int[] chosenArcher;
     public int[] chosenItems;
     [HideInInspector] public int[] chosenPet;
     [HideInInspector] public int[] chosenTower;
@@ -18,6 +20,7 @@ public class Inventory : MonoBehaviour
     public int[] chosenInitialMagicsID;
     public int[] chsenInitialPetsID;
     public int[] chosenInitialTowersID;
+    public int[] chosenInitialArchersID;
     private int _editingSlot;
     private Shop.ItemTypes _edittedType;
 
@@ -31,6 +34,7 @@ public class Inventory : MonoBehaviour
     {
         ShopItemData.ShopItem[] itemsData = data.ShopData;
         chosenMagics = new int[magicSlotsUI.Length];
+        chosenArcher = new int[archerSlotsUI.Length];
         chosenItems = new int[itemSlotsUI.Length];
         chosenPet = new int[petSlotsUI.Length];
         chosenTower = new int[towerSlotsUI.Length];
@@ -93,6 +97,22 @@ public class Inventory : MonoBehaviour
                 }
             }
         }
+
+        //choose archer from saved
+        /*string[] chosenArcherDecode = GlobalValue.inventoryArchers.Split(',');
+        for (int i = 0; i < chosenArcherDecode.Length; i++)
+        {
+            chosenArcher[i] = int.Parse(chosenArcherDecode[i]);
+            for (int j = 0; j < itemsData.Length; j++)
+            {
+                if (chosenArcher[i] == itemsData[j].id)
+                {
+
+                    archerSlotsUI[i].Init(itemsData[j].itemImage);
+
+                }
+            }
+        }*/
 
         List<int> itemIds = new List<int>();
         foreach (ShopItemData.ShopItem shopData in data.ShopData)
@@ -203,6 +223,15 @@ public class Inventory : MonoBehaviour
         itemPicker.Init(data, chosenTower, Shop.ItemTypes.Towers);
     }
 
+    public void OpenArchers(int slot)
+    {
+        SoundManager.Click();
+        _editingSlot = slot;
+        _edittedType = Shop.ItemTypes.Archer;
+        itemPicker.gameObject.SetActive(true);
+        itemPicker.Init(data, chosenArcher, Shop.ItemTypes.Archer);
+    }
+
     public void CloseItemPicker()
     {
         itemPicker.ClearItems();
@@ -231,6 +260,11 @@ public class Inventory : MonoBehaviour
             case Shop.ItemTypes.Towers:
                 towerSlotsUI[_editingSlot].ChangeSlotSprite(item.itemImage);
                 chosenTower[_editingSlot] = item.id;
+                GlobalValue.inventoryTowers = string.Join(",", chosenTower);
+                break;
+            case Shop.ItemTypes.Archer:
+                archerSlotsUI[_editingSlot].ChangeSlotSprite(item.itemImage);
+                chosenArcher[_editingSlot] = item.id;
                 GlobalValue.inventoryTowers = string.Join(",", chosenTower);
                 break;
         }
