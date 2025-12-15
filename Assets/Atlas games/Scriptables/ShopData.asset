@@ -495,8 +495,8 @@ MonoBehaviour:
     levelLock: 0
     levelToUnlock: 1
     id: 50
-    isFree: 0
-    oneTimePurchase: 1
+    isFree: 1
+    oneTimePurchase: 0
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
@@ -513,8 +513,8 @@ MonoBehaviour:
     type: 6
     isTimed: 0
     purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 1
+    levelLock: 1
+    levelToUnlock: 10
     id: 51
     isFree: 0
     oneTimePurchase: 1
@@ -534,8 +534,8 @@ MonoBehaviour:
     type: 6
     isTimed: 0
     purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 1
+    levelLock: 1
+    levelToUnlock: 20
     id: 52
     isFree: 0
     oneTimePurchase: 1
@@ -555,8 +555,8 @@ MonoBehaviour:
     type: 6
     isTimed: 0
     purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 1
+    levelLock: 1
+    levelToUnlock: 30
     id: 53
     isFree: 0
     oneTimePurchase: 1
@@ -576,8 +576,8 @@ MonoBehaviour:
     type: 6
     isTimed: 0
     purchaseType: 1
-    levelLock: 0
-    levelToUnlock: 1
+    levelLock: 1
+    levelToUnlock: 40
     id: 54
     isFree: 0
     oneTimePurchase: 1

@@ -73,7 +73,7 @@ public class GlobalValue : MonoBehaviour
 
     public static string inventoryArchers
     {
-        get { return PlayerPrefs.GetString("inventoryArchers", "50"); }
+        get { return PlayerPrefs.GetString("inventoryArchers", "50, 50, 50, 50, 50"); }
         set { PlayerPrefs.SetString("inventoryArchers", value); }
     }
     

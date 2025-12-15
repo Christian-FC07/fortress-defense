@@ -806,11 +806,11 @@ public class Enemy : MonoBehaviour, ICanTakeDamage, IListener
         currentHealth -= (int)_damage;
         if (this.tag == "enemyArmed")
         {
-            Debug.Log("armedenemy");
+            //Debug.Log("armedenemy");
         }
         else
         {
-            Debug.Log("enemy");
+            //Debug.Log("enemy");
         }
         FloatingTextManager.Instance.ShowText("" + (int)_damage, healthBarOffset, Color.red, transform.position);
 

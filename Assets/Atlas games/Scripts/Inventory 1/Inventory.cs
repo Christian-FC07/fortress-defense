@@ -98,8 +98,24 @@ public class Inventory : MonoBehaviour
             }
         }
 
+        //choose item from saved
+        string[] chosenItemDecode = GlobalValue.inventoryItem.Split(',');
+        for (int i = 0; i < chosenItemDecode.Length; i++)
+        {
+            chosenItems[i] = int.Parse(chosenItemDecode[i]);
+            for (int j = 0; j < itemsData.Length; j++)
+            {
+                if (chosenItems[i] == itemsData[j].id)
+                {
+
+                    archerSlotsUI[i].Init(itemsData[j].itemImage);
+
+                }
+            }
+        }
+
         //choose archer from saved
-        /*string[] chosenArcherDecode = GlobalValue.inventoryArchers.Split(',');
+        string[] chosenArcherDecode = GlobalValue.inventoryArchers.Split(',');
         for (int i = 0; i < chosenArcherDecode.Length; i++)
         {
             chosenArcher[i] = int.Parse(chosenArcherDecode[i]);
@@ -112,7 +128,17 @@ public class Inventory : MonoBehaviour
 
                 }
             }
-        }*/
+
+            /*foreach(var obj in itemsData)
+            {
+                if (chosenArcher[i] == obj.id)
+                {
+
+                    archerSlotsUI[i].Init(obj.itemImage);
+
+                }
+            }*/
+        }
 
         List<int> itemIds = new List<int>();
         foreach (ShopItemData.ShopItem shopData in data.ShopData)
@@ -265,7 +291,7 @@ public class Inventory : MonoBehaviour
             case Shop.ItemTypes.Archer:
                 archerSlotsUI[_editingSlot].ChangeSlotSprite(item.itemImage);
                 chosenArcher[_editingSlot] = item.id;
-                GlobalValue.inventoryTowers = string.Join(",", chosenTower);
+                GlobalValue.inventoryArchers = string.Join(",", chosenArcher);
                 break;
         }
         CloseItemPicker();

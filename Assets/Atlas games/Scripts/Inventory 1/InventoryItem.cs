@@ -84,6 +84,22 @@ public class InventoryItem : ScrollItem<ScrollItemData>
                     }
                 }
                 break;
+            case Shop.ItemTypes.Archer:
+                for (int i = 0; i < inventory.chosenArcher.Length; i++)
+                {
+                    if (data.id == inventory.chosenArcher[i])
+                    {
+                        _isChosen = true;
+                        break;
+                    }
+                    else
+                    {
+                        //_isChosen = false;
+                        _isChosen = true;
+                        break;
+                    }
+                }
+                break;
         }
         about = data.about;
         //selectedHighlight.SetActive(_isChosen);
@@ -115,7 +131,7 @@ public class InventoryItem : ScrollItem<ScrollItemData>
         if (!_isChosen)
         {
             inventory.ChangeChosenItem(_itemData);
-            SoundManager.Click(); 
+            SoundManager.Click();
         }
         else
         {
