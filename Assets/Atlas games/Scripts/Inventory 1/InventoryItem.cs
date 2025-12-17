@@ -94,8 +94,8 @@ public class InventoryItem : ScrollItem<ScrollItemData>
                     }
                     else
                     {
-                        //_isChosen = false;
-                        _isChosen = true;
+                        _isChosen = false;
+                        //_isChosen = true;
                         break;
                     }
                 }
@@ -128,14 +128,17 @@ public class InventoryItem : ScrollItem<ScrollItemData>
         Debug.Log(idInstance);
         profilePic.sprite = itemImage.sprite;
         info.text = about;
-        if (!_isChosen)
+        /*if (!_isChosen)
         {
             inventory.ChangeChosenItem(_itemData);
             SoundManager.Click();
         }
         else
         {
+            Debug.Log("you have not chosen yet!");
             SoundManager.Click();
-        }
+        }*/
+        inventory.ChangeChosenItem(_itemData);
+        SoundManager.Click();
     }
 }

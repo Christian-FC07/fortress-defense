@@ -1759,10 +1759,54 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 402788422461268987, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: b375ab648a098ff4cbec24ecfb1b5061,
+        type: 2}
+    - target: {fileID: 402788422461268987, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: archersTrfm
+      value: 
+      objectReference: {fileID: 515438413}
+    - target: {fileID: 1301038247041755716, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: b375ab648a098ff4cbec24ecfb1b5061,
+        type: 2}
+    - target: {fileID: 1301038247041755716, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: archersTrfm
+      value: 
+      objectReference: {fileID: 106485041}
+    - target: {fileID: 2723366638910673954, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: b375ab648a098ff4cbec24ecfb1b5061,
+        type: 2}
+    - target: {fileID: 2723366638910673954, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: archersTrfm
+      value: 
+      objectReference: {fileID: 328070007}
+    - target: {fileID: 2763147214070388678, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: b375ab648a098ff4cbec24ecfb1b5061,
+        type: 2}
+    - target: {fileID: 2763147214070388678, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+        type: 3}
+      propertyPath: archersTrfm
+      value: 
+      objectReference: {fileID: 1738744597}
     - target: {fileID: 4634142008795386586, guid: b78bbba641d6e6545a5e818d9f1e96f9,
         type: 3}
       propertyPath: m_Name
-      value: ARCHER MANAGER (1)
+      value: Archer
       objectReference: {fileID: 0}
     - target: {fileID: 4641435065474325748, guid: b78bbba641d6e6545a5e818d9f1e96f9,
         type: 3}
@@ -1814,69 +1858,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5806090422154681668, guid: b78bbba641d6e6545a5e818d9f1e96f9,
+    - target: {fileID: 5451348440894573436, guid: b78bbba641d6e6545a5e818d9f1e96f9,
         type: 3}
-      propertyPath: archerObj.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5806090422154681668, guid: b78bbba641d6e6545a5e818d9f1e96f9,
-        type: 3}
-      propertyPath: archersTrfm.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5806090422154681668, guid: b78bbba641d6e6545a5e818d9f1e96f9,
-        type: 3}
-      propertyPath: 'archerObj.Array.data[0]'
+      propertyPath: data
       value: 
-      objectReference: {fileID: 7002615878636977881, guid: 3b5498dd39e009d4f96e2ce5b2a2d992,
+      objectReference: {fileID: 11400000, guid: b375ab648a098ff4cbec24ecfb1b5061,
+        type: 2}
+    - target: {fileID: 5451348440894573436, guid: b78bbba641d6e6545a5e818d9f1e96f9,
         type: 3}
-    - target: {fileID: 5806090422154681668, guid: b78bbba641d6e6545a5e818d9f1e96f9,
-        type: 3}
-      propertyPath: 'archerObj.Array.data[1]'
-      value: 
-      objectReference: {fileID: 7002615878636977881, guid: d074da6f515440d40b05c8ef4608acb2,
-        type: 3}
-    - target: {fileID: 5806090422154681668, guid: b78bbba641d6e6545a5e818d9f1e96f9,
-        type: 3}
-      propertyPath: 'archerObj.Array.data[2]'
-      value: 
-      objectReference: {fileID: 7002615878636977881, guid: d842942f953e026478b7d95fa20bbf5b,
-        type: 3}
-    - target: {fileID: 5806090422154681668, guid: b78bbba641d6e6545a5e818d9f1e96f9,
-        type: 3}
-      propertyPath: 'archerObj.Array.data[3]'
-      value: 
-      objectReference: {fileID: 7002615878636977881, guid: e3b6457cc7a4ac34d9217f1ac9fcb3b0,
-        type: 3}
-    - target: {fileID: 5806090422154681668, guid: b78bbba641d6e6545a5e818d9f1e96f9,
-        type: 3}
-      propertyPath: 'archerObj.Array.data[4]'
-      value: 
-      objectReference: {fileID: 7002615878636977881, guid: fc5a2221a969dd141af3499af76f1407,
-        type: 3}
-    - target: {fileID: 5806090422154681668, guid: b78bbba641d6e6545a5e818d9f1e96f9,
-        type: 3}
-      propertyPath: 'archersTrfm.Array.data[0]'
-      value: 
-      objectReference: {fileID: 1738744597}
-    - target: {fileID: 5806090422154681668, guid: b78bbba641d6e6545a5e818d9f1e96f9,
-        type: 3}
-      propertyPath: 'archersTrfm.Array.data[1]'
-      value: 
-      objectReference: {fileID: 328070007}
-    - target: {fileID: 5806090422154681668, guid: b78bbba641d6e6545a5e818d9f1e96f9,
-        type: 3}
-      propertyPath: 'archersTrfm.Array.data[2]'
-      value: 
-      objectReference: {fileID: 106485041}
-    - target: {fileID: 5806090422154681668, guid: b78bbba641d6e6545a5e818d9f1e96f9,
-        type: 3}
-      propertyPath: 'archersTrfm.Array.data[3]'
-      value: 
-      objectReference: {fileID: 515438413}
-    - target: {fileID: 5806090422154681668, guid: b78bbba641d6e6545a5e818d9f1e96f9,
-        type: 3}
-      propertyPath: 'archersTrfm.Array.data[4]'
+      propertyPath: archersTrfm
       value: 
       objectReference: {fileID: 403950145}
     m_RemovedComponents: []
@@ -2216,7 +2206,7 @@ PrefabInstance:
     - target: {fileID: 6534493661185011523, guid: fb464bc0aa95c1f48a242d0ae509120d,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6534493661185011523, guid: fb464bc0aa95c1f48a242d0ae509120d,
         type: 3}
@@ -2870,7 +2860,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'fortrestLevels.Array.data[0].stateFortrestSprites.Array.data[3]'
       value: 
-      objectReference: {fileID: 312028963346254077, guid: 974300690cdf61242a55455a465ebf68,
+      objectReference: {fileID: -1022105624168072097, guid: 7b0fb1e69628e7e42abe13da40ae215e,
         type: 3}
     - target: {fileID: 2859291877774657223, guid: 6a4ee2e5a83e4834c9039c1606411f05,
         type: 3}

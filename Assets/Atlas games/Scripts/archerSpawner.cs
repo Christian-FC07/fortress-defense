@@ -1,12 +1,13 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class archerSpawner : MonoBehaviour
 {
     public ShopItemData data;
-    public Image image;
-    public Transform[] archersTrfm;
+    public Transform archersTrfm;
     public GameObject[] archerObj;
+    public int[]  num;
     private int[] objectData;
     
 
@@ -36,32 +37,65 @@ public class archerSpawner : MonoBehaviour
 
     void archerData()
     {
-        foreach(var location in archersTrfm)
+        /*string[] chosenArcherDecode = GlobalValue.inventoryArchers.Split(',');
+        foreach (var num in chosenArcherDecode)
         {
-            string[] chosenArcherDecode = GlobalValue.inventoryArchers.Split(',');
-            for (int i = 0; i < chosenArcherDecode.Length; i++)
+            /*switch(num)
             {
-                int j = int.Parse(chosenArcherDecode[i]);
-                Debug.Log(j);
-                switch(j)
+                case "50":
+                Debug.Log("50");
+                break;
+                case "51":
+                Debug.Log("51");
+                break;
+                case "52":
+                Debug.Log("52");
+                break;
+                case "53":
+                Debug.Log("53");
+                break;
+                case "54":
+                Debug.Log("54");
+                break;
+            }
+
+            Debug.Log("archer");
+        }*/
+        ShopItemData.ShopItem[] itemsData = data.ShopData;
+
+        string[] chosenArcherDecode = GlobalValue.inventoryArchers.Split(',');
+        Debug.Log(chosenArcherDecode[0]);
+        for (int i = 0; i < chosenArcherDecode.Length; i++)
+        {
+            if(Convert.ToInt32(chosenArcherDecode[i]) == 53)
+            {
+                Debug.Log("archer53");
+            }
+            else if(Convert.ToInt32(chosenArcherDecode[i]) == 50)
+            {
+                Debug.Log("archer50");
+            }
+
+            num[i] = int.Parse(chosenArcherDecode[i]);
+            for (int j = 0; j < itemsData.Length; j++)
+            {
+                if (num[i] == itemsData[j].id)
                 {
-                    case 50:
-                    Instantiate(archerObj[0], location);
-                    break;
-                    case 51:
-                    Instantiate(archerObj[1], location);
-                    break;
-                    case 52:
-                    Instantiate(archerObj[2], location);
-                    break;
-                    case 53:
-                    Instantiate(archerObj[3], location);
-                    break;
-                    case 54:
-                    Instantiate(archerObj[4], location);
-                    break;
+
+                    //archerSlotsUI[i].Init(itemsData[j].itemImage);
+
                 }
             }
+
+            /*foreach(var obj in itemsData)
+            {
+                if (chosenArcher[i] == obj.id)
+                {
+
+                    archerSlotsUI[i].Init(obj.itemImage);
+
+                }
+            }*/
         }
     }
 }
