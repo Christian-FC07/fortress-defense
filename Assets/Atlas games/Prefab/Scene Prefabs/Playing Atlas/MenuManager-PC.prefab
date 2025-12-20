@@ -1172,10 +1172,10 @@ RectTransform:
   - {fileID: 3093095175235926539}
   m_Father: {fileID: 4798538914140994025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 378.32, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7910335238515325686
 CanvasRenderer:
@@ -2720,10 +2720,10 @@ RectTransform:
   - {fileID: 1281837639663489530}
   m_Father: {fileID: 4798538914140994025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 159.44, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4681865294250485735
 CanvasRenderer:
@@ -9791,10 +9791,10 @@ RectTransform:
   - {fileID: 4132060296265165644}
   m_Father: {fileID: 4798538914140994025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 268.88, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1767088289361722016
 CanvasRenderer:
@@ -22100,6 +22100,7 @@ GameObject:
   - component: {fileID: 6236543549221654229}
   - component: {fileID: 6236543549221654228}
   - component: {fileID: 4781824067530106085}
+  - component: {fileID: 5724731754711091293}
   m_Layer: 5
   m_Name: Forzen btn - tutorial
   m_TagString: Untagged
@@ -22259,6 +22260,27 @@ MonoBehaviour:
   uiPartName: Thunder
   _isClicked: 0
   isClickable: 0
+--- !u!114 &5724731754711091293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6236543549221654226}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21728601422c2c44912c43c4855eb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AffectZoneManager
+  affectZoneList: []
+  isChecking: 0
+  isAffectZoneWorking: 0
+  healAmount: 0
+  cureSound: {fileID: 0}
+  timeDifferenceBetweenFireBalls: 0.4
+  disable_affectzone_countdown_cooldown: 5
+  XPConsumes: []
+  isZoneUsedFirstTime: 0
 --- !u!1 &6236543549278295463
 GameObject:
   m_ObjectHideFlags: 0
@@ -22713,6 +22735,7 @@ GameObject:
   - component: {fileID: 6236543549444325940}
   - component: {fileID: 6236543549444325939}
   - component: {fileID: 6236543549444325944}
+  - component: {fileID: 1481873140097740778}
   m_Layer: 5
   m_Name: Lighting btn
   m_TagString: Untagged
@@ -22873,6 +22896,27 @@ MonoBehaviour:
   uiPartName: Blizzard
   _isClicked: 0
   isClickable: 0
+--- !u!114 &1481873140097740778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6236543549444325937}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21728601422c2c44912c43c4855eb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AffectZoneManager
+  affectZoneList: []
+  isChecking: 0
+  isAffectZoneWorking: 0
+  healAmount: 0
+  cureSound: {fileID: 0}
+  timeDifferenceBetweenFireBalls: 0.4
+  disable_affectzone_countdown_cooldown: 5
+  XPConsumes: []
+  isZoneUsedFirstTime: 0
 --- !u!1 &6236543549542715545
 GameObject:
   m_ObjectHideFlags: 0
@@ -23603,6 +23647,7 @@ GameObject:
   - component: {fileID: 6236543550127161984}
   - component: {fileID: 6236543550127162015}
   - component: {fileID: 6236543550127161988}
+  - component: {fileID: 4112649367198282761}
   m_Layer: 5
   m_Name: Poison btn
   m_TagString: Untagged
@@ -23763,6 +23808,27 @@ MonoBehaviour:
   uiPartName: Poison
   _isClicked: 0
   isClickable: 0
+--- !u!114 &4112649367198282761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6236543550127162013}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c21728601422c2c44912c43c4855eb51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AffectZoneManager
+  affectZoneList: []
+  isChecking: 0
+  isAffectZoneWorking: 0
+  healAmount: 0
+  cureSound: {fileID: 0}
+  timeDifferenceBetweenFireBalls: 0.4
+  disable_affectzone_countdown_cooldown: 5
+  XPConsumes: []
+  isZoneUsedFirstTime: 0
 --- !u!1 &6236543550136385053
 GameObject:
   m_ObjectHideFlags: 0
@@ -25166,10 +25232,10 @@ RectTransform:
   - {fileID: 6250317091889223779}
   m_Father: {fileID: 4798538914140994025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 50, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5865097530211501742
 CanvasRenderer:
@@ -27694,10 +27760,10 @@ RectTransform:
   - {fileID: 7247869113660022545}
   m_Father: {fileID: 4798538914140994025}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 487.76, y: -50}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1641228785705619654
 CanvasRenderer:

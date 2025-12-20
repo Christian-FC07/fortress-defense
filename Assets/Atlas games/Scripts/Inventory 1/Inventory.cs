@@ -21,6 +21,8 @@ public class Inventory : MonoBehaviour
     public int[] chsenInitialPetsID;
     public int[] chosenInitialTowersID;
     public int[] chosenInitialArchersID;
+    public int[] archerIDS;
+    public string[] archernumber;
     private int _editingSlot;
     private Shop.ItemTypes _edittedType;
 
@@ -29,6 +31,11 @@ public class Inventory : MonoBehaviour
     // {
     //     InitSlots();
     // }
+
+    public void Start()
+    {
+        archerIDS = new int[5];
+    }
 
     public void InitSlots()
     {
@@ -108,7 +115,7 @@ public class Inventory : MonoBehaviour
                 if (chosenItems[i] == itemsData[j].id)
                 {
 
-                    archerSlotsUI[i].Init(itemsData[j].itemImage);
+                    itemSlotsUI[i].Init(itemsData[j].itemImage);
 
                 }
             }
@@ -126,6 +133,9 @@ public class Inventory : MonoBehaviour
 
                     archerSlotsUI[i].Init(itemsData[j].itemImage);
 
+                    PlayerPrefs.SetInt(archernumber[i], i);
+                    PlayerPrefs.Save();
+
                 }
             }
 
@@ -139,6 +149,26 @@ public class Inventory : MonoBehaviour
                 }
             }*/
         }
+        
+        //save archers in variable
+        /*string[] chosenArcherDecode2 = GlobalValue.inventoryArchers.Split(',');
+        for (int i = 0; i < chosenArcherDecode2.Length; i++)
+        {
+            chosenArcher[i] = int.Parse(chosenArcherDecode2[i]);
+            for (int j = 0; j < 5; j++)
+            {
+                if (chosenArcher[i] == itemsData[j].id)
+                {
+
+                    //archerIDS[j] = itemsData[j].id;
+                    //Debug.Log(archerIDS[j]);
+                    Debug.Log(itemsData[j].id);
+
+                }
+
+                
+            }
+        }*/
 
         List<int> itemIds = new List<int>();
         foreach (ShopItemData.ShopItem shopData in data.ShopData)

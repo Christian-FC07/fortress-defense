@@ -30,6 +30,8 @@ public class AffectZoneButton : MonoBehaviour, IKeyboardCall
     public string xp_text_prefix = "xp";
     float holdCounter = 0;
 
+    //public AffectZoneManager AffectZoneManager;
+
     private MagicSlotManager _magicSlotManager;
 
 
