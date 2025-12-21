@@ -4,7 +4,7 @@ using UnityEngine.UI;
 
 public class archerSpawner : MonoBehaviour
 {
-    public Transform archersTrfm;
+    public Transform[] archersTrfm;
     public GameObject[] archerObj;
     //public ShopItemData itemsData;
     public int[] chosenArcher;
@@ -12,12 +12,25 @@ public class archerSpawner : MonoBehaviour
 
     public void Start()
     {
+        chosenArcher = new int[5];
+
         string[] chosenArcherDecode = GlobalValue.inventoryArchers.Split(',');
-        for (int i = 0; i < chosenArcherDecode.Length; i++)
+        chosenArcher[0] = int.Parse(chosenArcherDecode[0]);
+        chosenArcher[1] = int.Parse(chosenArcherDecode[1]);
+        chosenArcher[2] = int.Parse(chosenArcherDecode[2]);
+        chosenArcher[3] = int.Parse(chosenArcherDecode[3]);
+        chosenArcher[4] = int.Parse(chosenArcherDecode[4]);
+
+        foreach(var location in archersTrfm)
         {
-            chosenArcher[i] = int.Parse(chosenArcherDecode[i]);
-            Debug.Log("chosenArcher");
+
         }
+
+        for(int i = 0 ; i < chosenArcher.Length ; i++)
+            {
+                Instantiate(archerObj[chosenArcher[i] - 50], archersTrfm[i]);
+                Debug.Log(chosenArcher[i] - 50);
+            }
     }
 
     /*public void archerData()
