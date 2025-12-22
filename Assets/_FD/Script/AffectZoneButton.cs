@@ -31,6 +31,8 @@ public class AffectZoneButton : MonoBehaviour, IKeyboardCall
     float holdCounter = 0;
     public GameObject magicActive;
 
+    //public AffectZoneManager AffectZoneManager;
+
     private MagicSlotManager _magicSlotManager;
 
 

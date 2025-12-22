@@ -14,7 +14,7 @@ public class Shop : MonoBehaviour
     public TextMeshProUGUI ShopTab;
     public enum ItemTypes
     {
-        Pet,Item,Magic,Monster,Website,Towers
+        Pet,Item,Magic,Monster,Website,Towers,Archer
     }
 
     public enum ItemPurchaseType
@@ -55,6 +55,12 @@ public class Shop : MonoBehaviour
             case "tower":
                 _chosenType = ItemTypes.Towers;
                 ShopTab.SetText("Towers");
+
+                break;
+
+            case "archer":
+                _chosenType = ItemTypes.Archer;
+                ShopTab.SetText("Archers");
 
                 break;
         }

@@ -79,9 +79,9 @@ public class ArrowProjectile : Projectile, IListener, ICanTakeDamage
 
         if (hit.Length > 0)
         {
-            for (int i = 0; i < 10; i++)
+             foreach (RaycastHit2D item in hit)
             {
-                if (hit[i].transform.gameObject.tag == "enemyArmed")
+                if (item.transform.gameObject.tag == "enemyArmed")
                 {
                     isHit = false;
                     //SoundManager.PlaySfx(SoundManager.Instance.hitArmor);
