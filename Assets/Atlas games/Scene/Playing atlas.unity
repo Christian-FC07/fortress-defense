@@ -734,12 +734,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7686c0ada310fd846bf5c6596abfdcd6, type: 3}
---- !u!224 &695489478 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 6236543549352406154, guid: 2bf74b55ce29e004d87d0765ff719bcd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1625546736}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &739224263
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,8 +1284,7 @@ RectTransform:
   m_Children:
   - {fileID: 1456238383}
   - {fileID: 146754729}
-  - {fileID: 1338654960}
-  m_Father: {fileID: 695489478}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1521,7 +1514,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 6168901443506814117}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4355013831264684356, guid: ca7acdc1ecfef444fa915767900c406c,
         type: 3}
@@ -1583,24 +1576,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca7acdc1ecfef444fa915767900c406c, type: 3}
---- !u!4 &1619435035 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6942962804765912401, guid: ca7acdc1ecfef444fa915767900c406c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1619435034}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1619435036 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4465912728488296499, guid: ca7acdc1ecfef444fa915767900c406c,
-    type: 3}
-  m_PrefabInstance: {fileID: 1619435034}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ab467b90c1bd654e8cdb0cf03fd344c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoTu_Timer
 --- !u!1001 &1625546736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1673,7 +1648,7 @@ PrefabInstance:
         type: 3}
       propertyPath: magicActive
       value: 
-      objectReference: {fileID: 1338654959}
+      objectReference: {fileID: 0}
     - target: {fileID: 6236543550127161984, guid: 2bf74b55ce29e004d87d0765ff719bcd,
         type: 3}
       propertyPath: magicActive
@@ -3494,3 +3469,5 @@ SceneRoots:
   - {fileID: 975563268}
   - {fileID: 739224265}
   - {fileID: 1759078464}
+  - {fileID: 1416688330}
+  - {fileID: 1619435034}
