@@ -57,8 +57,12 @@ public class RewardMenu : MonoBehaviour
                 User.Rxp = _rewardAmount;
                 break;
             case RewardType.ShopItem:
+                
                 // this is present in the shop branch, remove the comments after merging with Update !
                 GlobalValue.IncrementChosenShopItem(_itemName);
+                Debug.Log("Item Added");
+                GlobalValue.ItemFreeze = 5;
+                
                 break;
         }
         
