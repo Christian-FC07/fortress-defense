@@ -58,7 +58,7 @@ MonoBehaviour:
   - TutorialPrefab: {fileID: 6383901390142351076, guid: c88dbd66ced80ea4d8ad047945b24dad,
       type: 3}
     Model: 0
-    LevelNumber: 31
+    LevelNumber: 32
     Delay: 1
     MenuPart: 0
   - TutorialPrefab: {fileID: 6383901390142351076, guid: 963f983ec5380ac4ebcd956cbcd7c7cb,
@@ -107,5 +107,23 @@ MonoBehaviour:
       type: 3}
     Model: 0
     LevelNumber: 11
+    Delay: 0
+    MenuPart: 4
+  - TutorialPrefab: {fileID: 6383901390142351076, guid: 73646cb09e8961043b0d3ec83a2990f4,
+      type: 3}
+    Model: 0
+    LevelNumber: 21
+    Delay: 0
+    MenuPart: 4
+  - TutorialPrefab: {fileID: 6383901390142351076, guid: 8661229d59218404b88fd35b454b1542,
+      type: 3}
+    Model: 0
+    LevelNumber: 31
+    Delay: 0
+    MenuPart: 4
+  - TutorialPrefab: {fileID: 6383901390142351076, guid: 985b6a6db51a0234dbd78461c4bf960b,
+      type: 3}
+    Model: 0
+    LevelNumber: 31
     Delay: 0
     MenuPart: 4
