@@ -103,3 +103,9 @@ MonoBehaviour:
     LevelNumber: 0
     Delay: 0
     MenuPart: 4
+  - TutorialPrefab: {fileID: 6383901390142351076, guid: 985b6a6db51a0234dbd78461c4bf960b,
+      type: 3}
+    Model: 0
+    LevelNumber: 11
+    Delay: 0
+    MenuPart: 4
