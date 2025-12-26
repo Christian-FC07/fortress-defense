@@ -58,7 +58,7 @@ public class RewardMenu : MonoBehaviour
                 break;
             case RewardType.ShopItem:
                 // this is present in the shop branch, remove the comments after merging with Update !
-                // GlobalValue.IncrementChosenShopItem(_itemName);
+                GlobalValue.IncrementChosenShopItem(_itemName);
                 break;
         }
         
