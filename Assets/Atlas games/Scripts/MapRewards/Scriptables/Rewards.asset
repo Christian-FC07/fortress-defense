@@ -27,12 +27,12 @@ MonoBehaviour:
     icon: {fileID: -4347532159779508366, guid: e6d354f853fd8fa49a848b5dff9da5a6, type: 3}
   - rewardLevel: 30
     type: 2
-    shopItemName: Lightning
+    shopItemName: Lightning Strick
     amount: 1
     icon: {fileID: -894095381526335850, guid: 003ff60a5bbada948976e9d4bbd79c82, type: 3}
   - rewardLevel: 40
     type: 2
-    shopItemName: Ice
+    shopItemName: Ice Spike
     amount: 1
     icon: {fileID: -7560284153744367771, guid: 2dfceeb9ff3293d4792650330c27fa28, type: 3}
   - rewardLevel: 1
