@@ -22,6 +22,7 @@ public class ArrowProjectile : Projectile, IListener, ICanTakeDamage
     public GameObject ExplosionObj;
     float timeToLiveCounter = 0;
     public bool parentToHitObject = true;
+    public GameObject vfxEffect;
 
     bool isHit = false;
     Rigidbody2D rig;
@@ -107,6 +108,10 @@ public class ArrowProjectile : Projectile, IListener, ICanTakeDamage
                 SoundManager.PlaySfx(soundHitNothing, soundHitNothingVolume);
                 StartCoroutine(DestroyProjectile(3));
                 isHit = true;
+            }
+            if(vfxEffect != null)
+            {
+                Instantiate(vfxEffect, transform.position, transform.rotation);
             }
         }
         //check hit

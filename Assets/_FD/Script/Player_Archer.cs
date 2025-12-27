@@ -485,6 +485,7 @@ public class Player_Archer : Enemy, ICanTakeDamage, IListener
                 _tempArrow.Init(damageMin, damageMax, force * AngleToVector2(beginAngle - 1.5f), gravityScale, isCritical, weaponEffect, BoostItemUI.Instance.currentEffect, target.y, criticalMultiplier, this.gameObject);
                 break;
             default:
+                Debug.Log("arrow");
                 _tempArrow = Instantiate(arrow, fromPosition, Quaternion.identity);
                 _tempArrow.Init(damageMin, damageMax, force * AngleToVector2(beginAngle), gravityScale, isCritical, weaponEffect, BoostItemUI.Instance.currentEffect, target.y, criticalMultiplier, this.gameObject);
                 break;

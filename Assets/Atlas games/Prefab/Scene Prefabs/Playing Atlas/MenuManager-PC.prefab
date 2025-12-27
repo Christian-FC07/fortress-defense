@@ -22280,6 +22280,7 @@ MonoBehaviour:
   timerTxt: {fileID: 6236543549278295465}
   XPTxt: {fileID: 7938906100300515045}
   xp_text_prefix: xp
+  magicActive: {fileID: 0}
   canvasGroup: {fileID: 6236543549221654228}
 --- !u!225 &6236543549221654228
 CanvasGroup:
@@ -22916,6 +22917,7 @@ MonoBehaviour:
   timerTxt: {fileID: 6236543549635560683}
   XPTxt: {fileID: 1795211530525380326}
   xp_text_prefix: xp
+  magicActive: {fileID: 0}
   canvasGroup: {fileID: 6236543549444325939}
 --- !u!225 &6236543549444325939
 CanvasGroup:
@@ -23301,7 +23303,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6236543549714592265}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
@@ -23828,6 +23830,7 @@ MonoBehaviour:
   timerTxt: {fileID: 6236543550205237777}
   XPTxt: {fileID: 4147075441961143487}
   xp_text_prefix: xp
+  magicActive: {fileID: 0}
   canvasGroup: {fileID: 6236543550127162015}
 --- !u!225 &6236543550127162015
 CanvasGroup:
@@ -24138,6 +24141,7 @@ RectTransform:
   - {fileID: 5066579723543403593}
   - {fileID: 6355705030490891244}
   - {fileID: 1855290916148703372}
+  - {fileID: 6314524585796707877}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

@@ -98,10 +98,10 @@ MonoBehaviour:
     otherTimedItems: []
     about: As simple as he looks, he destroyes as jmany enemies as he can to buy
       more time for your archers!
-  - itemName: Wooden Tower
-    itemImage: {fileID: -7393992498400636253, guid: 21847f5d70e088f4b9371896da8a4560,
+  - itemName: Normal Tower
+    itemImage: {fileID: 6294939410754552826, guid: 6ae8e2ca384806741a89edc556c4a4f3,
       type: 3}
-    buttonImage: {fileID: -7393992498400636253, guid: 21847f5d70e088f4b9371896da8a4560,
+    buttonImage: {fileID: 6294939410754552826, guid: 6ae8e2ca384806741a89edc556c4a4f3,
       type: 3}
     itemPrice: 15
     itemMaxValue: 20
@@ -118,10 +118,10 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
     about: Upgrade tower level 2. This tower will get you 600 health.
-  - itemName: Metal Tower
-    itemImage: {fileID: -429167057990535834, guid: 116273641bfbeed45a1e6ad195fed697,
+  - itemName: Wooden Tower
+    itemImage: {fileID: -7393992498400636253, guid: 21847f5d70e088f4b9371896da8a4560,
       type: 3}
-    buttonImage: {fileID: -429167057990535834, guid: 116273641bfbeed45a1e6ad195fed697,
+    buttonImage: {fileID: -7393992498400636253, guid: 21847f5d70e088f4b9371896da8a4560,
       type: 3}
     itemPrice: 20
     itemMaxValue: 25
@@ -138,10 +138,10 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
     about: Upgrade tower level 3. This tower will get you 900 health.
-  - itemName: Stone Tower
-    itemImage: {fileID: -429167057990535834, guid: 116273641bfbeed45a1e6ad195fed697,
+  - itemName: Metal Tower
+    itemImage: {fileID: 7292455604328384115, guid: 62856e3033a27ad4e9f3b40f8dc673f4,
       type: 3}
-    buttonImage: {fileID: -429167057990535834, guid: 116273641bfbeed45a1e6ad195fed697,
+    buttonImage: {fileID: 7292455604328384115, guid: 62856e3033a27ad4e9f3b40f8dc673f4,
       type: 3}
     itemPrice: 30
     itemMaxValue: 40
@@ -158,10 +158,10 @@ MonoBehaviour:
     duration: 0
     otherTimedItems: []
     about: Upgrade tower level 4. This tower will get you 1000 health.
-  - itemName: Mixed Tower
-    itemImage: {fileID: -2636986280714855558, guid: 0d60c86a682c7c44f8872ebf482476c2,
+  - itemName: Stone Tower
+    itemImage: {fileID: -4923958591139859374, guid: fe02d03be8ca33f41a8f59efd326d58d,
       type: 3}
-    buttonImage: {fileID: 5954562338801867380, guid: 88ec3daa94f4c5248a2d63471c87deb4,
+    buttonImage: {fileID: -4923958591139859374, guid: fe02d03be8ca33f41a8f59efd326d58d,
       type: 3}
     itemPrice: 3800
     itemMaxValue: 3800

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3009410485888043092}
   - component: {fileID: 8701037159925218743}
   m_Layer: 9
-  m_Name: '[PLAYER] Arrow 3'
+  m_Name: '[PLAYER] arrow2 (posion)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,6 +55,8 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
+  m_ForceMeshLod: -1
+  m_MeshLodSelectionBias: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -76,10 +78,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
+  m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2111930155
   m_SortingLayer: 3
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 10536ba5d7715434aa1dcd0a72a1c20b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fb8aa3a33bf3e124a8c248ed04946a62, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -136,7 +139,8 @@ MonoBehaviour:
   Explosion: 0
   hitImageBlood: {fileID: 21300000, guid: 678a1a147322104439940c838f461dd8, type: 3}
   arrowImage: {fileID: 3009410485888043090}
-  DestroyEffect: {fileID: 0}
+  DestroyEffect: {fileID: 7925112798475830710, guid: 8760089d75b5145449501330a73da2f0,
+    type: 3}
   pointToGivePlayer: 0
   timeToLive: 3
   soundHitEnemy: {fileID: 0}
@@ -145,6 +149,7 @@ MonoBehaviour:
   soundHitNothingVolume: 0.5
   ExplosionObj: {fileID: 0}
   parentToHitObject: 1
+  vfxEffect: {fileID: 0}
   checkTargetDistanceOffset: {x: -0.25, y: 0}
   checkTargetDistance: 0.5
 --- !u!1 &3495437189585903451

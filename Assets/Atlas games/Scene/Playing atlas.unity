@@ -1644,11 +1644,6 @@ PrefabInstance:
       propertyPath: magicActive
       value: 
       objectReference: {fileID: 1456238382}
-    - target: {fileID: 6236543549444325940, guid: 2bf74b55ce29e004d87d0765ff719bcd,
-        type: 3}
-      propertyPath: magicActive
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 6236543550127161984, guid: 2bf74b55ce29e004d87d0765ff719bcd,
         type: 3}
       propertyPath: magicActive
@@ -1777,11 +1772,6 @@ PrefabInstance:
     - target: {fileID: 6398097630556096620, guid: 2bf74b55ce29e004d87d0765ff719bcd,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8938072158344554779, guid: 2bf74b55ce29e004d87d0765ff719bcd,
-        type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2547,7 +2537,12 @@ PrefabInstance:
     - target: {fileID: 2583819630124595366, guid: 6a4ee2e5a83e4834c9039c1606411f05,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 4.5333333
+      value: 5.16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2859291877774657217, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.97602195
       objectReference: {fileID: 0}
     - target: {fileID: 2859291877774657217, guid: 6a4ee2e5a83e4834c9039c1606411f05,
         type: 3}
@@ -2557,7 +2552,7 @@ PrefabInstance:
     - target: {fileID: 2859291877774657217, guid: 6a4ee2e5a83e4834c9039c1606411f05,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.03
+      value: -1.2342
       objectReference: {fileID: 0}
     - target: {fileID: 2859291877774657217, guid: 6a4ee2e5a83e4834c9039c1606411f05,
         type: 3}
@@ -2603,25 +2598,31 @@ PrefabInstance:
         type: 3}
       propertyPath: 'fortrestLevels.Array.data[0].stateFortrestSprites.Array.data[0]'
       value: 
-      objectReference: {fileID: -285456676521207239, guid: 25d989c3e1836534f8f40e8630983cba,
+      objectReference: {fileID: 6294939410754552826, guid: 6ae8e2ca384806741a89edc556c4a4f3,
         type: 3}
     - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
         type: 3}
       propertyPath: 'fortrestLevels.Array.data[0].stateFortrestSprites.Array.data[1]'
       value: 
-      objectReference: {fileID: 8756586904815097065, guid: 91d5f59a8f1ad9949b3b583159b047ca,
+      objectReference: {fileID: 6294939410754552826, guid: 6ae8e2ca384806741a89edc556c4a4f3,
         type: 3}
     - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
         type: 3}
       propertyPath: 'fortrestLevels.Array.data[0].stateFortrestSprites.Array.data[2]'
       value: 
-      objectReference: {fileID: 2074800290021679580, guid: c04f1898a0ba3444fb5d3c31cda22451,
+      objectReference: {fileID: 6294939410754552826, guid: 6ae8e2ca384806741a89edc556c4a4f3,
         type: 3}
     - target: {fileID: 2859291877774657219, guid: 6a4ee2e5a83e4834c9039c1606411f05,
         type: 3}
       propertyPath: 'fortrestLevels.Array.data[0].stateFortrestSprites.Array.data[3]'
       value: 
-      objectReference: {fileID: -1022105624168072097, guid: 7b0fb1e69628e7e42abe13da40ae215e,
+      objectReference: {fileID: 6294939410754552826, guid: 6ae8e2ca384806741a89edc556c4a4f3,
+        type: 3}
+    - target: {fileID: 2859291877774657222, guid: 6a4ee2e5a83e4834c9039c1606411f05,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 6704854570467044622, guid: ef86ae10b09d0ba4c9f199ea391f13c1,
         type: 3}
     - target: {fileID: 2859291877774657223, guid: 6a4ee2e5a83e4834c9039c1606411f05,
         type: 3}

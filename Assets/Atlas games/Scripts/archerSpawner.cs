@@ -7,7 +7,7 @@ public class archerSpawner : MonoBehaviour
     public Transform[] archersTrfm;
     public GameObject[] archerObj;
     //public ShopItemData itemsData;
-    public int[] chosenArcher;
+    [HideInInspector]public int[] chosenArcher;
     
 
     public void Start()
