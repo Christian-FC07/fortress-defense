@@ -56,7 +56,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: archer remake/main/bone_9
+    path: AR11/main/bone_9
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -99,7 +99,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: archer remake/main/bone_9/bone_6
+    path: AR11/main/bone_9/bone_6
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -142,7 +142,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
   m_PositionCurves:
   - curve:
       serializedVersion: 2
@@ -186,7 +186,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: archer remake/main/bone_9/bone_6
+    path: AR11/main/bone_9/bone_6
   - curve:
       serializedVersion: 2
       m_Curve:
@@ -229,7 +229,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
   m_ScaleCurves:
   - curve:
       serializedVersion: 2
@@ -273,7 +273,7 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
   m_FloatCurves: []
   m_PPtrCurves: []
   m_SampleRate: 40
@@ -284,7 +284,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 3239183442
+      path: 509548671
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -293,7 +293,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3054843076
+      path: 1767385321
       attribute: 1
       script: {fileID: 0}
       typeID: 4
@@ -302,7 +302,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1154353455
+      path: 3431848619
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -311,7 +311,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3239183442
+      path: 509548671
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -320,7 +320,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3054843076
+      path: 1767385321
       attribute: 4
       script: {fileID: 0}
       typeID: 4
@@ -329,7 +329,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3054843076
+      path: 1767385321
       attribute: 3
       script: {fileID: 0}
       typeID: 4
@@ -403,7 +403,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: archer remake/main/bone_9
+    path: AR11/main/bone_9
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -451,7 +451,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: archer remake/main/bone_9
+    path: AR11/main/bone_9
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -499,7 +499,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: archer remake/main/bone_9
+    path: AR11/main/bone_9
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -547,7 +547,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: archer remake/main/bone_9/bone_6
+    path: AR11/main/bone_9/bone_6
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -595,7 +595,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: archer remake/main/bone_9/bone_6
+    path: AR11/main/bone_9/bone_6
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -643,7 +643,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: archer remake/main/bone_9/bone_6
+    path: AR11/main/bone_9/bone_6
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -691,7 +691,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: archer remake/main/bone_9/bone_6
+    path: AR11/main/bone_9/bone_6
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -739,7 +739,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: archer remake/main/bone_9/bone_6
+    path: AR11/main/bone_9/bone_6
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -787,7 +787,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: archer remake/main/bone_9/bone_6
+    path: AR11/main/bone_9/bone_6
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -835,7 +835,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -883,7 +883,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -931,7 +931,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -979,7 +979,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.x
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1027,7 +1027,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.y
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1075,7 +1075,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: localEulerAnglesRaw.z
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1123,7 +1123,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.x
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1171,7 +1171,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.y
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1219,7 +1219,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalScale.z
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1232,7 +1232,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: archer remake/main/bone_9
+    path: AR11/main/bone_9/bone_6
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1244,7 +1244,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: archer remake/main/bone_9
+    path: AR11/main/bone_9/bone_6
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1256,7 +1256,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: archer remake/main/bone_9
+    path: AR11/main/bone_9/bone_6
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1268,7 +1268,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: archer remake/main/bone_9/bone_6
+    path: AR11/main/bone_9
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1280,7 +1280,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: archer remake/main/bone_9/bone_6
+    path: AR11/main/bone_9
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1292,7 +1292,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: archer remake/main/bone_9/bone_6
+    path: AR11/main/bone_9
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1304,7 +1304,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1316,7 +1316,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1328,7 +1328,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: archer remake/main/bone_9/bone_7
+    path: AR11/main/bone_9/bone_7
     classID: 4
     script: {fileID: 0}
     flags: 0
