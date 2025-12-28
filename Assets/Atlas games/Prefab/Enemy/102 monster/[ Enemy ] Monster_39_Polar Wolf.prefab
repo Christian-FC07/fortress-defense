@@ -259,7 +259,7 @@ MonoBehaviour:
   enemyState: 0
   weaknessMultiplier: 1
   strengthMultiplier: 1
-  weakness: 0
+  weakness: 1
   strength: 0
   canBeFreeze: 1
   dieFrozenFX: {fileID: 0}

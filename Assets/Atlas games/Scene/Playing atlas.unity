@@ -1195,7 +1195,7 @@ PrefabInstance:
         type: 3}
       propertyPath: EnemyWaves.Array.data[0].enemySpawns.Array.data[0].enemy
       value: 
-      objectReference: {fileID: 3697426553599540029, guid: 00da7a72eca3786409d4aed541afdfba,
+      objectReference: {fileID: 3697426553599540029, guid: 97d78ecd6c472854796698bed3512866,
         type: 3}
     - target: {fileID: 2789320161115064299, guid: 14c62279b37e6c24d81d4bce87c6ded6,
         type: 3}
@@ -2188,16 +2188,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: LevelEnemyEndless
-      objectReference: {fileID: 0}
-    - target: {fileID: 1480071122214238694, guid: fb464bc0aa95c1f48a242d0ae509120d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6534493661185011523, guid: fb464bc0aa95c1f48a242d0ae509120d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6534493661185011523, guid: fb464bc0aa95c1f48a242d0ae509120d,
         type: 3}
