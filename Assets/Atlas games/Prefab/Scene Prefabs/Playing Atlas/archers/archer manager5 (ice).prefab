@@ -547,7 +547,7 @@ MonoBehaviour:
   iconPoison: {fileID: 1893640126934877138}
   iconDoubleArrow: {fileID: 4737092480186880399}
   weaponEffect:
-    effectType: 0
+    effectType: 2
     normalDamageMin: 25
     normalDamageMax: 30
     poisonChance: 1
@@ -2183,7 +2183,7 @@ MonoBehaviour:
   iconPoison: {fileID: 8859306586437687238}
   iconDoubleArrow: {fileID: 8321523550266631939}
   weaponEffect:
-    effectType: 0
+    effectType: 2
     normalDamageMin: 25
     normalDamageMax: 30
     poisonChance: 1
@@ -4803,7 +4803,7 @@ MonoBehaviour:
   iconPoison: {fileID: 7063435933083091622}
   iconDoubleArrow: {fileID: 8334372024311344816}
   weaponEffect:
-    effectType: 0
+    effectType: 2
     normalDamageMin: 25
     normalDamageMax: 30
     poisonChance: 1

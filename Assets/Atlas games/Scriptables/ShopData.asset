@@ -482,9 +482,9 @@ MonoBehaviour:
     about: Need a litle bit of cover? Use this item to get 300 more health as a bubble
       shield around your fort.
   - itemName: Archer1
-    itemImage: {fileID: 5035691554330368422, guid: e61c847aa1876da4e95627622f852fe9,
+    itemImage: {fileID: 5619034068584148047, guid: 05c45728f70f5cf4689b9d238f7ecef4,
       type: 3}
-    buttonImage: {fileID: 5035691554330368422, guid: e61c847aa1876da4e95627622f852fe9,
+    buttonImage: {fileID: 5619034068584148047, guid: 05c45728f70f5cf4689b9d238f7ecef4,
       type: 3}
     itemPrice: 20
     itemMaxValue: 20
@@ -500,15 +500,14 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
-    about: Need a litle bit of cover? Use this item to get 300 more health as a bubble
-      shield around your fort.
+    about: This is a normal archers that protects your fort from the enemies.
   - itemName: Archer2
-    itemImage: {fileID: -7883409592485616875, guid: 4713edb7e5027f94f8a376240c0813f5,
+    itemImage: {fileID: -5208098988740100397, guid: 17ad8b2dade664c4fa961d56838e1163,
       type: 3}
-    buttonImage: {fileID: -7883409592485616875, guid: 4713edb7e5027f94f8a376240c0813f5,
+    buttonImage: {fileID: -5208098988740100397, guid: 17ad8b2dade664c4fa961d56838e1163,
       type: 3}
-    itemPrice: 20
-    itemMaxValue: 20
+    itemPrice: 200
+    itemMaxValue: 200
     hasMaxValue: 1
     type: 6
     isTimed: 0
@@ -521,15 +520,16 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
-    about: Need a litle bit of cover? Use this item to get 300 more health as a bubble
-      shield around your fort.
+    about: Want something hot? This is exactly what your looking for. This archer
+      is able to throw fire arrows, which helps you potecting your fort faster and
+      better.
   - itemName: Archer3
-    itemImage: {fileID: -765762238562136372, guid: 3093973e0569e584f99aa97eff86328b,
+    itemImage: {fileID: -8006443761845918028, guid: baab5f4d9f4c3964c9744bfc13ae67b0,
       type: 3}
-    buttonImage: {fileID: -765762238562136372, guid: 3093973e0569e584f99aa97eff86328b,
+    buttonImage: {fileID: -8006443761845918028, guid: baab5f4d9f4c3964c9744bfc13ae67b0,
       type: 3}
-    itemPrice: 20
-    itemMaxValue: 20
+    itemPrice: 300
+    itemMaxValue: 300
     hasMaxValue: 1
     type: 6
     isTimed: 0
@@ -542,15 +542,15 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
-    about: Need a litle bit of cover? Use this item to get 300 more health as a bubble
-      shield around your fort.
+    about: Enemies are not the only ones who can be toxic. Use this archer in order
+      to send poisonous arrows.
   - itemName: Archer4
-    itemImage: {fileID: -1486055471899425534, guid: 8437460e4224a904f8f7ad96224409f6,
+    itemImage: {fileID: -3479961763735246683, guid: 8c40a1a1e2dd3f047be24c59058cbf10,
       type: 3}
-    buttonImage: {fileID: -1486055471899425534, guid: 8437460e4224a904f8f7ad96224409f6,
+    buttonImage: {fileID: -3479961763735246683, guid: 8c40a1a1e2dd3f047be24c59058cbf10,
       type: 3}
-    itemPrice: 20
-    itemMaxValue: 20
+    itemPrice: 400
+    itemMaxValue: 400
     hasMaxValue: 1
     type: 6
     isTimed: 0
@@ -563,15 +563,15 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
-    about: Need a litle bit of cover? Use this item to get 300 more health as a bubble
-      shield around your fort.
+    about: Want to send some high voltage of power form the skies? Meets a new kind
+      of archer that can create hit points for spawning storm clouds and thunder!
   - itemName: Archer5
-    itemImage: {fileID: 9160508724580143841, guid: ad3d218b529de0244a2083e9331fd4bb,
+    itemImage: {fileID: -6605185240368141284, guid: d80499740e6e10a49930eae958fd697c,
       type: 3}
-    buttonImage: {fileID: 9160508724580143841, guid: ad3d218b529de0244a2083e9331fd4bb,
+    buttonImage: {fileID: -6605185240368141284, guid: d80499740e6e10a49930eae958fd697c,
       type: 3}
-    itemPrice: 20
-    itemMaxValue: 20
+    itemPrice: 500
+    itemMaxValue: 500
     hasMaxValue: 1
     type: 6
     isTimed: 0
@@ -584,5 +584,5 @@ MonoBehaviour:
     pet: {fileID: 2742581098072274894, guid: e08cd14326358354b9acc253cee4fa3d, type: 3}
     duration: 0
     otherTimedItems: []
-    about: Need a litle bit of cover? Use this item to get 300 more health as a bubble
-      shield around your fort.
+    about: Change the whole strategy with this one! This archer uses blizzard power
+      to freeze enemies in time!

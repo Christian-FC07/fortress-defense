@@ -832,7 +832,7 @@ MonoBehaviour:
   iconPoison: {fileID: 1893640126934877138}
   iconDoubleArrow: {fileID: 4737092480186880399}
   weaponEffect:
-    effectType: 0
+    effectType: 4
     normalDamageMin: 25
     normalDamageMax: 30
     poisonChance: 1
@@ -1244,7 +1244,7 @@ MonoBehaviour:
   weaknessMultiplier: 1
   strengthMultiplier: 1
   weakness: 0
-  strength: 0
+  strength: 4
   canBeFreeze: 1
   dieFrozenFX: {fileID: 0}
   canBeBurn: 1
@@ -1284,7 +1284,7 @@ MonoBehaviour:
   iconPoison: {fileID: 6987239991661374399}
   iconDoubleArrow: {fileID: 318000486080089537}
   weaponEffect:
-    effectType: 0
+    effectType: 4
     normalDamageMin: 25
     normalDamageMax: 30
     poisonChance: 1
@@ -1846,7 +1846,7 @@ MonoBehaviour:
   weaknessMultiplier: 1
   strengthMultiplier: 1
   weakness: 0
-  strength: 0
+  strength: 4
   canBeFreeze: 1
   dieFrozenFX: {fileID: 0}
   canBeBurn: 1
@@ -1886,7 +1886,7 @@ MonoBehaviour:
   iconPoison: {fileID: 9201161903794302991}
   iconDoubleArrow: {fileID: 6413795016256385633}
   weaponEffect:
-    effectType: 0
+    effectType: 4
     normalDamageMin: 25
     normalDamageMax: 30
     poisonChance: 1
@@ -4609,7 +4609,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8523440181810136904
 Transform:
   m_ObjectHideFlags: 0
