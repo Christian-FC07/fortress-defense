@@ -548,8 +548,8 @@ MonoBehaviour:
   iconDoubleArrow: {fileID: 4737092480186880399}
   weaponEffect:
     effectType: 2
-    normalDamageMin: 25
-    normalDamageMax: 30
+    normalDamageMin: 48
+    normalDamageMax: 48
     poisonChance: 1
     poisonTime: 5
     poisonDamagePerSec: 80
@@ -2184,8 +2184,8 @@ MonoBehaviour:
   iconDoubleArrow: {fileID: 8321523550266631939}
   weaponEffect:
     effectType: 2
-    normalDamageMin: 25
-    normalDamageMax: 30
+    normalDamageMin: 48
+    normalDamageMax: 48
     poisonChance: 1
     poisonTime: 5
     poisonDamagePerSec: 80
@@ -4804,8 +4804,8 @@ MonoBehaviour:
   iconDoubleArrow: {fileID: 8334372024311344816}
   weaponEffect:
     effectType: 2
-    normalDamageMin: 25
-    normalDamageMax: 30
+    normalDamageMin: 48
+    normalDamageMax: 48
     poisonChance: 1
     poisonTime: 5
     poisonDamagePerSec: 80

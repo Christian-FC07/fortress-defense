@@ -85,6 +85,7 @@ public class ArrowProjectile : Projectile, IListener, ICanTakeDamage
                 if (item.transform.gameObject.tag == "enemyArmed")
                 {
                     isHit = false;
+                    Debug.Log("hit armed");
                     //SoundManager.PlaySfx(SoundManager.Instance.hitArmor);
                 }
                 else
